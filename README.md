@@ -39,6 +39,26 @@ A static, mobile-first study site with:
 - an exam technique trainer
 - a progress dashboard
 
+## Run the site
+
+The site is static, with no build step. It reads the guides and `data/saa-c03/syllabus.json` from the repository, so serve the repository root and open `/site/`:
+
+```
+python3 -m http.server 8000
+# then open http://localhost:8000/site/
+```
+
+Lessons are rendered with [marked](https://github.com/markedjs/marked) 12.0.2, pinned from cdnjs with a subresource-integrity hash. If the library cannot load, a lesson is shown as plain text. Read progress is kept per section in `localStorage`; if the browser blocks storage the site still works and says progress will not be saved.
+
+Tests for the reader logic (Node 22 or later, no packages):
+
+```
+node --test "site/tests/*.test.js"
+python3 -m unittest discover -s tests -q
+```
+
+On Node 22 the form `node --test site/tests` (a bare directory) fails with `MODULE_NOT_FOUND`, so use the quoted glob above.
+
 ## Source and credit
 
 The study content will be adapted from **[aws-saa-c03-guides](https://github.com/RonitSachdev/aws-saa-c03-guides)** by **RonitSachdev**, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Anything built from it must keep this credit and link. The copied guides, their commit and the changes made are recorded in [content/saa-c03/ATTRIBUTION.md](content/saa-c03/ATTRIBUTION.md).
