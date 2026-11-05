@@ -145,6 +145,11 @@
       if (n) main.appendChild(n);
       main.appendChild(article);
 
+      // Wide code blocks and tables scroll sideways; make them reachable by keyboard.
+      Array.prototype.forEach.call(article.querySelectorAll("pre, table"), function (node) {
+        node.setAttribute("tabindex", "0");
+      });
+
       var h2s = Array.prototype.slice.call(article.querySelectorAll("h2"));
       var slugs = L.uniqueSlugs(h2s.map(function (h) { return h.textContent; }));
       progress.setTotal(lesson.file, h2s.length);

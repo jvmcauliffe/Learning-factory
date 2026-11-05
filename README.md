@@ -57,7 +57,28 @@ node --test "site/tests/*.test.js"
 python3 -m unittest discover -s tests -q
 ```
 
-On Node 22 the form `node --test site/tests` (a bare directory) fails with `MODULE_NOT_FOUND`, so use the quoted glob above.
+Both `node --test "site/tests/*.test.js"` and `node --test site/tests` work. The second needs `site/tests/index.js`, which loads every test file, because Node 22 treats a bare directory as a file path.
+
+### Browser tests, accessibility and offline use
+
+The browser tests live in `tests/e2e/`. They need Node 22 or later and the pinned packages in `tests/e2e/package.json` (Playwright 1.63.0, axe-core 4.10.2, marked 12.0.2). Install once, then run:
+
+```
+cd tests/e2e
+npm ci
+npx playwright install chromium   # only if Playwright has no browser yet
+node --test "*.test.js"
+```
+
+| Test file | What it checks |
+|---|---|
+| `a11y.test.js` | axe-core on every section at phone and desktop width, light and dark. Any serious or critical issue fails. |
+| `smoke.test.js` | Every section opens, no sideways page scroll, one flashcard, one drill and a short exam are completed, and the keyboard alone reaches the main controls. |
+| `offline.test.js` | After one visit the site, a lesson and every section work with the network off. The cache name carries the content version. |
+
+The tests start their own static server and serve the pinned marked build in place of the CDN, so they need no network.
+
+Offline use: `site/sw.js` caches the lessons, question data, glossary and site files on the first visit (over https or localhost) and `site/manifest.json` lets the site be installed. The cache is named `lf-saa-c03-<upstream commit>-<content hash>`. When a guide or data file changes, `site/tests/sw.test.js` fails and reports the new `CONTENT_HASH` to put in `site/sw.js`; the old cache is deleted when the new worker activates.
 
 ## Source and credit
 

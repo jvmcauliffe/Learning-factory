@@ -1,0 +1,10 @@
+{
+  "name": "learning-factory-e2e",
+  "private": true,
+  "description": "Browser tests for the SAA-C03 study site. Versions are pinned.",
+  "devDependencies": {
+    "axe-core": "4.10.2",
+    "marked": "12.0.2",
+    "playwright": "1.63.0"
+  }
+}
