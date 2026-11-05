@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0391",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "A team wants to run containers without managing any servers or clusters of instances. Which option fits?",
+      "options": [
+        {
+          "text": "Fargate",
+          "explanation": "This is the guide's answer for this scenario (line 88). Its note: the phrase \"no server management\" is the trigger.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "EKS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company runs Kubernetes on-premises and wants to migrate to AWS with minimal changes (line 89).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 89
+          }
+        },
+        {
+          "text": "ECS on EC2 launch type",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Containerized GPU-based ML inference, minimize management (line 92).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 92
+          }
+        },
+        {
+          "text": "awsvpc network mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Assign a dedicated security group to each container/task (line 94).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 94
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0392",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "A company runs Kubernetes on premises and wants to migrate to AWS with minimal changes. Which service fits?",
+      "options": [
+        {
+          "text": "Fargate Spot",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cost-optimize fault-tolerant containerized batch jobs on Fargate (line 96).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 96
+          }
+        },
+        {
+          "text": "EKS",
+          "explanation": "This is the guide's answer for this scenario (line 89). Its note: \"already Kubernetes\" is one of only two EKS signals.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 89
+          }
+        },
+        {
+          "text": "Fargate",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run containers without managing any servers or clusters of instances (line 88).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "ECS on EC2 launch type",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Containerized GPU-based ML inference, minimize management (line 92).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 92
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0393",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "An ECS task fails to start with an error pulling the image from ECR. Which role is missing?",
+      "options": [
+        {
+          "text": "awsvpc network mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Assign a dedicated security group to each container/task (line 94).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 94
+          }
+        },
+        {
+          "text": "ECR image scanning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically scan container images for vulnerabilities (line 93).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Task Execution Role",
+          "explanation": "This is the guide's answer for this scenario (line 90). Its note: launch plumbing = execution role.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 90
+          }
+        },
+        {
+          "text": "Task Role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Application inside the container gets AccessDenied calling DynamoDB (line 91).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 91
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0394",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "An application inside an ECS container gets AccessDenied when calling DynamoDB. Which role needs the permission?",
+      "options": [
+        {
+          "text": "Task Execution Role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ECS task fails to start; error pulling image from ECR (line 90).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 90
+          }
+        },
+        {
+          "text": "awsvpc network mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Assign a dedicated security group to each container/task (line 94).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 94
+          }
+        },
+        {
+          "text": "ECR image scanning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically scan container images for vulnerabilities (line 93).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Task Role",
+          "explanation": "This is the guide's answer for this scenario (line 91). Its note: app-level permissions once running.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 91
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0395",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "Containerised GPU-based ML inference must run with minimal management. Which launch type fits?",
+      "options": [
+        {
+          "text": "ECS on EC2 launch type",
+          "explanation": "This is the guide's answer for this scenario (line 92). Its note: Fargate has NO GPUs.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 92
+          }
+        },
+        {
+          "text": "Fargate",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run containers without managing any servers or clusters of instances (line 88).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "Fargate Spot",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cost-optimize fault-tolerant containerized batch jobs on Fargate (line 96).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 96
+          }
+        },
+        {
+          "text": "ECS Service Auto Scaling on SQS queue depth",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Scale container count based on messages waiting in a queue (line 97).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 97
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0396",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "Container images must be scanned for vulnerabilities automatically. Which feature fits?",
+      "options": [
+        {
+          "text": "ECS Service Auto Scaling on SQS queue depth",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Scale container count based on messages waiting in a queue (line 97).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "ECR image scanning",
+          "explanation": "This is the guide's answer for this scenario (line 93). Its note: built into the registry.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Task Role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Application inside the container gets AccessDenied calling DynamoDB (line 91).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "awsvpc network mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Assign a dedicated security group to each container/task (line 94).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 94
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0397",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "Each container task needs its own dedicated security group. Which network mode fits?",
+      "options": [
+        {
+          "text": "Task Role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Application inside the container gets AccessDenied calling DynamoDB (line 91).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "Fargate Spot",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cost-optimize fault-tolerant containerized batch jobs on Fargate (line 96).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 96
+          }
+        },
+        {
+          "text": "awsvpc network mode",
+          "explanation": "This is the guide's answer for this scenario (line 94). Its note: per-task ENI = per-task SG.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 94
+          }
+        },
+        {
+          "text": "Task Execution Role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ECS task fails to start; error pulling image from ECR (line 90).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 90
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0398",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "A company wants to avoid vendor lock-in and keep containers portable across clouds. Which service fits?",
+      "options": [
+        {
+          "text": "Fargate",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run containers without managing any servers or clusters of instances (line 88).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "ECS on EC2 launch type",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Containerized GPU-based ML inference, minimize management (line 92).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 92
+          }
+        },
+        {
+          "text": "Fargate Spot",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cost-optimize fault-tolerant containerized batch jobs on Fargate (line 96).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 96
+          }
+        },
+        {
+          "text": "EKS",
+          "explanation": "This is the guide's answer for this scenario (line 95). Its note: Kubernetes is the portability play.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 95
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0399",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "Fault-tolerant containerised batch jobs on Fargate must be cost-optimised. What should the architect use?",
+      "options": [
+        {
+          "text": "Fargate Spot",
+          "explanation": "This is the guide's answer for this scenario (line 96). Its note: interruptible = Spot.",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 96
+          }
+        },
+        {
+          "text": "Fargate",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run containers without managing any servers or clusters of instances (line 88).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "ECS on EC2 launch type",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Containerized GPU-based ML inference, minimize management (line 92).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 92
+          }
+        },
+        {
+          "text": "EKS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company runs Kubernetes on-premises and wants to migrate to AWS with minimal changes (line 89).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 89
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0400",
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "stem": "The number of containers must scale with the messages waiting in a queue. What should the architect configure?",
+      "options": [
+        {
+          "text": "Task Role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Application inside the container gets AccessDenied calling DynamoDB (line 91).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "ECS Service Auto Scaling on SQS queue depth",
+          "explanation": "This is the guide's answer for this scenario (line 97).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "awsvpc network mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Assign a dedicated security group to each container/task (line 94).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 94
+          }
+        },
+        {
+          "text": "ECR image scanning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically scan container images for vulnerabilities (line 93).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 93
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

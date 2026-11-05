@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0412",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "Developers want to deploy code quickly without managing infrastructure, but must keep full control of the underlying resources. Which service fits?",
+      "options": [
+        {
+          "text": "Elastic Beanstalk",
+          "explanation": "This is the guide's answer for this scenario (line 69). Its note: that's its identity phrase verbatim.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Fargate",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run containers without managing any servers or clusters of instances (line 88).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "EKS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company runs Kubernetes on-premises and wants to migrate to AWS with minimal changes (line 89).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 89
+          }
+        },
+        {
+          "text": "ECS on EC2 launch type",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Containerized GPU-based ML inference, minimize management (line 92).",
+          "source": {
+            "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+            "line": 92
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0413",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "A new version must deploy as fast as possible, and brief downtime is acceptable in a dev environment. Which deployment policy fits?",
+      "options": [
+        {
+          "text": "Blue/Green with CNAME swap",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Test the new version against a separate URL, then switch all traffic instantly with instant rollback (line 74).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "All at once",
+          "explanation": "This is the guide's answer for this scenario (line 70). Its note: speed + downtime-OK = the only reason to pick it.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Rolling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy with no downtime and no additional cost (line 71).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Immutable",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deployment must be safest possible with quick rollback if health checks fail (line 73).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 73
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0414",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "A deployment must have no downtime and no additional cost. Which deployment policy fits?",
+      "options": [
+        {
+          "text": "Rolling with additional batch",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy with no downtime while maintaining full capacity (line 72).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "Immutable",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deployment must be safest possible with quick rollback if health checks fail (line 73).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Rolling",
+          "explanation": "This is the guide's answer for this scenario (line 71). Its note: batches reuse existing instances, capacity dips but nothing new is billed.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "All at once",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy new version as fast as possible; brief downtime is acceptable (dev environment) (line 70).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0415",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "A deployment must have no downtime while maintaining full capacity. Which deployment policy fits?",
+      "options": [
+        {
+          "text": "Rolling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy with no downtime and no additional cost (line 71).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "All at once",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy new version as fast as possible; brief downtime is acceptable (dev environment) (line 70).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Immutable",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deployment must be safest possible with quick rollback if health checks fail (line 73).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Rolling with additional batch",
+          "explanation": "This is the guide's answer for this scenario (line 72). Its note: the extra batch covers the gap.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 72
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0416",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "A deployment must be as safe as possible, with quick rollback if health checks fail. Which deployment policy fits?",
+      "options": [
+        {
+          "text": "Immutable",
+          "explanation": "This is the guide's answer for this scenario (line 73). Its note: bad deploy? delete the new fleet, old one untouched.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "All at once",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy new version as fast as possible; brief downtime is acceptable (dev environment) (line 70).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Rolling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy with no downtime and no additional cost (line 71).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Rolling with additional batch",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy with no downtime while maintaining full capacity (line 72).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 72
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0417",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "The new version must be tested on a separate URL, then all traffic switched instantly with instant rollback. Which approach fits?",
+      "options": [
+        {
+          "text": "Immutable",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deployment must be safest possible with quick rollback if health checks fail (line 73).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Blue/Green with CNAME swap",
+          "explanation": "This is the guide's answer for this scenario (line 74). Its note: DNS swap both ways.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "All at once",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy new version as fast as possible; brief downtime is acceptable (dev environment) (line 70).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Rolling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy with no downtime and no additional cost (line 71).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 71
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0418",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "A Beanstalk app's database was lost when the environment was terminated. How can this be prevented in production?",
+      "options": [
+        {
+          "text": "Worker environment",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Long-running background jobs from a queue alongside a Beanstalk web app (line 77).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 77
+          }
+        },
+        {
+          "text": ".ebextensions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Customize packages and configuration of Beanstalk instances at deploy time (line 78).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "Create RDS outside the environment; connect via environment variables",
+          "explanation": "This is the guide's answer for this scenario (line 75). Its note: decouple lifecycles.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Snapshot the RDS instance → restore as standalone RDS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a database out of an existing Beanstalk environment (line 76).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 76
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0419",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "A database must be migrated out of an existing Beanstalk environment. What is the procedure?",
+      "options": [
+        {
+          "text": "Create RDS outside the environment; connect via environment variables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Beanstalk app's database was lost when the environment was terminated — prevent this in production (line 75).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Worker environment",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Long-running background jobs from a queue alongside a Beanstalk web app (line 77).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 77
+          }
+        },
+        {
+          "text": ".ebextensions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Customize packages and configuration of Beanstalk instances at deploy time (line 78).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "Snapshot the RDS instance → restore as standalone RDS",
+          "explanation": "This is the guide's answer for this scenario (line 76). Its note: then reconnect via env vars.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 76
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0420",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "Long-running background jobs from a queue must run alongside a Beanstalk web app. What should the architect add?",
+      "options": [
+        {
+          "text": "Worker environment",
+          "explanation": "This is the guide's answer for this scenario (line 77). Its note: the SQS-consuming tier.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 77
+          }
+        },
+        {
+          "text": ".ebextensions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Customize packages and configuration of Beanstalk instances at deploy time (line 78).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "Create RDS outside the environment; connect via environment variables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Beanstalk app's database was lost when the environment was terminated — prevent this in production (line 75).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Elastic Beanstalk",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Developers want to deploy code quickly without managing infrastructure but must retain full control of the underlying resources (line 69).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 69
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0421",
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "stem": "The packages and configuration of Beanstalk instances must be customised at deploy time. What should the architect use?",
+      "options": [
+        {
+          "text": "Snapshot the RDS instance → restore as standalone RDS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a database out of an existing Beanstalk environment (line 76).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 76
+          }
+        },
+        {
+          "text": ".ebextensions",
+          "explanation": "This is the guide's answer for this scenario (line 78). Its note: config files in the source bundle.",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "Worker environment",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Long-running background jobs from a queue alongside a Beanstalk web app (line 77).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Create RDS outside the environment; connect via environment variables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Beanstalk app's database was lost when the environment was terminated — prevent this in production (line 75).",
+          "source": {
+            "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
