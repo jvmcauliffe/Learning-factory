@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0248",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "Users worldwide need low-latency access to a static website, and the S3 bucket must not be publicly accessible. Which design fits?",
+      "options": [
+        {
+          "text": "CloudFront + S3 origin + OAC",
+          "explanation": "This is the guide's answer for this scenario (line 81). Its note: cache at edges, lock the bucket to CloudFront only)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "S3 Transfer Acceleration",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users around the world upload large files into one S3 bucket, uploads are slow (line 97).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Global Accelerator",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiplayer game over UDP has high latency for global players (line 87).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0249",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "Paying subscribers must be able to stream any video in the premium catalog. What should the architect use?",
+      "options": [
+        {
+          "text": "ACM certificate in us-east-1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Attach a custom domain certificate to a CloudFront distribution (line 99).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "Signed Cookies",
+          "explanation": "This is the guide's answer for this scenario (line 83). Its note: MANY files = cookies; ONE file = signed URL)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Signed URL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Send a customer a link to download a single report (line 85).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0250",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "A customer must be sent a link to download a single report. What should the architect use?",
+      "options": [
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Increase TTL / improve cache hit ratio",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce the load on the origin server behind CloudFront (line 95).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Signed URL",
+          "explanation": "This is the guide's answer for this scenario (line 85). Its note: one file, one URL)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Signed Cookies",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Paying subscribers should stream any video in the premium catalog (line 83).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0251",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "A multiplayer game running over UDP suffers high latency for global players. Which service fits?",
+      "options": [
+        {
+          "text": "CloudFront + S3 origin + OAC",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve a static website to users worldwide with low latency; the S3 bucket must not be publicly accessible (line 81).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "S3 Transfer Acceleration",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users around the world upload large files into one S3 bucket, uploads are slow (line 97).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Global Accelerator",
+          "explanation": "This is the guide's answer for this scenario (line 87). Its note: UDP rules out CloudFront instantly)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0252",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "Enterprise clients' firewalls require a small set of fixed IP addresses to whitelist. Which service fits?",
+      "options": [
+        {
+          "text": "Global Accelerator",
+          "explanation": "This is the guide's answer for this scenario (line 89). Its note: 2 static anycast IPs — the only global service that offers this)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 89
+          }
+        },
+        {
+          "text": "CloudFront + S3 origin + OAC",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve a static website to users worldwide with low latency; the S3 bucket must not be publicly accessible (line 81).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Increase TTL / improve cache hit ratio",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce the load on the origin server behind CloudFront (line 95).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "ACM certificate in us-east-1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Attach a custom domain certificate to a CloudFront distribution (line 99).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 99
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0253",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "A multi-Region application needs failover in seconds, without waiting for DNS caches to expire. Which service fits?",
+      "options": [
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Global Accelerator",
+          "explanation": "This is the guide's answer for this scenario (line 91). Its note: in-path health checks, same IPs before and after)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "Failover routing policy + health check",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Active-passive setup: send traffic to the standby region only when the primary fails (line 99).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "Increase TTL / improve cache hit ratio",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce the load on the origin server behind CloudFront (line 95).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 95
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0254",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "Licensing forbids streaming the content in certain countries. What should the architect configure?",
+      "options": [
+        {
+          "text": "Increase TTL / improve cache hit ratio",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce the load on the origin server behind CloudFront (line 95).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "S3 Transfer Acceleration",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users around the world upload large files into one S3 bucket, uploads are slow (line 97).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "This is the guide's answer for this scenario (line 93). Its note: country-level block at the edge)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Signed Cookies",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Paying subscribers should stream any video in the premium catalog (line 83).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0255",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "The architect must reduce the load on the origin server behind CloudFront. What should be done?",
+      "options": [
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Signed URL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Send a customer a link to download a single report (line 85).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "ACM certificate in us-east-1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Attach a custom domain certificate to a CloudFront distribution (line 99).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "Increase TTL / improve cache hit ratio",
+          "explanation": "This is the guide's answer for this scenario (line 95). Its note: more hits at the edge = fewer origin fetches)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 95
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0256",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "Users around the world upload large files into one S3 bucket and uploads are slow. Which feature fits?",
+      "options": [
+        {
+          "text": "S3 Transfer Acceleration",
+          "explanation": "This is the guide's answer for this scenario (line 97). Its note: UPLOAD direction — not CloudFront)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "CloudFront + S3 origin + OAC",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve a static website to users worldwide with low latency; the S3 bucket must not be publicly accessible (line 81).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "ACM certificate in us-east-1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Attach a custom domain certificate to a CloudFront distribution (line 99).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 99
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0257",
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "stem": "A custom domain certificate must be attached to a CloudFront distribution. What is required?",
+      "options": [
+        {
+          "text": "Signed URL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Send a customer a link to download a single report (line 85).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "ACM certificate in us-east-1",
+          "explanation": "This is the guide's answer for this scenario (line 99). Its note: always, regardless of your app's region)..",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "CloudFront + S3 origin + OAC",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve a static website to users worldwide with low latency; the S3 bucket must not be publicly accessible (line 81).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "CloudFront Geo Restriction",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Licensing forbids streaming the content in certain countries (line 93).",
+          "source": {
+            "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+            "line": 93
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

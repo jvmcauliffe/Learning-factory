@@ -1,0 +1,298 @@
+{
+  "questions": [
+    {
+      "id": "q0746",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "A company transfers 5 TB nightly and VPN performance is inconsistent. Which connectivity option fits?",
+      "options": [
+        {
+          "text": "Direct Connect",
+          "explanation": "This is the guide's answer for this scenario (line 54). Its note: dedicated fiber = consistent throughput for big regular transfers.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0747",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "What is a cost-effective backup for an existing Direct Connect link?",
+      "options": [
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Site-to-Site VPN failover",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: \"cost-effective backup\" is the VPN's middle name.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Direct Connect",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Transferring 5 TB nightly; VPN performance is inconsistent (line 54).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0748",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "Data sent over Direct Connect must be encrypted in transit. What should the architect add?",
+      "options": [
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Site-to-Site VPN over the DX connection",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: DX is private, not encrypted.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Direct Connect",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Transferring 5 TB nightly; VPN performance is inconsistent (line 54).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 54
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0749",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "On-premises must be connected to AWS within days. Which option fits?",
+      "options": [
+        {
+          "text": "Direct Connect",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Transferring 5 TB nightly; VPN performance is inconsistent (line 54).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "TGW peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Connect hub networks in us-east-1 and eu-west-1 (line 51).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "This is the guide's answer for this scenario (line 60). Its note: DX takes weeks–months; VPN takes hours.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0750",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "Remote employees' laptops need secure access to the VPC. Which service fits?",
+      "options": [
+        {
+          "text": "AWS Client VPN",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: individual devices, not a site.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Direct Connect",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Transferring 5 TB nightly; VPN performance is inconsistent (line 54).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0751",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "One Direct Connect link must reach VPCs in multiple Regions. What should the architect use?",
+      "options": [
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 64). Its note: one fiber, many VPCs/regions.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0752",
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "stem": "On-premises must reach AWS with no traffic on the public internet. Which option fits?",
+      "options": [
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Direct Connect",
+          "explanation": "This is the guide's answer for this scenario (line 66). Its note: the only option that skips the internet entirely.",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

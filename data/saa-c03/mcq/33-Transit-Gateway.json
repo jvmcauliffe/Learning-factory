@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "q0763",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "Twenty-five VPCs and an on-premises datacenter need centralised connectivity. Which service fits?",
+      "options": [
+        {
+          "text": "Transit Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 39). Its note: hub-and-spoke kills the n(n-1)/2 mesh.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0764",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "VPC A peers with VPC B and VPC B peers with VPC C, but A cannot reach C. What should the architect use?",
+      "options": [
+        {
+          "text": "Direct Connect",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Transferring 5 TB nightly; VPN performance is inconsistent (line 54).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 41). Its note: peering is non-transitive; TGW routes transitively.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0765",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "Production VPCs must not communicate with development VPCs, but all need on-premises access. What is the design?",
+      "options": [
+        {
+          "text": "TGW peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Connect hub networks in us-east-1 and eu-west-1 (line 51).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "TGW with separate route tables per attachment",
+          "explanation": "This is the guide's answer for this scenario (line 43). Its note: segmentation at the hub.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0766",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "An application requires IP multicast. Which service supports it?",
+      "options": [
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 45). Its note: the only service that supports it.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 45
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0767",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "Just two VPCs need to communicate at the lowest cost. What should the architect use?",
+      "options": [
+        {
+          "text": "VPC peering",
+          "explanation": "This is the guide's answer for this scenario (line 47). Its note: free hourly, TGW would be overkill.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: 25 VPCs and on-premises datacenter need centralized connectivity (line 39).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "TGW peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Connect hub networks in us-east-1 and eu-west-1 (line 51).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0768",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "The network hub must be shared across 50 AWS accounts. What is the design?",
+      "options": [
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "TGW shared via AWS RAM",
+          "explanation": "This is the guide's answer for this scenario (line 49).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 49
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0769",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "Hub networks in us-east-1 and eu-west-1 must be connected. What should the architect use?",
+      "options": [
+        {
+          "text": "Direct Connect Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One Direct Connect must reach VPCs in multiple regions (line 64).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "Site-to-Site VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Must connect on-premises to AWS within days (line 60).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "TGW peering",
+          "explanation": "This is the guide's answer for this scenario (line 51). Its note: cross-region hub-to-hub.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0770",
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "stem": "All inter-VPC traffic must pass through a firewall appliance. What is the design?",
+      "options": [
+        {
+          "text": "VPC peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Just 2 VPCs need to communicate at lowest cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "TGW peering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Connect hub networks in us-east-1 and eu-west-1 (line 51).",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "AWS Client VPN",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Remote employees' laptops need secure access to the VPC (line 62).",
+          "source": {
+            "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "TGW with appliance mode",
+          "explanation": "This is the guide's answer for this scenario (line 53). Its note: symmetric flows through the inspection VPC.",
+          "source": {
+            "guide": "content/saa-c03/33-Transit-Gateway.md",
+            "line": 53
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

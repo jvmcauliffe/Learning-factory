@@ -1,0 +1,382 @@
+{
+  "questions": [
+    {
+      "id": "q0227",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "A company must point its root domain (example.com) at an Application Load Balancer. Which DNS record type should the architect use?",
+      "options": [
+        {
+          "text": "Alias record",
+          "explanation": "This is the guide's answer for this scenario (line 97). Its note: CNAME is forbidden at the apex; Alias is the AWS answer, free and auto-tracking)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "CNAME",
+          "explanation": "Not this one. The guide pairs this answer with: name → name, NOT at apex (line 120).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 120
+          }
+        },
+        {
+          "text": "Weighted routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Test a new app version by sending 10% of users to it (line 101).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0228",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "An active-passive design must send traffic to the standby Region only when the primary fails. Which routing configuration fits?",
+      "options": [
+        {
+          "text": "Geolocation",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users in Germany must see the German-language site (line 103).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Failover routing policy + health check",
+          "explanation": "This is the guide's answer for this scenario (line 99). Its note: \"active-passive\" is the giveaway)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "Weighted routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Test a new app version by sending 10% of users to it (line 101).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0229",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "A team wants to test a new application version by sending 10% of users to it. Which routing policy fits?",
+      "options": [
+        {
+          "text": "Geolocation",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users in Germany must see the German-language site (line 103).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "**Private hosted zone**",
+          "explanation": "Not this one. The guide pairs this answer with: DNS only inside a VPC (line 127).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 127
+          }
+        },
+        {
+          "text": "Weighted routing",
+          "explanation": "This is the guide's answer for this scenario (line 101). Its note: canary = percentages = weights)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0230",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "Users in Germany must always see the German-language site. Which routing policy fits?",
+      "options": [
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Weighted routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Test a new app version by sending 10% of users to it (line 101).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Multi-Value answer routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Return several healthy IPs and let clients pick, without a load balancer (line 111).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "Geolocation",
+          "explanation": "This is the guide's answer for this scenario (line 103). Its note: user's location is a RULE, not a performance choice — and don't forget the Default record)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0231",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "Global users must be served with the best possible performance. Which routing policy fits?",
+      "options": [
+        {
+          "text": "Latency routing",
+          "explanation": "This is the guide's answer for this scenario (line 105). Its note: \"fastest\" = latency)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Geolocation",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users in Germany must see the German-language site (line 103).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Weighted routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Test a new app version by sending 10% of users to it (line 101).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Multi-Value answer routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Return several healthy IPs and let clients pick, without a load balancer (line 111).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 111
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0232",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "The architect must shift traffic share between Regions using a bias value. Which routing policy fits?",
+      "options": [
+        {
+          "text": "Multi-Value answer routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Return several healthy IPs and let clients pick, without a load balancer (line 111).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "Geoproximity with bias",
+          "explanation": "This is the guide's answer for this scenario (line 107). Its note: \"shift traffic share\" / \"bias\" is Geoproximity's name tag)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Geolocation",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users in Germany must see the German-language site (line 103).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0233",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "An endpoint with a private IP address inside a VPC must be health-checked. What should the architect use?",
+      "options": [
+        {
+          "text": "Multi-Value answer routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Return several healthy IPs and let clients pick, without a load balancer (line 111).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "CloudWatch alarm-based health check",
+          "explanation": "This is the guide's answer for this scenario (line 109). Its note: global checkers can't see inside your VPC)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "**Private hosted zone**",
+          "explanation": "Not this one. The guide pairs this answer with: DNS only inside a VPC (line 127).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 127
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0234",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "Several healthy IP addresses must be returned so clients can pick one, without a load balancer. Which routing policy fits?",
+      "options": [
+        {
+          "text": "Alias record",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Point the apex/root domain example.com at an Application Load Balancer (line 97).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Geolocation",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users in Germany must see the German-language site (line 103).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Multi-Value answer routing",
+          "explanation": "This is the guide's answer for this scenario (line 111). Its note: up to 8 healthy records)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 111
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0235",
+      "guide": "content/saa-c03/07-Route53.md",
+      "stem": "A multi-Region application needs near-instant failover, and DNS caching delays are unacceptable. What should the architect use?",
+      "options": [
+        {
+          "text": "Global Accelerator instead of Route 53",
+          "explanation": "This is the guide's answer for this scenario (line 113). Its note: anything in the request path beats a phonebook when clients cache old answers)..",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 113
+          }
+        },
+        {
+          "text": "Weighted routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Test a new app version by sending 10% of users to it (line 101).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Latency routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Serve global users with the best possible performance (line 105).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Geolocation",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Users in Germany must see the German-language site (line 103).",
+          "source": {
+            "guide": "content/saa-c03/07-Route53.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    }
+  ]
+}
