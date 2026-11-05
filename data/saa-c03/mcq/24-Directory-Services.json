@@ -1,0 +1,298 @@
+{
+  "questions": [
+    {
+      "id": "q0614",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "FSx for Windows File Server must be deployed, and users must authenticate with existing on-premises AD identities. Which directory option fits?",
+      "options": [
+        {
+          "text": "Managed Microsoft AD with a trust, or AD Connector",
+          "explanation": "This is the guide's answer for this scenario (line 54). Its note: both let on-prem identities work; pick whichever the options offer)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0615",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "Security policy requires that no user identities are stored in the cloud. Which directory option fits?",
+      "options": [
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "AD Connector",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: proxy only — all auth redirected on-prem, nothing stored in AWS)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Managed Microsoft AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Establish a two-way trust between AWS and the on-premises domain so users on both sides access resources (line 62).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0616",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "A small company needs a low-cost, basic LDAP-compatible directory for one application. Which option fits?",
+      "options": [
+        {
+          "text": "AD Connector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Security policy requires that no user identities are stored in the cloud (line 56).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: cheap Samba standalone, fine under ~5,000 users)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Managed Microsoft AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Establish a two-way trust between AWS and the on-premises domain so users on both sides access resources (line 62).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0617",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "EC2 Windows instances must join a domain, and MFA is required. Which option fits?",
+      "options": [
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "AD Connector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Security policy requires that no user identities are stored in the cloud (line 56).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "AWS Managed Microsoft AD",
+          "explanation": "This is the guide's answer for this scenario (line 60). Its note: real AD: domain join + MFA; Simple AD has neither MFA nor trust)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0618",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "A two-way trust must be established between AWS and the on-premises domain so users on both sides can access resources. Which option fits?",
+      "options": [
+        {
+          "text": "Managed Microsoft AD",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: the only option supporting trust relationships)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "AD Connector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Security policy requires that no user identities are stored in the cloud (line 56).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0619",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "RDS for SQL Server must support Windows Authentication for corporate users. Which directory option fits?",
+      "options": [
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Managed Microsoft AD",
+          "explanation": "This is the guide's answer for this scenario (line 64). Its note: RDS integrates with it directly; add a trust for on-prem users)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "AD Connector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: WorkSpaces desktops authenticating against on-prem AD without replicating the directory (line 66).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0620",
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "stem": "WorkSpaces desktops must authenticate against the on-premises AD without replicating the directory. Which option fits?",
+      "options": [
+        {
+          "text": "Managed Microsoft AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Establish a two-way trust between AWS and the on-premises domain so users on both sides access resources (line 62).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "AD Connector",
+          "explanation": "This is the guide's answer for this scenario (line 66). Its note: phone line: auth flows back on-prem)..",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

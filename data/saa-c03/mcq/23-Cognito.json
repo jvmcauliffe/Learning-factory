@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "q0595",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "A mobile app needs user sign-up, sign-in and login with Google and Facebook. Which service fits?",
+      "options": [
+        {
+          "text": "Cognito User Pools",
+          "explanation": "This is the guide's answer for this scenario (line 60). Its note: directory + social login + hosted UI)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "AWS Managed Microsoft AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: EC2 Windows instances must join a domain, and MFA is required (line 60).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0596",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "Authenticated app users must upload files directly to S3 from their devices. Which Cognito component provides the access?",
+      "options": [
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: JWT → STS → temporary AWS credentials; only creds can call S3)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0597",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "Users must be able to browse limited content without creating an account. What should the architect configure?",
+      "options": [
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Simple AD",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small company needs a low-cost, basic LDAP-compatible directory for one application (line 58).",
+          "source": {
+            "guide": "content/saa-c03/24-Directory-Services.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Identity Pool unauthenticated (guest) access",
+          "explanation": "This is the guide's answer for this scenario (line 64).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0598",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "Users of a REST API on API Gateway must be authenticated without custom code. What should the architect use?",
+      "options": [
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Identity Pool + IAM policy variables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Each user may only read and write objects in their own S3 prefix (line 68).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "This is the guide's answer for this scenario (line 66). Its note: API Gateway validates the JWT for you)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0599",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "Each user may only read and write objects in their own S3 prefix. What is the design?",
+      "options": [
+        {
+          "text": "Identity Pool + IAM policy variables",
+          "explanation": "This is the guide's answer for this scenario (line 68). Its note: `${cognito-identity...:sub}` scopes one policy per user)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticate users of a REST API on API Gateway without custom code (line 66).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0600",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "Company employees need single sign-on access to multiple AWS accounts. Which service fits?",
+      "options": [
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticate users of a REST API on API Gateway without custom code (line 66).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "This is the guide's answer for this scenario (line 70). Its note: workforce = Identity Center; customers = Cognito)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Cognito User Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs user sign-up, sign-in, and login with Google and Facebook (line 60).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0601",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "Enterprise customers must log into a SaaS application with their corporate SAML identity provider. What should the architect use?",
+      "options": [
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Identity Pool + IAM policy variables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Each user may only read and write objects in their own S3 prefix (line 68).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "User Pools with SAML federation",
+          "explanation": "This is the guide's answer for this scenario (line 72). Its note: still authentication — still the login box)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0602",
+      "guide": "content/saa-c03/23-Cognito.md",
+      "stem": "MFA must be added to an application's customer logins. Where is it configured?",
+      "options": [
+        {
+          "text": "Cognito Identity Pools",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Authenticated app users must upload files directly to S3 from the device (line 62).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "IAM Identity Center, NOT Cognito",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company employees need SSO access to multiple AWS accounts (line 70).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "Identity Pool + IAM policy variables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Each user may only read and write objects in their own S3 prefix (line 68).",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "User Pools",
+          "explanation": "This is the guide's answer for this scenario (line 74). Its note: MFA lives where authentication lives)..",
+          "source": {
+            "guide": "content/saa-c03/23-Cognito.md",
+            "line": 74
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}
