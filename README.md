@@ -80,6 +80,21 @@ The tests start their own static server and serve the pinned marked build in pla
 
 Offline use: `site/sw.js` caches the lessons, question data, glossary and site files on the first visit (over https or localhost) and `site/manifest.json` lets the site be installed. The cache is named `lf-saa-c03-<upstream commit>-<content hash>`. When a guide or data file changes, `site/tests/sw.test.js` fails and reports the new `CONTENT_HASH` to put in `site/sw.js`; the old cache is deleted when the new worker activates.
 
+## letmemaster.com fetch tools
+
+Content from letmemaster.com ("Let me master", operated by Jeremy) is used only under the owner's written permission, recorded in [docs/permissions/letmemaster.md](docs/permissions/letmemaster.md). Credit letmemaster.com and its owner wherever its content appears, alongside the RonitSachdev credit below. Everything fetched is a `candidate`; facts stay `unverified` until John verifies them.
+
+| Command | What it does |
+|---|---|
+| `python3 tools/fetch_letmemaster.py --max-pages N` | Reads robots.txt and the sitemap, fetches up to N sitemap pages on letmemaster.com only, at least 2 seconds apart, with a clear User-Agent and back-off on transient errors. Saves raw pages and `manifest.json` (url, fetched_at, status, sha256) under `raw/letmemaster/`. Pages already saved with an unchanged hash are skipped; `--refresh` refetches them and rewrites only the changed ones. |
+| `python3 tools/parse_letmemaster.py` | Turns the saved pages into `data/letmemaster/<slug>.json`: source URL, fetch time, raw hash, status `candidate`, and the headings, paragraphs, lists and tables kept verbatim. Output is byte-identical across runs. It does no quiz mapping. |
+
+The fetch tool refuses to run, with a non-zero exit and a clear message, if the permission file is missing or does not cover automated fetching.
+
+`raw/` is git-ignored: raw pages and the session cookie are never committed. To fetch pages that need John's logged-in session, set `LETMEMASTER_COOKIE` as an environment secret in the session settings (the whole `Cookie` header value). Never paste it into a chat, an issue or a file. The tool sends it only to letmemaster.com, prints only whether it is set, and never logs or stores it. Without it, only public pages are fetched.
+
+The tests (`tests/test_letmemaster.py`) use a local server only and never contact the live site.
+
 ## Source and credit
 
 The study content will be adapted from **[aws-saa-c03-guides](https://github.com/RonitSachdev/aws-saa-c03-guides)** by **RonitSachdev**, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Anything built from it must keep this credit and link. The copied guides, their commit and the changes made are recorded in [content/saa-c03/ATTRIBUTION.md](content/saa-c03/ATTRIBUTION.md).
