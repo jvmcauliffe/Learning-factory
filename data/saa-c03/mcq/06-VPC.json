@@ -1,0 +1,508 @@
+{
+  "questions": [
+    {
+      "id": "q0195",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "A security team must block all traffic from one specific IP address to resources in a VPC. What should the architect use?",
+      "options": [
+        {
+          "text": "NACL deny rule",
+          "explanation": "This is the guide's answer for this scenario (line 132). Its note: security groups can't deny.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "Security Group",
+          "explanation": "Not this one. The guide pairs this answer with: Stateful / instance-level (line 168).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "Flow Logs",
+          "explanation": "Not this one. The guide pairs this answer with: Traffic metadata, accept/reject (line 176).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 176
+          }
+        },
+        {
+          "text": "Traffic Mirroring",
+          "explanation": "Not this one. The guide pairs this answer with: Full packet capture (line 177).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 177
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0196",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "Only the application tier may connect to the database tier. How should the architect configure access?",
+      "options": [
+        {
+          "text": "Egress-only Internet Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: IPv6-only instances need outbound internet, no inbound (line 150).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 150
+          }
+        },
+        {
+          "text": "DB security group allows inbound from the app tier's SG",
+          "explanation": "This is the guide's answer for this scenario (line 134). Its note: SG-to-SG reference.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 134
+          }
+        },
+        {
+          "text": "NACL deny rule",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Block all traffic from a specific IP address (line 132).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private EC2 must access S3 privately at the lowest cost (line 136).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 136
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0197",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "Private EC2 instances must reach Amazon S3 privately at the lowest cost. What should the architect choose?",
+      "options": [
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: 25 VPCs plus on-premises via VPN must all communicate (line 138).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "VPC Peering (not transitive!)",
+          "explanation": "Not this one. The guide pairs this answer with: 2–3 VPCs, full access (line 173).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "This is the guide's answer for this scenario (line 136). Its note: free — NAT Gateway is the expensive decoy.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "NAT Gateway in the public subnet",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private instances need to download OS updates (line 144).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 144
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0198",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "Twenty-five VPCs and an on-premises network connected by VPN must all communicate with each other. Which service fits?",
+      "options": [
+        {
+          "text": "VPC Peering (not transitive!)",
+          "explanation": "Not this one. The guide pairs this answer with: 2–3 VPCs, full access (line 173).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "PrivateLink (NLB + endpoint service)",
+          "explanation": "Not this one. The guide pairs this answer with: One service, overlapping CIDRs, SaaS (line 175).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 175
+          }
+        },
+        {
+          "text": "VPC Sharing via RAM",
+          "explanation": "Not this one. The guide pairs this answer with: One network, many accounts (line 179).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 179
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 138). Its note: peering mesh = 300 connections; TGW is the hub.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 138
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0199",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "A company must expose one application to a partner's VPC, and the two VPC CIDR ranges overlap. Which solution fits?",
+      "options": [
+        {
+          "text": "PrivateLink",
+          "explanation": "This is the guide's answer for this scenario (line 140). Its note: NLB + endpoint service; overlap doesn't matter.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: 25 VPCs plus on-premises via VPN must all communicate (line 138).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "VPC Peering (not transitive!)",
+          "explanation": "Not this one. The guide pairs this answer with: 2–3 VPCs, full access (line 173).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "VPC Sharing via RAM",
+          "explanation": "Not this one. The guide pairs this answer with: One network, many accounts (line 179).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 179
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0200",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "A design uses a single NAT Gateway. How can the architect make it highly available?",
+      "options": [
+        {
+          "text": "Route to IGW",
+          "explanation": "Not this one. The guide pairs this answer with: Public subnet definition (line 160).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 160
+          }
+        },
+        {
+          "text": "One NAT Gateway per AZ",
+          "explanation": "This is the guide's answer for this scenario (line 142). Its note: each private subnet routing to its local one.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 142
+          }
+        },
+        {
+          "text": "Disable the source/destination check",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: NAT instance stopped forwarding traffic (line 152).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 152
+          }
+        },
+        {
+          "text": "Egress-only Internet Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: IPv6-only instances need outbound internet, no inbound (line 150).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 150
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0201",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "Instances in a private subnet need to download operating system updates. What should the architect set up?",
+      "options": [
+        {
+          "text": "PrivateLink (NLB + endpoint service)",
+          "explanation": "Not this one. The guide pairs this answer with: One service, overlapping CIDRs, SaaS (line 175).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 175
+          }
+        },
+        {
+          "text": "VPC Peering (not transitive!)",
+          "explanation": "Not this one. The guide pairs this answer with: 2–3 VPCs, full access (line 173).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "NAT Gateway in the public subnet",
+          "explanation": "This is the guide's answer for this scenario (line 144). Its note: private route `0.0.0.0/0 → NAT`.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: 25 VPCs plus on-premises via VPN must all communicate (line 138).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 138
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0202",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "What is the most secure way for administrators to access instances in private subnets?",
+      "options": [
+        {
+          "text": "NACL deny rule",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Block all traffic from a specific IP address (line 132).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: 25 VPCs plus on-premises via VPN must all communicate (line 138).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Flow Logs",
+          "explanation": "Not this one. The guide pairs this answer with: Traffic metadata, accept/reject (line 176).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 176
+          }
+        },
+        {
+          "text": "SSM Session Manager",
+          "explanation": "This is the guide's answer for this scenario (line 146). Its note: no port 22, no bastion, fully logged.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 146
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0203",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "An architect must determine why traffic to an instance is being rejected. Which tool should they use?",
+      "options": [
+        {
+          "text": "VPC Flow Logs",
+          "explanation": "This is the guide's answer for this scenario (line 148). Its note: metadata shows ACCEPT/REJECT; full packets = Traffic Mirroring.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 148
+          }
+        },
+        {
+          "text": "Traffic Mirroring",
+          "explanation": "Not this one. The guide pairs this answer with: Full packet capture (line 177).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 177
+          }
+        },
+        {
+          "text": "SSM Session Manager",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Most secure way for admins to access private instances (line 146).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 146
+          }
+        },
+        {
+          "text": "NACL deny rule",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Block all traffic from a specific IP address (line 132).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 132
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0204",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "IPv6-only instances need outbound internet access but must not accept inbound connections. What should the architect use?",
+      "options": [
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private EC2 must access S3 privately at the lowest cost (line 136).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "Egress-only Internet Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 150). Its note: IPv6's \"NAT\".",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 150
+          }
+        },
+        {
+          "text": "NAT Gateway in the public subnet",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private instances need to download OS updates (line 144).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "Route to IGW",
+          "explanation": "Not this one. The guide pairs this answer with: Public subnet definition (line 160).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 160
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0205",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "A NAT instance has stopped forwarding traffic. What is the fix?",
+      "options": [
+        {
+          "text": "Route to IGW",
+          "explanation": "Not this one. The guide pairs this answer with: Public subnet definition (line 160).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 160
+          }
+        },
+        {
+          "text": "Egress-only IGW",
+          "explanation": "Not this one. The guide pairs this answer with: IPv6 outbound-only (line 164).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 164
+          }
+        },
+        {
+          "text": "Disable the source/destination check",
+          "explanation": "This is the guide's answer for this scenario (line 152).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 152
+          }
+        },
+        {
+          "text": "One NAT Gateway per AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Single NAT Gateway — make the design highly available (line 142).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 142
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0206",
+      "guide": "content/saa-c03/06-VPC.md",
+      "stem": "Outbound requests from instances succeed, but the responses never arrive. What is the likely cause?",
+      "options": [
+        {
+          "text": "Security Group",
+          "explanation": "Not this one. The guide pairs this answer with: Stateful / instance-level (line 168).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "Disable the source/destination check",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: NAT instance stopped forwarding traffic (line 152).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 152
+          }
+        },
+        {
+          "text": "Route to IGW",
+          "explanation": "Not this one. The guide pairs this answer with: Public subnet definition (line 160).",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 160
+          }
+        },
+        {
+          "text": "NACL missing outbound ephemeral-port (1024–65535) rule",
+          "explanation": "This is the guide's answer for this scenario (line 154). Its note: stateless!.",
+          "source": {
+            "guide": "content/saa-c03/06-VPC.md",
+            "line": 154
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

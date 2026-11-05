@@ -1,0 +1,550 @@
+{
+  "questions": [
+    {
+      "id": "q0030",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Compliance data is accessed about twice a year, and auditors must receive it within 10 minutes. Which S3 storage class is the most cost-effective?",
+      "options": [
+        {
+          "text": "Glacier Flexible Retrieval",
+          "explanation": "This is the guide's answer for this scenario (line 130). Its note: Deep Archive can never beat 12 hr; Instant passes but costs more; Flexible Expedited = 1–5 min)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 130
+          }
+        },
+        {
+          "text": "Glacier Deep Archive (never faster than 12 hr)",
+          "explanation": "Not this one. The guide pairs this answer with: Cheapest, 12+ hr retrieval OK (line 168).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "Glacier Instant Retrieval",
+          "explanation": "Not this one. The guide pairs this answer with: Archive + milliseconds retrieval (line 166).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 166
+          }
+        },
+        {
+          "text": "Standard-IA",
+          "explanation": "Not this one. The guide pairs this answer with: Infrequent + instant retrieval (line 162).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 162
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0031",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Records are retained for 7 years and almost never accessed; retrieval within 2 business days is acceptable. Which storage class is the cheapest?",
+      "options": [
+        {
+          "text": "Standard-IA",
+          "explanation": "Not this one. The guide pairs this answer with: Infrequent + instant retrieval (line 162).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 162
+          }
+        },
+        {
+          "text": "Glacier Deep Archive",
+          "explanation": "This is the guide's answer for this scenario (line 132). Its note: deadline ≥ 12 hr finally lets the cheapest class survive)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "Glacier Flexible Retrieval",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Compliance data accessed about twice a year; auditors must receive it within 10 minutes. Most cost-effective class? (line 130).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 130
+          }
+        },
+        {
+          "text": "Glacier Instant Retrieval",
+          "explanation": "Not this one. The guide pairs this answer with: Archive + milliseconds retrieval (line 166).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 166
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0032",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Reports are heavily used for 30 days, rarely after 90 days, and must always be retrievable in milliseconds. What should the architect configure?",
+      "options": [
+        {
+          "text": "One Zone-IA",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Thumbnails can be regenerated from originals at any time; store infrequently accessed copies cheaply. (line 138).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Glacier Deep Archive (never faster than 12 hr)",
+          "explanation": "Not this one. The guide pairs this answer with: Cheapest, 12+ hr retrieval OK (line 168).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "Lifecycle rule: Standard → Standard-IA at 30 days → Glacier Instant Retrieval at 90",
+          "explanation": "This is the guide's answer for this scenario (line 134). Its note: known pattern → lifecycle; \"milliseconds\" keeps you in Instant, out of Flexible)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 134
+          }
+        },
+        {
+          "text": "Intelligent-Tiering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Access patterns are unknown and unpredictable; minimize cost without performance impact. (line 136).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 136
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0033",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Access patterns are unknown and unpredictable. The company wants to minimize cost without a performance impact. Which option fits?",
+      "options": [
+        {
+          "text": "S3 Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Processing artifacts are deleted after 20 days. Cheapest class? (line 140).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "One Zone-IA",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Thumbnails can be regenerated from originals at any time; store infrequently accessed copies cheaply. (line 138).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Glacier Instant Retrieval",
+          "explanation": "Not this one. The guide pairs this answer with: Archive + milliseconds retrieval (line 166).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 166
+          }
+        },
+        {
+          "text": "Intelligent-Tiering",
+          "explanation": "This is the guide's answer for this scenario (line 136). Its note: \"unknown/unpredictable\" is its one and only signal)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 136
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0034",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Thumbnails can be regenerated from the originals at any time. The company wants to store infrequently accessed copies cheaply. Which storage class fits?",
+      "options": [
+        {
+          "text": "One Zone-IA",
+          "explanation": "This is the guide's answer for this scenario (line 138). Its note: \"can be regenerated\" = single-AZ risk is acceptable)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Standard-IA",
+          "explanation": "Not this one. The guide pairs this answer with: Infrequent + instant retrieval (line 162).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 162
+          }
+        },
+        {
+          "text": "Intelligent-Tiering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Access patterns are unknown and unpredictable; minimize cost without performance impact. (line 136).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "S3 Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Processing artifacts are deleted after 20 days. Cheapest class? (line 140).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 140
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0035",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Processing artifacts are deleted after 20 days. Which storage class is the cheapest?",
+      "options": [
+        {
+          "text": "Glacier Deep Archive",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Records retained 7 years, almost never accessed, retrieval within 2 business days is acceptable. Cheapest? (line 132).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "S3 Standard",
+          "explanation": "This is the guide's answer for this scenario (line 140). Its note: under every minimum duration — IA/Glacier would bill 30–180 days anyway)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "Standard-IA",
+          "explanation": "Not this one. The guide pairs this answer with: Infrequent + instant retrieval (line 162).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 162
+          }
+        },
+        {
+          "text": "One Zone-IA",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Thumbnails can be regenerated from originals at any time; store infrequently accessed copies cheaply. (line 138).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 138
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0036",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Security must audit exactly when each encryption key was used and control key rotation. Which encryption option fits?",
+      "options": [
+        {
+          "text": "SSE-C (HTTPS mandatory)",
+          "explanation": "Not this one. The guide pairs this answer with: Customer supplies key per request (line 177).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 177
+          }
+        },
+        {
+          "text": "Client-side encryption",
+          "explanation": "Not this one. The guide pairs this answer with: \"AWS must never see plaintext\" (line 178).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 178
+          }
+        },
+        {
+          "text": "SSE-KMS",
+          "explanation": "This is the guide's answer for this scenario (line 142). Its note: \"audit key usage\" is the KMS keyword; add S3 Bucket Key if the question moans about KMS request costs)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 142
+          }
+        },
+        {
+          "text": "SSE-S3",
+          "explanation": "Not this one. The guide pairs this answer with: Default encryption, zero effort (line 174).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 174
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0037",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "A regulation requires data to be impossible to delete for 5 years, even by administrators. What should the architect use?",
+      "options": [
+        {
+          "text": "Object Lock — Governance mode",
+          "explanation": "Not this one. The guide pairs this answer with: WORM, privileged users may bypass (line 182).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 182
+          }
+        },
+        {
+          "text": "Legal Hold",
+          "explanation": "Not this one. The guide pairs this answer with: \"Lawsuit,\" indefinite hold (line 183).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 183
+          }
+        },
+        {
+          "text": "Versioning (+ MFA Delete for root-MFA-gated deletes)",
+          "explanation": "Not this one. The guide pairs this answer with: Accidental delete/overwrite protection (line 170).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Object Lock, Compliance mode",
+          "explanation": "This is the guide's answer for this scenario (line 144). Its note: \"even administrators\" rules out Governance)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 144
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0038",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Objects must be preserved indefinitely while litigation is pending. What should the architect use?",
+      "options": [
+        {
+          "text": "Legal Hold",
+          "explanation": "This is the guide's answer for this scenario (line 146). Its note: \"lawsuit\" + no fixed end date)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 146
+          }
+        },
+        {
+          "text": "Object Lock, Compliance mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Regulatory requirement: data must be impossible to delete for 5 years — even by administrators. (line 144).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "Object Lock — Governance mode",
+          "explanation": "Not this one. The guide pairs this answer with: WORM, privileged users may bypass (line 182).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 182
+          }
+        },
+        {
+          "text": "Versioning (+ MFA Delete for root-MFA-gated deletes)",
+          "explanation": "Not this one. The guide pairs this answer with: Accidental delete/overwrite protection (line 170).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 170
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0039",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Users on every continent upload multi-GB video files to a single S3 bucket. How can the architect speed up the uploads?",
+      "options": [
+        {
+          "text": "CRR (versioning on both sides)",
+          "explanation": "Not this one. The guide pairs this answer with: Copy to another region, DR/compliance (line 171).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "Transfer Acceleration + multipart upload",
+          "explanation": "This is the guide's answer for this scenario (line 148). Its note: global UPLOAD to one bucket; global download would be CloudFront)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 148
+          }
+        },
+        {
+          "text": "CloudFront",
+          "explanation": "Not this one. The guide pairs this answer with: Global DOWNLOADS (line 191).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 191
+          }
+        },
+        {
+          "text": "Byte-range fetch",
+          "explanation": "Not this one. The guide pairs this answer with: Download part of an object (line 192).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 192
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0040",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "All objects must be encrypted in transit. What should the architect do?",
+      "options": [
+        {
+          "text": "SSE-S3",
+          "explanation": "Not this one. The guide pairs this answer with: Default encryption, zero effort (line 174).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 174
+          }
+        },
+        {
+          "text": "Client-side encryption",
+          "explanation": "Not this one. The guide pairs this answer with: \"AWS must never see plaintext\" (line 178).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 178
+          }
+        },
+        {
+          "text": "Bucket policy denying requests where `aws:SecureTransport` is false",
+          "explanation": "This is the guide's answer for this scenario (line 150). Its note: in transit = HTTPS/TLS, not KMS)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 150
+          }
+        },
+        {
+          "text": "SSE-KMS (in CloudTrail)",
+          "explanation": "Not this one. The guide pairs this answer with: \"Audit key usage\" / control rotation (line 175).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 175
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0041",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "An architect enables access logging for a bucket. What is the key configuration rule?",
+      "options": [
+        {
+          "text": "CloudTrail data events",
+          "explanation": "Not this one. The guide pairs this answer with: Who accessed — real-time + IAM identity (line 188).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 188
+          }
+        },
+        {
+          "text": "Athena",
+          "explanation": "Not this one. The guide pairs this answer with: SQL across S3 data sets (line 195).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 195
+          }
+        },
+        {
+          "text": "Versioning (+ MFA Delete for root-MFA-gated deletes)",
+          "explanation": "Not this one. The guide pairs this answer with: Accidental delete/overwrite protection (line 170).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Deliver logs to a DIFFERENT bucket",
+          "explanation": "This is the guide's answer for this scenario (line 152). Its note: same bucket = infinite logging loop); query them with Athena..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 152
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0042",
+      "guide": "content/saa-c03/02-S3.md",
+      "stem": "Replication was enabled, but the existing objects were not copied. What solves this?",
+      "options": [
+        {
+          "text": "S3 Batch Replication",
+          "explanation": "This is the guide's answer for this scenario (line 154). Its note: CRR/SRR only replicate NEW objects)..",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 154
+          }
+        },
+        {
+          "text": "CRR (versioning on both sides)",
+          "explanation": "Not this one. The guide pairs this answer with: Copy to another region, DR/compliance (line 171).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "SRR",
+          "explanation": "Not this one. The guide pairs this answer with: Aggregate logs / copy within region (line 172).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 172
+          }
+        },
+        {
+          "text": "S3 Batch Operations",
+          "explanation": "Not this one. The guide pairs this answer with: Encrypt EXISTING objects (line 180).",
+          "source": {
+            "guide": "content/saa-c03/02-S3.md",
+            "line": 180
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    }
+  ]
+}
