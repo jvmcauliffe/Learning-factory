@@ -1,0 +1,115 @@
+{
+  "exam": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+  "retrieved": "2026-11-05",
+  "sources": [
+    {
+      "url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "title": "AWS Certified Solutions Architect - Associate (SAA-C03) Exam Guide, version 1.1",
+      "sha256_of_retrieved_file": "aefe84e6296d4a03ed0ff1ce07840216f3389f83c7b191f20baf2eb3ca5be150"
+    },
+    {
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "title": "AWS Certified Solutions Architect - Associate (certification page)"
+    }
+  ],
+  "status_rule": "Every fact is unverified. Only John changes a status to verified, after checking it against current AWS documentation.",
+  "facts": [
+    {
+      "id": "domain-1",
+      "label": "Domain 1: Design Secure Architectures",
+      "value": {
+        "weight_percent": 30
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Weight is a share of scored content, exam guide version 1.1."
+    },
+    {
+      "id": "domain-2",
+      "label": "Domain 2: Design Resilient Architectures",
+      "value": {
+        "weight_percent": 26
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Weight is a share of scored content, exam guide version 1.1."
+    },
+    {
+      "id": "domain-3",
+      "label": "Domain 3: Design High-Performing Architectures",
+      "value": {
+        "weight_percent": 24
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Weight is a share of scored content, exam guide version 1.1."
+    },
+    {
+      "id": "domain-4",
+      "label": "Domain 4: Design Cost-Optimized Architectures",
+      "value": {
+        "weight_percent": 20
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Weight is a share of scored content, exam guide version 1.1."
+    },
+    {
+      "id": "question-count",
+      "label": "Questions on the exam",
+      "value": {
+        "total": 65,
+        "scored": 50,
+        "unscored": 15
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "The guide says 50 questions affect the score and 15 unscored questions are not identified. The AWS page says 65 questions."
+    },
+    {
+      "id": "question-types",
+      "label": "Question types",
+      "value": {
+        "types": [
+          "multiple choice",
+          "multiple response"
+        ]
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Multiple choice has one correct response and three distractors. Multiple response has two or more correct responses out of five or more options."
+    },
+    {
+      "id": "time-limit",
+      "label": "Time limit",
+      "value": {
+        "minutes": 130
+      },
+      "source_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "status": "unverified",
+      "note": "Stated on the AWS certification page."
+    },
+    {
+      "id": "pass-mark",
+      "label": "Minimum passing score",
+      "value": {
+        "scaled_score": 720,
+        "scale_min": 100,
+        "scale_max": 1000
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Reported as a scaled score of 100 to 1,000."
+    },
+    {
+      "id": "scoring-note",
+      "label": "Scoring model",
+      "value": {
+        "text": "Compensatory: you need to pass only the overall exam, not each section. Unanswered questions are scored as incorrect and there is no penalty for guessing."
+      },
+      "source_url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf",
+      "status": "unverified",
+      "note": "Paraphrased from the exam guide."
+    }
+  ]
+}

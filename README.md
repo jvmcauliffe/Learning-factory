@@ -4,7 +4,7 @@ A study tool for the AWS Certified Solutions Architect – Associate exam (SAA-C
 
 ## Status
 
-Packet 01 done: the 37 guides are copied unchanged into `content/saa-c03/` and parsed into a question bank. No user interface yet. The build plan is in [docs/roadmap.md](docs/roadmap.md).
+Packets 01 and 02 done: the 37 guides are copied unchanged into `content/saa-c03/`, parsed into a question bank, and listed in the upstream reading order with the exam facts. No user interface yet. The build plan is in [docs/roadmap.md](docs/roadmap.md).
 
 ## Question bank
 
@@ -16,6 +16,12 @@ Rebuild it (standard library only, byte-identical on every run):
 python3 tools/build_bank.py
 python3 -m unittest discover -s tests -q
 ```
+
+## Syllabus and exam facts
+
+`data/saa-c03/syllabus.json` lists the 37 guides in the upstream reading order, in 8 topic groups, with each guide's number, title, file and the "owns the questions about" text. Rebuild it with `python3 tools/build_syllabus.py` (standard library only, byte-identical on every run). The upstream groups are by topic, not by official exam domain; mapping guides to domains is a later packet.
+
+`data/saa-c03/exam-facts.json` holds the exam format, the four domain weights (30/26/24/20), the time limit and the pass mark, each with a `source_url` (the official AWS exam guide, version 1.1, or the AWS certification page) and `"status": "unverified"`. **Only John changes a status to verified**, after checking it against current AWS documentation. No packet or tool may do it.
 
 ## Roadmap
 

@@ -1,0 +1,363 @@
+{
+  "groups": [
+    {
+      "group_order": 1,
+      "guides": [
+        {
+          "file": "content/saa-c03/06-VPC.md",
+          "guide_number": "06",
+          "order": 1,
+          "owns_questions_about": "subnets, NAT, SG vs NACL, endpoints, peering/TGW/PrivateLink",
+          "source_line": 15,
+          "title": "VPC"
+        },
+        {
+          "file": "content/saa-c03/02-S3.md",
+          "guide_number": "02",
+          "order": 2,
+          "owns_questions_about": "storage classes, encryption, Object Lock",
+          "source_line": 16,
+          "title": "S3"
+        },
+        {
+          "file": "content/saa-c03/03-EC2.md",
+          "guide_number": "03",
+          "order": 3,
+          "owns_questions_about": "instance families, pricing options, placement groups",
+          "source_line": 17,
+          "title": "EC2"
+        },
+        {
+          "file": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+          "guide_number": "04",
+          "order": 4,
+          "owns_questions_about": "volume types, shared storage, ephemeral",
+          "source_line": 18,
+          "title": "EBS, EFS & Instance Store"
+        },
+        {
+          "file": "content/saa-c03/05-ELB-AutoScaling.md",
+          "guide_number": "05",
+          "order": 5,
+          "owns_questions_about": "ALB/NLB/GLB, scaling policies",
+          "source_line": 19,
+          "title": "ELB & Auto Scaling"
+        },
+        {
+          "file": "content/saa-c03/01-IAM.md",
+          "guide_number": "01",
+          "order": 6,
+          "owns_questions_about": "roles, policies, SCPs, STS",
+          "source_line": 20,
+          "title": "IAM"
+        }
+      ],
+      "name": "Core infrastructure (heaviest-tested — do these first)",
+      "raw_heading": "🏗️ Core infrastructure (heaviest-tested — do these first)"
+    },
+    {
+      "group_order": 2,
+      "guides": [
+        {
+          "file": "content/saa-c03/09-RDS-Aurora.md",
+          "guide_number": "09",
+          "order": 7,
+          "owns_questions_about": "Multi-AZ vs Read Replicas (the #1 DB question)",
+          "source_line": 25,
+          "title": "RDS & Aurora"
+        },
+        {
+          "file": "content/saa-c03/10-DynamoDB.md",
+          "guide_number": "10",
+          "order": 8,
+          "owns_questions_about": "DAX, Global Tables, Streams, GSI/LSI",
+          "source_line": 26,
+          "title": "DynamoDB"
+        },
+        {
+          "file": "content/saa-c03/11-ElastiCache.md",
+          "guide_number": "11",
+          "order": 9,
+          "owns_questions_about": "Redis vs Memcached, caching strategies",
+          "source_line": 27,
+          "title": "ElastiCache"
+        },
+        {
+          "file": "content/saa-c03/12-Other-Databases.md",
+          "guide_number": "12",
+          "order": 10,
+          "owns_questions_about": "the keyword zoo: Redshift, Athena, Neptune, QLDB…",
+          "source_line": 28,
+          "title": "Other Databases"
+        }
+      ],
+      "name": "Databases",
+      "raw_heading": "🗄️ Databases"
+    },
+    {
+      "group_order": 3,
+      "guides": [
+        {
+          "file": "content/saa-c03/13-Lambda.md",
+          "guide_number": "13",
+          "order": 11,
+          "owns_questions_about": "15-min limit, concurrency, VPC access",
+          "source_line": 33,
+          "title": "Lambda"
+        },
+        {
+          "file": "content/saa-c03/14-ECS-EKS-Fargate.md",
+          "guide_number": "14",
+          "order": 12,
+          "owns_questions_about": "containers, the two roles",
+          "source_line": 34,
+          "title": "ECS, EKS & Fargate"
+        },
+        {
+          "file": "content/saa-c03/15-Elastic-Beanstalk.md",
+          "guide_number": "15",
+          "order": 13,
+          "owns_questions_about": "deployment policies",
+          "source_line": 35,
+          "title": "Elastic Beanstalk"
+        },
+        {
+          "file": "content/saa-c03/16-API-Gateway.md",
+          "guide_number": "16",
+          "order": 14,
+          "owns_questions_about": "auth trio, 29s timeout, throttling",
+          "source_line": 36,
+          "title": "API Gateway"
+        },
+        {
+          "file": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+          "guide_number": "17",
+          "order": 15,
+          "owns_questions_about": "decoupling — the heaviest single question source",
+          "source_line": 37,
+          "title": "SQS, SNS & Kinesis"
+        },
+        {
+          "file": "content/saa-c03/18-EventBridge-StepFunctions.md",
+          "guide_number": "18",
+          "order": 16,
+          "owns_questions_about": "events, workflows",
+          "source_line": 38,
+          "title": "EventBridge & Step Functions"
+        }
+      ],
+      "name": "Serverless & application integration",
+      "raw_heading": "⚡ Serverless & application integration"
+    },
+    {
+      "group_order": 4,
+      "guides": [
+        {
+          "file": "content/saa-c03/07-Route53.md",
+          "guide_number": "07",
+          "order": 17,
+          "owns_questions_about": "routing policies, Alias vs CNAME",
+          "source_line": 43,
+          "title": "Route 53"
+        },
+        {
+          "file": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+          "guide_number": "08",
+          "order": 18,
+          "owns_questions_about": "CDN vs backbone",
+          "source_line": 44,
+          "title": "CloudFront & Global Accelerator"
+        },
+        {
+          "file": "content/saa-c03/32-DirectConnect-VPN.md",
+          "guide_number": "32",
+          "order": 19,
+          "owns_questions_about": "hybrid connectivity",
+          "source_line": 45,
+          "title": "Direct Connect & VPN"
+        },
+        {
+          "file": "content/saa-c03/33-Transit-Gateway.md",
+          "guide_number": "33",
+          "order": 20,
+          "owns_questions_about": "hub-and-spoke",
+          "source_line": 46,
+          "title": "Transit Gateway"
+        }
+      ],
+      "name": "Networking & edge",
+      "raw_heading": "🌍 Networking & edge"
+    },
+    {
+      "group_order": 5,
+      "guides": [
+        {
+          "file": "content/saa-c03/20-KMS-CloudHSM.md",
+          "guide_number": "20",
+          "order": 21,
+          "owns_questions_about": "encryption keys",
+          "source_line": 51,
+          "title": "KMS & CloudHSM"
+        },
+        {
+          "file": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+          "guide_number": "21",
+          "order": 22,
+          "owns_questions_about": "rotation",
+          "source_line": 52,
+          "title": "Secrets Manager & Parameter Store"
+        },
+        {
+          "file": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+          "guide_number": "22",
+          "order": 23,
+          "owns_questions_about": "+ GuardDuty/Macie/Inspector zoo",
+          "source_line": 53,
+          "title": "WAF, Shield & Security Services"
+        },
+        {
+          "file": "content/saa-c03/23-Cognito.md",
+          "guide_number": "23",
+          "order": 24,
+          "owns_questions_about": "User Pools vs Identity Pools",
+          "source_line": 54,
+          "title": "Cognito"
+        },
+        {
+          "file": "content/saa-c03/24-Directory-Services.md",
+          "guide_number": "24",
+          "order": 25,
+          "owns_questions_about": "Managed AD / Connector / Simple",
+          "source_line": 55,
+          "title": "Directory Services"
+        }
+      ],
+      "name": "Security & identity",
+      "raw_heading": "🔐 Security & identity"
+    },
+    {
+      "group_order": 6,
+      "guides": [
+        {
+          "file": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+          "guide_number": "19",
+          "order": 26,
+          "owns_questions_about": "who watches what",
+          "source_line": 60,
+          "title": "CloudWatch, CloudTrail & Config"
+        },
+        {
+          "file": "content/saa-c03/28-CloudFormation.md",
+          "guide_number": "28",
+          "order": 27,
+          "owns_questions_about": "IaC",
+          "source_line": 61,
+          "title": "CloudFormation"
+        },
+        {
+          "file": "content/saa-c03/29-Organizations-ControlTower.md",
+          "guide_number": "29",
+          "order": 28,
+          "owns_questions_about": "SCPs, multi-account",
+          "source_line": 62,
+          "title": "Organizations & Control Tower"
+        },
+        {
+          "file": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+          "guide_number": "30",
+          "order": 29,
+          "owns_questions_about": "governance tools",
+          "source_line": 63,
+          "title": "Service Catalog & Trusted Advisor"
+        },
+        {
+          "file": "content/saa-c03/31-Cost-Management.md",
+          "guide_number": "31",
+          "order": 30,
+          "owns_questions_about": "Explorer/Budgets/CUR",
+          "source_line": 64,
+          "title": "Cost Management"
+        }
+      ],
+      "name": "Monitoring, management & governance",
+      "raw_heading": "📊 Monitoring, management & governance"
+    },
+    {
+      "group_order": 7,
+      "guides": [
+        {
+          "file": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+          "guide_number": "25",
+          "order": 31,
+          "owns_questions_about": "hybrid bridges",
+          "source_line": 69,
+          "title": "Storage Gateway, DataSync & Transfer Family"
+        },
+        {
+          "file": "content/saa-c03/26-FSx.md",
+          "guide_number": "26",
+          "order": 32,
+          "owns_questions_about": "Windows/Lustre/ONTAP/OpenZFS",
+          "source_line": 70,
+          "title": "FSx Family"
+        },
+        {
+          "file": "content/saa-c03/27-Snow-Family.md",
+          "guide_number": "27",
+          "order": 33,
+          "owns_questions_about": "offline transfer",
+          "source_line": 71,
+          "title": "Snow Family"
+        }
+      ],
+      "name": "Hybrid storage & migration",
+      "raw_heading": "📦 Hybrid storage & migration"
+    },
+    {
+      "group_order": 8,
+      "guides": [
+        {
+          "file": "content/saa-c03/34-Well-Architected.md",
+          "guide_number": "34",
+          "order": 34,
+          "owns_questions_about": "the 6 pillars as question framing",
+          "source_line": 76,
+          "title": "Well-Architected Framework"
+        },
+        {
+          "file": "content/saa-c03/35-Disaster-Recovery.md",
+          "guide_number": "35",
+          "order": 35,
+          "owns_questions_about": "RPO/RTO, the 4 strategies",
+          "source_line": 77,
+          "title": "Disaster Recovery"
+        },
+        {
+          "file": "content/saa-c03/37-GapFill-Services.md",
+          "guide_number": "37",
+          "order": 36,
+          "owns_questions_about": "MQ, ACM, Textract, SSM… the 1-question services",
+          "source_line": 78,
+          "title": "Gap-Fill Services"
+        },
+        {
+          "file": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+          "guide_number": "36",
+          "order": 37,
+          "owns_questions_about": "⭐ the greatest-hits trap list + exam technique",
+          "source_line": 79,
+          "title": "Exam Traps & Key Patterns"
+        }
+      ],
+      "name": "Final review (read last, and on exam morning)",
+      "raw_heading": "🎯 Final review (read last, and on exam morning)"
+    }
+  ],
+  "guide_count": 37,
+  "source": {
+    "file": "content/saa-c03/00-README.md",
+    "licence": "CC BY 4.0",
+    "upstream": "https://github.com/RonitSachdev/aws-saa-c03-guides"
+  },
+  "status": "candidate"
+}
