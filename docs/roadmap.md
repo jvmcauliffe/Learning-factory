@@ -20,6 +20,8 @@ Each step is a separately approved Claude task packet. The packet texts are in [
 | 25 | Glossary + bookmarks (run before 23) | 01, 03-06, 22 |
 | 23 | Accessibility, offline, browser tests | 03-22, 25 |
 | 24 | Fact freshness + upstream sync report (report-only) | 07-18 |
+| 26 | letmemaster.com crawler + parser. Held until John commits the owner's written permission. Does not run the crawl or commit content. | 01, permission record |
+| 27 | Ingest and map crawled content (not drafted; needs a real crawl and John's scope check) | 26 |
 
 Every pull request: independent Codex review, then John merges. John alone marks facts verified and publishes.
 
