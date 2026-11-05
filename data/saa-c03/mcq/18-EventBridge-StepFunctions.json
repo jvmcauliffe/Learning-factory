@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0483",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "A cleanup Lambda function must run every night at 2 AM without managing servers. What is the right design?",
+      "options": [
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "This is the guide's answer for this scenario (line 69). Its note: serverless cron, no EC2 crontab)..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Step Functions Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Order workflow needs retries, error handling, and a manual approval step that may take days. (line 73).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route only events where a specific JSON field matches a value, to different targets. (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reprocess last week's events after fixing a bug. (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0484",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "Events from SaaS tools such as Zendesk or Datadog must be ingested into AWS and routed to Lambda. What should the architect use?",
+      "options": [
+        {
+          "text": "Step Functions Express",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of short-lived, high-frequency workflow executions at lowest cost. (line 83).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "EventBridge partner event bus",
+          "explanation": "This is the guide's answer for this scenario (line 71). Its note: SaaS integration is EventBridge's exclusive turf)..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Step Functions Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Order workflow needs retries, error handling, and a manual approval step that may take days. (line 73).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Step Functions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multi-step data pipeline of Lambdas exceeds 15 minutes end to end. (line 75).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0485",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "An order workflow needs retries, error handling and a manual approval step that may take days. Which option fits?",
+      "options": [
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup Lambda every night at 2 AM without managing servers. (line 69).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route only events where a specific JSON field matches a value, to different targets. (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Step Functions Standard",
+          "explanation": "This is the guide's answer for this scenario (line 73). Its note: up to 1 year + human-in-the-loop)..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Step Functions Express",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of short-lived, high-frequency workflow executions at lowest cost. (line 83).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0486",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "A multi-step data pipeline of Lambda functions exceeds 15 minutes end to end. What should the architect use?",
+      "options": [
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup Lambda every night at 2 AM without managing servers. (line 69).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route only events where a specific JSON field matches a value, to different targets. (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reprocess last week's events after fixing a bug. (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Step Functions",
+          "explanation": "This is the guide's answer for this scenario (line 75). Its note: orchestrate, don't chain — Lambda's 15-min cap is per function, the workflow can run far longer)..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0487",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "Each item in an array of records must be processed as a separate step. Which state fits?",
+      "options": [
+        {
+          "text": "Map state",
+          "explanation": "This is the guide's answer for this scenario (line 77). Its note: built-in for-each)..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Step Functions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multi-step data pipeline of Lambdas exceeds 15 minutes end to end. (line 75).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Step Functions Retry",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Retry a failing step with exponential backoff, no custom retry code. (line 87).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route only events where a specific JSON field matches a value, to different targets. (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0488",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "An audit trail must show the input and output of every step of each execution. Which option fits?",
+      "options": [
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reprocess last week's events after fixing a bug. (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Step Functions Standard",
+          "explanation": "This is the guide's answer for this scenario (line 79). Its note: execution history..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "Step Functions Express",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of short-lived, high-frequency workflow executions at lowest cost. (line 83).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup Lambda every night at 2 AM without managing servers. (line 69).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0489",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "Only events where a specific JSON field matches a value must be routed to different targets. What should the architect use?",
+      "options": [
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reprocess last week's events after fixing a bug. (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Step Functions Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Order workflow needs retries, error handling, and a manual approval step that may take days. (line 73).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "This is the guide's answer for this scenario (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup Lambda every night at 2 AM without managing servers. (line 69).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0490",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "Millions of short-lived, high-frequency workflow executions must run at the lowest cost. Which option fits?",
+      "options": [
+        {
+          "text": "Step Functions Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Order workflow needs retries, error handling, and a manual approval step that may take days. (line 73).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup Lambda every night at 2 AM without managing servers. (line 69).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reprocess last week's events after fixing a bug. (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Step Functions Express",
+          "explanation": "This is the guide's answer for this scenario (line 83).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0491",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "Last week's events must be reprocessed after a bug fix. What should the architect use?",
+      "options": [
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "This is the guide's answer for this scenario (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route only events where a specific JSON field matches a value, to different targets. (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "EventBridge scheduled rule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup Lambda every night at 2 AM without managing servers. (line 69).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Step Functions Retry",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Retry a failing step with exponential backoff, no custom retry code. (line 87).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0492",
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "stem": "A failing step must be retried with exponential backoff and no custom retry code. What should the architect use?",
+      "options": [
+        {
+          "text": "Map state",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Process each item in an array of records as a separate step. (line 77).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Step Functions Retry",
+          "explanation": "This is the guide's answer for this scenario (line 87). Its note: built into the state definition)..",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "EventBridge archive + replay",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reprocess last week's events after fixing a bug. (line 85).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "EventBridge rule with content-based filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route only events where a specific JSON field matches a value, to different targets. (line 81).",
+          "source": {
+            "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+            "line": 81
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    }
+  ]
+}

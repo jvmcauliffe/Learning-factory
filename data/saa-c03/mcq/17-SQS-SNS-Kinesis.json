@@ -1,0 +1,466 @@
+{
+  "questions": [
+    {
+      "id": "q0457",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "The web tier is overwhelmed by traffic spikes and orders are being lost. What should the architect do?",
+      "options": [
+        {
+          "text": "SQS + Auto Scaling worker group",
+          "explanation": "This is the guide's answer for this scenario (line 101). Its note: queue buffers the spike, workers scale on depth.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Kinesis Data Firehose",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Stream IoT telemetry into S3 with the least operational overhead, no custom code (line 107).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "Amazon MQ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate an on-prem RabbitMQ/ActiveMQ app using AMQP/JMS/MQTT without rewriting (line 109).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "SNS message filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Each subscriber should only receive certain message types from a topic (line 111).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 111
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0458",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "Messages must be processed in strict order with no duplicates. Which option fits?",
+      "options": [
+        {
+          "text": "SNS message filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Each subscriber should only receive certain message types from a topic (line 111).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "SQS FIFO",
+          "explanation": "This is the guide's answer for this scenario (line 102). Its note: order + exactly-once; remember 300/3,000 msg/s cap.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 102
+          }
+        },
+        {
+          "text": "SNS fan-out to multiple SQS queues",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One event must notify three downstream systems, and none may miss it even if temporarily down (line 103).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Kinesis Data Firehose",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Stream IoT telemetry into S3 with the least operational overhead, no custom code (line 107).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 107
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0459",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "One event must notify three downstream systems, and none may miss it even if temporarily down. Which design fits?",
+      "options": [
+        {
+          "text": "SNS message filtering",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Each subscriber should only receive certain message types from a topic (line 111).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "Kinesis Data Firehose",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Stream IoT telemetry into S3 with the least operational overhead, no custom code (line 107).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "SNS fan-out to multiple SQS queues",
+          "explanation": "This is the guide's answer for this scenario (line 103). Its note: queues hold messages for sleeping services.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "SQS + Auto Scaling worker group",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Web tier overwhelmed by traffic spikes; orders being lost (line 101).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 101
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0460",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "Some SQS messages are being processed twice. What should the architect change?",
+      "options": [
+        {
+          "text": "Dead-Letter Queue with MaxReceiveCount",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Messages that repeatedly fail are blocking the queue (line 105).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Long polling (20s)",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce cost of consumers polling an often-empty queue (line 108).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 108
+          }
+        },
+        {
+          "text": "Store in S3, send a pointer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Message payloads are 1 MB, exceeding the SQS limit (line 110).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 110
+          }
+        },
+        {
+          "text": "Increase the visibility timeout",
+          "explanation": "This is the guide's answer for this scenario (line 104). Its note: processing outlasts the hiding window.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 104
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0461",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "Messages that repeatedly fail are blocking the queue. What should the architect configure?",
+      "options": [
+        {
+          "text": "Dead-Letter Queue with MaxReceiveCount",
+          "explanation": "This is the guide's answer for this scenario (line 105). Its note: quarantine poison messages.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Increase the visibility timeout",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Some SQS messages are being processed twice (line 104).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 104
+          }
+        },
+        {
+          "text": "Long polling (20s)",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce cost of consumers polling an often-empty queue (line 108).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 108
+          }
+        },
+        {
+          "text": "Store in S3, send a pointer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Message payloads are 1 MB, exceeding the SQS limit (line 110).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 110
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0462",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "Two applications must consume the same real-time clickstream data, with the ability to reprocess yesterday's data. Which service fits?",
+      "options": [
+        {
+          "text": "SNS fan-out to multiple SQS queues",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One event must notify three downstream systems, and none may miss it even if temporarily down (line 103).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Kinesis Data Streams",
+          "explanation": "This is the guide's answer for this scenario (line 106). Its note: multiple consumers + replay = its two kill-shots.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 106
+          }
+        },
+        {
+          "text": "Kinesis Data Firehose",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Stream IoT telemetry into S3 with the least operational overhead, no custom code (line 107).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "SQS + Auto Scaling worker group",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Web tier overwhelmed by traffic spikes; orders being lost (line 101).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 101
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0463",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "IoT telemetry must stream into S3 with the least operational overhead and no custom code. Which service fits?",
+      "options": [
+        {
+          "text": "SQS + Auto Scaling worker group",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Web tier overwhelmed by traffic spikes; orders being lost (line 101).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Amazon MQ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate an on-prem RabbitMQ/ActiveMQ app using AMQP/JMS/MQTT without rewriting (line 109).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "Kinesis Data Firehose",
+          "explanation": "This is the guide's answer for this scenario (line 107). Its note: zero-code delivery truck to S3.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "Kinesis Data Streams",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Clickstream analytics: two applications must consume the same real-time data, with ability to reprocess yesterday (line 106).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 106
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0464",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "The architect must reduce the cost of consumers polling an often-empty queue. What should be enabled?",
+      "options": [
+        {
+          "text": "Increase the visibility timeout",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Some SQS messages are being processed twice (line 104).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 104
+          }
+        },
+        {
+          "text": "Dead-Letter Queue with MaxReceiveCount",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Messages that repeatedly fail are blocking the queue (line 105).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Store in S3, send a pointer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Message payloads are 1 MB, exceeding the SQS limit (line 110).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 110
+          }
+        },
+        {
+          "text": "Long polling (20s)",
+          "explanation": "This is the guide's answer for this scenario (line 108). Its note: fewer empty receives.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 108
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0465",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "An on-premises application using AMQP, JMS or MQTT must migrate without being rewritten. Which service fits?",
+      "options": [
+        {
+          "text": "Amazon MQ",
+          "explanation": "This is the guide's answer for this scenario (line 109). Its note: protocol names = MQ.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "SQS + Auto Scaling worker group",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Web tier overwhelmed by traffic spikes; orders being lost (line 101).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "SNS fan-out to multiple SQS queues",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One event must notify three downstream systems, and none may miss it even if temporarily down (line 103).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Kinesis Data Streams",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Clickstream analytics: two applications must consume the same real-time data, with ability to reprocess yesterday (line 106).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 106
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0466",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "Message payloads are 1 MB, which exceeds the SQS limit. What is the right design?",
+      "options": [
+        {
+          "text": "Dead-Letter Queue with MaxReceiveCount",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Messages that repeatedly fail are blocking the queue (line 105).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Store in S3, send a pointer",
+          "explanation": "This is the guide's answer for this scenario (line 110). Its note: 256 KB cap.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 110
+          }
+        },
+        {
+          "text": "Increase the visibility timeout",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Some SQS messages are being processed twice (line 104).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 104
+          }
+        },
+        {
+          "text": "Long polling (20s)",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce cost of consumers polling an often-empty queue (line 108).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 108
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0467",
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "stem": "Each subscriber should only receive certain message types from a topic. What should the architect use?",
+      "options": [
+        {
+          "text": "SQS + Auto Scaling worker group",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Web tier overwhelmed by traffic spikes; orders being lost (line 101).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "SQS FIFO",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Messages must be processed in strict order with no duplicates (line 102).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 102
+          }
+        },
+        {
+          "text": "SNS message filtering",
+          "explanation": "This is the guide's answer for this scenario (line 111). Its note: filter policy per subscription.",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "SNS fan-out to multiple SQS queues",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: One event must notify three downstream systems, and none may miss it even if temporarily down (line 103).",
+          "source": {
+            "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

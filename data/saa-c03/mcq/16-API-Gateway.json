@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0434",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "An architect must build a REST API with no servers to manage and pay only per request. Which design fits?",
+      "options": [
+        {
+          "text": "API Gateway + Lambda + DynamoDB",
+          "explanation": "This is the guide's answer for this scenario (line 67). Its note: the canonical serverless chain.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "WebSocket API",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Push live updates to a real-time dashboard / chat application (line 72).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "Private endpoint + Interface VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API must be accessible only from within the VPC, never the internet (line 73).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0435",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "A SaaS company wants to offer customers different API request limits per pricing tier. What should the architect use?",
+      "options": [
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Usage Plans + API Keys",
+          "explanation": "This is the guide's answer for this scenario (line 68). Its note: REST API only — per-customer tiers.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app users must sign in before calling the API (line 69).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Lambda Authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company has an existing custom/third-party token system for API auth (line 70).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0436",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "Mobile app users must sign in before calling the API. Which authoriser fits?",
+      "options": [
+        {
+          "text": "Usage Plans + API Keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: SaaS company wants to offer customers different API request limits per pricing tier (line 68).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "This is the guide's answer for this scenario (line 69). Its note: app users = Cognito JWTs.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Lambda Authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company has an existing custom/third-party token system for API auth (line 70).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0437",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "A company has an existing custom or third-party token system for API authentication. Which authoriser fits?",
+      "options": [
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app users must sign in before calling the API (line 69).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Usage Plans + API Keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: SaaS company wants to offer customers different API request limits per pricing tier (line 68).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Lambda Authorizer",
+          "explanation": "This is the guide's answer for this scenario (line 70). Its note: custom logic = your Lambda decides.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0438",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "What is the cheapest way to expose a simple Lambda function over HTTP with JWT authentication?",
+      "options": [
+        {
+          "text": "HTTP API",
+          "explanation": "This is the guide's answer for this scenario (line 71). Its note: ~70% cheaper, minimal features.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "WebSocket API",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Push live updates to a real-time dashboard / chat application (line 72).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "Private endpoint + Interface VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API must be accessible only from within the VPC, never the internet (line 73).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Usage Plans + API Keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: SaaS company wants to offer customers different API request limits per pricing tier (line 68).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 68
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0439",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "Live updates must be pushed to a real-time dashboard or chat application. Which API type fits?",
+      "options": [
+        {
+          "text": "Throttling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Clients suddenly receive HTTP 429 errors (line 76).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "WebSocket API",
+          "explanation": "This is the guide's answer for this scenario (line 72). Its note: persistent two-way connection.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "HTTP API",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cheapest way to expose a simple Lambda function over HTTP with JWT auth (line 71).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Private endpoint + Interface VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API must be accessible only from within the VPC, never the internet (line 73).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 73
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0440",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "An API must be reachable only from within the VPC, never from the internet. What is the right configuration?",
+      "options": [
+        {
+          "text": "WebSocket API",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Push live updates to a real-time dashboard / chat application (line 72).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Private endpoint + Interface VPC Endpoint",
+          "explanation": "This is the guide's answer for this scenario (line 73).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "HTTP API",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cheapest way to expose a simple Lambda function over HTTP with JWT auth (line 71).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 71
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0441",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "A backend process takes 2 minutes and API Gateway requests keep timing out. What is the fix?",
+      "options": [
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Throttling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Clients suddenly receive HTTP 429 errors (line 76).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "Usage Plans + API Keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: SaaS company wants to offer customers different API request limits per pricing tier (line 68).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Go async: return 202, queue to SQS/Step Functions",
+          "explanation": "This is the guide's answer for this scenario (line 74). Its note: 29s is a hard limit; you cannot raise it.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 74
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0442",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "Browser JavaScript served from another domain is blocked when calling the API. What should the architect do?",
+      "options": [
+        {
+          "text": "Enable CORS",
+          "explanation": "This is the guide's answer for this scenario (line 75). Its note: on API Gateway.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Throttling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Clients suddenly receive HTTP 429 errors (line 76).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "Cognito User Pool authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app users must sign in before calling the API (line 69).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Lambda Authorizer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company has an existing custom/third-party token system for API auth (line 70).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0443",
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "stem": "Clients suddenly receive HTTP 429 errors. What is the cause?",
+      "options": [
+        {
+          "text": "Private endpoint + Interface VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API must be accessible only from within the VPC, never the internet (line 73).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Throttling",
+          "explanation": "This is the guide's answer for this scenario (line 76). Its note: raise the limit or add caching/usage plans.",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "Enable CORS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Browser JavaScript from another domain gets blocked calling the API (line 75).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Go async: return 202, queue to SQS/Step Functions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Backend process takes 2 minutes; API Gateway requests keep timing out — fix it (line 74).",
+          "source": {
+            "guide": "content/saa-c03/16-API-Gateway.md",
+            "line": 74
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
