@@ -1,0 +1,508 @@
+{
+  "questions": [
+    {
+      "id": "q0339",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "A BI team needs a petabyte-scale data warehouse for complex analytical queries. Which service fits?",
+      "options": [
+        {
+          "text": "Redshift",
+          "explanation": "This is the guide's answer for this scenario (line 53). Its note: OLAP, columnar, built for BI.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 53
+          }
+        },
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "DocumentDB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a MongoDB workload to a managed AWS service (line 61).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 61
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0340",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "The team must query data in S3 from an existing Redshift cluster without loading it. Which feature fits?",
+      "options": [
+        {
+          "text": "OpenSearch",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Product catalog needs fuzzy, typo-tolerant full-text search; data is in DynamoDB (line 63).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 63
+          }
+        },
+        {
+          "text": "Redshift Spectrum",
+          "explanation": "This is the guide's answer for this scenario (line 54). Its note: extends the warehouse into S3.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "Redshift",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: BI team needs a petabyte-scale data warehouse for complex analytical queries (line 53).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 53
+          }
+        },
+        {
+          "text": "Athena",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run occasional SQL queries on ALB/VPC logs stored in S3, minimal setup (line 55).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 55
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0341",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "Occasional SQL queries must run on ALB and VPC logs stored in S3 with minimal setup. Which service fits?",
+      "options": [
+        {
+          "text": "Redshift Spectrum",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Query data in S3 from the existing Redshift cluster without loading it (line 54).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "OpenSearch",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Product catalog needs fuzzy, typo-tolerant full-text search; data is in DynamoDB (line 63).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 63
+          }
+        },
+        {
+          "text": "Athena",
+          "explanation": "This is the guide's answer for this scenario (line 55). Its note: serverless SQL-on-S3.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 55
+          }
+        },
+        {
+          "text": "Redshift",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: BI team needs a petabyte-scale data warehouse for complex analytical queries (line 53).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 53
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0342",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "The architect must reduce Athena costs and speed up queries. What should be done?",
+      "options": [
+        {
+          "text": "Redshift",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: BI team needs a petabyte-scale data warehouse for complex analytical queries (line 53).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 53
+          }
+        },
+        {
+          "text": "Athena",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run occasional SQL queries on ALB/VPC logs stored in S3, minimal setup (line 55).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 55
+          }
+        },
+        {
+          "text": "OpenSearch",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Product catalog needs fuzzy, typo-tolerant full-text search; data is in DynamoDB (line 63).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 63
+          }
+        },
+        {
+          "text": "Parquet/ORC + compression + partitioning",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: bill = TB scanned, so scan less.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 56
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0343",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "A social app needs friend-of-friend recommendations and fraud-ring detection. Which service fits?",
+      "options": [
+        {
+          "text": "Neptune",
+          "explanation": "This is the guide's answer for this scenario (line 57). Its note: relationships = graph.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "DocumentDB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a MongoDB workload to a managed AWS service (line 61).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 61
+          }
+        },
+        {
+          "text": "Keyspaces",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a Cassandra workload (line 62).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0344",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "A single organisation needs a complete, immutable, cryptographically verifiable history of financial records. Which service fits?",
+      "options": [
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "QLDB",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: centralized ledger.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Managed Blockchain",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple companies transact without a trusted central authority (line 59).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 59
+          }
+        },
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0345",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "Multiple companies must transact with no trusted central authority. Which service fits?",
+      "options": [
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Managed Blockchain",
+          "explanation": "This is the guide's answer for this scenario (line 59). Its note: decentralized — the QLDB foil.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 59
+          }
+        },
+        {
+          "text": "QLDB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Complete, immutable, cryptographically verifiable history of financial records, single organization (line 58).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 58
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0346",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "Millions of IoT sensor readings arrive per minute and are analysed over time windows. Which service fits?",
+      "options": [
+        {
+          "text": "DocumentDB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a MongoDB workload to a managed AWS service (line 61).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 61
+          }
+        },
+        {
+          "text": "Keyspaces",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a Cassandra workload (line 62).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "OpenSearch",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Product catalog needs fuzzy, typo-tolerant full-text search; data is in DynamoDB (line 63).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 63
+          }
+        },
+        {
+          "text": "Timestream",
+          "explanation": "This is the guide's answer for this scenario (line 60). Its note: time-series.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0347",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "A MongoDB workload must migrate to a managed AWS service. Which service fits?",
+      "options": [
+        {
+          "text": "DocumentDB",
+          "explanation": "This is the guide's answer for this scenario (line 61). Its note: keyword match, done.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 61
+          }
+        },
+        {
+          "text": "Keyspaces",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a Cassandra workload (line 62).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0348",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "A Cassandra workload must migrate to a managed AWS service. Which service fits?",
+      "options": [
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Keyspaces",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: keyword match, done.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "DocumentDB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a MongoDB workload to a managed AWS service (line 61).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 61
+          }
+        },
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0349",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "A product catalogue needs fuzzy, typo-tolerant full-text search, and the data is in DynamoDB. Which service fits?",
+      "options": [
+        {
+          "text": "Redshift",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: BI team needs a petabyte-scale data warehouse for complex analytical queries (line 53).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 53
+          }
+        },
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "OpenSearch",
+          "explanation": "This is the guide's answer for this scenario (line 63). Its note: via DynamoDB Streams → Lambda; DynamoDB can't fuzzy-search.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 63
+          }
+        },
+        {
+          "text": "Athena",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run occasional SQL queries on ALB/VPC logs stored in S3, minimal setup (line 55).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 55
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0350",
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "stem": "Analysts' reports are slowing the production OLTP database. What should the architect do?",
+      "options": [
+        {
+          "text": "Neptune",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Social app needs friend-of-friend recommendations / detect fraud rings (line 57).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "Timestream",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Millions of IoT sensor readings per minute, analyzed over time windows (line 60).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "DocumentDB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a MongoDB workload to a managed AWS service (line 61).",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 61
+          }
+        },
+        {
+          "text": "move analytics off prod",
+          "explanation": "This is the guide's answer for this scenario (line 64). Its note: to Redshift (the cardinal sin, corrected.",
+          "source": {
+            "guide": "content/saa-c03/12-Other-Databases.md",
+            "line": 64
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

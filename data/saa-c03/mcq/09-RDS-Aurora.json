@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0271",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "A database must survive an Availability Zone failure with no manual intervention. What should the architect enable?",
+      "options": [
+        {
+          "text": "Multi-AZ",
+          "explanation": "This is the guide's answer for this scenario (line 83). Its note: \"survive failure\" + \"automatic\" = spare tire, 60–120s DNS flip)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "RDS Proxy",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda functions are exhausting database connections (line 87).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "Aurora Cloning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Need a full copy of the production database for testing, quickly and cheaply (line 95).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Aurora Serverless v2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Dev database sits idle nights and weekends; minimize cost (line 93).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 93
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0272",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "Reporting and analytics queries are slowing down the production database. What should the architect add?",
+      "options": [
+        {
+          "text": "Aurora Cloning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Need a full copy of the production database for testing, quickly and cheaply (line 95).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Read Replica",
+          "explanation": "This is the guide's answer for this scenario (line 85). Its note: offload reads to a checkout lane — but if the queries are the *same ones repeatedly*, ElastiCache wins; replica is for diverse/complex queries)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Multi-AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database must survive an AZ failure with no manual intervention (line 83).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "RDS Proxy",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda functions are exhausting database connections (line 87).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0273",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "Lambda functions are exhausting the database's connections. What should the architect use?",
+      "options": [
+        {
+          "text": "Multi-AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database must survive an AZ failure with no manual intervention (line 83).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Aurora Serverless v2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Dev database sits idle nights and weekends; minimize cost (line 93).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "RDS Proxy",
+          "explanation": "This is the guide's answer for this scenario (line 87). Its note: Lambda + RDS = Proxy, every time)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "Read Replica",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reporting/analytics queries are slowing down the production database (line 85).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 85
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0274",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "An architect must encrypt an existing unencrypted RDS database. What is the procedure?",
+      "options": [
+        {
+          "text": "Multi-AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database must survive an AZ failure with no manual intervention (line 83).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Read Replica",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reporting/analytics queries are slowing down the production database (line 85).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Manual snapshots",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Compliance requires database backups kept for 7 years (line 99).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "snapshot → copy with encryption → restore",
+          "explanation": "This is the guide's answer for this scenario (line 89). Its note: encryption is creation-time only; this is the snapshot dance)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 89
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0275",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "A global application needs cross-region disaster recovery with a recovery time under one minute. Which option fits?",
+      "options": [
+        {
+          "text": "Aurora Global Database",
+          "explanation": "This is the guide's answer for this scenario (line 91). Its note: RPO ~1s, RTO <1min — nothing else touches it)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "Multi-AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database must survive an AZ failure with no manual intervention (line 83).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Aurora Serverless v2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Dev database sits idle nights and weekends; minimize cost (line 93).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Aurora Cloning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Need a full copy of the production database for testing, quickly and cheaply (line 95).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0276",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "A development database sits idle nights and weekends, and the company wants to minimise cost. Which option fits?",
+      "options": [
+        {
+          "text": "Multi-AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database must survive an AZ failure with no manual intervention (line 83).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Aurora Serverless v2",
+          "explanation": "This is the guide's answer for this scenario (line 93). Its note: spiky/idle/unpredictable = serverless)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global application needs cross-region DR with less than 1 minute recovery (line 91).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "Aurora Cloning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Need a full copy of the production database for testing, quickly and cheaply (line 95).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0277",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "A full copy of the production database is needed for testing, quickly and cheaply. Which option fits?",
+      "options": [
+        {
+          "text": "Aurora Serverless v2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Dev database sits idle nights and weekends; minimize cost (line 93).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Aurora Backtrack",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Developer ran a bad DELETE; restore the database to 5 minutes ago as fast as possible (line 97).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Aurora Cloning",
+          "explanation": "This is the guide's answer for this scenario (line 95). Its note: copy-on-write = instant, near-free until it diverges)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global application needs cross-region DR with less than 1 minute recovery (line 91).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 91
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0278",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "A developer ran a bad DELETE. The database must return to its state from 5 minutes ago as fast as possible. Which option fits?",
+      "options": [
+        {
+          "text": "Aurora Cloning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Need a full copy of the production database for testing, quickly and cheaply (line 95).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Manual snapshots",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Compliance requires database backups kept for 7 years (line 99).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global application needs cross-region DR with less than 1 minute recovery (line 91).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "Aurora Backtrack",
+          "explanation": "This is the guide's answer for this scenario (line 97). Its note: rewind in place — no restore, no new instance)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 97
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0279",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "Compliance requires database backups to be kept for 7 years. What should the architect use?",
+      "options": [
+        {
+          "text": "Manual snapshots",
+          "explanation": "This is the guide's answer for this scenario (line 99). Its note: automated backups cap at 35 days)..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 99
+          }
+        },
+        {
+          "text": "Aurora Backtrack",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Developer ran a bad DELETE; restore the database to 5 minutes ago as fast as possible (line 97).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Aurora Cloning",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Need a full copy of the production database for testing, quickly and cheaply (line 95).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global application needs cross-region DR with less than 1 minute recovery (line 91).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 91
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0280",
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "stem": "An application needs operating-system-level access to the database host, or a custom database engine. Where should it run?",
+      "options": [
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global application needs cross-region DR with less than 1 minute recovery (line 91).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "EC2",
+          "explanation": "This is the guide's answer for this scenario (line 101). Its note: or RDS Custom for Oracle/SQL Server) — plain RDS gives no OS access..",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Multi-AZ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database must survive an AZ failure with no manual intervention (line 83).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Aurora Serverless v2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Dev database sits idle nights and weekends; minimize cost (line 93).",
+          "source": {
+            "guide": "content/saa-c03/09-RDS-Aurora.md",
+            "line": 93
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
