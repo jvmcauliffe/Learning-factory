@@ -1,0 +1,256 @@
+{
+  "questions": [
+    {
+      "id": "q0718",
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "stem": "Non-technical teams must deploy infrastructure using only pre-approved configurations, without being granted broad IAM permissions. What should the architect use?",
+      "options": [
+        {
+          "text": "Service Catalog",
+          "explanation": "This is the guide's answer for this scenario (line 31). Its note: vending machine: products in portfolios, launch-on-behalf.",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 31
+          }
+        },
+        {
+          "text": "Trusted Advisor",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify idle instances and unattached Elastic IPs to reduce the bill (line 33).",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 33
+          }
+        },
+        {
+          "text": "AWS Budgets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Receive a notification when forecasted spend reaches 80% of the monthly budget (line 30).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 30
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0719",
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "stem": "The team must identify idle instances and unattached Elastic IPs to reduce the bill. Which service fits?",
+      "options": [
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Trusted Advisor",
+          "explanation": "This is the guide's answer for this scenario (line 33). Its note: Cost Optimization pillar.",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 33
+          }
+        },
+        {
+          "text": "Service Catalog",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Non-technical teams must deploy infrastructure, but only pre-approved configurations, without granting them broad IAM permissions (line 31).",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 31
+          }
+        },
+        {
+          "text": "AWS Budgets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Receive a notification when forecasted spend reaches 80% of the monthly budget (line 30).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 30
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0720",
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "stem": "The team can see only a few Trusted Advisor checks. What is the explanation?",
+      "options": [
+        {
+          "text": "AWS Budgets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Receive a notification when forecasted spend reaches 80% of the monthly budget (line 30).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 30
+          }
+        },
+        {
+          "text": "Cost Allocation Tags",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Finance needs to attribute AWS costs to individual teams and projects (line 32).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 32
+          }
+        },
+        {
+          "text": "Support plan",
+          "explanation": "This is the guide's answer for this scenario (line 35). Its note: full checks need Business/Enterprise.",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 35
+          }
+        },
+        {
+          "text": "Service Catalog",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Non-technical teams must deploy infrastructure, but only pre-approved configurations, without granting them broad IAM permissions (line 31).",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 31
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0721",
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "stem": "The team wants a warning before it reaches an AWS service quota. What provides this?",
+      "options": [
+        {
+          "text": "Service Catalog",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Non-technical teams must deploy infrastructure, but only pre-approved configurations, without granting them broad IAM permissions (line 31).",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 31
+          }
+        },
+        {
+          "text": "AWS Budgets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Receive a notification when forecasted spend reaches 80% of the monthly budget (line 30).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 30
+          }
+        },
+        {
+          "text": "Cost Anomaly Detection",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Get alerted about unexpected spending spikes without setting thresholds (line 38).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 38
+          }
+        },
+        {
+          "text": "Trusted Advisor Service Limits check",
+          "explanation": "This is the guide's answer for this scenario (line 37). Its note: limits = its own pillar.",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 37
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0722",
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "stem": "The security team must flag security groups that allow unrestricted access and a root account without MFA. Which service fits?",
+      "options": [
+        {
+          "text": "Trusted Advisor",
+          "explanation": "This is the guide's answer for this scenario (line 39). Its note: Security pillar.",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "Service Catalog",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Non-technical teams must deploy infrastructure, but only pre-approved configurations, without granting them broad IAM permissions (line 31).",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 31
+          }
+        },
+        {
+          "text": "AWS Budgets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Receive a notification when forecasted spend reaches 80% of the monthly budget (line 30).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 30
+          }
+        },
+        {
+          "text": "Cost Allocation Tags",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Finance needs to attribute AWS costs to individual teams and projects (line 32).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 32
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0723",
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "stem": "Central IT must curate standard CloudFormation-based products for business units. What should the architect use?",
+      "options": [
+        {
+          "text": "CUR + Athena",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Analysts need the most granular billing data, queryable with standard SQL (line 34).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 34
+          }
+        },
+        {
+          "text": "Service Catalog portfolios",
+          "explanation": "This is the guide's answer for this scenario (line 41). Its note: products live in portfolios, shared to users/accounts.",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Trusted Advisor",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify idle instances and unattached Elastic IPs to reduce the bill (line 33).",
+          "source": {
+            "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+            "line": 33
+          }
+        },
+        {
+          "text": "AWS Budgets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Receive a notification when forecasted spend reaches 80% of the monthly budget (line 30).",
+          "source": {
+            "guide": "content/saa-c03/31-Cost-Management.md",
+            "line": 30
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}
