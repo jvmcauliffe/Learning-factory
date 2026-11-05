@@ -1,0 +1,466 @@
+{
+  "questions": [
+    {
+      "id": "q0363",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "A video transcoding job runs for 90 minutes. How should the architect run it?",
+      "options": [
+        {
+          "text": "No — AWS Batch / Fargate",
+          "explanation": "This is the guide's answer for this scenario (line 72). Its note: 15-minute hard limit; Step Functions only if divisible into <15-min steps.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "S3 event notification → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Generate a thumbnail whenever an image lands in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API is fast normally but has latency spikes after idle periods (line 74).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "EventBridge schedule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup script every night at 2 AM, no servers (line 78).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 78
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0364",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "A thumbnail must be generated whenever an image lands in S3. What is the right design?",
+      "options": [
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API is fast normally but has latency spikes after idle periods (line 74).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "S3 event notification → Lambda",
+          "explanation": "This is the guide's answer for this scenario (line 73). Its note: the canonical async trigger.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "EventBridge schedule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup script every night at 2 AM, no servers (line 78).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "Event Source Mapping",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda should process SQS messages (line 82).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 82
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0365",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "An API is fast normally but shows latency spikes after idle periods. What should the architect configure?",
+      "options": [
+        {
+          "text": "increase memory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: CPU-intensive function is too slow (line 77).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "DLQ / on-failure destination",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Asynchronously invoked function fails and events disappear (line 81).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "This is the guide's answer for this scenario (line 74). Its note: Pre-warmed = no cold starts.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "Reserved Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda scaling overwhelms a legacy database that handles only 50 connections (line 75).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0366",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "Lambda scaling is overwhelming a legacy database that handles only 50 connections. What should the architect configure?",
+      "options": [
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API is fast normally but has latency spikes after idle periods (line 74).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "attach Lambda to the VPC + RDS Proxy",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda must query an RDS database in a private subnet (line 76).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "increase memory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: CPU-intensive function is too slow (line 77).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Reserved Concurrency",
+          "explanation": "This is the guide's answer for this scenario (line 75). Its note: cap (Restricted) — and mention RDS Proxy.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0367",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "A Lambda function must query an RDS database in a private subnet. What is the right setup?",
+      "options": [
+        {
+          "text": "attach Lambda to the VPC + RDS Proxy",
+          "explanation": "This is the guide's answer for this scenario (line 76). Its note: add NAT if it still needs internet.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "Reserved Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda scaling overwhelms a legacy database that handles only 50 connections (line 75).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API is fast normally but has latency spikes after idle periods (line 74).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "CloudFront Functions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Rewrite URLs or add security headers on millions of requests, cheapest (line 80).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 80
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0368",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "A CPU-intensive Lambda function is too slow. What should the architect change?",
+      "options": [
+        {
+          "text": "DLQ / on-failure destination",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Asynchronously invoked function fails and events disappear (line 81).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "increase memory",
+          "explanation": "This is the guide's answer for this scenario (line 77). Its note: CPU scales with memory — the counterintuitive one.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API is fast normally but has latency spikes after idle periods (line 74).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "Reserved Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda scaling overwhelms a legacy database that handles only 50 connections (line 75).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 75
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0369",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "A cleanup script must run every night at 2 AM with no servers. What is the right design?",
+      "options": [
+        {
+          "text": "Event Source Mapping",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda should process SQS messages (line 82).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "Lambda@Edge",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Validate JWT tokens / call an external auth service at the edge (line 79).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "EventBridge schedule → Lambda",
+          "explanation": "This is the guide's answer for this scenario (line 78). Its note: serverless cron.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "S3 event notification → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Generate a thumbnail whenever an image lands in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 73
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0370",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "Requests at the edge must have JWT tokens validated, or call an external auth service. What should the architect use?",
+      "options": [
+        {
+          "text": "CloudFront Functions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Rewrite URLs or add security headers on millions of requests, cheapest (line 80).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "EventBridge schedule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup script every night at 2 AM, no servers (line 78).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "S3 event notification → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Generate a thumbnail whenever an image lands in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Lambda@Edge",
+          "explanation": "This is the guide's answer for this scenario (line 79). Its note: network calls allowed; CF Functions can't.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 79
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0371",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "URLs must be rewritten or security headers added on millions of requests, at the lowest cost. What should the architect use?",
+      "options": [
+        {
+          "text": "CloudFront Functions",
+          "explanation": "This is the guide's answer for this scenario (line 80). Its note: sub-ms, ~1/6 price, no network.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Lambda@Edge",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Validate JWT tokens / call an external auth service at the edge (line 79).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "EventBridge schedule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup script every night at 2 AM, no servers (line 78).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "DLQ / on-failure destination",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Asynchronously invoked function fails and events disappear (line 81).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 81
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0372",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "An asynchronously invoked function fails and the events disappear. What should the architect configure?",
+      "options": [
+        {
+          "text": "increase memory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: CPU-intensive function is too slow (line 77).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "DLQ / on-failure destination",
+          "explanation": "This is the guide's answer for this scenario (line 81). Its note: async retries twice, then drops.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Event Source Mapping",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Lambda should process SQS messages (line 82).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "Provisioned Concurrency",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: API is fast normally but has latency spikes after idle periods (line 74).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 74
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0373",
+      "guide": "content/saa-c03/13-Lambda.md",
+      "stem": "A Lambda function should process messages from an SQS queue. What is the integration?",
+      "options": [
+        {
+          "text": "EventBridge schedule → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run a cleanup script every night at 2 AM, no servers (line 78).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "DLQ / on-failure destination",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Asynchronously invoked function fails and events disappear (line 81).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Event Source Mapping",
+          "explanation": "This is the guide's answer for this scenario (line 82). Its note: Lambda pulls in batches; failures return to the queue.",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "S3 event notification → Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Generate a thumbnail whenever an image lands in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/13-Lambda.md",
+            "line": 73
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
