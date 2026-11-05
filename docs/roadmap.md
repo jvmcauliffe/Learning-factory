@@ -20,13 +20,13 @@ Each step is a separately approved Claude task packet. The packet texts are in [
 | 25 | Glossary + bookmarks (run before 23) | 01, 03-06, 22 |
 | 23 | Accessibility, offline, browser tests | 03-22, 25 |
 | 24 | Fact freshness + upstream sync report (report-only) | 07-18 |
-| 26 | letmemaster.com crawler + parser. Held until John commits the owner's written permission. Does not run the crawl or commit content. | 01, permission record |
+| 26 | letmemaster.com crawler + parser (can use John's logged-in session cookie from an environment secret). Does not run the crawl or commit fetched content. | 01, permission record (done) |
 | 27 | Ingest and map crawled content (not drafted; needs a real crawl and John's scope check) | 26 |
 
 Every pull request: independent Codex review, then John merges. John alone marks facts verified and publishes.
 
-## Feature map (modelled on public study sites)
-Only the feature ideas are used. No text, questions or notes from any third-party site are copied; all content comes from the CC BY 4.0 guides by RonitSachdev.
+## Feature map
+The features are modelled on public study sites. Content comes from two sources: the CC BY 4.0 guides by RonitSachdev, and letmemaster.com with its owner's written permission (see [permissions](permissions/letmemaster.md)). Both are credited wherever their content appears.
 
 | Feature | Lands in |
 |---|---|

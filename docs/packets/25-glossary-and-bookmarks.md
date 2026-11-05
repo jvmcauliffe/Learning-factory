@@ -14,7 +14,7 @@ learning-factory gains a searchable glossary built only from the guides' own wor
 jvmcauliffe/learning-factory: tools/build_glossary.py, data/saa-c03/glossary.json, data/saa-c03/glossary-skipped.json, site/glossary.js, site/bookmarks.js, site/index.html, site/styles.css, tests/test_build_glossary.py, site/tests/bookmarks.test.js
 
 ### Out-of-scope
-Definitions the guides do not state. Any text copied from a third-party site. Publishing, deploying or merging. Any change to jvmcauliffe/content-creation-pipeline.
+Definitions that neither the guides nor the permitted letmemaster.com content (packet 27) state. Publishing, deploying or merging. Any change to jvmcauliffe/content-creation-pipeline.
 
 ### Authority
 implement-and-open-pr
@@ -29,7 +29,7 @@ medium
 python3 -m unittest discover -s tests -q passes. node --test site/tests passes. Two runs of python3 tools/build_glossary.py give the same sha256sum. Every glossary source line resolves to a real line in content/saa-c03/.
 
 ### Evidence packet
-Upstream: RonitSachdev/aws-saa-c03-guides at a71e466f02702fe01a6fe414c0b49cb8a673d205 (CC BY 4.0). Depends on packets 01, 03, 04, 05, 06 and 22. Feature idea only: modelled on public study sites; no third-party content is copied.
+Upstream: RonitSachdev/aws-saa-c03-guides at a71e466f02702fe01a6fe414c0b49cb8a673d205 (CC BY 4.0). Depends on packets 01, 03, 04, 05, 06 and 22. Terms come from the guides; letmemaster.com terms may be added after packet 27, credited to letmemaster.com.
 
 ### Reusable review receipts
 None

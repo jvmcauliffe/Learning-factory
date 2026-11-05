@@ -14,7 +14,8 @@ Recorded 5 November 2026 from the email thread John McAuliffe pasted into the se
 
 Working rules until John says otherwise:
 - Credit letmemaster.com (and its owner) wherever its content appears, alongside the RonitSachdev CC BY 4.0 credit.
-- Fetch politely: honour robots.txt, at least 2 seconds between requests, a clear User-Agent, no logins or paywall bypass.
+- Fetch politely: honour robots.txt, at least 2 seconds between requests, a clear User-Agent.
+- John's own logged-in session may be used (John's instruction, 5 November 2026). It is supplied only as the `LETMEMASTER_COOKIE` environment secret, never pasted in chat, never written to a file, log or the repository. No other credentials are used.
 - Keep every fetched item marked "candidate"; facts stay "unverified" until John verifies them.
 - If the owner revokes or narrows the permission, stop and remove the content.
 
