@@ -1,0 +1,508 @@
+{
+  "questions": [
+    {
+      "id": "q0079",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A nightly batch job processes images. Jobs can be re-run if they fail, and the company wants to minimize cost. Which purchasing option fits?",
+      "options": [
+        {
+          "text": "Spot instances",
+          "explanation": "This is the guide's answer for this scenario (line 129). Its note: fault-tolerant + interruptible + cheapest = Spot's home turf.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 129
+          }
+        },
+        {
+          "text": "On-Demand",
+          "explanation": "Not this one. The guide pairs this answer with: short-term, unpredictable, < 1 year (line 169).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "Reserved Instance (up to 72%)",
+          "explanation": "Not this one. The guide pairs this answer with: steady 24/7 for 1–3 years (line 170).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Compute Savings Plan",
+          "explanation": "Not this one. The guide pairs this answer with: commit $/hr, any family/region + Fargate/Lambda (line 173).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 173
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0080",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A critical payment workload cannot tolerate interruption, and the company wants to minimize cost. Which purchasing approach fits?",
+      "options": [
+        {
+          "text": "Dedicated Instance",
+          "explanation": "Not this one. The guide pairs this answer with: hardware isolation only, cheaper (line 179).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 179
+          }
+        },
+        {
+          "text": "NOT Spot — Reserved Instances / Savings Plan",
+          "explanation": "This is the guide's answer for this scenario (line 131). Its note: \"cannot tolerate interruption\" disqualifies Spot no matter how loudly the question says \"cheapest\".",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 131
+          }
+        },
+        {
+          "text": "Spot instances",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Nightly batch job processes images; jobs can be re-run if they fail; minimize cost (line 129).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 129
+          }
+        },
+        {
+          "text": "On-Demand",
+          "explanation": "Not this one. The guide pairs this answer with: short-term, unpredictable, < 1 year (line 169).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 169
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0081",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A company runs an SAP HANA in-memory database on EC2. Which instance family fits?",
+      "options": [
+        {
+          "text": "C family",
+          "explanation": "Not this one. The guide pairs this answer with: batch / encoding / HPC compute (line 161).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 161
+          }
+        },
+        {
+          "text": "I family",
+          "explanation": "Not this one. The guide pairs this answer with: high local NVMe IOPS (line 164).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 164
+          }
+        },
+        {
+          "text": "X family",
+          "explanation": "This is the guide's answer for this scenario (line 133). Its note: eXtreme RAM; plain \"in-memory cache/analytics\" → R family.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 133
+          }
+        },
+        {
+          "text": "R family",
+          "explanation": "Not this one. The guide pairs this answer with: in-memory analytics / cache (line 162).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 162
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0082",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A team needs instances to train a deep learning model and, separately, to serve ML predictions cheaply. Which instance families fit?",
+      "options": [
+        {
+          "text": "X family",
+          "explanation": "Not this one. The guide pairs this answer with: SAP HANA (line 163).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 163
+          }
+        },
+        {
+          "text": "R family",
+          "explanation": "Not this one. The guide pairs this answer with: in-memory analytics / cache (line 162).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 162
+          }
+        },
+        {
+          "text": "C family",
+          "explanation": "Not this one. The guide pairs this answer with: batch / encoding / HPC compute (line 161).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 161
+          }
+        },
+        {
+          "text": "P family for training, G or Inf for inference",
+          "explanation": "This is the guide's answer for this scenario (line 135). Its note: P = Power training, G/Inf = inference/graphics.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 135
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0083",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A company has per-socket Windows Server licenses that it wants to bring to AWS. What should it use?",
+      "options": [
+        {
+          "text": "Dedicated Host",
+          "explanation": "This is the guide's answer for this scenario (line 137). Its note: sockets/cores/BYOL = Host; mere hardware isolation = Dedicated Instance.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 137
+          }
+        },
+        {
+          "text": "Dedicated Instance",
+          "explanation": "Not this one. The guide pairs this answer with: hardware isolation only, cheaper (line 179).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 179
+          }
+        },
+        {
+          "text": "Zonal RI / Capacity Reservation",
+          "explanation": "Not this one. The guide pairs this answer with: guarantee capacity in an AZ (line 172).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 172
+          }
+        },
+        {
+          "text": "Reserved Instance (up to 72%)",
+          "explanation": "Not this one. The guide pairs this answer with: steady 24/7 for 1–3 years (line 170).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 170
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0084",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A company must guarantee that EC2 capacity is available in a specific AZ for month-end processing. What should it use?",
+      "options": [
+        {
+          "text": "Cluster placement group",
+          "explanation": "Not this one. The guide pairs this answer with: lowest latency / HPC / same rack (line 180).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 180
+          }
+        },
+        {
+          "text": "Zonal Reserved Instance or On-Demand Capacity Reservation",
+          "explanation": "This is the guide's answer for this scenario (line 139). Its note: Savings Plans and regional RIs are billing-only — they hold no seats.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 139
+          }
+        },
+        {
+          "text": "Compute Savings Plan",
+          "explanation": "Not this one. The guide pairs this answer with: commit $/hr, any family/region + Fargate/Lambda (line 173).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "EC2 Instance Savings Plan",
+          "explanation": "Not this one. The guide pairs this answer with: commit $/hr, one family one region, max discount (line 174).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 174
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0085",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A t3 instance performs well, then slows dramatically after hours of sustained load. What is the cause and the fix?",
+      "options": [
+        {
+          "text": "Move the ENI to the standby",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On primary failure, standby must take over with the same private IP, no client changes (line 145).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 145
+          }
+        },
+        {
+          "text": "Cluster placement group",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Tightly-coupled HPC workload needs the lowest inter-node latency (line 147).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 147
+          }
+        },
+        {
+          "text": "CPU credits exhausted, throttled to baseline — move to M/C family or enable Unlimited mode",
+          "explanation": "This is the guide's answer for this scenario (line 141). Its note: and \"bill spiked after enabling a setting\" = Unlimited overage.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 141
+          }
+        },
+        {
+          "text": "Public IP changed on stop/start — assign an Elastic IP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: After stopping and starting the instance, users can't reach it at the old address (line 143).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 143
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0086",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "After an instance is stopped and started, users can no longer reach it at the old address. What should the architect do?",
+      "options": [
+        {
+          "text": "Move the ENI to the standby",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On primary failure, standby must take over with the same private IP, no client changes (line 145).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 145
+          }
+        },
+        {
+          "text": "CPU credits exhausted, throttled to baseline — move to M/C family or enable Unlimited mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: t3 instance performs well, then slows dramatically after hours of sustained load (line 141).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 141
+          }
+        },
+        {
+          "text": "Hibernate (RAM → encrypted EBS root)",
+          "explanation": "Not this one. The guide pairs this answer with: preserve RAM state across stop (line 189).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 189
+          }
+        },
+        {
+          "text": "Public IP changed on stop/start — assign an Elastic IP",
+          "explanation": "This is the guide's answer for this scenario (line 143). Its note: default public IPs are not sticky.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 143
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0087",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "When the primary instance fails, the standby must take over with the same private IP and no client changes. What should the architect do?",
+      "options": [
+        {
+          "text": "Move the ENI to the standby",
+          "explanation": "This is the guide's answer for this scenario (line 145). Its note: works only within the same AZ.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 145
+          }
+        },
+        {
+          "text": "multiple ENIs",
+          "explanation": "Not this one. The guide pairs this answer with: separate management network / dual-homed (line 184).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 184
+          }
+        },
+        {
+          "text": "Public IP changed on stop/start — assign an Elastic IP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: After stopping and starting the instance, users can't reach it at the old address (line 143).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 143
+          }
+        },
+        {
+          "text": "Hibernate (RAM → encrypted EBS root)",
+          "explanation": "Not this one. The guide pairs this answer with: preserve RAM state across stop (line 189).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 189
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0088",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A tightly coupled HPC workload needs the lowest inter-node latency. Which placement strategy fits?",
+      "options": [
+        {
+          "text": "Dedicated Host",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company has per-socket Windows Server licenses to bring to AWS (line 137).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 137
+          }
+        },
+        {
+          "text": "Cluster placement group",
+          "explanation": "This is the guide's answer for this scenario (line 147). Its note: Close = same rack; Kafka/Cassandra/Hadoop at scale = Partition; 7 critical solo instances = Spread.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 147
+          }
+        },
+        {
+          "text": "Spread placement group",
+          "explanation": "Not this one. The guide pairs this answer with: few critical instances, isolate failures (max 7/AZ) (line 181).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 181
+          }
+        },
+        {
+          "text": "Partition placement group",
+          "explanation": "Not this one. The guide pairs this answer with: Hadoop / Cassandra / Kafka at scale (line 182).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 182
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0089",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A company will make a steady dollar-per-hour commitment but wants the freedom to switch instance families and regions, and even use Fargate or Lambda. What should it choose?",
+      "options": [
+        {
+          "text": "Convertible RI (66%)",
+          "explanation": "Not this one. The guide pairs this answer with: RI but family may change (line 171).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "Reserved Instance (up to 72%)",
+          "explanation": "Not this one. The guide pairs this answer with: steady 24/7 for 1–3 years (line 170).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Compute Savings Plan",
+          "explanation": "This is the guide's answer for this scenario (line 149). Its note: one family, one region, max discount = EC2 Instance Savings Plan.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 149
+          }
+        },
+        {
+          "text": "EC2 Instance Savings Plan",
+          "explanation": "Not this one. The guide pairs this answer with: commit $/hr, one family one region, max discount (line 174).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 174
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0090",
+      "guide": "content/saa-c03/03-EC2.md",
+      "stem": "A workload has a predictable baseline and unpredictable spikes. The company wants to optimize cost. Which approach fits?",
+      "options": [
+        {
+          "text": "On-Demand",
+          "explanation": "Not this one. The guide pairs this answer with: short-term, unpredictable, < 1 year (line 169).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "Reserved Instance (up to 72%)",
+          "explanation": "Not this one. The guide pairs this answer with: steady 24/7 for 1–3 years (line 170).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Spot instances",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Nightly batch job processes images; jobs can be re-run if they fail; minimize cost (line 129).",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 129
+          }
+        },
+        {
+          "text": "RI/Savings Plan for baseline + Spot for the spikes",
+          "explanation": "This is the guide's answer for this scenario (line 151). Its note: the classic combo.",
+          "source": {
+            "guide": "content/saa-c03/03-EC2.md",
+            "line": 151
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    }
+  ]
+}
