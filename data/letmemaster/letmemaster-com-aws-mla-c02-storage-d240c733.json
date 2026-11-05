@@ -1,0 +1,73 @@
+{
+  "fetched_at": "2026-11-05T14:15:23Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Storage"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon EBS 10 min read",
+        "Amazon EFS 7 min read",
+        "Amazon FSx 8 min read",
+        "Amazon S3 13 min read",
+        "Amazon S3 Glacier 7 min read",
+        "AWS Storage Gateway 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "MLA-C02 study guide",
+    "Storage services for AWS Certified Machine Learning Engineer – Associate (MLA-C02), with a tutorial on each.",
+    "The whole MLA-C02 study guide · Practice MLA-C02",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "fcaa3bc8c17c6f406f61e94094a2f62d7198fc952ff0a7862555e27033c95024",
+  "source_url": "https://letmemaster.com/aws/mla-c02/storage",
+  "status": "candidate",
+  "tables": [],
+  "title": "Storage for MLA-C02: Study Guide · LetMeMaster"
+}

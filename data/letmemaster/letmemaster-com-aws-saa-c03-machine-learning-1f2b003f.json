@@ -1,0 +1,76 @@
+{
+  "fetched_at": "2026-11-05T14:16:29Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Machine Learning"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon Comprehend 5 min read",
+        "Amazon Lex 4 min read",
+        "Amazon Polly 3 min read",
+        "Amazon Rekognition 5 min read",
+        "Amazon SageMaker AI 7 min read",
+        "Amazon Textract 4 min read",
+        "Amazon Transcribe 4 min read",
+        "Amazon Translate 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Machine Learning services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "3f9a65fe30dc9a60e6a03dee4e9b86deecf932636ce379deb6d55475fe6c9688",
+  "source_url": "https://letmemaster.com/aws/saa-c03/machine-learning",
+  "status": "candidate",
+  "tables": [],
+  "title": "Machine Learning for SAA-C03: Study Guide · LetMeMaster"
+}

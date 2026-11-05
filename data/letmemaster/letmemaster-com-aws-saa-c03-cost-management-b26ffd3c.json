@@ -1,0 +1,72 @@
+{
+  "fetched_at": "2026-11-05T14:16:17Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS Cost Management"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS Budgets 7 min read",
+        "AWS Cost and Usage Report 6 min read",
+        "AWS Cost Explorer 6 min read",
+        "Savings Plans 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "AWS Cost Management services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "c59c6892c63c57dd8e4279fd4df4c282044021484c1f71771cd0de5906589967",
+  "source_url": "https://letmemaster.com/aws/saa-c03/cost-management",
+  "status": "candidate",
+  "tables": [],
+  "title": "AWS Cost Management for SAA-C03: Study Guide · LetMeMaster"
+}

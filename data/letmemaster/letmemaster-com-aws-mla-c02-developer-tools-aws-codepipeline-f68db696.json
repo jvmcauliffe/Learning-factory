@@ -1,0 +1,282 @@
+{
+  "fetched_at": "2026-11-05T14:15:47Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CodePipeline"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "A pipeline for ML"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "A pipeline for ML",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Action types: source (CodeCommit, Amazon S3, Amazon ECR, or GitHub, GitLab, and Bitbucket through AWS CodeConnections), build and test (AWS CodeBuild), deploy (AWS CloudFormation, AWS CodeDeploy, Amazon ECS, Amazon S3, and others), approval (a person approves or rejects), and invoke (AWS Lambda or AWS Step Functions, for custom steps such as starting a SageMaker pipeline).",
+        "Triggers: start on a push or pull request, filtered by branch, Git tag, or file path; start on new data or a new container image in S3 or ECR; or start manually.",
+        "Variables pass values between actions and can be overridden for an execution.",
+        "Manual approval pauses a stage until someone approves, with an optional SNS notification, for example before a model reaches production.",
+        "Stage conditions and rollback: rules (such as a CloudWatch alarm check) gate entry to a stage, and a failed stage can roll back to the last successful execution automatically.",
+        "Execution modes: superseded (default; a newer execution replaces one waiting at a stage), queued, and parallel."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Source: training code and pipeline definitions in Git.",
+        "Build: CodeBuild runs unit tests, scans the code, builds the training and inference containers, and pushes them to ECR (where Amazon Inspector scans images).",
+        "Train: an invoke action starts a SageMaker pipeline that trains, evaluates, and registers the model.",
+        "Approve: a data scientist approves the model version (in the Model Registry or as a manual approval).",
+        "Deploy: CloudFormation or the AWS CDK deploys the endpoint to staging, tests run, and a second approval promotes it to production."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Release automation",
+        "Safety",
+        "ML"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Build and deploy on every commit→ leads to Pipeline with source, build, deploy stages",
+        "Pipeline should start only for release tags→ leads to Git tag trigger filter",
+        "Someone must sign off before production→ leads to Manual approval action"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Undo a failed release automatically→ leads to Stage rollback",
+        "Block a stage while alarms are firing→ leads to Stage condition with alarm rule"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Start a SageMaker pipeline from the release→ leads to Invoke action (Lambda or Step Functions)",
+        "Deploy to another account→ leads to Cross-account roles and a KMS key"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Pipelines are stages of actions; artifacts move through an encrypted S3 artifact store.",
+        "Sources include CodeCommit, S3, ECR, and third-party Git through CodeConnections; triggers can filter branches, tags, and paths.",
+        "Manual approvals, stage conditions, and rollback make releases safe.",
+        "In MLOps, CodePipeline builds containers with CodeBuild, starts SageMaker pipelines, and deploys approved models with CloudFormation or the CDK."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodePipeline User Guide: What is AWS CodePipeline?",
+        "AWS CodePipeline User Guide: CodePipeline concepts"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodePipeline User Guide: Add a manual approval action to a stage"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "A pipeline for ML",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Developer Tools AWS CodeDeploy",
+        "Next in Developer Tools AWS X-Ray"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's managed continuous delivery service: pipelines, stages, actions, and artifacts, source triggers, manual approvals, deploying ML models and infrastructure, cross-account pipelines, security, cost, and monitoring.",
+    "4 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CodePipeline quiz: 5 questions on AWS CodePipeline.",
+    "AWS CodePipeline is a managed continuous deliveryCI/CD (Continuous integration and continuous delivery)Practices in which every code change is built and tested automatically (continuous integration) and kept ready to release, often deploying it automatically through a pipeline (continuous delivery or deployment).Glossary entryClose service. A pipeline describes how a change moves from source to production as a series of stages (for example source, build, test, approve, deploy), each made of actions that run in order or in parallel. CodePipeline starts the pipeline when the source changes, passes artifacts between actions through an S3 artifact store, and records every execution.",
+    "Choose CodePipeline when a question asks to automate the release of code, containers, infrastructure, or MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose models: build and test on every commit, require an approval, and deploy to staging and production (MLA-C02 tasks 3.3.1, 3.3.2, and 3.3.4).",
+    "The pipeline uses a service role with only the permissions its actions need; artifacts in S3 are encrypted with KMS, and cross-account deployments use a customer managed keyCustomer managed keyA KMS key that you create, own, and manage: you control its key policy, rotation, and deletion. AWS managed keys, in contrast, are created and managed for you by an AWS service.Glossary entryClose and roles in the target accounts. CloudTrail records pipeline changes.",
+    "Failed actions and stages can be retried; stage rollback returns to the last good release; executions are kept as history.",
+    "Run independent actions in parallel within a stage, and choose the execution mode that suits how often changes arrive.",
+    "You pay per pipeline or per action execution time, depending on the pipeline type, plus the services the actions use (CodeBuild minutes, S3 storage).",
+    "EventBridge reports pipeline, stage, and action state changes (to alert on failures); the console and APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose show execution history; CloudTrail logs API calls.",
+    "Already know this topic?",
+    "Try the AWS CodePipeline quiz: 5 questions on AWS CodePipeline.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CodePipeline.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "3583efa0b1113310f4421c3e0698e09b91fab25a5634454d319895ce69da425a",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-codepipeline",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Release pipeline from source to production with approvals",
+          "AWS CodePipeline"
+        ],
+        [
+          "Compile, test, and build containers",
+          "AWS CodeBuild (an action in the pipeline)"
+        ],
+        [
+          "Shift traffic gradually to a new Lambda or ECS version",
+          "AWS CodeDeploy"
+        ],
+        [
+          "ML steps (process, train, evaluate, register) with lineage",
+          "SageMaker Pipelines, started by CodePipeline"
+        ],
+        [
+          "Orchestrate data workflows with Airflow",
+          "Amazon MWAA"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CodePipeline for MLA-C02: Study Notes · LetMeMaster"
+}

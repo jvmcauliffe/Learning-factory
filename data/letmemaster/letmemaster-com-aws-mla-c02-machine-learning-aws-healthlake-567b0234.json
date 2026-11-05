@@ -1,0 +1,245 @@
+{
+  "fetched_at": "2026-11-05T14:15:59Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS HealthLake"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Import FHIR R4 data from Amazon S3, and export in bulk (FHIR Bulk Data) for analytics.",
+        "Transformation: convert legacy formats such as C-CDA and CSV into FHIR R4 (a data transformation agent is in preview).",
+        "Integrated NLP: medical entities, relationships, traits, and PHI from clinical text, stored as FHIR resources.",
+        "Analytics: query with Athena (SQL); govern access with AWS Lake Formation; build training datasets for SageMaker AI.",
+        "Standards: FHIR R4 APIs, SMART on FHIR authorization with OAuth 2.0 and OpenID ConnectOIDC (OpenID Connect)A sign-in standard built on OAuth 2.0 that lets an application learn who a user is from a trusted identity provider, through a signed ID token. IAM accepts OIDC providers, so that, for example, a GitHub Actions workflow can assume an IAM role.Glossary entryClose, US Core."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to HealthLake",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Managed FHIR R4 data store→ leads to HealthLake data store",
+        "Query patient records with SQL→ leads to HealthLake with Athena",
+        "Apps authorize with SMART on FHIR→ leads to HealthLake FHIR APIs"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Just extract entities from a note→ leads to Comprehend Medical"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "HealthLake stores and serves health data in FHIR R4, with import, bulk export, and SMART on FHIR.",
+        "Integrated medical NLP turns clinical notes into structured FHIR resources.",
+        "Athena and Lake Formation make the data available for analytics and ML.",
+        "HIPAA eligible, encrypted, with PrivateLink and CloudTrail."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS HealthLake Developer Guide: What is AWS HealthLake?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon DevOps Guru",
+        "Next in Machine Learning and Artificial Intelligence Amazon Lex"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "A HIPAA-eligible service to store, transform, query, and share health data in the FHIR R4 standard: data stores, import and export, integrated medical NLP, SQL queries with Athena, SMART on FHIR, and security.",
+    "2 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS HealthLake quiz: 5 questions on AWS HealthLake.",
+    "AWS HealthLake is a HIPAAHIPAA (Health Insurance Portability and Accountability Act)A US law that protects health information. AWS customers can process protected health information on HIPAA-eligible services after accepting a Business Associate Addendum (BAA) with AWS, which is available in AWS Artifact.Glossary entryClose-eligible service for storing, analyzing, and sharing health data in the FHIR R4 standard (Fast Healthcare Interoperability Resources). A data store indexes records such as patients, observations, conditions, and clinical notes, gives a chronological view of each patient's history, and serves them through standard FHIR APIsAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose. Integrated medical NLP extracts entities and PHI from unstructured notes, and Amazon Athena queries the data with SQLSQL (Structured Query Language)The standard language for querying and changing data in relational databases. Analytics services such as Amazon Athena and Amazon Redshift also use SQL.Glossary entryClose for analytics and MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose.",
+    "Choose HealthLake when a question asks for a managed FHIR data store, interoperability with healthcare systems, or a single place to analyze structured and unstructured patient data for ML (MLA-C02 task 1.1.8).",
+    "HIPAA eligible; connections use TLSTLS (Transport Layer Security)The protocol that encrypts traffic between a client and a server and lets the server prove its identity with a certificate. It replaced SSL, though the older name is still common; HTTPS is HTTP over TLS.Glossary entryClose; data is encrypted at rest (with an AWS owned or customer managed KMS key); access through IAM and SMART on FHIR; AWS PrivateLink keeps traffic off the internet; CloudTrail logs activity. Results that inform clinical decisions need review by medical professionals.",
+    "A managed data store with durable primary storage and an always-updated index.",
+    "The index scales with the data; use bulk export and Athena for large analytical queries instead of many API calls.",
+    "Pay for data storage, queries, and NLP processing; see HealthLake pricing.",
+    "CloudWatch metrics, CloudTrail logs, and EventBridge events for data store operations.",
+    "Already know this topic?",
+    "Try the AWS HealthLake quiz: 5 questions on AWS HealthLake.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS HealthLake.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "50002314e60415b360acd07e9c0890b779a02aa941507178eb679eccc18256ec",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/aws-healthlake",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "A managed FHIR R4 data store with search, analytics, and NLP",
+          "AWS HealthLake"
+        ],
+        [
+          "Extract entities and PHI from clinical text through an API",
+          "Amazon Comprehend Medical"
+        ],
+        [
+          "Store and analyze medical images or genomics data",
+          "AWS HealthImaging or AWS HealthOmics (out of scope for MLA-C02)"
+        ],
+        [
+          "A general data lakeData lakeA central store for large amounts of structured and unstructured data kept in its original form, usually in Amazon S3, which many tools can analyze. AWS Lake Formation helps build and secure one.Glossary entryClose",
+          "Amazon S3 with Lake Formation and Athena"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS HealthLake for MLA-C02: Study Notes · LetMeMaster"
+}

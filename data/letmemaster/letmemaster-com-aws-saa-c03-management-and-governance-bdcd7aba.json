@@ -1,0 +1,86 @@
+{
+  "fetched_at": "2026-11-05T14:16:31Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Management and Governance"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS Auto Scaling 3 min read",
+        "AWS CLI 3 min read",
+        "AWS CloudFormation 7 min read",
+        "AWS CloudTrail 6 min read",
+        "Amazon CloudWatch 7 min read",
+        "AWS Compute Optimizer 2 min read",
+        "AWS Config 5 min read",
+        "AWS Control Tower 5 min read",
+        "AWS Health Dashboard 3 min read",
+        "AWS License Manager 3 min read",
+        "Amazon Managed Grafana 2 min read",
+        "Amazon Managed Service for Prometheus 3 min read",
+        "AWS Management Console 2 min read",
+        "AWS Organizations 6 min read",
+        "AWS Service Catalog 4 min read",
+        "AWS Systems Manager 7 min read",
+        "AWS Trusted Advisor 3 min read",
+        "AWS Well-Architected Tool 2 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Management and Governance services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "62b30d4737e8a3ccf21d6be998fbc8c36c25baa529ac6f7f90a5586759165837",
+  "source_url": "https://letmemaster.com/aws/saa-c03/management-and-governance",
+  "status": "candidate",
+  "tables": [],
+  "title": "Management and Governance for SAA-C03: Study Guide · LetMeMaster"
+}

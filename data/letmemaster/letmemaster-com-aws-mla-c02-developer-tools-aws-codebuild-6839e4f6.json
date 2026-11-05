@@ -1,0 +1,255 @@
+{
+  "fetched_at": "2026-11-05T14:15:39Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CodeBuild"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Buildspec (buildspec.yml): phases install, pre_build, build, and post_build with the commands to run; artifacts to keep; reports for test results; env for variables, including values from Parameter Store or Secrets Manager instead of plain text.",
+        "Build environment: an AWS managed image (with common languages and Docker) or your own image from ECR; Linux, Windows, ARM, and GPUGPU (Graphics processing unit)A processor with thousands of small cores that run many calculations in parallel. GPUs speed up machine learning, graphics, and video work; EC2 instance families such as P and G include them.Glossary entryClose options; EC2 or Lambda compute, and reserved capacity for steady use.",
+        "Containers: build Docker images for training and inference and push them to Amazon ECR; Amazon Inspector then scans them for vulnerabilities (task 4.3.1).",
+        "Test reports: unit and integration test results (for example JUnit) and code coverage appear in the console, so a failed model or data test fails the build.",
+        "Caching: cache dependencies in S3 or locally to make builds faster.",
+        "VPC access: run builds in your VPC to reach private resources such as a package repository or database."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Build and test",
+        "Security"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Run unit tests on each commit→ leads to Build stage with buildspec",
+        "Fail the build when tests fail, show results→ leads to Test reports",
+        "Build the inference container→ leads to Docker build, push to ECR"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Database password in the build→ leads to Secrets Manager in buildspec env",
+        "Build needs a private package server→ leads to CodeBuild in a VPC",
+        "Scan the image for CVEs→ leads to Amazon Inspector on ECR"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CodeBuild runs the phases in buildspec.yml on managed, short-lived environments.",
+        "It builds and pushes training and inference containers to ECR and runs tests with reports.",
+        "Secrets come from Secrets Manager or Parameter Store; builds can run in a VPC.",
+        "Pay per build minute; cache to go faster."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodeBuild User Guide: What is AWS CodeBuild?",
+        "AWS CodeBuild User Guide: Build specification reference"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodeBuild User Guide: Use AWS CodeBuild with Amazon Virtual Private Cloud"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Developer Tools AWS CodeArtifact",
+        "Next in Developer Tools AWS CodeCommit"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's managed build service: buildspec phases, build environments and compute, building and testing ML code and containers, test reports, caching, VPC access, secrets, security, cost, and monitoring.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CodeBuild quiz: 5 questions on AWS CodeBuild.",
+    "AWS CodeBuild is a fully managed build service: it compiles source code, runs tests, and produces artifacts such as packages and container images, on build environments that it starts for each build and removes afterwards. A buildspec file in the repository says what to run. You pay for build time, and there are no build servers to manage.",
+    "Choose CodeBuild when a question asks to build, test, or package code or containers automatically, usually as the build and test stage of a CodePipeline release (MLA-C02 tasks 3.2.3, 3.3.2, and 3.3.4).",
+    "Each build project uses a service role with least privilegeLeast privilegeGiving each person or system only the permissions it needs for its task, and no more. In IAM, this means starting with no access and allowing specific actions on specific resources.Glossary entryClose; artifacts and logs are encrypted with KMS; secrets come from Secrets Manager or Parameter Store; builds in a VPC reach private resources without the internet.",
+    "Builds run on fresh, isolated environments; failed builds can retry; buildspec files are versioned with the code.",
+    "Choose a larger compute type for heavy builds, cache dependencies, and run test suites in parallel with batch builds.",
+    "You pay per build minute by compute type (and for reserved capacity if used). Cache dependencies and right-size compute to shorten builds.",
+    "Build logs go to CloudWatch Logs or S3; CloudWatch metrics show builds, duration, and failures; EventBridge reports build state changes.",
+    "Already know this topic?",
+    "Try the AWS CodeBuild quiz: 5 questions on AWS CodeBuild.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CodeBuild.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "dc3dee1ac7195daef2da4dfd827dd9524d8c4e5fdce7e48d680429c3eac28ef4",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-codebuild",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Build, test, and package code or images",
+          "AWS CodeBuild"
+        ],
+        [
+          "Orchestrate the release from source to deploy",
+          "AWS CodePipeline"
+        ],
+        [
+          "Deploy with traffic shifting and rollback",
+          "AWS CodeDeploy"
+        ],
+        [
+          "Train a model on managed instances",
+          "SageMaker AI training jobs"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CodeBuild for MLA-C02: Study Notes · LetMeMaster"
+}

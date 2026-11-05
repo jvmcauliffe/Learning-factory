@@ -1,0 +1,75 @@
+{
+  "fetched_at": "2026-11-05T14:15:09Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Developer Tools"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS CDK 3 min read",
+        "AWS CodeArtifact 3 min read",
+        "AWS CodeBuild 3 min read",
+        "AWS CodeCommit 2 min read",
+        "AWS CodeConnections 2 min read",
+        "AWS CodeDeploy 3 min read",
+        "AWS CodePipeline 4 min read",
+        "AWS X-Ray 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "MLA-C02 study guide",
+    "Developer Tools services for AWS Certified Machine Learning Engineer – Associate (MLA-C02), with a tutorial on each.",
+    "The whole MLA-C02 study guide · Practice MLA-C02",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "ce26072452d60ec2c10149bde5ae54a845187f30a3d1f5dab6fdde7641044389",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools",
+  "status": "candidate",
+  "tables": [],
+  "title": "Developer Tools for MLA-C02: Study Guide · LetMeMaster"
+}

@@ -1,0 +1,411 @@
+{
+  "fetched_at": "2026-11-05T14:15:49Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon Bedrock"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Choosing and calling a model"
+    },
+    {
+      "level": 2,
+      "text": "Inference options"
+    },
+    {
+      "level": 2,
+      "text": "Customizing models"
+    },
+    {
+      "level": 2,
+      "text": "Knowledge Bases: managed RAG"
+    },
+    {
+      "level": 2,
+      "text": "Agents and Guardrails"
+    },
+    {
+      "level": 2,
+      "text": "Evaluate and manage prompts"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Bedrock or something else?"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Choosing and calling a model",
+        "Inference options",
+        "Customizing models",
+        "Knowledge Bases: managed RAG",
+        "Agents and Guardrails",
+        "Evaluate and manage prompts",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Bedrock or something else?",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Model choice (task 2.1): compare models on the task (text, chat, code, images, embeddings), quality on your data, latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose, context size, and price per token. A smaller, cheaper model that passes your evaluation is usually the right answer to a cost question.",
+        "Invocation: InvokeModel sends a model-specific request; the Converse API gives one request format across models, including multi-turn messages and tool use. Both have streaming variants for responses that appear token by token.",
+        "Embeddings models, such as Amazon Titan Text Embeddings and Cohere Embed, turn text (and some images) into vectors for semantic search and RAG.",
+        "Prompt caching lets supported models reuse a repeated prompt prefix, such as a long system prompt or document, which lowers latency and the cost of the cached input tokens."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Fine-tuning: train on labeled prompt-and-response pairs for a specific task.",
+        "Continued pre-training: train on unlabeled domain text, so the model learns its vocabulary.",
+        "Distillation: a large \"teacher\" model generates responses that train a smaller, cheaper \"student\" model.",
+        "Custom Model Import: bring the weights of a supported open model that you customized elsewhere (for example in SageMaker AI) and serve it through Bedrock."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Data sources: for example Amazon S3, a web crawler, Confluence, SharePoint, or Salesforce. An ingestion job (sync) parses, chunks, and embeds new and changed documents.",
+        "Chunking: default (about 300 tokens, keeping sentences whole), fixed-size (tokens per chunk and an overlap percentage), hierarchical (small child chunks for precise matching, replaced by their larger parent chunks for context), semantic (splits where the meaning changes; it uses a model, so it costs more), or no chunking when you split the files yourself.",
+        "Embeddings model and vector store: Amazon OpenSearch Serverless, OpenSearch Service managed clusters, Amazon S3 Vectors (low-cost storage for infrequently queried vectors), Amazon Aurora PostgreSQL (pgvector), Amazon Neptune Analytics (GraphRAG), or partner stores such as Pinecone, Redis Enterprise Cloud, and MongoDB Atlas. The embedding dimensions must match the index.",
+        "Query: Retrieve returns the passages; RetrieveAndGenerate also generates the answer. Metadata filtering narrows the search (for example to one department's documents), and a reranking model reorders results by relevance."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Content filters: hate, insults, sexual, violence, misconduct, and prompt attacks, each with a strength you set.",
+        "Denied topics and word filters (for example competitor names or profanity).",
+        "Sensitive information filters: block or mask PIIPII (Personally identifiable information)Information that can identify a person, alone or combined with other data, such as a name, email address, or passport number. Amazon Macie finds PII in Amazon S3.Glossary entryClose such as addresses or account numbers, and your own regular expressions.",
+        "Contextual grounding checks: catch responses that aren't supported by the retrieved source, or don't answer the question; useful against hallucinations in RAG.",
+        "Automated Reasoning checks: validate responses against logical rules that you define."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Evaluations (task 2.3) compare models, prompts, and knowledge bases with automatic metrics, human reviewers, or a model acting as a judge (LLM-as-a-judge), and evaluate RAG retrieval and answers.",
+        "Prompt management stores prompts with variables and versions, so applications and tests use a known version and changes can be rolled back."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "IAM controls who can invoke which models and use which knowledge bases, agents, and guardrails. Applications should use IAM roles.",
+        "Bedrock API keys authenticate with a bearer token. Short-term keys last up to 12 hours, inherit the permissions of the identity that created them, and are the ones AWS recommends for production; long-term keys create an IAM user and are meant only for exploration. The bedrock:CallWithBearerToken permission controls whether an identity may use API keys at all.",
+        "Data: model providers have no access to the accounts that run their models, so they can't see your prompts, completions, or logs. Traffic uses TLSTLS (Transport Layer Security)The protocol that encrypts traffic between a client and a server and lets the server prove its identity with a certificate. It replaced SSL, though the older name is still common; HTTPS is HTTP over TLS.Glossary entryClose; encrypt custom models, knowledge base resources, and logs with KMS keys, including customer managed keysCustomer managed keyA KMS key that you create, own, and manage: you control its key policy, rotation, and deletion. AWS managed keys, in contrast, are created and managed for you by an AWS service.Glossary entryClose.",
+        "Private access: interface VPC endpointsVPC endpointA private connection from a VPC to an AWS service or another endpoint service without crossing the internet. Gateway endpoints, for Amazon S3 and DynamoDB, are route table targets; interface endpoints are network interfaces that use AWS PrivateLink.Glossary entryClose (AWS PrivateLink) keep calls from a VPC off the internet.",
+        "Responsible AI: Guardrails, evaluations for bias and quality, and human review of customization data."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CloudWatch metrics: invocations, latency, input and output token counts, throttles, and errors per model.",
+        "Model invocation logging (off by default) sends prompts and responses to CloudWatch Logs or S3 for audit and debugging.",
+        "CloudTrail records Bedrock API calls, including cross-Region requests (in the source Region).",
+        "EventBridge reports state changes of jobs such as batch inference and customization."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Use a foundation model with no servers",
+        "Capacity and cost",
+        "Safety and trust",
+        "Not Bedrock"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Same request format for many models→ leads to Converse API",
+        "Answers from company documents, with citations→ leads to Knowledge Bases (RAG)",
+        "Multi-step tasks that call APIs→ leads to AgentCore (Agents Classic only for existing agents)"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Throttled at peak, data may stay in the EU→ leads to Geographic cross-Region inference",
+        "Steady volume, guaranteed capacity, custom model→ leads to Provisioned Throughput",
+        "Millions of prompts overnight→ leads to Batch inference from S3",
+        "Repeated long prompt prefix→ leads to Prompt caching"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Mask PII, block topics or prompt attacks→ leads to Guardrails",
+        "Answers not supported by the documents→ leads to Contextual grounding check",
+        "Compare models or prompts, LLM-as-a-judge→ leads to Evaluations"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Full control of training code and instances→ leads to SageMaker AI",
+        "Extract text from scanned forms→ leads to Textract"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Bedrock serves foundation models from Amazon and other providers through one API, fully managed.",
+        "On-demand for variable traffic, cross-Region inference for throughput (geographic for data residency, global for lower cost), batch for offline jobs, Provisioned Throughput for steady volume and for any customized model.",
+        "Prefer prompts and RAG; fine-tune with labeled data, continue pre-training with unlabeled data, distill to a smaller model, or import a model customized elsewhere.",
+        "Knowledge Bases manage chunking, embeddings, the vector store, retrieval, and reranking.",
+        "Guardrails filter content, denied topics, and PII, check grounding, and work with any model through ApplyGuardrail.",
+        "Prefer IAM roles or short-term API keys; use PrivateLink for private access, KMS for encryption, and invocation logging plus CloudWatch token metrics to monitor use and cost."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Bedrock User Guide: Amazon Bedrock Agents Classic maintenance mode",
+        "Amazon Bedrock User Guide: Overview"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Bedrock User Guide: Route model inference requests across AWS Regions with cross-Region inference",
+        "Amazon Bedrock User Guide: Process multiple prompts with batch inference",
+        "Amazon Bedrock User Guide: Increase model invocation capacity with Provisioned Throughput",
+        "Amazon Bedrock User Guide: Prompt caching for faster model inference",
+        "Amazon Bedrock User Guide: Customize your model to improve its performance for your use case",
+        "Amazon Bedrock User Guide: Use Custom model import to import a customized open-source model",
+        "Amazon Bedrock User Guide: Retrieve data and generate AI responses with Amazon Bedrock Knowledge Bases",
+        "Amazon Bedrock User Guide: How content chunking works for knowledge bases",
+        "Amazon Bedrock User Guide: Prerequisites for using a vector store you created for a knowledge base",
+        "Amazon Bedrock User Guide: Automate tasks in your application using AI agents",
+        "Amazon Bedrock User Guide: Detect and filter harmful content by using Amazon Bedrock Guardrails",
+        "Amazon Bedrock User Guide: Evaluate the performance of Amazon Bedrock resources",
+        "Amazon Bedrock User Guide: Construct and store reusable prompts with Prompt management",
+        "Amazon Bedrock User Guide: API keys",
+        "Amazon Bedrock User Guide: Data protection",
+        "Amazon Bedrock User Guide: Use interface VPC endpoints (AWS PrivateLink)",
+        "Amazon Bedrock User Guide: Monitor model invocation using CloudWatch Logs and Amazon S3"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Choosing and calling a model",
+        "Inference options",
+        "Customizing models",
+        "Knowledge Bases: managed RAG",
+        "Agents and Guardrails",
+        "Evaluate and manage prompts",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Bedrock or something else?",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Next in Machine Learning and Artificial Intelligence Amazon Bedrock AgentCore"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's fully managed service for building generative AI applications with foundation models: choosing and invoking models, on-demand, cross-Region, batch, and Provisioned Throughput inference, customization and Custom Model Import, Knowledge Bases for RAG, agents, Guardrails, evaluations, prompt management, security, cost, and monitoring.",
+    "10 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon Bedrock quiz: 6 questions on Amazon Bedrock.",
+    "Amazon Bedrock is a fully managed service for building generative AI applications with foundation models (FMs). It gives you models from Amazon and from other providers through one APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose, so you can switch models without changing how your application calls them, and there are no servers or GPUsGPU (Graphics processing unit)A processor with thousands of small cores that run many calculations in parallel. GPUs speed up machine learning, graphics, and video work; EC2 instance families such as P and G include them.Glossary entryClose for you to manage. Around the models, Bedrock adds what an application needs: retrieval of your own documents (Knowledge Bases), task automation (agents), safety controls (Guardrails), evaluations, and prompt management.",
+    "Choose Bedrock when a question asks you to use, customize, or ground a foundation model with the least operational overhead. Choose Amazon SageMaker AI when you must train or host your own model with full control over the code, framework, and infrastructure. Choose an AI service such as Amazon Comprehend or Amazon Textract when a ready-made API already does the job.",
+    "Cross-Region inference has no additional routing cost; the global profiles are priced lower than the geographic ones, and the geographic ones are the choice when data must stay in a region such as the EU. Traffic between Regions stays on the AWS network. Batch inference isn't supported for provisioned models.",
+    "Try prompt engineering and RAG first: they change behaviour without training. Customize the model when it must learn a style, format, or domain that prompts can't teach (task 2.2):",
+    "Training data goes in S3, and a customization job writes a custom model that you run through Provisioned Throughput. Watch for overfitting and catastrophic forgetting (the model loses general ability), and evaluate the custom model against the base model before you switch.",
+    "A knowledge base connects a model to your documents with Retrieval Augmented Generation (RAG): retrieve relevant passages, then generate an answer grounded in them, with citations.",
+    "Refresh a knowledge base by running ingestion when the source changes, for example from an EventBridge schedule or a pipeline (task 3.3).",
+    "Agents break a request into steps, call tools such as APIs and knowledge bases, and keep the conversation's context. Amazon Bedrock Agents, with its action groups (an API schema backed by, for example, a Lambda function), is now Agents Classic and has been closed to new customers since July 30, 2026; existing agents keep working. For new agents, AWS recommends Amazon Bedrock AgentCore, including a managed, configuration-based agent harness. Older exam questions may still describe action groups, so recognize them.",
+    "Guardrails apply the same safety policy to prompts and responses, whichever model you use:",
+    "Attach a guardrail to an inference call by its ID and version, or call the ApplyGuardrail API to check text from any model, including one outside Bedrock.",
+    "Bedrock is a Regional managed service. Cross-Region inference spreads load across Regions; add retries with backoff for throttlingThrottlingLimiting how many requests a client can make in a period. A throttled request is rejected, often with HTTP status 429 or a throttling error, and should be retried later with backoff.Glossary entryClose and, for critical paths, a fallback model or Region.",
+    "On-demand use is limited by quotas (requests and tokens per minute per model). When requests are throttled, use cross-Region inference, request a quota increase, or buy Provisioned Throughput. Streaming improves perceived latency; a smaller model or prompt caching reduces real latency.",
+    "You pay per input and output token on demand, per model unit hour for Provisioned Throughput, and for customization, storage, and the vector store behind a knowledge base. To pay less: choose the smallest model that meets the quality bar, shorten prompts and cap output tokens, use prompt caching, batch inference for offline work, global cross-Region inference where data may leave the geography, and distillation to move traffic to a smaller model (task 4.2).",
+    "Already know this topic?",
+    "Try the Amazon Bedrock quiz: 6 questions on Amazon Bedrock.",
+    "Sign in to test\n\t\tyour knowledge with 6 questions on Amazon Bedrock.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "c06f3fee785e1da74dee5ad0d72688bcb40beeff8afc140c6adb031f0fefb2ec",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/amazon-bedrock",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Option",
+          "How it works",
+          "Choose it for"
+        ],
+        [
+          "On-demand",
+          "Pay per input and output token; requests are subject to the account's quotas",
+          "Variable or unpredictable traffic"
+        ],
+        [
+          "Cross-RegionAWS RegionA separate geographic area where AWS runs its services, such as us-east-1 in Northern Virginia, made up of several Availability Zones. Most resources live in one Region; you choose Regions for latency, data residency, and the services you need.Glossary entryClose inference",
+          "An inference profile routes requests to Regions in a geography (such as US or EU) or worldwide (global)",
+          "More throughput and resilience to Regional capacity limits; geographic profiles keep processing in the geography"
+        ],
+        [
+          "Batch inference",
+          "Put many prompts in files in Amazon S3, start a job, and collect the outputs in S3",
+          "Large offline jobs that don't need an immediate answer"
+        ],
+        [
+          "Provisioned Throughput",
+          "Buy model units (MUs), each a fixed number of input and output tokens per minute, billed hourly with no commitment, 1 month, or 6 months",
+          "Steady high volume with guaranteed capacity; required to use a customized model"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Use or customize a foundation model through an API, no infrastructure",
+          "Amazon Bedrock"
+        ],
+        [
+          "Train your own model, or host a model with full control of the container and instance",
+          "Amazon SageMaker AI"
+        ],
+        [
+          "A task with a ready-made API: OCR, sentiment, transcription, translation",
+          "The AI service (Textract, Comprehend, Transcribe, Translate)"
+        ],
+        [
+          "Run agents in production with isolated sessions, memory, identity, and observability",
+          "Amazon Bedrock AgentCore"
+        ],
+        [
+          "Vector search that you manage alongside other search",
+          "Amazon OpenSearch Service"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon Bedrock for MLA-C02: Study Notes · LetMeMaster"
+}

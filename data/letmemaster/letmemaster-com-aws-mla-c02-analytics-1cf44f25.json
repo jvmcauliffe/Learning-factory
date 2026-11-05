@@ -1,0 +1,79 @@
+{
+  "fetched_at": "2026-11-05T14:14:57Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Analytics"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon Athena 6 min read",
+        "Amazon Data Firehose 7 min read",
+        "Amazon EMR 6 min read",
+        "AWS Glue 8 min read",
+        "AWS Glue DataBrew 3 min read",
+        "AWS Glue Data Quality 3 min read",
+        "Amazon Kinesis Data Streams 7 min read",
+        "AWS Lake Formation 5 min read",
+        "Amazon Managed Service for Apache Flink 3 min read",
+        "Amazon OpenSearch Service 7 min read",
+        "Amazon Quick (Quick Sight) 4 min read",
+        "Amazon Redshift 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "MLA-C02 study guide",
+    "Analytics services for AWS Certified Machine Learning Engineer – Associate (MLA-C02), with a tutorial on each.",
+    "The whole MLA-C02 study guide · Practice MLA-C02",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "a1bd77046ab53c082729116d0d5096b17017c119854e637aebcb8182f9f2684a",
+  "source_url": "https://letmemaster.com/aws/mla-c02/analytics",
+  "status": "candidate",
+  "tables": [],
+  "title": "Analytics for MLA-C02: Study Guide · LetMeMaster"
+}

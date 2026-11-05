@@ -1,0 +1,75 @@
+{
+  "fetched_at": "2026-11-05T14:16:43Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Storage"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS Backup 8 min read",
+        "Amazon EBS 10 min read",
+        "Amazon EFS 7 min read",
+        "Amazon FSx 8 min read",
+        "Amazon S3 13 min read",
+        "Amazon S3 Glacier 7 min read",
+        "AWS Storage Gateway 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Storage services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "b2519ebeb2209b34dae137f2541f7d9f1e9d0b3d3fde0eb1e0ea65ecb5b46d82",
+  "source_url": "https://letmemaster.com/aws/saa-c03/storage",
+  "status": "candidate",
+  "tables": [],
+  "title": "Storage for SAA-C03: Study Guide · LetMeMaster"
+}

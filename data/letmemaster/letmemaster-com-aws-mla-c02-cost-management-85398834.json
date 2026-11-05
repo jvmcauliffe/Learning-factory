@@ -1,0 +1,70 @@
+{
+  "fetched_at": "2026-11-05T14:15:01Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Cloud Financial Management"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS Billing and Cost Management 4 min read",
+        "AWS Budgets 7 min read",
+        "AWS Cost Explorer 6 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "MLA-C02 study guide",
+    "Cloud Financial Management services for AWS Certified Machine Learning Engineer – Associate (MLA-C02), with a tutorial on each.",
+    "The whole MLA-C02 study guide · Practice MLA-C02",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "c518b877ae4a9a544c5cf89bb4ffeb535162ad241590f3dc75f07223c63aeb21",
+  "source_url": "https://letmemaster.com/aws/mla-c02/cost-management",
+  "status": "candidate",
+  "tables": [],
+  "title": "Cloud Financial Management for MLA-C02: Study Guide · LetMeMaster"
+}

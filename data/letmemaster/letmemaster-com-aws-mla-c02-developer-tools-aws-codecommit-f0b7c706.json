@@ -1,0 +1,245 @@
+{
+  "fetched_at": "2026-11-05T14:15:42Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CodeCommit"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Repositories of any size and file type, with branches, tags, and history; clone over HTTPSHTTPS (HTTP Secure)HTTP sent over a TLS-encrypted connection, so that requests and responses cannot be read or changed on the way, and the server proves its identity with a certificate.Glossary entryClose or SSHSSH (Secure Shell)A protocol for secure remote logins and commands over an encrypted connection, usually on TCP port 22. Session Manager in AWS Systems Manager gives shell access to instances without opening that port.Glossary entryClose.",
+        "Pull requests with comments and approval rules, such as requiring two approvers before merging to main.",
+        "Triggers and events: notify SNS or invoke Lambda on pushes, and send repository events to EventBridge, which can start a CodePipeline pipeline.",
+        "Access with IAM: grant users and roles access per repository and per action (for example, deny pushes to main); use temporary credentials through the Git credential helper or federated access."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to CodeCommit",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Private Git hosted in AWS, IAM permissions→ leads to CodeCommit",
+        "Two approvals before merging to main→ leads to Pull request approval rules",
+        "Start a pipeline on each push→ leads to EventBridge event to CodePipeline"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Repositories stay on GitHub→ leads to CodeConnections",
+        "Track versions of large datasets→ leads to S3 versioning"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CodeCommit hosts private Git repositories with IAM access control and encryption.",
+        "Pull request approval rules enforce review; EventBridge events start pipelines.",
+        "Keep large data and model artifacts in S3 or the Model Registry, not in Git.",
+        "For repositories on GitHub, GitLab, or Bitbucket, use CodeConnections."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodeCommit User Guide: What is AWS CodeCommit?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Developer Tools AWS CodeBuild",
+        "Next in Developer Tools AWS CodeConnections"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's managed private Git repositories: repositories, pull requests, triggers and events for pipelines, IAM access, encryption, and when to use a third-party Git provider through CodeConnections instead.",
+    "2 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CodeCommit quiz: 5 questions on AWS CodeCommit.",
+    "AWS CodeCommit is a managed, secure source control service that hosts private Git repositories. It supports standard Git, so existing Git tools work, and it adds pull requests with reviews, notifications, and integration with IAM and other AWS services. There are no servers to manage, and repositories are encrypted at rest and in transit.",
+    "Choose CodeCommit when a question asks for private Git repositories hosted in AWS, with access controlled by IAM, as the source for a release pipeline (MLA-C02 task 3.3.2). If the code already lives on GitHub, GitLab, or Bitbucket, connect it with AWS CodeConnections instead of moving it.",
+    "IAM policies control access; data is encrypted at rest with KMS (an AWS managed key or a customer managed keyCustomer managed keyA KMS key that you create, own, and manage: you control its key policy, rotation, and deletion. AWS managed keys, in contrast, are created and managed for you by an AWS service.Glossary entryClose) and in transit; CloudTrail records APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls; approval rules enforce code review.",
+    "CodeCommit stores repositories redundantly as a managed service. Git itself is distributed, so every clone holds the history.",
+    "Git works best for source code: version large, frequently changing files in Amazon S3 instead, and delete branches and tags you no longer need.",
+    "You pay per active user per month above the free allowance, with additional charges for storage and Git requests above the included amounts.",
+    "EventBridge events and SNS notifications report pushes, pull requests, and comments; CloudTrail logs access.",
+    "Already know this topic?",
+    "Try the AWS CodeCommit quiz: 5 questions on AWS CodeCommit.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CodeCommit.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "d1745cbaba34c33e1f70bb2d529fcc7a08d248e23fbc4033b725238020d40c24",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-codecommit",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Private Git repositories in AWS, IAM access control",
+          "AWS CodeCommit"
+        ],
+        [
+          "Code already on GitHub, GitLab, or Bitbucket, used by AWS pipelines",
+          "AWS CodeConnections"
+        ],
+        [
+          "Version large data files or model artifacts",
+          "Amazon S3 with versioning, or the SageMaker Model Registry for models"
+        ],
+        [
+          "Store and share software packages",
+          "AWS CodeArtifact"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CodeCommit for MLA-C02: Study Notes · LetMeMaster"
+}

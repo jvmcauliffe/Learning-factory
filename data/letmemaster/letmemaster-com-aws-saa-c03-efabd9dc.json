@@ -1,0 +1,341 @@
+{
+  "fetched_at": "2026-11-05T14:16:09Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS Certified Solutions Architect – Associate"
+    },
+    {
+      "level": 2,
+      "text": "Exam domains"
+    },
+    {
+      "level": 2,
+      "text": "Exam format"
+    },
+    {
+      "level": 2,
+      "text": "Study guide"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Domain 1: Design Secure Architectures 30%",
+        "Domain 2: Design Resilient Architectures 26%",
+        "Domain 3: Design High-Performing Architectures 24%",
+        "Domain 4: Design Cost-Optimized Architectures 20%"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon Athena 6 min read",
+        "AWS Data Exchange 4 min read",
+        "Amazon Data Firehose 7 min read",
+        "Amazon EMR 6 min read",
+        "AWS Glue 8 min read",
+        "Amazon Kinesis Data Streams 7 min read",
+        "AWS Lake Formation 5 min read",
+        "Amazon MSK (Managed Streaming for Apache Kafka) 6 min read",
+        "Amazon OpenSearch Service 7 min read",
+        "Amazon Quick (Quick Sight) 4 min read",
+        "Amazon Redshift 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon AppFlow 5 min read",
+        "Amazon EventBridge 8 min read",
+        "Amazon MQ 6 min read",
+        "Amazon SNS 8 min read",
+        "Amazon SQS 9 min read",
+        "AWS Step Functions 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Budgets 7 min read",
+        "AWS Cost and Usage Report 6 min read",
+        "AWS Cost Explorer 6 min read",
+        "Savings Plans 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Batch 6 min read",
+        "Amazon EC2 12 min read",
+        "Amazon EC2 Auto Scaling 9 min read",
+        "AWS Elastic Beanstalk 7 min read",
+        "AWS Outposts 5 min read",
+        "AWS Serverless Application Repository 4 min read",
+        "VMware Cloud on AWS 4 min read",
+        "AWS Wavelength 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon ECR 5 min read",
+        "Amazon ECS 9 min read",
+        "Amazon ECS Anywhere 4 min read",
+        "Amazon EKS 8 min read",
+        "Amazon EKS Anywhere 4 min read",
+        "Amazon EKS Distro 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Aurora 7 min read",
+        "Amazon Aurora Serverless 5 min read",
+        "Amazon DocumentDB 5 min read",
+        "Amazon DynamoDB 10 min read",
+        "Amazon ElastiCache 7 min read",
+        "Amazon Keyspaces 5 min read",
+        "Amazon Neptune 6 min read",
+        "Amazon RDS 8 min read",
+        "Amazon Redshift 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS X-Ray 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Amplify 4 min read",
+        "Amazon API Gateway 10 min read",
+        "AWS Device Farm 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Comprehend 5 min read",
+        "Amazon Lex 4 min read",
+        "Amazon Polly 3 min read",
+        "Amazon Rekognition 5 min read",
+        "Amazon SageMaker AI 7 min read",
+        "Amazon Textract 4 min read",
+        "Amazon Transcribe 4 min read",
+        "Amazon Translate 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Auto Scaling 3 min read",
+        "AWS CLI 3 min read",
+        "AWS CloudFormation 7 min read",
+        "AWS CloudTrail 6 min read",
+        "Amazon CloudWatch 7 min read",
+        "AWS Compute Optimizer 2 min read",
+        "AWS Config 5 min read",
+        "AWS Control Tower 5 min read",
+        "AWS Health Dashboard 3 min read",
+        "AWS License Manager 3 min read",
+        "Amazon Managed Grafana 2 min read",
+        "Amazon Managed Service for Prometheus 3 min read",
+        "AWS Management Console 2 min read",
+        "AWS Organizations 6 min read",
+        "AWS Service Catalog 4 min read",
+        "AWS Systems Manager 7 min read",
+        "AWS Trusted Advisor 3 min read",
+        "AWS Well-Architected Tool 2 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Elastic Transcoder 3 min read",
+        "Amazon Kinesis Video Streams 6 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Application Migration Service 4 min read",
+        "AWS DataSync 5 min read",
+        "AWS Database Migration Service 5 min read",
+        "AWS Snow Family 4 min read",
+        "AWS Transfer Family 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Client VPN 3 min read",
+        "Amazon CloudFront 8 min read",
+        "AWS Direct Connect 5 min read",
+        "Elastic Load Balancing 7 min read",
+        "AWS Global Accelerator 4 min read",
+        "AWS PrivateLink 5 min read",
+        "Amazon Route 53 8 min read",
+        "AWS Site-to-Site VPN 4 min read",
+        "AWS Transit Gateway 4 min read",
+        "Amazon VPC 9 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "VPC security layers: subnets, security groups, and network ACLs 5 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Artifact 2 min read",
+        "AWS Certificate Manager (ACM) 3 min read",
+        "AWS CloudHSM 4 min read",
+        "Amazon Cognito 4 min read",
+        "Amazon Detective 2 min read",
+        "AWS Directory Service 4 min read",
+        "AWS Firewall Manager 3 min read",
+        "Amazon GuardDuty 4 min read",
+        "AWS IAM Identity Center 3 min read",
+        "Amazon Inspector 3 min read",
+        "AWS Key Management Service (KMS) 6 min read",
+        "Amazon Macie 3 min read",
+        "AWS Network Firewall 4 min read",
+        "AWS Resource Access Manager (RAM) 3 min read",
+        "AWS Secrets Manager 4 min read",
+        "AWS Security Hub 3 min read",
+        "AWS Shield 3 min read",
+        "AWS WAF 4 min read",
+        "AWS Identity and Access Management (IAM) 6 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Encryption keys, certificates, and data retention 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "IAM roles and temporary credentials 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Fargate 6 min read",
+        "AWS Lambda 10 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Backup 8 min read",
+        "Amazon EBS 10 min read",
+        "Amazon EFS 7 min read",
+        "Amazon FSx 8 min read",
+        "Amazon S3 13 min read",
+        "Amazon S3 Glacier 7 min read",
+        "AWS Storage Gateway 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "1 Sample quiz  A few questions, no sign-in needed.",
+        "2 Learn  Read a tutorial on one service.",
+        "3 Service quiz  Every question on one service, at the end of its tutorial.",
+        "4 Category or domain quiz  A wider check across a category of services, or one exam domain.",
+        "5 Random quiz  Questions from the whole exam.",
+        "6 Practice exam  A full-length, timed practice exam."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Official exam guide (SAA-C03)(opens in a new tab)",
+        "AWS certification page(opens in a new tab)",
+        "In-scope AWS services (SAA-C03)(opens in a new tab)"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 · Associate",
+    "Validates the ability to design solutions based on the AWS Well-Architected Framework: architectures that are secure, resilient, high-performing, and cost-optimized.",
+    "Share of scored content in each domain, from the official exam guide.",
+    "Original practice questions with explanations, by domain, by service, or at random.",
+    "Tutorials grouped by the categories of the official list of in-scope services. Open a category\n\t\t\tto see its services.",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "A few questions, no sign-in needed.",
+    "Read a tutorial on one service.",
+    "Every question on one service, at the end of its tutorial.",
+    "A wider check across a category of services, or one exam domain.",
+    "Questions from the whole exam.",
+    "A full-length, timed practice exam.",
+    "Official exam information was last checked on 20 October 2026, and the list of in-scope services on 21 October 2026. Exam details can change, so confirm them on the official pages before booking.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "89605391c83a875b831d02dda2f86193e5b013072ab219c8d18824606641e376",
+  "source_url": "https://letmemaster.com/aws/saa-c03",
+  "status": "candidate",
+  "tables": [],
+  "title": "SAA-C03 Study Guide & Practice Exams · LetMeMaster"
+}

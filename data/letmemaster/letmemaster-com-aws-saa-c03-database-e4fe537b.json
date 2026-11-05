@@ -1,0 +1,77 @@
+{
+  "fetched_at": "2026-11-05T14:16:23Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Database"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon Aurora 7 min read",
+        "Amazon Aurora Serverless 5 min read",
+        "Amazon DocumentDB 5 min read",
+        "Amazon DynamoDB 10 min read",
+        "Amazon ElastiCache 7 min read",
+        "Amazon Keyspaces 5 min read",
+        "Amazon Neptune 6 min read",
+        "Amazon RDS 8 min read",
+        "Amazon Redshift 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Database services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "a0e47be82cd6ac8ebd0834d2b84531be62423c831bc03f0b3acde1f08e562e17",
+  "source_url": "https://letmemaster.com/aws/saa-c03/database",
+  "status": "candidate",
+  "tables": [],
+  "title": "Database for SAA-C03: Study Guide · LetMeMaster"
+}

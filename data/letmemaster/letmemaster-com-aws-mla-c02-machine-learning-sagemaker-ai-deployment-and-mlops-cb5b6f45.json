@@ -1,0 +1,404 @@
+{
+  "fetched_at": "2026-11-05T14:16:03Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "SageMaker AI: deployment, MLOps, and monitoring"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Choosing an inference option"
+    },
+    {
+      "level": 2,
+      "text": "Hosting many models"
+    },
+    {
+      "level": 2,
+      "text": "Rolling out new versions safely"
+    },
+    {
+      "level": 2,
+      "text": "Autoscaling endpoints"
+    },
+    {
+      "level": 2,
+      "text": "Endpoints in a VPC"
+    },
+    {
+      "level": 2,
+      "text": "MLOps: Pipelines and the Model Registry"
+    },
+    {
+      "level": 2,
+      "text": "Monitoring models in production"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Related tutorials"
+    },
+    {
+      "level": 3,
+      "text": "SageMaker AI: preparing data and features"
+    },
+    {
+      "level": 3,
+      "text": "SageMaker AI: training and tuning models"
+    },
+    {
+      "level": 3,
+      "text": "Amazon SageMaker AI"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Choosing an inference option",
+        "Hosting many models",
+        "Rolling out new versions safely",
+        "Autoscaling endpoints",
+        "Endpoints in a VPC",
+        "MLOps: Pipelines and the Model Registry",
+        "Monitoring models in production",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Multi-model endpoints host many models of the same framework behind one container; models load from S3 on first use and unload when idle. Choose them for thousands of similar models with uneven traffic, such as one model per customer.",
+        "Multi-container endpoints run different containers (for example different frameworks) on one endpoint, called directly or chained in order as an inference pipeline (pre-processing, model, post-processing).",
+        "Inference components place several models, including foundation models, on one endpoint and give each its own share of accelerators and copies, so you can scale each model separately (task 3.1.7).",
+        "Choosing instances (task 4.2.1): GPU instances for deep learning and large models, AWS Inferentia (Inf) instances for cost-efficient deep learning inference, CPU instances for classic models. Inference Recommender load-tests a model on several instance types and recommends one for your latency and cost, and SageMaker Neo compiles a model to run faster on a target."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Production variants split live traffic between models on one endpoint by weight, for A/B testing (task 4.1.4).",
+        "Shadow variants (shadow tests) send a copy of live traffic to a new model whose responses aren't returned to users, so you compare it with production at no risk (task 2.3.3).",
+        "Deployment guardrails update real-time and asynchronous endpoints with blue/greenBlue/green deploymentReleasing a new version (green) alongside the running one (blue), then moving traffic to green once it is ready. Rolling back is quick: move the traffic back to blue.Glossary entryClose deployments: shift traffic all at once, as a canary (a small share first), or linearly in steps, watch CloudWatch alarms during a baking period, and roll back automatically if an alarm fires. Rolling deployments replace capacity in batches. These answer \"deploy with automatic rollback\" (task 3.3.1)."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SageMaker Pipelines define the MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose workflow as steps in a DAG: processing, training, tuning, evaluation, a condition (for example \"AUC ≥ 0.85\"), model registration, and deployment, with parameters and lineage. Pipelines run on a schedule, from EventBridge when new data arrives (retraining, task 3.3.5), or from a CI/CDCI/CD (Continuous integration and continuous delivery)Practices in which every code change is built and tested automatically (continuous integration) and kept ready to release, often deploying it automatically through a pipeline (continuous delivery or deployment).Glossary entryClose pipeline.",
+        "The Model Registry keeps versions of a model in a model package group, each with metrics and an approval status (pending, approved, rejected). Approving a version can trigger deployment through an EventBridge rule, which gives an audit trail of what was deployed and who approved it (task 3.3.6).",
+        "CI/CD: AWS CodePipeline with CodeBuild runs tests on code and containers, starts the pipeline, and deploys approved models to staging and then production; infrastructure is code in CloudFormation or the AWS CDK. Managed MLflow tracks experiments and can also register models."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CloudWatch metrics for endpoints: Invocations, ModelLatency, OverheadLatency, 4XX and 5XX errors, and instance CPU, GPU, and memory utilization. Logs from the container go to CloudWatch Logs.",
+        "Data capture records requests and responses to S3, the input for drift analysis.",
+        "Drift (tasks 2.3.2 and 4.1.3): compare production inputs and predictions with a baseline from the training data. Data drift is a change in the input distribution; model quality drift needs ground truth labels to compute accuracy; SageMaker Clarify measures bias drift and feature attribution drift.",
+        "Amazon SageMaker Model Monitor has provided these four monitors on a schedule, but it is no longer open to new customers. Exam questions may still name it. For new designs, AWS points to open-source monitoring solutions (SageMaker AI MLflow with Evidently AI) with Amazon QuickSight dashboards, and CloudWatch metrics with anomaly detection alarms."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Pick the inference option",
+        "Many models",
+        "Release safely",
+        "Automate and govern"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Idle for hours, cold starts fine→ leads to Serverless Inference",
+        "Huge payload or long processing→ leads to Asynchronous Inference",
+        "Whole dataset overnight→ leads to Batch transform",
+        "Needs GPU or a VPC→ leads to Real-time endpoint"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Thousands of similar models, uneven traffic→ leads to Multi-model endpoint",
+        "Pre-process, predict, post-process→ leads to Inference pipeline"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Try a model on live traffic, no user impact→ leads to Shadow variant",
+        "Split traffic between two models→ leads to Production variants (A/B)",
+        "Canary with automatic rollback on alarms→ leads to Deployment guardrails"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Retrain when new data lands→ leads to EventBridge starts a SageMaker Pipeline",
+        "Approved versions only, with an audit trail→ leads to Model Registry approval",
+        "Input distribution changed→ leads to Data drift monitoring"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Real-time for low latency, serverless for spiky traffic without GPUs or VPC needs, asynchronous for large or long requests, batch transform for offline datasets.",
+        "Multi-model endpoints share one container across many models; inference components share an endpoint with per-model resources.",
+        "Shadow variants test without user impact; production variants split traffic; deployment guardrails shift traffic by canary or linear steps and roll back on alarms.",
+        "Target tracking on invocations per instance is the default scaling policy.",
+        "Pipelines automate the workflow, the Model Registry versions and approves models, and drift monitoring compares production with a baseline. Model Monitor is closed to new customers."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI Developer Guide: Deploy models for inference",
+        "Amazon SageMaker AI Developer Guide: Real-time inference"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI Developer Guide: Deploy models with Serverless Inference",
+        "Amazon SageMaker AI Developer Guide: Asynchronous inference",
+        "Amazon SageMaker AI Developer Guide: Batch transform for inference",
+        "Amazon SageMaker AI Developer Guide: Multi-model endpoints",
+        "Amazon SageMaker AI Developer Guide: Testing models with shadow variants",
+        "Amazon SageMaker AI Developer Guide: Testing models with production variants",
+        "Amazon SageMaker AI Developer Guide: Deployment guardrails for updating models in production",
+        "Amazon SageMaker AI Developer Guide: Automatic scaling of Amazon SageMaker AI models",
+        "Amazon SageMaker AI Developer Guide: Amazon SageMaker Inference Recommender",
+        "Amazon SageMaker AI Developer Guide: Give hosted endpoints access to resources in your Amazon VPC",
+        "Amazon SageMaker AI Developer Guide: Pipelines",
+        "Amazon SageMaker AI Developer Guide: Model Registry",
+        "Amazon SageMaker AI Developer Guide: Data and model quality monitoring with Amazon SageMaker Model Monitor",
+        "Amazon SageMaker AI Developer Guide: Model performance optimization with SageMaker Neo"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Choosing an inference option",
+        "Hosting many models",
+        "Rolling out new versions safely",
+        "Autoscaling endpoints",
+        "Endpoints in a VPC",
+        "MLOps: Pipelines and the Model Registry",
+        "Monitoring models in production",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon SageMaker AI",
+        "Next in Machine Learning and Artificial Intelligence SageMaker AI: preparing data and features"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI · 7 min read SageMaker AI: preparing data and features The MLA-C02 deep dive on data preparation in Amazon SageMaker AI: Data Wrangler in SageMaker Canvas, Processing jobs, Feature Store online and offline stores, labeling with Ground Truth, measuring bias with Clarify, feature engineering techniques, class imbalance, and data splits.",
+        "Amazon SageMaker AI · 8 min read SageMaker AI: training and tuning models The MLA-C02 deep dive on training with Amazon SageMaker AI: built-in algorithms, script mode and your own containers, training data input modes, managed Spot training with checkpoints, distributed training, automatic model tuning, overfitting and convergence, experiments with MLflow, Debugger, and evaluation metrics.",
+        "Amazon SageMaker AI · 7 min read Amazon SageMaker AI AWS's fully managed service to build, train, and deploy machine learning models: the 2024 rename, training and managed Spot training, built-in algorithms and JumpStart, the four inference options, autoscaling, Canvas, Feature Store, Pipelines, security, cost, and when to use the AI services instead."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "The MLA-C02 deep dive on running models with Amazon SageMaker AI: choosing real-time, serverless, asynchronous, or batch inference, multi-model and multi-container endpoints, safe rollouts with deployment guardrails and shadow tests, autoscaling, endpoints in a VPC, Pipelines and the Model Registry, and monitoring for drift.",
+    "8 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon SageMaker AI quiz: 9 questions on Amazon SageMaker AI.",
+    "This deep dive covers how Amazon SageMaker AI serves, automates, and watches models, at the depth of the MLA-C02 exam (Domain 3, and the monitoring tasks of Domain 4). For the service as a whole, start with the Amazon SageMaker AI tutorial; for training, see SageMaker AI: training and tuning models.",
+    "Serverless endpoints don't support GPUsGPU (Graphics processing unit)A processor with thousands of small cores that run many calculations in parallel. GPUs speed up machine learning, graphics, and video work; EC2 instance families such as P and G include them.Glossary entryClose, VPC configuration, network isolation, data capture, multi-model endpoints, or multiple production variants, so any of those requirements points to a real-time or asynchronous endpoint. Provisioned concurrency keeps a serverless endpoint warm for predictable bursts, and the OverheadLatency metric shows cold-start time.",
+    "Endpoints scale with Application Auto Scaling. The usual policy is target tracking on SageMakerVariantInvocationsPerInstance (requests per instance per minute), found by load testing; GPU or CPU utilization, or a custom metric, can suit models whose cost per request varies (task 3.2.6). Scheduled scaling handles known peaks, and asynchronous endpoints and inference components can scale to zero when idle. Set a cooldown so the endpoint doesn't scale in and out too quickly.",
+    "Give the model a VPC configuration (private subnetsSubnetA range of IP addresses in a VPC, inside one Availability Zone. A subnet is public when its route table sends internet traffic to an internet gateway, and private when it does not.Glossary entryClose and security groupsSecurity groupA stateful virtual firewall for network interfaces, such as an EC2 instance's, whose rules can only allow traffic. Return traffic for allowed connections is allowed automatically, and a rule can refer to another security group instead of IP addresses.Glossary entryClose) so the container reaches resources in your VPC, such as a feature store or database, without the internet; add VPC endpointsVPC endpointA private connection from a VPC to an AWS service or another endpoint service without crossing the internet. Gateway endpoints, for Amazon S3 and DynamoDB, are route table targets; interface endpoints are network interfaces that use AWS PrivateLink.Glossary entryClose for S3 and other services it calls (task 3.2.4). Turn on network isolation when the container must make no outbound calls at all. Applications call the endpoint privately through an interface VPC endpoint for the SageMaker Runtime APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose.",
+    "The model runs with an execution role; restrict who can call InvokeEndpoint with IAM. Encrypt model artifacts, endpoint storage, and captured data with KMS keys. Use a VPC configuration, network isolation, and interface endpoints for private traffic.",
+    "Run real-time endpoints on at least two instances, which SageMaker AI spreads across Availability ZonesAZ (Availability Zone)An isolated location within an AWS Region, made up of one or more data centers with their own power, cooling, and networking. The AZs in a Region are linked by fast, low-latency connections, so spreading resources across them protects against the failure of one site.Glossary entryClose. Deployment guardrails roll back failed updates; asynchronous requests wait in the queue instead of failing when capacity is short.",
+    "Autoscale on the right metric, load-test with Inference Recommender, compile with Neo, and choose GPU or Inferentia instances for deep learning. Watch ModelLatency (time in the model) separately from OverheadLatency (time added by SageMaker AI, including cold starts).",
+    "Match the option to the traffic: serverless or asynchronous with scale to zero for idle periods, batch transform instead of an always-on endpoint for offline scoring, multi-model endpoints or inference components to share instances, Inferentia instances, and SageMaker AI Savings Plans for steady use (tasks 4.2.4 and 4.2.6).",
+    "Already know this topic?",
+    "Try the Amazon SageMaker AI quiz: 9 questions on Amazon SageMaker AI.",
+    "Sign in to test\n\t\tyour knowledge with 9 questions on Amazon SageMaker AI.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Amazon SageMaker AI · 7 min read",
+    "The MLA-C02 deep dive on data preparation in Amazon SageMaker AI: Data Wrangler in SageMaker Canvas, Processing jobs, Feature Store online and offline stores, labeling with Ground Truth, measuring bias with Clarify, feature engineering techniques, class imbalance, and data splits.",
+    "Amazon SageMaker AI · 8 min read",
+    "The MLA-C02 deep dive on training with Amazon SageMaker AI: built-in algorithms, script mode and your own containers, training data input modes, managed Spot training with checkpoints, distributed training, automatic model tuning, overfitting and convergence, experiments with MLflow, Debugger, and evaluation metrics.",
+    "Amazon SageMaker AI · 7 min read",
+    "AWS's fully managed service to build, train, and deploy machine learning models: the 2024 rename, training and managed Spot training, built-in algorithms and JumpStart, the four inference options, autoscaling, Canvas, Feature Store, Pipelines, security, cost, and when to use the AI services instead.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "598debd23934e5e02160943bc1aee4ed31e92cdc541e34af2c03c5c01e88ba2d",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/sagemaker-ai-deployment-and-mlops",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Option",
+          "How it works",
+          "Choose it for"
+        ],
+        [
+          "Real-time endpoint",
+          "Instances you choose serve requests with low latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose, around the clock",
+          "Interactive apps that need answers in milliseconds, steady traffic"
+        ],
+        [
+          "Serverless Inference",
+          "SageMaker AI provides compute per request, 1–6 GB of memory, and scales to zero",
+          "Spiky or infrequent traffic that can tolerate cold startsCold startThe extra delay when AWS Lambda must create a new execution environment, load the code, and run its initialization before handling a request. Later requests reuse the environment and are faster; provisioned concurrency avoids cold starts.Glossary entryClose"
+        ],
+        [
+          "Asynchronous Inference",
+          "Requests queue; payloads up to 1 GB in S3, processing up to one hour, results to S3 with optional SNS notices; can scale to zero",
+          "Large inputs or long processing with near-real-time needs"
+        ],
+        [
+          "Batch transform",
+          "Runs the model over a dataset in S3 and writes results to S3; no endpoint stays up",
+          "Scoring a whole dataset offline, on a schedule"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Millisecond answers, steady traffic, GPU, or VPC",
+          "Real-time endpoint"
+        ],
+        [
+          "Occasional requests, no idle cost, cold starts acceptable",
+          "Serverless Inference"
+        ],
+        [
+          "500 MB inputs, 20-minute processing",
+          "Asynchronous Inference"
+        ],
+        [
+          "Score 10 million rows nightly",
+          "Batch transform"
+        ],
+        [
+          "A foundation model with no hosting to manage",
+          "Amazon Bedrock"
+        ]
+      ]
+    }
+  ],
+  "title": "SageMaker AI: deployment, MLOps, and monitoring for MLA-C02: Study Notes · LetMeMaster"
+}

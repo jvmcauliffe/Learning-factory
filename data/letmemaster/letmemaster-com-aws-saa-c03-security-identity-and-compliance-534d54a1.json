@@ -1,0 +1,99 @@
+{
+  "fetched_at": "2026-11-05T14:16:39Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Security, Identity, and Compliance"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS Artifact 2 min read",
+        "AWS Certificate Manager (ACM) 3 min read",
+        "AWS CloudHSM 4 min read",
+        "Amazon Cognito 4 min read",
+        "Amazon Detective 2 min read",
+        "AWS Directory Service 4 min read",
+        "AWS Firewall Manager 3 min read",
+        "Amazon GuardDuty 4 min read",
+        "AWS IAM Identity Center 3 min read",
+        "Amazon Inspector 3 min read",
+        "AWS Key Management Service (KMS) 6 min read",
+        "Amazon Macie 3 min read",
+        "AWS Network Firewall 4 min read",
+        "AWS Resource Access Manager (RAM) 3 min read",
+        "AWS Secrets Manager 4 min read",
+        "AWS Security Hub 3 min read",
+        "AWS Shield 3 min read",
+        "AWS WAF 4 min read",
+        "AWS Identity and Access Management (IAM) 6 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Encryption keys, certificates, and data retention 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "IAM roles and temporary credentials 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Security, Identity, and Compliance services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "9910c96d804ffc71b1757ed65fc3ca36af5537e694b14dc10400f05b45e811f1",
+  "source_url": "https://letmemaster.com/aws/saa-c03/security-identity-and-compliance",
+  "status": "candidate",
+  "tables": [],
+  "title": "Security, Identity, and Compliance for SAA-C03: Study Guide · LetMeMaster"
+}

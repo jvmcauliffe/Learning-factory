@@ -1,0 +1,104 @@
+{
+  "fetched_at": "2026-11-05T14:16:12Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Practice"
+    },
+    {
+      "level": 2,
+      "text": "Sample quiz"
+    },
+    {
+      "level": 2,
+      "text": "Random quiz"
+    },
+    {
+      "level": 2,
+      "text": "Domain quiz"
+    },
+    {
+      "level": 2,
+      "text": "Service quiz"
+    },
+    {
+      "level": 2,
+      "text": "Practice exams"
+    },
+    {
+      "level": 3,
+      "text": "Mock Test #1"
+    },
+    {
+      "level": 3,
+      "text": "Mock Test #2"
+    },
+    {
+      "level": 3,
+      "text": "Mock Test #3"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Mock Test #1 Exam level · 65 questions · 130 minutes",
+        "Mock Test #2 Exam level · 65 questions · 130 minutes",
+        "Mock Test #3 Exam level · 65 questions · 130 minutes"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03",
+    "Original practice questions with an explanation for every answer. They are not exam questions, and scores do not predict exam results.",
+    "Random questions with the answer after each one. No sign-in needed; nothing is saved.",
+    "Random questions from the whole exam. Answers and explanations at the end.",
+    "Questions from one exam domain. Answers and explanations at the end.",
+    "Questions on one topic, with the answer and explanation after each one.",
+    "A full-length, timed practice exam. Results at the end. After you finish a practice exam, review it without a timer,\n\t\t\t\t\t\twith the answer after each question.",
+    "Exam level · 65 questions · 130 minutes",
+    "Exam level · 65 questions · 130 minutes",
+    "Exam level · 65 questions · 130 minutes",
+    "Sign in to take random, domain, and service quizzes and practice exams, and keep your results.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "5759d45beb9541eefeee0e098b350d0dea6fe0e3defbd2a12edafc4be6f51f1a",
+  "source_url": "https://letmemaster.com/aws/saa-c03/practice",
+  "status": "candidate",
+  "tables": [],
+  "title": "SAA-C03 Practice Questions & Practice Exams · LetMeMaster"
+}

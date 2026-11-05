@@ -1,0 +1,247 @@
+{
+  "fetched_at": "2026-11-05T14:15:55Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon Comprehend Medical"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Entity detection: medical conditions, medications, tests, treatments, procedures, anatomy, and their traits (for example negation: \"no sign of pneumonia\").",
+        "PHI detection (DetectPHI): names, dates, addresses, IDs, and other protected health information, to mask or remove before sharing data.",
+        "Ontology linking: InferICD10CM links conditions to ICD-10-CM codes, InferRxNorm links medications to RxNorm concepts, and InferSNOMEDCT links conditions, anatomy, tests, and procedures to SNOMED CT codes, each with confidence scores.",
+        "Real-time APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls for single documents, and batch analysis jobs for documents in Amazon S3.",
+        "Works with Amazon Transcribe (including Transcribe Medical) to analyze transcribed patient conversations, and with Amazon Textract for scanned documents."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to Comprehend Medical",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Diagnoses and medications from doctors' notes→ leads to Entity detection",
+        "Remove PHI before training a model→ leads to DetectPHI",
+        "Billing codes from clinical text→ leads to InferICD10CM",
+        "Normalized drug names→ leads to InferRxNorm"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Customer reviews' sentiment→ leads to Amazon Comprehend",
+        "A FHIR data store for patient records→ leads to AWS HealthLake"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Comprehend Medical extracts medical entities and PHI from English clinical text.",
+        "Ontology linking maps to ICD-10-CM, RxNorm, and SNOMED CT.",
+        "HIPAA eligible, no persistent storage of content; real-time and batch.",
+        "Human review by medical professionals is required for patient care uses."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Comprehend Medical Developer Guide: What is Amazon Comprehend Medical?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon Comprehend",
+        "Next in Machine Learning and Artificial Intelligence Amazon DevOps Guru"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "A HIPAA-eligible NLP service for clinical text: medical entities, protected health information (PHI) detection, and linking to ICD-10-CM, RxNorm, and SNOMED CT, in real time or in batches, and how it differs from Amazon Comprehend and AWS HealthLake.",
+    "2 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon Comprehend Medical quiz: 5 questions on Amazon Comprehend Medical.",
+    "Amazon Comprehend Medical uses natural language processing trained for healthcare to find information in unstructured clinical text: physician notes, discharge summaries, test results, and case notes. It detects medical entities (conditions, medications with dosage and frequency, tests, treatments, anatomy) and protected health information (PHI), and links entities to standard medical codes through ontology linking. It is a HIPAAHIPAA (Health Insurance Portability and Accountability Act)A US law that protects health information. AWS customers can process protected health information on HIPAA-eligible services after accepting a Business Associate Addendum (BAA) with AWS, which is available in AWS Artifact.Glossary entryClose-eligible service, works on English (US) text, and doesn't persistently store your content.",
+    "Choose it when a question involves clinical or medical text: extracting diagnoses and medications, coding for billing, or finding PHI to redact before data is used for analytics or MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose (MLA-C02 tasks 1.2.8 and 2.1.8). For general text, use Amazon Comprehend.",
+    "HIPAA eligible; all connections use TLSTLS (Transport Layer Security)The protocol that encrypts traffic between a client and a server and lets the server prove its identity with a certificate. It replaced SSL, though the older name is still common; HTTPS is HTTP over TLS.Glossary entryClose; the service doesn't store your text, and batch input and output in S3 are encrypted with keys you control. Control access with IAM. Results need review by trained medical professionals before use in patient care.",
+    "A managed API; batch jobs work through documents in S3 and write results there.",
+    "Use batch jobs for large document sets; set confidence thresholds per use case.",
+    "Pay per amount of text analyzed, by operation (entities, PHI, ontology linking), with no minimum fee; pricing differs from Amazon Comprehend.",
+    "CloudWatch metrics for API use; CloudTrail logs calls.",
+    "Already know this topic?",
+    "Try the Amazon Comprehend Medical quiz: 5 questions on Amazon Comprehend Medical.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon Comprehend Medical.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "3b970946669f898dd97b53fe379aa096110e3380fc5e5d72fc9c69cdf896ee1b",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/amazon-comprehend-medical",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Entities, PHI, and medical codes from clinical notes",
+          "Amazon Comprehend Medical"
+        ],
+        [
+          "Sentiment, entities, or PIIPII (Personally identifiable information)Information that can identify a person, alone or combined with other data, such as a name, email address, or passport number. Amazon Macie finds PII in Amazon S3.Glossary entryClose in everyday text",
+          "Amazon Comprehend"
+        ],
+        [
+          "Store and query health records in FHIR, with medical NLP built in",
+          "AWS HealthLake"
+        ],
+        [
+          "Text from scanned forms",
+          "Amazon Textract, then Comprehend Medical"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon Comprehend Medical for MLA-C02: Study Notes · LetMeMaster"
+}

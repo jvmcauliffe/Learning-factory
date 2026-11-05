@@ -1,0 +1,79 @@
+{
+  "fetched_at": "2026-11-05T14:16:13Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Analytics"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon Athena 6 min read",
+        "AWS Data Exchange 4 min read",
+        "Amazon Data Firehose 7 min read",
+        "Amazon EMR 6 min read",
+        "AWS Glue 8 min read",
+        "Amazon Kinesis Data Streams 7 min read",
+        "AWS Lake Formation 5 min read",
+        "Amazon MSK (Managed Streaming for Apache Kafka) 6 min read",
+        "Amazon OpenSearch Service 7 min read",
+        "Amazon Quick (Quick Sight) 4 min read",
+        "Amazon Redshift 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Analytics services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "Start here",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "2d28814bb39bdd924bcf2b8eb67d26d24b6224b36dba1b66817a9abbe3d35b94",
+  "source_url": "https://letmemaster.com/aws/saa-c03/analytics",
+  "status": "candidate",
+  "tables": [],
+  "title": "Analytics for SAA-C03: Study Guide · LetMeMaster"
+}

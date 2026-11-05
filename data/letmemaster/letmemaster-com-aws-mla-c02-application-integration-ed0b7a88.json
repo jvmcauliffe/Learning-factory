@@ -1,0 +1,72 @@
+{
+  "fetched_at": "2026-11-05T14:14:59Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Application Integration"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon EventBridge 8 min read",
+        "Amazon MWAA (Managed Workflows for Apache Airflow) 4 min read",
+        "Amazon SNS 8 min read",
+        "Amazon SQS 9 min read",
+        "AWS Step Functions 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "MLA-C02 study guide",
+    "Application Integration services for AWS Certified Machine Learning Engineer – Associate (MLA-C02), with a tutorial on each.",
+    "The whole MLA-C02 study guide · Practice MLA-C02",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "5b4ee636b640b74ae5e2108d3e1c73bc90242223c541aed8fbc57f24473622e9",
+  "source_url": "https://letmemaster.com/aws/mla-c02/application-integration",
+  "status": "candidate",
+  "tables": [],
+  "title": "Application Integration for MLA-C02: Study Guide · LetMeMaster"
+}

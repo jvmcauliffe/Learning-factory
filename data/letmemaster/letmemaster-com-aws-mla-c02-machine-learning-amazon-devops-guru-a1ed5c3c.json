@@ -1,0 +1,243 @@
+{
+  "fetched_at": "2026-11-05T14:15:57Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon DevOps Guru"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Alternatives for new designs"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Alternatives for new designs",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Coverage: analyze a whole account, selected CloudFormation stacks, or resources with chosen tags, so you can focus on one application.",
+        "Insights group related anomalies (metrics, logs, events, and deployments) with likely causes and recommendations.",
+        "Notifications through Amazon SNS and EventBridge, and optional integration with AWS Systems Manager OpsCenter.",
+        "DevOps Guru for RDS analyzes database performance with Performance Insights data."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "DevOps Guru (no new customers from 2026-10-29)",
+        "For new designs"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Anomalies across an application's stack with recommendations→ leads to DevOps Guru insights",
+        "Focus on one CloudFormation stack→ leads to DevOps Guru coverage by stack"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Alarm when a metric leaves its normal band→ leads to CloudWatch anomaly detection",
+        "Find the slow service in a request→ leads to X-Ray"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "DevOps Guru uses ML to find operational anomalies and give reactive and proactive insights with recommendations.",
+        "Coverage can be an account, CloudFormation stacks, or tagged resources; alerts go through SNS and EventBridge.",
+        "It stops accepting new customers on October 29, 2026, and ends support on September 30, 2027; use CloudWatch anomaly detection and X-Ray for new designs."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon DevOps Guru User Guide: What is Amazon DevOps Guru?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Alternatives for new designs",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon Comprehend Medical",
+        "Next in Machine Learning and Artificial Intelligence AWS HealthLake"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "An ML-powered operations service that detects anomalous application behaviour and recommends fixes, with reactive and proactive insights; it stops accepting new customers on October 29, 2026 and ends support on September 30, 2027.",
+    "2 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon DevOps Guru quiz: 5 questions on Amazon DevOps Guru.",
+    "Amazon DevOps Guru is a fully managed operations service that uses machine learningML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose to analyze operational data, application metrics, and events, find behaviour that deviates from normal patterns, and recommend fixes. It creates reactive insights for problems happening now (for example rising latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose and errors after a deployment) and proactive insights for risks that could cause problems later.",
+    "Availability: DevOps Guru stops accepting new customers on October 29, 2026. Existing customers can keep using it until September 30, 2027, after which it can no longer be accessed. The MLA-C02 exam lists it in scope, so recognize it; for new designs, use the alternatives below.",
+    "IAM controls access; DevOps Guru reads CloudWatch, CloudTrail, and Config data in your account; insights are encrypted.",
+    "Its value is faster detection of operational issues, which shortens outages.",
+    "ML baselines adapt to each metric, which reduces the threshold tuning that static alarms need.",
+    "Charged by the resource hours analyzed and the APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls made; set coverage to None in each account and RegionAWS RegionA separate geographic area where AWS runs its services, such as us-east-1 in Northern Virginia, made up of several Availability Zones. Most resources live in one Region; you choose Regions for latency, data residency, and the services you need.Glossary entryClose to stop charges.",
+    "Insights appear in the console and are sent through SNS and EventBridge.",
+    "Already know this topic?",
+    "Try the Amazon DevOps Guru quiz: 5 questions on Amazon DevOps Guru.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon DevOps Guru.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "285c45f26217136bddb67cd11f1e05c22bc5b858b64a4839ab6257a30f57f7eb",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/amazon-devops-guru",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Service"
+        ],
+        [
+          "Alarms that learn normal ranges for a metric",
+          "Amazon CloudWatch anomaly detection alarms"
+        ],
+        [
+          "Tracing where latency comes from",
+          "AWS X-Ray and CloudWatch Application Signals"
+        ],
+        [
+          "Investigating operational issues",
+          "Amazon CloudWatch's investigation features"
+        ],
+        [
+          "Unusual spend",
+          "AWS Cost Anomaly Detection"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon DevOps Guru for MLA-C02: Study Notes · LetMeMaster"
+}

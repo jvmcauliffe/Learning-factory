@@ -1,0 +1,336 @@
+{
+  "fetched_at": "2026-11-05T14:16:45Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Analytics services: choosing the right one"
+    },
+    {
+      "level": 2,
+      "text": "The services at a glance"
+    },
+    {
+      "level": 2,
+      "text": "How they fit together"
+    },
+    {
+      "level": 2,
+      "text": "Real-time analytics on streams: Amazon Managed Service for Apache Flink"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: from the question to the service"
+    },
+    {
+      "level": 2,
+      "text": "Commonly confused pairs"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03",
+        "/",
+        "Analytics"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "The services at a glance",
+        "How they fit together",
+        "Real-time analytics on streams: Amazon Managed Service for Apache Flink",
+        "Reverse mindmap: from the question to the service",
+        "Commonly confused pairs",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Ingest: Kinesis Data Streams, Data Firehose, or Amazon MSK bring streaming data in.",
+        "Store and catalog: data lands in Amazon S3, and AWS Glue crawlers record its schema in the AWS Glue Data Catalog.",
+        "Process: AWS Glue jobs or Amazon EMR clusters clean and transform the data. Amazon Managed Service for Apache Flink processes the streams themselves as the data arrives.",
+        "Query and analyze: Athena queries the data in place, Redshift serves warehouse workloads, and OpenSearch Service handles search and log analytics.",
+        "Visualize and govern: Amazon Quick builds dashboards, and Lake Formation controls who can see which databases, tables, columns, and rows."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "The data arrives as a stream",
+        "The data is queried with SQL",
+        "The data is prepared or processed",
+        "The data is searched",
+        "The data is governed, shared, or shown"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Real-time processing, several consumers, replay→ leads to Kinesis Data Streams",
+        "Deliver to S3, Redshift, or OpenSearch with no code→ leads to Data Firehose",
+        "Convert streaming JSON to Parquet or ORC→ leads to Data Firehose",
+        "Existing Apache Kafka applications→ leads to Amazon MSK",
+        "Windowed counts or aggregations on a stream in real time→ leads to Managed Service for Apache Flink"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Ad hoc SQL on files in S3, serverless→ leads to Athena",
+        "Data warehouse for complex reporting→ leads to Redshift",
+        "Query S3 from Redshift without loading→ leads to Redshift Spectrum"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Discover schemas, central table catalog→ leads to Glue crawlers and Data Catalog",
+        "Serverless ETL, no clusters→ leads to AWS Glue",
+        "Spark, Hadoop, Hive, or HBase with cluster control→ leads to Amazon EMR"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Full-text search, log analytics, monitoring→ leads to OpenSearch Service"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Column, row, or cell permissions on a data lake→ leads to Lake Formation",
+        "Share data lake tables with other accounts→ leads to Lake Formation",
+        "Subscribe to third-party data sets→ leads to AWS Data Exchange",
+        "Dashboards for business users, embedded analytics→ leads to Amazon Quick"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Identify the stage the question is about: ingest, store, process, query, or govern.",
+        "\"Deliver\" and \"no code\" point to Data Firehose; \"real-time processing\" and \"multiple consumers\" point to Kinesis Data Streams.",
+        "\"Serverless SQL on Amazon S3\" points to Athena; \"data warehouse\" points to Redshift.",
+        "\"Real-time windowed analytics on a stream\" points to Managed Service for Apache Flink.",
+        "\"Fine-grained data lake permissions\" points to Lake Formation; \"find sensitive data in S3\" points to Amazon Macie."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Certification: SAA-C03 in-scope AWS services",
+        "Amazon Kinesis Data Streams Developer Guide: What is Amazon Kinesis Data Streams?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Data Firehose Developer Guide: What is Amazon Data Firehose?",
+        "Amazon Data Firehose Developer Guide: Convert input data format",
+        "Amazon Managed Service for Apache Flink Developer Guide: What is Amazon Managed Service for Apache Flink?",
+        "Amazon Managed Service for Apache Flink FAQs",
+        "Amazon MSK Developer Guide: What is Amazon MSK?",
+        "Amazon Athena User Guide: What is Amazon Athena?",
+        "Amazon Redshift Management Guide: What is Amazon Redshift?",
+        "AWS Glue Developer Guide: What is AWS Glue?",
+        "Amazon EMR Management Guide: What is Amazon EMR?",
+        "Amazon OpenSearch Service Developer Guide: What is Amazon OpenSearch Service?",
+        "AWS Lake Formation Developer Guide: What is AWS Lake Formation?",
+        "Amazon Macie User Guide: What is Amazon Macie?",
+        "AWS Data Exchange User Guide: What is AWS Data Exchange?",
+        "Amazon Quick User Guide: What is Amazon Quick?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "The services at a glance",
+        "How they fit together",
+        "Real-time analytics on streams: Amazon Managed Service for Apache Flink",
+        "Reverse mindmap: from the question to the service",
+        "Commonly confused pairs",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Next in Analytics Amazon Athena"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "What each of the eleven SAA-C03 analytics services does, how they fit into a data pipeline, and how to go from the clues in a question to the right service.",
+    "6 min read · Last reviewed 28 October 2026 · SAA-C03",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this category?",
+    "Try the Analytics quiz: 26 questions across Analytics.",
+    "The Analytics category of the exam covers eleven services. Most analytics designs combine several of them, so it helps to know the job each one does before comparing them. Each service name links to its own tutorial, which covers its security, resilience, performance, and cost in depth.",
+    "Amazon Kinesis Video Streams shares the Kinesis name, but the exam lists it under Media Services.",
+    "A typical data lake pipeline moves through five stages:",
+    "Amazon Managed Service for Apache Flink (formerly Amazon Kinesis Data Analytics) runs Apache Flink applications with no servers to manage. An application reads a Kinesis data stream or an Amazon MSK topic and computes results continuously as records arrive: windowed counts and aggregations (such as \"orders per store in the last 5 minutes\"), filtering, joins, and streaming ETL. You write the application in Java, Scala, Python, or SQL, or query streams interactively in a Studio notebook. The service scales the application and checkpoints its state.",
+    "Data Firehose only buffers and delivers, and Athena or Glue run on data at restEncryption at restEncrypting data where it is stored, such as on disks, in databases, or in backups, so that it cannot be read without the key. On AWS it usually uses keys in AWS KMS.Glossary entryClose, so a requirement to compute rolling or windowed results on a stream in real time points to Managed Service for Apache Flink.",
+    "Exam scenarios rarely name the service you need. They describe a requirement. Find the kind of problem the question describes, then follow its clue to the service.",
+    "Already know this category?",
+    "Try the Analytics quiz: 26 questions across Analytics.",
+    "Sign in to test\n\t\tyour knowledge with 26 questions across Analytics.",
+    "All Analytics tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "ab1ec50f50319424aaa21942ffc1f195b7be25952af227a87292d688c0843bab",
+  "source_url": "https://letmemaster.com/aws/saa-c03/analytics/analytics-services-overview",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Service",
+          "What it does"
+        ],
+        [
+          "Amazon Kinesis Data Streams",
+          "Collects streaming records in real time and keeps them so that several applications can read them"
+        ],
+        [
+          "Amazon Data Firehose",
+          "Delivers streaming data to destinations such as Amazon S3, Amazon Redshift, and Amazon OpenSearch Service, with no applications to write"
+        ],
+        [
+          "Amazon MSK",
+          "Runs Apache Kafka clusters for you, so existing Kafka applications work unchanged"
+        ],
+        [
+          "Amazon Athena",
+          "Runs standard SQLSQL (Structured Query Language)The standard language for querying and changing data in relational databases. Analytics services such as Amazon Athena and Amazon Redshift also use SQL.Glossary entryClose queries directly on data in Amazon S3, with no infrastructure to manage"
+        ],
+        [
+          "Amazon Redshift",
+          "A fully managed, petabyte-scale data warehouseData warehouseA database designed for analytics, holding cleaned, structured data from many sources, so that reports and queries across years of history run fast. Amazon Redshift is the AWS data warehouse.Glossary entryClose"
+        ],
+        [
+          "AWS Glue",
+          "Serverless data integration: crawlers, the Data Catalog, and ETLETL (Extract, transform, and load)Copying data from sources, cleaning and reshaping it, and loading it into a target such as a data warehouse. AWS Glue is the AWS serverless ETL service.Glossary entryClose jobs"
+        ],
+        [
+          "Amazon EMR",
+          "Managed clusters for big data frameworks such as Apache Spark and Apache Hadoop"
+        ],
+        [
+          "Amazon OpenSearch Service",
+          "Managed OpenSearch clusters for log analytics, full-text search, and monitoring"
+        ],
+        [
+          "AWS Lake Formation",
+          "Central governance and fine-grained access control for a data lakeData lakeA central store for large amounts of structured and unstructured data kept in its original form, usually in Amazon S3, which many tools can analyze. AWS Lake Formation helps build and secure one.Glossary entryClose"
+        ],
+        [
+          "AWS Data Exchange",
+          "Finds, subscribes to, and uses data from other organizations"
+        ],
+        [
+          "Amazon Quick",
+          "Business intelligence dashboards and visualizations (Amazon Quick Sight, formerly Amazon QuickSight)"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "If the choice is between",
+          "Choose the first when",
+          "Choose the second when"
+        ],
+        [
+          "Kinesis Data Streams or Data Firehose",
+          "You need custom real-time processing, several consumers, or replay",
+          "You only need to deliver data to a destination"
+        ],
+        [
+          "Kinesis Data Streams or Amazon MSK",
+          "You want an AWS-native stream with no Kafka to run",
+          "You need Apache Kafka compatibility"
+        ],
+        [
+          "Athena or Redshift",
+          "Queries are occasional and the data stays in Amazon S3",
+          "Many users run frequent, complex reporting queries"
+        ],
+        [
+          "AWS Glue or Amazon EMR",
+          "You want serverless ETL",
+          "You need control over big data frameworks and clusters"
+        ],
+        [
+          "Athena or OpenSearch Service",
+          "You query structured data with SQL",
+          "You search text or analyze logs"
+        ],
+        [
+          "Data Firehose or Managed Service for Apache Flink",
+          "You deliver a stream to a destination",
+          "You compute results, such as windowed aggregations, continuously on the stream"
+        ],
+        [
+          "Amazon Macie or Lake Formation",
+          "You need to find sensitive data, such as personal data, in S3 buckets",
+          "You need to control who can query which databases, tables, columns, and rows"
+        ]
+      ]
+    }
+  ],
+  "title": "Analytics services: choosing the right one for SAA-C03: Study Notes · LetMeMaster"
+}

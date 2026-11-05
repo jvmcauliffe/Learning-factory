@@ -1,0 +1,321 @@
+{
+  "fetched_at": "2026-11-05T14:14:49Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Tutorials"
+    },
+    {
+      "level": 2,
+      "text": "Amazon Web Services"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Athena 6 min read",
+        "Amazon Data Firehose 7 min read",
+        "Amazon EMR 6 min read",
+        "AWS Glue 8 min read",
+        "AWS Glue DataBrew 3 min read",
+        "AWS Glue Data Quality 3 min read",
+        "Amazon Kinesis Data Streams 7 min read",
+        "AWS Lake Formation 5 min read",
+        "Amazon Managed Service for Apache Flink 3 min read",
+        "Amazon OpenSearch Service 7 min read",
+        "Amazon Quick (Quick Sight) 4 min read",
+        "Amazon Redshift 7 min read",
+        "AWS Data Exchange 4 min read",
+        "Amazon MSK (Managed Streaming for Apache Kafka) 6 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon EventBridge 8 min read",
+        "Amazon MWAA (Managed Workflows for Apache Airflow) 4 min read",
+        "Amazon SNS 8 min read",
+        "Amazon SQS 9 min read",
+        "AWS Step Functions 8 min read",
+        "Amazon AppFlow 5 min read",
+        "Amazon MQ 6 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Billing and Cost Management 4 min read",
+        "AWS Budgets 7 min read",
+        "AWS Cost Explorer 6 min read",
+        "AWS Cost and Usage Report 6 min read",
+        "Savings Plans 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Batch 6 min read",
+        "Amazon EC2 12 min read",
+        "AWS Lambda 10 min read",
+        "Amazon EC2 Auto Scaling 9 min read",
+        "AWS Elastic Beanstalk 7 min read",
+        "AWS Outposts 5 min read",
+        "AWS Serverless Application Repository 4 min read",
+        "VMware Cloud on AWS 4 min read",
+        "AWS Wavelength 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon ECR 5 min read",
+        "Amazon ECS 9 min read",
+        "Amazon EKS 8 min read",
+        "Amazon ECS Anywhere 4 min read",
+        "Amazon EKS Anywhere 4 min read",
+        "Amazon EKS Distro 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon DocumentDB 5 min read",
+        "Amazon DynamoDB 10 min read",
+        "Amazon ElastiCache 7 min read",
+        "Amazon Neptune 6 min read",
+        "Amazon RDS 8 min read",
+        "Amazon Aurora 7 min read",
+        "Amazon Aurora Serverless 5 min read",
+        "Amazon Keyspaces 5 min read",
+        "Amazon Redshift 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CDK 3 min read",
+        "AWS CodeArtifact 3 min read",
+        "AWS CodeBuild 3 min read",
+        "AWS CodeCommit 2 min read",
+        "AWS CodeConnections 2 min read",
+        "AWS CodeDeploy 3 min read",
+        "AWS CodePipeline 4 min read",
+        "AWS X-Ray 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Bedrock 10 min read",
+        "Amazon Bedrock AgentCore 6 min read",
+        "Amazon CodeGuru 2 min read",
+        "Amazon Comprehend 5 min read",
+        "Amazon Comprehend Medical 2 min read",
+        "Amazon DevOps Guru 2 min read",
+        "AWS HealthLake 2 min read",
+        "Amazon Lex 4 min read",
+        "Amazon Personalize 3 min read",
+        "Amazon Polly 3 min read",
+        "Amazon Rekognition 5 min read",
+        "Amazon SageMaker AI 7 min read",
+        "Amazon Textract 4 min read",
+        "Amazon Transcribe 4 min read",
+        "Amazon Translate 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SageMaker AI: deployment, MLOps, and monitoring 8 min read",
+        "SageMaker AI: preparing data and features 7 min read",
+        "SageMaker AI: training and tuning models 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Auto Scaling 3 min read",
+        "AWS CloudFormation 7 min read",
+        "AWS CloudTrail 6 min read",
+        "Amazon CloudWatch 7 min read",
+        "AWS Compute Optimizer 2 min read",
+        "AWS Config 5 min read",
+        "AWS Organizations 6 min read",
+        "AWS Service Catalog 4 min read",
+        "AWS Systems Manager 7 min read",
+        "AWS Trusted Advisor 3 min read",
+        "AWS CLI 3 min read",
+        "AWS Control Tower 5 min read",
+        "AWS Health Dashboard 3 min read",
+        "AWS License Manager 3 min read",
+        "Amazon Managed Grafana 2 min read",
+        "Amazon Managed Service for Prometheus 3 min read",
+        "AWS Management Console 2 min read",
+        "AWS Well-Architected Tool 2 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Kinesis Video Streams 6 min read",
+        "Amazon Elastic Transcoder 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS DataSync 5 min read",
+        "AWS Application Migration Service 4 min read",
+        "AWS Database Migration Service 5 min read",
+        "AWS Snow Family 4 min read",
+        "AWS Transfer Family 7 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon API Gateway 10 min read",
+        "Amazon CloudFront 8 min read",
+        "AWS Direct Connect 5 min read",
+        "Amazon VPC 9 min read",
+        "AWS Client VPN 3 min read",
+        "Elastic Load Balancing 7 min read",
+        "AWS Global Accelerator 4 min read",
+        "AWS PrivateLink 5 min read",
+        "Amazon Route 53 8 min read",
+        "AWS Site-to-Site VPN 4 min read",
+        "AWS Transit Gateway 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "VPC security layers: subnets, security groups, and network ACLs 5 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Identity and Access Management (IAM) 6 min read",
+        "Amazon Inspector 3 min read",
+        "AWS Key Management Service (KMS) 6 min read",
+        "Amazon Macie 3 min read",
+        "AWS Secrets Manager 4 min read",
+        "AWS Artifact 2 min read",
+        "AWS Certificate Manager (ACM) 3 min read",
+        "AWS CloudHSM 4 min read",
+        "Amazon Cognito 4 min read",
+        "Amazon Detective 2 min read",
+        "AWS Directory Service 4 min read",
+        "AWS Firewall Manager 3 min read",
+        "Amazon GuardDuty 4 min read",
+        "AWS IAM Identity Center 3 min read",
+        "AWS Network Firewall 4 min read",
+        "AWS Resource Access Manager (RAM) 3 min read",
+        "AWS Security Hub 3 min read",
+        "AWS Shield 3 min read",
+        "AWS WAF 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "IAM roles and temporary credentials 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Encryption keys, certificates, and data retention 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon EBS 10 min read",
+        "Amazon EFS 7 min read",
+        "Amazon FSx 8 min read",
+        "Amazon S3 13 min read",
+        "Amazon S3 Glacier 7 min read",
+        "AWS Storage Gateway 7 min read",
+        "AWS Backup 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Amplify 4 min read",
+        "Amazon API Gateway 10 min read",
+        "AWS Device Farm 4 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Fargate 6 min read",
+        "AWS Lambda 10 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Short, original study notes. Each one is reviewed before it is published.",
+    "Unfamiliar term or acronym? See the glossary.",
+    "Grouped by service category. Each tutorial covers one service, for every exam that lists it.\n\t\t\t\tStudy guides by exam: MLA-C02,SAA-C03",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Start here",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "06c7c68e7a94198f56dbec471e6d6b9f3f7d5d9029a5685faaf51817f9ac64e7",
+  "source_url": "https://letmemaster.com/tutorials",
+  "status": "candidate",
+  "tables": [],
+  "title": "Tutorials · LetMeMaster"
+}

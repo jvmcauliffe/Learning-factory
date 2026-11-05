@@ -1,0 +1,68 @@
+{
+  "fetched_at": "2026-11-05T14:16:25Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Developer Tools"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SAA-C03"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "AWS X-Ray 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "SAA-C03 study guide",
+    "Developer Tools services for AWS Certified Solutions Architect – Associate (SAA-C03), with a tutorial on each.",
+    "The whole SAA-C03 study guide · Practice SAA-C03",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "2f2a7dcc8be61b1193d81dee07ab5049236ab6cc2a32b9997cb0546c8e036a8a",
+  "source_url": "https://letmemaster.com/aws/saa-c03/developer-tools",
+  "status": "candidate",
+  "tables": [],
+  "title": "Developer Tools for SAA-C03: Study Guide · LetMeMaster"
+}

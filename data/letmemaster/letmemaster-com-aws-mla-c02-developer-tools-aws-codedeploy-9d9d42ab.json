@@ -1,0 +1,253 @@
+{
+  "fetched_at": "2026-11-05T14:15:45Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CodeDeploy"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Deployment types: in-place (update instances in turn; EC2 and on-premises) and blue/greenBlue/green deploymentReleasing a new version (green) alongside the running one (blue), then moving traffic to green once it is ready. Rolling back is quick: move the traffic back to blue.Glossary entryClose (create a new set of instances, tasks, or a new function version, then move traffic).",
+        "Deployment configurations: for EC2, how many instances stay healthy (CodeDeployDefault.OneAtATime is the default, HalfAtATime, AllAtOnce, or custom). For Lambda and ECS, how traffic shifts: canary (for example CodeDeployDefault.LambdaCanary10Percent5Minutes: 10% first, the rest after 5 minutes), linear (for example LambdaLinear10PercentEvery1Minute), or all at once.",
+        "AppSpec file: what to deploy and lifecycle hooks, such as running a validation Lambda function before and after traffic shifts.",
+        "Automatic rollback when a deployment fails or a CloudWatch alarm (for example on error rate or latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose) goes into alarm."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Traffic shifting",
+        "Safety",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "10% of traffic first, the rest later→ leads to Canary configuration",
+        "10% more every minute→ leads to Linear configuration",
+        "Lambda or ECS inference service→ leads to CodeDeploy blue/green"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Roll back when errors rise→ leads to Alarm-based automatic rollback",
+        "Run tests before traffic moves→ leads to AppSpec lifecycle hook"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SageMaker AI endpoint update→ leads to Deployment guardrails"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CodeDeploy deploys to EC2, on-premises, Lambda, and ECS with in-place or blue/green deployments.",
+        "Lambda and ECS support canary, linear, and all-at-once traffic shifting; EC2 configurations keep a minimum of healthy hosts.",
+        "AppSpec hooks run checks; CloudWatch alarms trigger automatic rollback.",
+        "For SageMaker AI endpoints, use deployment guardrails instead."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodeDeploy User Guide: What is CodeDeploy?",
+        "AWS CodeDeploy User Guide: Working with deployment configurations"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Developer Tools AWS CodeConnections",
+        "Next in Developer Tools AWS CodePipeline"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's managed deployment service for Amazon EC2, on-premises servers, AWS Lambda, and Amazon ECS: in-place and blue/green deployments, canary and linear traffic shifting, AppSpec hooks, automatic rollback, and how it compares with SageMaker AI deployment guardrails.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CodeDeploy quiz: 5 questions on AWS CodeDeploy.",
+    "AWS CodeDeploy automates deployments to Amazon EC2 instances, on-premisesOn-premisesIn data centers or offices that you run yourself, rather than in the cloud. Hybrid architectures connect on-premises systems to AWS, for example through AWS Direct Connect or a VPN.Glossary entryClose servers, AWS Lambda functions, and Amazon ECS services. It controls how a new version replaces the old one, shifts traffic gradually where the platform allows, runs your checks at each step, and rolls back automatically when a deployment fails or an alarm fires.",
+    "Choose CodeDeploy when a question asks to release a new version of an application or a Lambda- or ECS-based inference service with canary or linear traffic shifting and automatic rollback (MLA-C02 tasks 3.3.1 and 3.3.2). For models on SageMaker AI endpoints, use SageMaker AI's own deployment guardrails instead.",
+    "CodeDeploy uses a service role; EC2 instances need an instance profile and the CodeDeploy agent; revisions in S3 are encrypted; CloudTrail logs deployments.",
+    "Blue/green keeps the old version ready for fast rollback; alarm-based rollback limits the damage of a bad release.",
+    "Canary and linear shifting limit how many users see a new version at once; choose the step size and interval to match how quickly problems show up.",
+    "No extra charge for deployments to EC2, Lambda, or ECS; on-premises deployments are charged per instance update. You pay for the resources created, such as a second fleet during blue/green.",
+    "Deployment state changes go to EventBridge and SNS; CloudWatch alarms drive rollback; the console shows each lifecycle event.",
+    "Already know this topic?",
+    "Try the AWS CodeDeploy quiz: 5 questions on AWS CodeDeploy.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CodeDeploy.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "1a327369ce61206206e794c42536b52af0c57a15ddef206c0cbaf1717d592228",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-codedeploy",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Canary or linear release of a Lambda function or ECS service with rollback",
+          "AWS CodeDeploy"
+        ],
+        [
+          "Canary or linear update of a SageMaker AI endpoint with rollback",
+          "SageMaker AI deployment guardrails"
+        ],
+        [
+          "The whole release workflow with approvals",
+          "AWS CodePipeline (with a CodeDeploy deploy action)"
+        ],
+        [
+          "Create or update infrastructure",
+          "AWS CloudFormation or the AWS CDK"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CodeDeploy for MLA-C02: Study Notes · LetMeMaster"
+}
