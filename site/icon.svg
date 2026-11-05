@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SAA-C03 Study">
+  <rect width="512" height="512" rx="96" fill="#1f5fbf"/>
+  <path d="M96 150h140c14 0 20 6 20 20v196c0-14-6-20-20-20H96z" fill="#ffffff"/>
+  <path d="M416 150H276c-14 0-20 6-20 20v196c0-14 6-20 20-20h140z" fill="#dbe7fb"/>
+</svg>
