@@ -1,0 +1,249 @@
+{
+  "fetched_at": "2026-11-05T14:15:53Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon CodeGuru"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Securing ML code and containers today"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Securing ML code and containers today",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "CodeGuru Reviewer analyzes Java and Python repositories with program analysis and machine learning, and comments on pull requests with suggestions on defects, resource leaks, security issues, and hard-coded secrets.",
+        "CodeGuru Profiler collects runtime data from live applications on JVM languages and Python and shows the most expensive lines of code, CPU bottlenecks, and latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose problems, with recommendations."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Reviewer: repository associations (CodeCommit, GitHub, Bitbucket, and others), incremental reviews on pull requests, full repository scans, a detector library, and secrets detection that suggests moving secrets to AWS Secrets Manager.",
+        "Profiler: an agent in the application (on EC2, containers, or Lambda) sends profiles; flame graphs show where CPU time goes; anomaly and recommendation reports point to costly code paths."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CodeGuru",
+        "Alternatives for new pipelines"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Automated review comments on pull requests→ leads to CodeGuru Reviewer (no new associations since 2025-11-07)",
+        "Find the most CPU-expensive code at run time→ leads to CodeGuru Profiler"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Scan container images for CVEs→ leads to Amazon Inspector",
+        "Keep secrets out of code→ leads to Secrets Manager"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CodeGuru Reviewer reviews Java and Python code and finds secrets; since November 7, 2025, no new repository associations can be created.",
+        "CodeGuru Profiler finds expensive code and CPU bottlenecks in running JVM and Python applications.",
+        "To secure ML CI/CD pipelines in new designs, scan images and code with Amazon Inspector, control dependencies with CodeArtifact, and store secrets in Secrets Manager."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon CodeGuru Reviewer User Guide: What is Amazon CodeGuru Reviewer?",
+        "Amazon CodeGuru Profiler User Guide: What is Amazon CodeGuru Profiler?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Securing ML code and containers today",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon Bedrock AgentCore",
+        "Next in Machine Learning and Artificial Intelligence Amazon Comprehend"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "ML-powered developer tools: CodeGuru Reviewer for code reviews and secrets detection (closed to new repository associations since November 7, 2025) and CodeGuru Profiler for finding expensive code at run time, with the alternatives AWS suggests for securing ML pipelines.",
+    "2 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon CodeGuru quiz: 5 questions on Amazon CodeGuru.",
+    "Amazon CodeGuru is a family of MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose-powered developer tools that find problems in code:",
+    "Availability: since November 7, 2025, you can't create new repository associations in CodeGuru Reviewer; AWS documents other services with similar capabilities. Exam questions may still name CodeGuru for checking code in CI/CDCI/CD (Continuous integration and continuous delivery)Practices in which every code change is built and tested automatically (continuous integration) and kept ready to release, often deploying it automatically through a pipeline (continuous delivery or deployment).Glossary entryClose pipelines (MLA-C02 task 4.3.1), but new designs should use the alternatives below.",
+    "IAM controls access; code analyzed by Reviewer and profiling data are encrypted; repository access uses connections rather than stored credentials.",
+    "Managed services; Profiler's agent sends data asynchronously so it doesn't affect the application's availability.",
+    "Profiler's sampling has a low overhead and points to where optimization pays most, which also cuts compute cost.",
+    "Reviewer was priced by the lines of code analyzed; Profiler by sampling hours of the profiled application.",
+    "Recommendations appear in the console and in pull requests; Profiler reports anomalies; CloudTrail records APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls.",
+    "Already know this topic?",
+    "Try the Amazon CodeGuru quiz: 5 questions on Amazon CodeGuru.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon CodeGuru.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "34955055eabcf6794dcbe2fd9d690d6fca8ad9fad55d44f6592c67dcb9d2264e",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/amazon-codeguru",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Check",
+          "Service"
+        ],
+        [
+          "Vulnerabilities in container images in ECR, Lambda functions, and EC2",
+          "Amazon Inspector (including scans in CI/CD)"
+        ],
+        [
+          "Approved, versioned dependencies",
+          "AWS CodeArtifact"
+        ],
+        [
+          "Secrets kept out of code",
+          "AWS Secrets Manager"
+        ],
+        [
+          "Code quality and tests in the pipeline",
+          "AWS CodeBuild with test reports, in AWS CodePipeline"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon CodeGuru for MLA-C02: Study Notes · LetMeMaster"
+}

@@ -1,0 +1,455 @@
+{
+  "fetched_at": "2026-11-05T14:16:07Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "SageMaker AI: training and tuning models"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Three ways to bring the algorithm"
+    },
+    {
+      "level": 2,
+      "text": "Getting the data to the job"
+    },
+    {
+      "level": 2,
+      "text": "Training faster and cheaper"
+    },
+    {
+      "level": 2,
+      "text": "Hyperparameters and automatic model tuning"
+    },
+    {
+      "level": 2,
+      "text": "Overfitting, underfitting, and convergence"
+    },
+    {
+      "level": 2,
+      "text": "Experiments and evaluation"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Related tutorials"
+    },
+    {
+      "level": 3,
+      "text": "SageMaker AI: deployment, MLOps, and monitoring"
+    },
+    {
+      "level": 3,
+      "text": "SageMaker AI: preparing data and features"
+    },
+    {
+      "level": 3,
+      "text": "Amazon SageMaker AI"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Three ways to bring the algorithm",
+        "Getting the data to the job",
+        "Training faster and cheaper",
+        "Hyperparameters and automatic model tuning",
+        "Overfitting, underfitting, and convergence",
+        "Experiments and evaluation",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Managed Spot training runs on spare EC2 capacity at a large discount. Jobs can be interrupted, so save checkpoints to S3 and set a maximum wait time; SageMaker AI resumes from the last checkpoint.",
+        "Distributed training splits work across GPUsGPU (Graphics processing unit)A processor with thousands of small cores that run many calculations in parallel. GPUs speed up machine learning, graphics, and video work; EC2 instance families such as P and G include them.Glossary entryClose and instances. Data parallelism gives each GPU a copy of the model and a slice of each batch (for models that fit on one GPU but train slowly); model parallelism splits a model that is too large for one GPU's memory. SageMaker HyperPod provides resilient clusters for very large, long training runs.",
+        "Early stopping ends training when the validation metric stops improving.",
+        "Choose the instance to match the work: GPU instances for deep learning, CPU instances for most tree-based models, AWS Trainium (Trn) instances for cost-efficient deep learning training."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Search strategies: Bayesian (learns from earlier jobs; a good default), random, grid, and Hyperband (stops weak configurations early, which saves time and cost on long jobs).",
+        "Early stopping of tuning jobs that are clearly worse than the best so far.",
+        "Warm start reuses what an earlier tuning job learned.",
+        "Set ranges sensibly (logarithmic scaling for learning rates) and limit the total and parallel jobs to control cost."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Managed MLflow on SageMaker AI tracks experiments: parameters, metrics, and artifacts of each run, so results are reproducible and comparable (task 2.3.1). The Model Registry records the versions that you decide to keep.",
+        "Classification metrics: accuracy (misleading on imbalanced classes), precision (of the predicted positives, how many are right), recall (of the real positives, how many were found), F1, AUC-ROC, and the confusion matrix. Choose recall when missing a positive is costly (fraud, disease), precision when a false alarm is costly.",
+        "Regression metrics: RMSE (penalizes large errors), MAE, and R².",
+        "Text generation metrics: BLEU (translation, n-gram overlap with a reference), ROUGE (summaries, recall of reference n-grams), BERTScore and semantic similarity (meaning, not exact words), plus human evaluation or LLM-as-a-judge.",
+        "SageMaker Clarify explains predictions with feature attributions (SHAP) and measures bias (task 2.3.4)."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "The job runs with an execution role that needs only the S3 locations, ECR images, and KMS keys it uses.",
+        "Run jobs in your VPC (private subnetsSubnetA range of IP addresses in a VPC, inside one Availability Zone. A subnet is public when its route table sends internet traffic to an internet gateway, and private when it does not.Glossary entryClose with S3 and other VPC endpointsVPC endpointA private connection from a VPC to an AWS service or another endpoint service without crossing the internet. Gateway endpoints, for Amazon S3 and DynamoDB, are route table targets; interface endpoints are network interfaces that use AWS PrivateLink.Glossary entryClose) to keep traffic private; turn on network isolation so the container can make no outbound calls, and inter-container traffic encryption for distributed jobs.",
+        "Encrypt the training volumes and the output artifact with KMS keys."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "The data",
+        "Speed and cost",
+        "Quality"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Huge dataset, start without downloading→ leads to Fast File mode",
+        "Read throughput limits each epoch→ leads to FSx for Lustre",
+        "Each instance gets part of the data→ leads to ShardedByS3Key"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Cut training cost, interruptions are fine→ leads to Managed Spot training with checkpoints",
+        "Model too big for one GPU→ leads to Model parallelism",
+        "Training too slow on one GPU→ leads to Data parallelism"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Best hyperparameters automatically→ leads to Automatic model tuning (Bayesian or Hyperband)",
+        "Validation worse than training→ leads to Overfitting: regularize, early stop, more data",
+        "Loss is NaN or flat→ leads to Lower learning rate, Debugger rules",
+        "Compare runs reproducibly→ leads to Managed MLflow"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Built-in algorithms, script mode, or your own container: choose by how much code and control you need.",
+        "File mode downloads, Fast File mode streams from S3, FSx for Lustre gives the highest throughput.",
+        "Managed Spot training plus checkpoints is the main training cost saver; distributed training is the main speed lever.",
+        "Automatic model tuning searches hyperparameters by an objective metric; Bayesian is the default choice, Hyperband saves time.",
+        "Recognize overfitting, underfitting, convergence problems, and catastrophic forgetting, and their fixes.",
+        "Track experiments in managed MLflow, register versions in the Model Registry, and choose metrics that match the business cost of errors."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI Developer Guide: Built-in algorithms and pretrained models",
+        "Amazon SageMaker AI Developer Guide: Setting up training jobs to access datasets"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI Developer Guide: Managed Spot Training",
+        "Amazon SageMaker AI Developer Guide: Distributed training",
+        "Amazon SageMaker AI Developer Guide: Automatic model tuning",
+        "Amazon SageMaker AI Developer Guide: Stop training jobs early",
+        "Amazon SageMaker AI Developer Guide: Amazon SageMaker Debugger",
+        "Amazon SageMaker AI Developer Guide: Managed MLflow on Amazon SageMaker AI",
+        "Amazon SageMaker AI Developer Guide: SageMaker JumpStart pretrained models",
+        "Amazon SageMaker AI Developer Guide: Model explainability"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Three ways to bring the algorithm",
+        "Getting the data to the job",
+        "Training faster and cheaper",
+        "Hyperparameters and automatic model tuning",
+        "Overfitting, underfitting, and convergence",
+        "Experiments and evaluation",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence SageMaker AI: preparing data and features",
+        "Next in Machine Learning and Artificial Intelligence Amazon Textract"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI · 8 min read SageMaker AI: deployment, MLOps, and monitoring The MLA-C02 deep dive on running models with Amazon SageMaker AI: choosing real-time, serverless, asynchronous, or batch inference, multi-model and multi-container endpoints, safe rollouts with deployment guardrails and shadow tests, autoscaling, endpoints in a VPC, Pipelines and the Model Registry, and monitoring for drift.",
+        "Amazon SageMaker AI · 7 min read SageMaker AI: preparing data and features The MLA-C02 deep dive on data preparation in Amazon SageMaker AI: Data Wrangler in SageMaker Canvas, Processing jobs, Feature Store online and offline stores, labeling with Ground Truth, measuring bias with Clarify, feature engineering techniques, class imbalance, and data splits.",
+        "Amazon SageMaker AI · 7 min read Amazon SageMaker AI AWS's fully managed service to build, train, and deploy machine learning models: the 2024 rename, training and managed Spot training, built-in algorithms and JumpStart, the four inference options, autoscaling, Canvas, Feature Store, Pipelines, security, cost, and when to use the AI services instead."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "The MLA-C02 deep dive on training with Amazon SageMaker AI: built-in algorithms, script mode and your own containers, training data input modes, managed Spot training with checkpoints, distributed training, automatic model tuning, overfitting and convergence, experiments with MLflow, Debugger, and evaluation metrics.",
+    "8 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon SageMaker AI quiz: 9 questions on Amazon SageMaker AI.",
+    "This deep dive covers how Amazon SageMaker AI trains and tunes models, at the depth of the MLA-C02 exam (Domain 2, tasks 2.2 and 2.3). For what SageMaker AI is and how it compares with other services, start with the Amazon SageMaker AI tutorial.",
+    "A training job runs your algorithm in a container on instances that SageMaker AI starts for the job and stops when it ends. You choose the algorithm or script, the instance type and count, the input data in Amazon S3 (or Amazon EFS or FSx for Lustre), and the hyperparameters. The job writes the model artifact to S3, and its logs and metrics to Amazon CloudWatch. You pay only while the job runs.",
+    "SageMaker JumpStart adds pretrained models and solution templates that you can fine-tune and deploy with a few calls. For foundation models with no infrastructure at all, see Amazon Bedrock.",
+    "The data must be in the same RegionAWS RegionA separate geographic area where AWS runs its services, such as us-east-1 in Northern Virginia, made up of several Availability Zones. Most resources live in one Region; you choose Regions for latency, data residency, and the services you need.Glossary entryClose as the job. For distributed training, ShardedByS3Key gives each instance a different part of the data. Columnar formatsColumnar storageStoring data column by column instead of row by row, so that analytical queries read only the columns they need, and similar values compress well. Amazon Redshift and the Parquet and ORC file formats store data this way.Glossary entryClose such as ParquetApache ParquetAn open-source columnar file format for analytics that stores compressed columns along with the schema. Querying Parquet files with Amazon Athena scans less data than CSV or JSON, so it is faster and cheaper.Glossary entryClose, and splitting data into many reasonably sized files, speed up reading.",
+    "Hyperparameters are set before training: for example the learning rate, batch size, number of epochs (passes over the data), and steps, tree depth, or regularization strength. Too high a learning rate makes the loss jump or diverge; too low makes training slow.",
+    "Automatic model tuning (AMT) runs many training jobs with different hyperparameter values and keeps the best by an objective metric that you name, such as validation AUC:",
+    "Amazon SageMaker Debugger watches tensors during training and applies rules that flag problems such as vanishing gradients, overfitting, or a loss that has stopped decreasing, and can stop the job. Its profiler shows whether CPU, GPU, or I/O is the bottleneck.",
+    "Combining models (task 2.2.6) can improve accuracy (ensembles that average or stack several models) or reduce cost (a cheap model handles easy cases and passes hard ones to a bigger model).",
+    "Checkpoints let interrupted Spot jobs, and long runs, resume instead of starting again. HyperPod replaces faulty nodes in large training clusters.",
+    "Use Fast File mode or FSx for Lustre when reading data limits speed, distributed training when one instance is too slow, and the profiler to find bottlenecks. Training jobs are limited by account quotas on instance types; request increases ahead of large runs.",
+    "You pay per instance second while the job runs. Pay less with managed Spot training, right-sized instances, early stopping, Hyperband and early stopping in tuning, limits on parallel tuning jobs, and SageMaker AI Savings Plans for steady use.",
+    "CloudWatch Logs hold the training logs, CloudWatch metrics show the algorithm's metrics and instance utilization, EventBridge reports job state changes, and CloudTrail records the APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls.",
+    "Already know this topic?",
+    "Try the Amazon SageMaker AI quiz: 9 questions on Amazon SageMaker AI.",
+    "Sign in to test\n\t\tyour knowledge with 9 questions on Amazon SageMaker AI.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Amazon SageMaker AI · 8 min read",
+    "The MLA-C02 deep dive on running models with Amazon SageMaker AI: choosing real-time, serverless, asynchronous, or batch inference, multi-model and multi-container endpoints, safe rollouts with deployment guardrails and shadow tests, autoscaling, endpoints in a VPC, Pipelines and the Model Registry, and monitoring for drift.",
+    "Amazon SageMaker AI · 7 min read",
+    "The MLA-C02 deep dive on data preparation in Amazon SageMaker AI: Data Wrangler in SageMaker Canvas, Processing jobs, Feature Store online and offline stores, labeling with Ground Truth, measuring bias with Clarify, feature engineering techniques, class imbalance, and data splits.",
+    "Amazon SageMaker AI · 7 min read",
+    "AWS's fully managed service to build, train, and deploy machine learning models: the 2024 rename, training and managed Spot training, built-in algorithms and JumpStart, the four inference options, autoscaling, Canvas, Feature Store, Pipelines, security, cost, and when to use the AI services instead.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "73d3dcd9574bbd8360f0cfc14d06c0681045fab13d07a53c77390a683f15be62",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/sagemaker-ai-training-and-tuning",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Option",
+          "You provide",
+          "Choose it when"
+        ],
+        [
+          "Built-in algorithm",
+          "Data and hyperparameters",
+          "A common problem fits a ready algorithm: XGBoost for tabular data, Linear Learner, K-Means, Random Cut Forest for anomalies, DeepAR for time series forecasts, BlazingText for text, image classification and object detection"
+        ],
+        [
+          "Script mode",
+          "Your training script, run in a prebuilt framework container (PyTorch, TensorFlow, scikit-learn, Hugging Face, XGBoost)",
+          "You write the model code but don't want to build or maintain containers"
+        ],
+        [
+          "Your own container",
+          "A Docker image in Amazon ECR",
+          "You need libraries, languages, or a runtime that the prebuilt containers don't have"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Input",
+          "How it works",
+          "Choose it for"
+        ],
+        [
+          "File mode (default)",
+          "Downloads the whole dataset to the instance before training starts",
+          "Small to medium datasets; the instance needs room for all of it"
+        ],
+        [
+          "Fast File mode",
+          "Shows S3 objects as files and streams them as the script reads them; training starts at once",
+          "Large datasets in S3, without waiting for a download or sizing the disk for it"
+        ],
+        [
+          "Pipe mode",
+          "Streams data from S3 through a pipe, read once in order",
+          "Older streaming jobs; largely replaced by Fast File mode"
+        ],
+        [
+          "FSx for Lustre",
+          "Mounts a high-throughput file system, often linked to S3",
+          "Repeated training on large data where read throughput limits speed; the job runs in your VPC"
+        ],
+        [
+          "Amazon EFS",
+          "Mounts data already in EFS",
+          "Data that lives in a shared file system; the job runs in your VPC"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Symptom",
+          "Likely cause",
+          "Fixes"
+        ],
+        [
+          "Training error low, validation error high",
+          "Overfitting",
+          "More data or augmentation, regularization (L1, L2, dropout), simpler model, early stopping, fewer features"
+        ],
+        [
+          "Both errors high",
+          "Underfitting",
+          "More capable model, more features, train longer, less regularization"
+        ],
+        [
+          "Loss doesn't decrease, or becomes NaN",
+          "Convergence problem",
+          "Lower the learning rate, normalize inputs, check labels, fix vanishing or exploding gradients"
+        ],
+        [
+          "A fine-tuned model loses general ability",
+          "Catastrophic forgetting",
+          "Mix general data into fine-tuning, parameter-efficient fine-tuning (such as LoRA), fewer epochs, a lower learning rate"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Tabular data, strong baseline, little code",
+          "XGBoost built-in algorithm, or AutoML in SageMaker Canvas"
+        ],
+        [
+          "Your own PyTorch or TensorFlow code, no container work",
+          "Script mode"
+        ],
+        [
+          "A foundation model adapted with no infrastructure",
+          "Amazon Bedrock customization"
+        ],
+        [
+          "Find good hyperparameters automatically",
+          "Automatic model tuning"
+        ],
+        [
+          "Spot problems inside training as it runs",
+          "SageMaker Debugger"
+        ]
+      ]
+    }
+  ],
+  "title": "SageMaker AI: training and tuning models for MLA-C02: Study Notes · LetMeMaster"
+}

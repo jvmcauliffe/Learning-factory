@@ -1,0 +1,360 @@
+{
+  "fetched_at": "2026-11-05T14:15:51Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon Bedrock AgentCore"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "The services"
+    },
+    {
+      "level": 2,
+      "text": "Runtime in more detail"
+    },
+    {
+      "level": 2,
+      "text": "AgentCore or Amazon Bedrock Agents?"
+    },
+    {
+      "level": 2,
+      "text": "Building an agent system on AgentCore"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "The services",
+        "Runtime in more detail",
+        "AgentCore or Amazon Bedrock Agents?",
+        "Building an agent system on AgentCore",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Session isolation: one microVM per user session prevents data leaking between sessions; when a session ends, the microVM is terminated and its memory sanitized.",
+        "Long sessions: sessions on microVMs run for up to 8 hours, for complex reasoning and asynchronous work; Runtime also offers instance-based compute in your account for multi-day sessions and GPUGPU (Graphics processing unit)A processor with thousands of small cores that run many calculations in parallel. GPUs speed up machine learning, graphics, and video work; EC2 instance families such as P and G include them.Glossary entryClose workloads.",
+        "Large inputs: payloads up to 100 MB, so agents can handle images, audio, video, and large datasets.",
+        "Protocols: HTTPHTTP (Hypertext Transfer Protocol)The protocol that web browsers and APIs use to send requests, such as GET and POST, and receive responses. On its own it is not encrypted; HTTPS adds TLS.Glossary entryClose and WebSocket streaming, MCP for tools, and Agent-to-Agent (A2A) for agents that talk to other agents.",
+        "Versions and endpoints: each deployment creates an immutable version, and named endpoints point to versions, so you can promote a tested version and roll back by moving the endpoint (task 3.3.8)."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "The agent code (for example a Strands or LangGraph agent) is packaged as a container and deployed to Runtime, often from a CI/CDCI/CD (Continuous integration and continuous delivery)Practices in which every code change is built and tested automatically (continuous integration) and kept ready to release, often deploying it automatically through a pipeline (continuous delivery or deployment).Glossary entryClose pipeline that creates a new version and moves the endpoint after tests pass.",
+        "Users sign in through the company identity provider; Identity checks the token and lets the agent call SaaS APIs as that user.",
+        "Gateway exposes internal APIs and Lambda functions as MCP tools, and Policy limits which tools and actions each agent may use.",
+        "Memory keeps the conversation and long-term facts about each user.",
+        "Observability sends traces and metrics to CloudWatch, and Evaluations score quality on sample sessions."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Session isolation in separate microVMs; inbound authentication through your identity provider or IAM; outbound credentials managed by Identity instead of being stored in agent code.",
+        "Least privilegeLeast privilegeGiving each person or system only the permissions it needs for its task, and no more. In IAM, this means starting with no access and allowing specific actions on specific resources.Glossary entryClose: the runtime's execution role and Gateway targets get only the permissions their tools need; Policy adds deterministic limits on tool calls.",
+        "Guardrails from Amazon Bedrock can filter model inputs and outputs inside the agent; CloudTrail records the AgentCore API calls."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Run agents in production",
+        "Tools and access",
+        "State and quality"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "One user's data must never reach another session→ leads to Runtime microVM per session",
+        "Agent works for hours on a task→ leads to Runtime long sessions",
+        "Roll back a bad agent release→ leads to Runtime versions and endpoints"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Company APIs and Lambda functions as agent tools→ leads to Gateway (MCP)",
+        "Agent calls Slack or GitHub as the user→ leads to Identity outbound OAuth",
+        "Agents may only call approved actions→ leads to Policy on Gateway tool calls"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Remember a user's preferences across sessions→ leads to Long-term Memory",
+        "Find which tool call failed→ leads to Observability traces",
+        "Score agent answers before release→ leads to Evaluations"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AgentCore runs agents from any framework and model in production, with no infrastructure to manage.",
+        "Runtime isolates each session in its own microVM, supports sessions up to 8 hours and 100 MB payloads, and versions agents behind endpoints.",
+        "Memory keeps short-term and long-term state; Gateway turns APIs and Lambda functions into MCP tools; Identity and Policy control what agents can reach and do.",
+        "Observability traces every step in CloudWatch, and Evaluations measure quality.",
+        "Amazon Bedrock Agents (now Agents Classic) is closed to new customers since July 30, 2026; build new agents on AgentCore, with the managed agent harness for a low-code start."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Bedrock User Guide: Amazon Bedrock Agents Classic maintenance mode",
+        "Amazon Bedrock AgentCore Developer Guide: Overview"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Bedrock AgentCore Developer Guide: Host agent or tools with AgentCore Runtime",
+        "Amazon Bedrock AgentCore Developer Guide: Add memory to your AgentCore agent",
+        "Amazon Bedrock AgentCore Developer Guide: AgentCore Gateway",
+        "Amazon Bedrock AgentCore Developer Guide: AgentCore Identity",
+        "Amazon Bedrock AgentCore Developer Guide: Policy in AgentCore",
+        "Amazon Bedrock AgentCore Developer Guide: AgentCore Code Interpreter",
+        "Amazon Bedrock AgentCore Developer Guide: AgentCore Browser",
+        "Amazon Bedrock AgentCore Developer Guide: Observability, audit logging, and tracing for your agents",
+        "Amazon Bedrock AgentCore Developer Guide: Evaluate agent performance with AgentCore Evaluations"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "The services",
+        "Runtime in more detail",
+        "AgentCore or Amazon Bedrock Agents?",
+        "Building an agent system on AgentCore",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon Bedrock",
+        "Next in Machine Learning and Artificial Intelligence Amazon CodeGuru"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's platform for running AI agents in production with any framework and model: Runtime with isolated sessions, Memory, Gateway for turning APIs into MCP tools, Identity, Policy, Code Interpreter and Browser tools, Observability, Evaluations, versioning, security, cost, and how it differs from Amazon Bedrock Agents.",
+    "6 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon Bedrock AgentCore quiz: 5 questions on Amazon Bedrock AgentCore.",
+    "Amazon Bedrock AgentCore is a platform for deploying and operating AI agents securely at scale, with any agent framework (such as Strands Agents, LangGraph, CrewAI, or LlamaIndex) and any foundation model, in or outside Amazon Bedrock. It provides the pieces that an agent needs in production, without infrastructure to manage: a serverless runtime with isolated sessions, memory, a gateway to tools, identity, policy controls, built-in tools, observability, and evaluations. The services work together or on their own.",
+    "Choose AgentCore when a question is about running agents in production: isolating each user's session, keeping state across turns and sessions, exposing company APIsAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose to agents as tools, controlling what agents may do, or tracing and evaluating agent behaviour (MLA-C02 tasks 3.1.6, 3.2.9, 3.2.11, 3.3.8, 4.1.5, and 4.2.8).",
+    "A typical production design (task 3.2.11):",
+    "Runtime is serverless and scales sessions on demand; persistent filesystems and Memory let agents resume work. Design tools to be idempotentIdempotencyAn operation is idempotent when repeating it has the same effect as doing it once, such as setting a value rather than adding to it. It makes retries safe; many AWS APIs accept a client token for this.Glossary entryClose and add retries for failed tool calls.",
+    "Fast cold startsCold startThe extra delay when AWS Lambda must create a new execution environment, load the code, and run its initialization before handling a request. Later requests reuse the environment and are faster; provisioned concurrency avoids cold starts.Glossary entryClose for real-time chats, streaming responses, and long sessions for slower reasoning. Watch for tool failures, coordination failures between agents, and truncated streaming in Observability traces (task 4.1.5).",
+    "Pricing is consumption-based with no upfront commitment. Runtime charges for resources actually used, and CPU is typically not billed while the agent waits on a model or I/O. Model tokens are billed separately by the model provider (for example Amazon Bedrock), so monitor token usage per agent and cache or shorten prompts (tasks 4.2.8 and 4.2.10).",
+    "AgentCore Observability shows sessions, traces, and spans in CloudWatch, with metrics such as latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose, errors, and token use; the OpenTelemetry format also works with other observability tools. Use AWS X-Ray and CloudWatch for the AWS services that the agent's tools call (task 4.2.2).",
+    "Already know this topic?",
+    "Try the Amazon Bedrock AgentCore quiz: 5 questions on Amazon Bedrock AgentCore.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon Bedrock AgentCore.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "9d9f595c120ef81038b101b701311a7affe1f2c2f0af9d01d9af1abc1e14cda0",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/amazon-bedrock-agentcore",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Service",
+          "What it does",
+          "Answers the requirement"
+        ],
+        [
+          "Runtime",
+          "Hosts agents and tools serverlessly; each user session runs in its own microVM with isolated CPU, memory, and filesystem, wiped when the session ends",
+          "Isolation between users, long-running or asynchronous agents, any framework"
+        ],
+        [
+          "Memory",
+          "Short-term memory of turns within a session, and long-term memory that extracts preferences, facts, and summaries across sessions",
+          "Agents that remember context and users (agent state management)"
+        ],
+        [
+          "Gateway",
+          "Turns APIs, Lambda functions, and existing services into Model Context Protocol (MCP) tools, and connects to existing MCP servers",
+          "Give agents access to company tools without rewriting them"
+        ],
+        [
+          "Identity",
+          "Authenticates users into agents through existing identity providers (such as Amazon Cognito, Okta, or Microsoft Entra ID), and lets agents call third-party services with OAuth or API keys on a user's behalf",
+          "Agents act with the right user's permissions"
+        ],
+        [
+          "Policy",
+          "Deterministic rules, written in natural language or a Cedar-compatible policy language, checked on every tool call through Gateway",
+          "Agents stay within business rules and allowed actions"
+        ],
+        [
+          "Code Interpreter",
+          "An isolated sandbox where agents run code (Python, JavaScript, TypeScript)",
+          "Calculations and data analysis inside the agent"
+        ],
+        [
+          "Browser",
+          "A managed cloud browser that agents use to navigate websites and fill forms",
+          "Tasks in web applications without an API"
+        ],
+        [
+          "Observability",
+          "Traces each step: reasoning, tool calls, and model interactions, in OpenTelemetry format, shown in Amazon CloudWatch",
+          "Debug failures and bottlenecks, audit agent decisions"
+        ],
+        [
+          "Evaluations",
+          "Automated assessment of how well agents and tools complete tasks, before and after deployment",
+          "Measure agent quality over time"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "An agent declared by configuration (model, tools, instructions), little code",
+          "AgentCore's managed agent harness"
+        ],
+        [
+          "An existing agent built with Bedrock action groups",
+          "Amazon Bedrock Agents Classic: closed to new customers since July 30, 2026; AWS recommends migrating to AgentCore"
+        ],
+        [
+          "Your own agent code in any framework or model, run in production with isolation, memory, and tracing",
+          "Amazon Bedrock AgentCore"
+        ],
+        [
+          "A single model call with retrieval, no multi-step actions",
+          "A Bedrock knowledge base and the Converse API"
+        ],
+        [
+          "A custom model hosted on instances you choose",
+          "Amazon SageMaker AI"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon Bedrock AgentCore for MLA-C02: Study Notes · LetMeMaster"
+}

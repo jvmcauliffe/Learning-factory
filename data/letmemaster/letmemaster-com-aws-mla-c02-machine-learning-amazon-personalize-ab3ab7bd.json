@@ -1,0 +1,248 @@
+{
+  "fetched_at": "2026-11-05T14:16:01Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon Personalize"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Dataset group with datasets: item interactions (the core data), items (metadata such as category or price), users (metadata such as age band), and actions for next-best-action use cases. Import historical data in bulk from S3 and record new events in real time with an event tracker (PutEvents).",
+        "Domain dataset groups (for example ecommerce or video on demand) offer recommenders optimized for common use cases. Custom dataset groups let you choose a recipe, such as User-Personalization-v2, Similar-Items, Personalized-Ranking-v2, or Trending-Now, and train a solution.",
+        "Serving: a campaign (or a recommender) serves real-time recommendations through an APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose; batch inference jobs produce recommendations for many users at once (for example for emails); batch segment jobs produce user segments.",
+        "Filters exclude or include items by rules, such as removing items a user has already bought or showing only items in stock.",
+        "Cold startCold startThe extra delay when AWS Lambda must create a new execution environment, load the code, and run its initialization before handling a request. Later requests reuse the environment and are faster; provisioned concurrency avoids cold starts.Glossary entryClose: new items and users are handled through metadata and exploration of new items, so they can be recommended before they have many interactions.",
+        "Re-ranking search results: Personalize can re-rank results from Amazon OpenSearch Service for each user."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to Personalize",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Recommended for you, real time→ leads to Campaign or recommender",
+        "Recommendations in tomorrow's emails→ leads to Batch inference job",
+        "Users likely to buy a category→ leads to Batch segment job",
+        "Hide items already purchased→ leads to Filter",
+        "Learn from clicks as they happen→ leads to Event tracker (PutEvents)"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Own recommender algorithm with full control→ leads to SageMaker AI"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Personalize turns interaction data into real-time and batch recommendations, rankings, and segments.",
+        "Datasets: interactions, items, and users; event trackers stream new interactions.",
+        "Use domain recommenders for common cases, or custom recipes and solutions; serve with campaigns or batch jobs.",
+        "Filters apply business rules; metadata helps with cold start."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Personalize Developer Guide: What is Amazon Personalize?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence Amazon Lex",
+        "Next in Machine Learning and Artificial Intelligence Amazon Polly"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "A managed service for real-time and batch recommendations and user segments: datasets and event tracking, domain recommenders and custom recipes, solutions, campaigns, batch jobs, filters, cold start, security, and cost.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon Personalize quiz: 5 questions on Amazon Personalize.",
+    "Amazon Personalize is a fully managed machine learningML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose service that uses your data to generate item recommendations for users (such as \"Recommended for you\", \"Frequently bought together\", or \"More like this\"), re-rank lists for each user, and create user segments for marketing. It trains models on item interaction data (clicks, views, purchases), optionally with item and user metadata, and serves results in real time or in batches. No ML expertise is needed to start.",
+    "Choose Personalize when a question asks for personalized recommendations or rankings without building a recommender model yourself (MLA-C02 tasks 2.1.4 and 2.1.8). Build your own model in SageMaker AI only when you need algorithms or control that Personalize doesn't offer.",
+    "IAM controls access; datasets and models are encrypted with KMS keys; Personalize reads data from S3 through a role you grant; CloudTrail logs API calls.",
+    "A managed service; retrain solution versions regularly, or use automatic training, so recommendations follow changing behaviour.",
+    "Campaigns have a minimum provisioned throughput (transactions per second) and scale above it; use batch jobs for bulk outputs instead of many real-time calls.",
+    "Pay for data ingested, training hours, and recommendation requests (real-time throughput or batch volume); there is no minimum fee. Keep campaign minimum throughput low and use batch for offline work.",
+    "CloudWatch metrics for campaigns and recommenders; offline metrics (such as precision and coverage) for each solution version to compare models; A/B test recommendations with your own tools or partners.",
+    "Already know this topic?",
+    "Try the Amazon Personalize quiz: 5 questions on Amazon Personalize.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon Personalize.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "adae850b37c8df5a506d91b0f506aba69ef9dc1908a7d40ecea286dce3bca68f",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/amazon-personalize",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Product or content recommendations with no ML team",
+          "Amazon Personalize"
+        ],
+        [
+          "A custom recommender algorithm you train and host",
+          "Amazon SageMaker AI"
+        ],
+        [
+          "Semantic search over documents",
+          "OpenSearch Service or a Bedrock knowledge base"
+        ],
+        [
+          "Generate product descriptions",
+          "Amazon Bedrock"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon Personalize for MLA-C02: Study Notes · LetMeMaster"
+}

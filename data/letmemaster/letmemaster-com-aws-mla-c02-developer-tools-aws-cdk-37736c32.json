@@ -1,0 +1,246 @@
+{
+  "fetched_at": "2026-11-05T14:15:35Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CDK"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Constructs: the building blocks. L1 constructs map one to one to CloudFormation resources; L2 constructs add defaults and helper methods (for example granting a role access to a bucket with one call); L3 constructs (patterns) combine several resources into a common architecture.",
+        "Stacks and apps: an app contains one or more stacks, each deployed as a CloudFormation stack, to one account and RegionAWS RegionA separate geographic area where AWS runs its services, such as us-east-1 in Northern Virginia, made up of several Availability Zones. Most resources live in one Region; you choose Regions for latency, data residency, and the services you need.Glossary entryClose.",
+        "Commands: cdk synth (generate templates), cdk diff (show changes), cdk deploy, and cdk destroy. An account is bootstrapped once with the resources the CDK needs to deploy.",
+        "Sharing values between stacks: pass a resource from one stack to another in code, and the CDK creates the CloudFormation exports and references (task 3.2.2: communication between stacks).",
+        "CDK Pipelines: a construct that builds a self-updating CodePipeline pipeline to deploy your stacks to several stages and accounts."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to the CDK",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Define the SageMaker endpoint in Python code→ leads to CDK stack",
+        "Reuse a standard ML environment across teams→ leads to L3 construct (pattern)",
+        "Pass a bucket from one stack to another→ leads to Cross-stack reference in code",
+        "Self-updating deployment pipeline→ leads to CDK Pipelines"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Plain YAML template→ leads to CloudFormation",
+        "Same template in 20 accounts→ leads to StackSets"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "The CDK defines infrastructure in TypeScript, Python, Java, C#, Go, or JavaScript and synthesizes CloudFormation templates.",
+        "Constructs come in three levels; L2 and L3 add defaults and patterns.",
+        "Stacks share values through code; CDK Pipelines deploys stacks across stages.",
+        "Deployments get CloudFormation's rollback; there is no charge for the CDK itself."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CDK v2 Developer Guide: What is the AWS CDK?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Next in Developer Tools AWS CodeArtifact"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "The AWS Cloud Development Kit: defining infrastructure as code in TypeScript, Python, Java, C#, or Go, constructs, stacks and apps, synthesis to CloudFormation, deploying ML infrastructure, sharing values between stacks, and CDK Pipelines.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CDK quiz: 5 questions on AWS CDK.",
+    "The AWS Cloud Development Kit (AWS CDK) is an open-source framework for defining infrastructure as codeIaC (Infrastructure as code)Defining infrastructure, such as networks, servers, and permissions, in text files that are versioned and deployed automatically, instead of setting it up by hand. AWS CloudFormation and the AWS CDK are AWS tools for it.Glossary entryClose in programming languages: TypeScript, JavaScript, Python, Java, C#, and Go. You write classes and objects for your resources, and the CDK synthesizes them into AWS CloudFormation templates, which CloudFormation then deploys. You get loops, conditions, functions, types, and tests from your language, plus higher-level building blocks that apply good defaults.",
+    "Choose the CDK when a question asks to define and deploy MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose infrastructure as code with a general-purpose language: SageMaker AI endpoints, pipelines, roles, buckets, and networking, repeatable across environments, often from a CI/CDCI/CD (Continuous integration and continuous delivery)Practices in which every code change is built and tested automatically (continuous integration) and kept ready to release, often deploying it automatically through a pipeline (continuous delivery or deployment).Glossary entryClose pipeline (MLA-C02 tasks 3.2.2 and 3.3.10).",
+    "L2 constructs apply secure defaults (for example encryption and blocked public access for buckets) and grant methods create least-privilegeLeast privilegeGiving each person or system only the permissions it needs for its task, and no more. In IAM, this means starting with no access and allowing specific actions on specific resources.Glossary entryClose policies; deployments use the bootstrap roles; review IAM changes with cdk diff before deploying.",
+    "Because deployment is CloudFormation, failed updates roll back, and the same code recreates environments in another Region for disaster recoveryDR (Disaster recovery)Preparing for and recovering from events that take a workload down, such as a Regional outage or deleted data. AWS describes four strategies, from cheapest and slowest to costliest and fastest: backup and restore, pilot light, warm standby, and multi-site active/active.Glossary entryClose.",
+    "Synthesis runs locally or in CodeBuild; splitting large apps into several stacks keeps deployments manageable.",
+    "The CDK has no charge; you pay for the resources you deploy. Tags applied in code help track costs per project.",
+    "Deployments appear as CloudFormation stack events; CloudTrail records the APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls; drift detection finds resources changed outside the code.",
+    "Already know this topic?",
+    "Try the AWS CDK quiz: 5 questions on AWS CDK.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CDK.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "e26c805864bf15f8115e43b40e37bba45ba588c591c9aa06c9a10068e8b59c91",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-cdk",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Infrastructure as code in Python or TypeScript with reusable constructs",
+          "AWS CDK"
+        ],
+        [
+          "Infrastructure as code in YAML or JSONJSON (JavaScript Object Notation)A text format for structured data made of name-and-value pairs and lists, such as {\"bucket\": \"logs\"}. IAM policies, most AWS API responses, and many CloudFormation templates are written in JSON.Glossary entryClose templates",
+          "AWS CloudFormation directly"
+        ],
+        [
+          "Deploy one template to many accounts and Regions",
+          "CloudFormation StackSets"
+        ],
+        [
+          "Let teams launch only approved infrastructure",
+          "AWS Service Catalog"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CDK for MLA-C02: Study Notes · LetMeMaster"
+}

@@ -1,0 +1,259 @@
+{
+  "fetched_at": "2026-11-05T14:15:31Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon MWAA (Managed Workflows for Apache Airflow)"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Application Integration"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "DAGs, plugins, and requirements live in S3; MWAA picks up changes to the DAG folder.",
+        "Operators and sensors call AWS services, including Amazon SageMaker AI (training, processing, endpoints), AWS Glue, Amazon EMR, AWS Batch, Amazon Athena, Amazon Redshift, AWS Lambda, Amazon ECS on Fargate, and Amazon EKS, as well as hundreds of community operators for other systems.",
+        "Automatic scaling of workers between a minimum and maximum you set; multiple schedulers for resilience.",
+        "Environment classes set the size of the scheduler and web server for the number of DAGs you run.",
+        "Access modes: the Airflow UI through a public endpoint on the internet or a private endpoint inside your VPC; in both cases access is controlled by IAM policies."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to MWAA",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Move existing Airflow DAGs to AWS→ leads to Amazon MWAA",
+        "Airflow UI only inside the VPC→ leads to Private network access mode",
+        "Many parallel tasks at month end→ leads to Raise the maximum workers"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Serverless, visual, AWS-native steps→ leads to Step Functions",
+        "SageMaker steps with model lineage→ leads to SageMaker Pipelines",
+        "Run one job every hour→ leads to EventBridge Scheduler"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MWAA runs Apache Airflow for you: DAGs in S3, autoscaling workers, schedulers, and the web server in your VPC.",
+        "Choose it for existing Airflow skills and DAGs, and for Airflow's operators across AWS and other systems.",
+        "Secure it with an execution role, private subnets, KMS, Secrets Manager, and private access mode.",
+        "It is billed by the hour while the environment exists; Step Functions or SageMaker Pipelines can be cheaper for simpler or ML-only workflows."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon MWAA Serverless User Guide: What is Amazon MWAA Serverless?",
+        "Amazon MWAA User Guide: What is Amazon Managed Workflows for Apache Airflow?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon MWAA User Guide: Configuring Amazon MWAA worker automatic scaling",
+        "Amazon MWAA User Guide: About networking on Amazon MWAA"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Application Integration Amazon EventBridge",
+        "Next in Application Integration Amazon SNS"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Managed Apache Airflow for orchestrating data and ML pipelines: DAGs in Amazon S3, schedulers and autoscaling workers, operators for AWS services, VPC networking and access modes, security, monitoring, cost, and how it compares with Step Functions and SageMaker Pipelines.",
+    "4 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon Managed Workflows for Apache Airflow (Amazon MWAA) quiz: 5 questions on Amazon Managed Workflows for Apache Airflow (Amazon MWAA).",
+    "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) is a managed service for Apache Airflow, the open-source tool for creating, scheduling, and monitoring workflows written in Python. Each workflow is a DAG (directed acyclic graph) of tasks. You put DAGs in an Amazon S3 bucket, and MWAA runs the Airflow scheduler, workers that scale automatically, the web server, and the metadata database for you, inside a VPC, with AWS security built in.",
+    "Choose MWAA when a question describes existing Airflow DAGs, a team that knows Airflow, or pipelines that orchestrate many systems through Airflow operators and want the Airflow ecosystem, without running Airflow servers (MLA-C02 tasks 3.2.2 and 3.3).",
+    "The scheduler and workers run in private subnetsSubnetA range of IP addresses in a VPC, inside one Availability Zone. A subnet is public when its route table sends internet traffic to an internet gateway, and private when it does not.Glossary entryClose of your VPC and use an execution role for AWS access; data and the environment are encrypted with KMS (AWS owned or customer managed keysCustomer managed keyA KMS key that you create, own, and manage: you control its key policy, rotation, and deletion. AWS managed keys, in contrast, are created and managed for you by an AWS service.Glossary entryClose); store connection secrets in AWS Secrets Manager rather than in DAG code. Private network access mode keeps the UI off the internet.",
+    "MWAA runs and patches Airflow; multiple schedulers and automatically scaled workers keep DAGs running; tasks can retry with backoff, and DAG code in versioned S3 can be rolled back.",
+    "Raise the maximum worker count for many parallel tasks, choose a larger environment class for more DAGs, and keep heavy processing in the services the tasks call (Glue, EMR, SageMaker AI) instead of on the workers.",
+    "You pay per hour for the environment (by class) plus additional workers and schedulers beyond those included, and metadata storage. An environment costs money while it exists, even when no DAG runs, so it suits frequent or complex orchestration. Amazon MWAA Serverless (since November 2025) is a deployment option with no environment to manage: each workflow runs with its own execution role and worker, and you pay for the compute time of the tasks that run. It uses Apache Airflow 3.",
+    "Airflow logs (scheduler, workers, tasks, web server) and environment metrics go to Amazon CloudWatch; the Airflow UI shows task history; CloudTrail records MWAA APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls.",
+    "Already know this topic?",
+    "Try the Amazon Managed Workflows for Apache Airflow (Amazon MWAA) quiz: 5 questions on Amazon Managed Workflows for Apache Airflow (Amazon MWAA).",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon Managed Workflows for Apache Airflow (Amazon MWAA).",
+    "All Application Integration tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "47fd8e1e9420553e1e141bfc4e592a1f0dfd617cf7d07a06e039303fc849dd4b",
+  "source_url": "https://letmemaster.com/aws/mla-c02/application-integration/amazon-mwaa",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Existing Airflow DAGs, or the Airflow operator ecosystem",
+          "Amazon MWAA"
+        ],
+        [
+          "Airflow workflows that run occasionally, with no environment to pay for between runs",
+          "Amazon MWAA Serverless"
+        ],
+        [
+          "Serverless workflows of AWS services with visual design, pay per transition",
+          "AWS Step Functions"
+        ],
+        [
+          "An MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose workflow of SageMaker steps with lineage and the Model Registry",
+          "SageMaker Pipelines"
+        ],
+        [
+          "Start a job on a schedule or event, no workflow",
+          "Amazon EventBridge"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon MWAA (Managed Workflows for Apache Airflow) for MLA-C02: Study Notes · LetMeMaster"
+}

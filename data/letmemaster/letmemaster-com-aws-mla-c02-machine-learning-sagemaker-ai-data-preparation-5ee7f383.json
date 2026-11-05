@@ -1,0 +1,419 @@
+{
+  "fetched_at": "2026-11-05T14:16:05Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "SageMaker AI: preparing data and features"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Data Wrangler in SageMaker Canvas"
+    },
+    {
+      "level": 2,
+      "text": "Processing jobs"
+    },
+    {
+      "level": 2,
+      "text": "Feature Store"
+    },
+    {
+      "level": 2,
+      "text": "Labeling data with Ground Truth"
+    },
+    {
+      "level": 2,
+      "text": "Measuring bias with Clarify"
+    },
+    {
+      "level": 2,
+      "text": "Feature engineering techniques"
+    },
+    {
+      "level": 2,
+      "text": "Clean, balance, and split"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Related tutorials"
+    },
+    {
+      "level": 3,
+      "text": "SageMaker AI: deployment, MLOps, and monitoring"
+    },
+    {
+      "level": 3,
+      "text": "SageMaker AI: training and tuning models"
+    },
+    {
+      "level": 3,
+      "text": "Amazon SageMaker AI"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Machine Learning and Artificial Intelligence"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Data Wrangler in SageMaker Canvas",
+        "Processing jobs",
+        "Feature Store",
+        "Labeling data with Ground Truth",
+        "Measuring bias with Clarify",
+        "Feature engineering techniques",
+        "Clean, balance, and split",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Import from Amazon S3, Amazon Athena, Amazon Redshift, Snowflake, and Databricks.",
+        "Transform with built-in steps (handle missing values, encode categories, scale numbers, featurize text and dates) or your own Python, combined into a data flow.",
+        "Data Insights and Quality Report: finds missing values, outliers, duplicates, target leakage, and class imbalance before you train.",
+        "Export the flow to S3, a SageMaker Pipelines step, Feature Store, or a Python script, so the same preparation runs in production."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Missing values: drop rows or columns, or impute with the mean, median, most frequent value, or a model. Outliers: detect (for example with Random Cut Forest or z-scores) and cap, transform, or remove. Duplicates: remove, especially across training and test sets (task 1.3.7).",
+        "Class imbalance (task 1.3.5): oversample the minority class (including synthetic examples with SMOTE), undersample the majority class, use class weights, augment images or text, and judge the model with precision, recall, F1, or AUC instead of accuracy.",
+        "Splits: separate training, validation, and test data; shuffle before splitting unless the data is a time series, which must be split by time; use stratified splits so each set keeps the class proportions; use cross-validation for small datasets (task 1.3.3).",
+        "Formats (task 1.1.5): ParquetApache ParquetAn open-source columnar file format for analytics that stores compressed columns along with the schema. Querying Parquet files with Amazon Athena scans less data than CSV or JSON, so it is faster and cheaper.Glossary entryClose or ORC for columnarColumnar storageStoring data column by column instead of row by row, so that analytical queries read only the columns they need, and similar values compress well. Amazon Redshift and the Parquet and ORC file formats store data this way.Glossary entryClose analytics and large training sets, CSV or JSONJSON (JavaScript Object Notation)A text format for structured data made of name-and-value pairs and lists, such as {\"bucket\": \"logs\"}. IAM policies, most AWS API responses, and many CloudFormation templates are written in JSON.Glossary entryClose Lines for simple exchange, RecordIO-protobuf for some built-in algorithms."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Features",
+        "Labels and bias",
+        "Preparation"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Same values in training and inference→ leads to Feature Store (online plus offline)",
+        "Lowest-latency feature lookups→ leads to InMemory online store",
+        "Feature values as of a past date→ leads to Offline store in S3"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Humans label images, sensitive data→ leads to Ground Truth, private workforce",
+        "Cut labeling cost→ leads to Automated data labeling",
+        "One group underrepresented→ leads to Clarify pre-training bias"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Visual transforms, export to a pipeline→ leads to Data Wrangler in Canvas",
+        "Repeatable Spark or scikit-learn step→ leads to Processing job",
+        "Rare positive class→ leads to Oversample, SMOTE, class weights",
+        "Skewed numeric feature→ leads to Log transformation"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Data Wrangler is now in SageMaker Canvas: import, transform, check quality and leakage, and export to Pipelines or Feature Store.",
+        "Feature Store's online store serves the latest values at low latency; the offline store in S3 keeps history for training, and syncing them avoids training-serving skew.",
+        "Ground Truth labels with human workforces, and automated data labeling cuts the cost.",
+        "Clarify measures bias before and after training and explains predictions.",
+        "Know the feature engineering techniques, how to handle class imbalance, and how to split data without leakage."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI Developer Guide: Prepare ML data with Amazon SageMaker Data Wrangler",
+        "Amazon SageMaker AI Developer Guide: Data preparation (SageMaker Canvas)"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI Developer Guide: Data transformation workloads with SageMaker Processing",
+        "Amazon SageMaker AI Developer Guide: Create, store, and share features with Feature Store",
+        "Amazon SageMaker AI Developer Guide: Feature Store storage configurations",
+        "Amazon SageMaker AI Developer Guide: Training data labeling using humans with Amazon SageMaker Ground Truth",
+        "Amazon SageMaker AI Developer Guide: Fairness, model explainability, and bias detection with SageMaker Clarify",
+        "Amazon SageMaker AI Developer Guide: Pre-training bias metrics"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Data Wrangler in SageMaker Canvas",
+        "Processing jobs",
+        "Feature Store",
+        "Labeling data with Ground Truth",
+        "Measuring bias with Clarify",
+        "Feature engineering techniques",
+        "Clean, balance, and split",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Machine Learning and Artificial Intelligence SageMaker AI: deployment, MLOps, and monitoring",
+        "Next in Machine Learning and Artificial Intelligence SageMaker AI: training and tuning models"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon SageMaker AI · 8 min read SageMaker AI: deployment, MLOps, and monitoring The MLA-C02 deep dive on running models with Amazon SageMaker AI: choosing real-time, serverless, asynchronous, or batch inference, multi-model and multi-container endpoints, safe rollouts with deployment guardrails and shadow tests, autoscaling, endpoints in a VPC, Pipelines and the Model Registry, and monitoring for drift.",
+        "Amazon SageMaker AI · 8 min read SageMaker AI: training and tuning models The MLA-C02 deep dive on training with Amazon SageMaker AI: built-in algorithms, script mode and your own containers, training data input modes, managed Spot training with checkpoints, distributed training, automatic model tuning, overfitting and convergence, experiments with MLflow, Debugger, and evaluation metrics.",
+        "Amazon SageMaker AI · 7 min read Amazon SageMaker AI AWS's fully managed service to build, train, and deploy machine learning models: the 2024 rename, training and managed Spot training, built-in algorithms and JumpStart, the four inference options, autoscaling, Canvas, Feature Store, Pipelines, security, cost, and when to use the AI services instead."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "The MLA-C02 deep dive on data preparation in Amazon SageMaker AI: Data Wrangler in SageMaker Canvas, Processing jobs, Feature Store online and offline stores, labeling with Ground Truth, measuring bias with Clarify, feature engineering techniques, class imbalance, and data splits.",
+    "7 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon SageMaker AI quiz: 9 questions on Amazon SageMaker AI.",
+    "This deep dive covers the SageMaker AI features for preparing data and features for training, at the depth of the MLA-C02 exam (Domain 1, which is 28% of the exam). It also covers the feature engineering and bias techniques that the exam asks about whatever the tool. For the service as a whole, start with the Amazon SageMaker AI tutorial.",
+    "Data preparation on AWS often starts outside SageMaker AI: AWS Glue and Amazon EMR transform data at scale, AWS Glue DataBrew cleans it visually, and AWS Glue Data Quality checks rules. SageMaker AI adds the steps closest to the model: exploring and transforming data for MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose, storing features for training and serving, labeling, and measuring bias.",
+    "Data Wrangler prepares data for ML with little or no code, and is now part of SageMaker Canvas, where you can also describe transformations in natural language.",
+    "A SageMaker Processing job runs a script (scikit-learn, Spark, or your own container) on managed instances for pre-processing, feature engineering, and evaluation, reading from and writing to S3. Choose it to run the same transformation code repeatedly in a pipeline, without keeping a cluster up.",
+    "Amazon SageMaker Feature Store stores features so that the same values are used to train and to serve, which avoids training-serving skew. Features live in feature groups, each record identified by a record ID and an event time.",
+    "With both stores on, Feature Store keeps them in sync. Ingest features in batches (for example from a Processing job, Glue, or EMR) or as streams with PutRecord, for example from a Lambda function or Apache Flink reading Kinesis (tasks 1.1.9 and 1.2.2). Applications in a VPC reach the Feature Store Runtime APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose privately through an interface VPC endpointVPC endpointA private connection from a VPC to an AWS service or another endpoint service without crossing the internet. Gateway endpoints, for Amazon S3 and DynamoDB, are route table targets; interface endpoints are network interfaces that use AWS PrivateLink.Glossary entryClose.",
+    "Amazon SageMaker Ground Truth labels data for training with human workers: images (classification, bounding boxes, segmentation), text, video, and 3D point clouds. Choose a private workforce (your employees) for sensitive data, a vendor workforce, or Amazon Mechanical Turk for public data. Automated data labeling trains a model on human labels and labels the confident cases automatically, sending only uncertain ones to people, which lowers cost. Ground Truth Plus provides an expert workforce and project management as a managed service (task 1.3.2).",
+    "SageMaker Clarify measures pre-training bias in the data before you train, for a facet such as age or gender: for example class imbalance (one group has far fewer examples) and the difference in proportions of labels (one group gets positive labels more often). After training, it measures post-training bias in predictions and explains them with feature attributions (SHAP). Clarify runs as a Processing job and its reports appear in SageMaker Studio (tasks 1.3.3 and 1.3.4).",
+    "Tree-based models such as XGBoost don't need scaling; linear models and neural networks do. Fit scalers and encoders on the training data only, then apply them to validation and test data, to avoid leakage.",
+    "Processing jobs, Data Wrangler, and labeling jobs use IAM execution roles; encrypt data and outputs with KMS keys; run jobs in your VPC with S3 endpoints; use a private Ground Truth workforce for sensitive data. Remove or mask personal data before training (task 1.2.8), for example with Amazon Comprehend PIIPII (Personally identifiable information)Information that can identify a person, alone or combined with other data, such as a name, email address, or passport number. Amazon Macie finds PII in Amazon S3.Glossary entryClose detection or Amazon Macie for data in S3.",
+    "The offline store keeps a durable history in S3, so training sets can be rebuilt; pipelines rerun failed Processing steps.",
+    "Use Spark (Processing jobs, EMR, or Glue) for large datasets, columnar formats, and the InMemory online store for the lowest serving latency.",
+    "Pay for Processing and Canvas instance time, Feature Store reads, writes, and storage, and labeling per object. Automated data labeling and a smaller human-labeled sample lower labeling cost.",
+    "Processing and labeling jobs write to CloudWatch Logs and report state changes to EventBridge; CloudTrail records the API calls.",
+    "Already know this topic?",
+    "Try the Amazon SageMaker AI quiz: 9 questions on Amazon SageMaker AI.",
+    "Sign in to test\n\t\tyour knowledge with 9 questions on Amazon SageMaker AI.",
+    "All Machine Learning and Artificial Intelligence tutorials",
+    "Amazon SageMaker AI · 8 min read",
+    "The MLA-C02 deep dive on running models with Amazon SageMaker AI: choosing real-time, serverless, asynchronous, or batch inference, multi-model and multi-container endpoints, safe rollouts with deployment guardrails and shadow tests, autoscaling, endpoints in a VPC, Pipelines and the Model Registry, and monitoring for drift.",
+    "Amazon SageMaker AI · 8 min read",
+    "The MLA-C02 deep dive on training with Amazon SageMaker AI: built-in algorithms, script mode and your own containers, training data input modes, managed Spot training with checkpoints, distributed training, automatic model tuning, overfitting and convergence, experiments with MLflow, Debugger, and evaluation metrics.",
+    "Amazon SageMaker AI · 7 min read",
+    "AWS's fully managed service to build, train, and deploy machine learning models: the 2024 rename, training and managed Spot training, built-in algorithms and JumpStart, the four inference options, autoscaling, Canvas, Feature Store, Pipelines, security, cost, and when to use the AI services instead.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "76e1c9dbaacaf1590d6301685d0e0f15ecd84f8d39fad51bc74c4d5c43430eaf",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning/sagemaker-ai-data-preparation",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Store",
+          "What it is for"
+        ],
+        [
+          "Online store",
+          "Low-latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose lookups of the latest feature values during inference. Tiers: Standard (default), Standard V2 (update individual features in place), and InMemory, powered by Amazon ElastiCache, for the lowest latency (online only, no customer managed keysCustomer managed keyA KMS key that you create, own, and manage: you control its key policy, rotation, and deletion. AWS managed keys, in contrast, are created and managed for you by an AWS service.Glossary entryClose)"
+        ],
+        [
+          "Offline store",
+          "The history of feature values in Amazon S3, cataloged in AWS Glue so you can query it with Athena, build training datasets, and look back to the values at a past time"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Technique",
+          "What it does",
+          "Use it when"
+        ],
+        [
+          "Normalization (min-max)",
+          "Rescales values to a range such as 0–1",
+          "Features on different scales, distance-based models, neural networks"
+        ],
+        [
+          "Standardization (z-score)",
+          "Mean 0, standard deviation 1",
+          "Roughly normal features; linear models and neural networks"
+        ],
+        [
+          "Log transformation",
+          "Compresses large values",
+          "Skewed data such as income or prices"
+        ],
+        [
+          "Binning",
+          "Groups numbers into ranges",
+          "Nonlinear effects, or noisy continuous values"
+        ],
+        [
+          "One-hot encoding",
+          "One column per category",
+          "Categories with no order and few values"
+        ],
+        [
+          "Label or ordinal encoding",
+          "One integer per category",
+          "Categories with a natural order"
+        ],
+        [
+          "Feature splitting",
+          "Splits one value into parts (date into day, month, weekday)",
+          "A value hides several useful signals"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Visual data preparation for ML, export to a pipeline",
+          "Data Wrangler in SageMaker Canvas"
+        ],
+        [
+          "Visual cleaning for analysts, recipes on a schedule",
+          "AWS Glue DataBrew"
+        ],
+        [
+          "Rule-based data quality checks in ETLETL (Extract, transform, and load)Copying data from sources, cleaning and reshaping it, and loading it into a target such as a data warehouse. AWS Glue is the AWS serverless ETL service.Glossary entryClose",
+          "AWS Glue Data Quality"
+        ],
+        [
+          "Same features for training and real-time inference",
+          "SageMaker Feature Store"
+        ],
+        [
+          "Human labels for images or text",
+          "SageMaker Ground Truth"
+        ],
+        [
+          "Bias in a dataset, explanations of predictions",
+          "SageMaker Clarify"
+        ]
+      ]
+    }
+  ],
+  "title": "SageMaker AI: preparing data and features for MLA-C02: Study Notes · LetMeMaster"
+}

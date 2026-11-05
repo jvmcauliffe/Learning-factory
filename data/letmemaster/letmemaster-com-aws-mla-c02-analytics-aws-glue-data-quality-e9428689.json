@@ -1,0 +1,278 @@
+{
+  "fetched_at": "2026-11-05T14:15:27Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS Glue Data Quality"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Two places to run it"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Analytics"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Two places to run it",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "DQDL rules: completeness, uniqueness, value ranges, allowed values, data types, freshness, referential integrity between datasets, custom SQLSQL (Structured Query Language)The standard language for querying and changing data in relational databases. Analytics services such as Amazon Athena and Amazon Redshift also use SQL.Glossary entryClose, and more. Dynamic rules compare with past runs (for example RowCount > avg(last(10))).",
+        "Rule recommendations: Glue analyzes a table and proposes a starting ruleset.",
+        "Anomaly detection: analyzers collect statistics over time, and ML flags unusual values or volumes that no rule describes.",
+        "Results: written to Amazon S3, sent to Amazon CloudWatch and Amazon EventBridge, so a rule on a low score can alert a team or stop a pipeline."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to Glue Data Quality",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Stop the ETL run when rules fail→ leads to Data quality step in the Glue job",
+        "Quarantine only the bad rows→ leads to Failed records in ETL checks",
+        "Suggest rules for a new table→ leads to Rule recommendations",
+        "Volume suddenly drops, no rule for it→ leads to Anomaly detection"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Clean data with clicks→ leads to DataBrew",
+        "Production model inputs drift→ leads to Model monitoring"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Write rules in DQDL; the score is the share of rules that pass.",
+        "Run on Data Catalog tables (with recommendations) or inside Glue ETL jobs (with failed-record handling and stopping bad loads).",
+        "Dynamic rules and ML anomaly detection catch changes over time.",
+        "Results go to S3, CloudWatch, and EventBridge for alerts and automation."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Glue Developer Guide: AWS Glue Data Quality",
+        "AWS Glue Developer Guide: Data Quality Definition Language (DQDL) reference"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Glue Developer Guide: Data Quality for ETL jobs in AWS Glue Studio notebooks"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Two places to run it",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Analytics AWS Glue DataBrew",
+        "Next in Analytics Amazon Kinesis Data Streams"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Rule-based and ML-assisted data quality checks for data lakes and pipelines: DQDL rules, rule recommendations, checks on Data Catalog tables and in ETL jobs, quality scores, failed records, anomaly detection, alerts, and cost.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS Glue Data Quality quiz: 5 questions on AWS Glue Data Quality.",
+    "AWS Glue Data Quality measures and monitors the quality of data in data lakesData lakeA central store for large amounts of structured and unstructured data kept in its original form, usually in Amazon S3, which many tools can analyze. AWS Lake Formation helps build and secure one.Glossary entryClose and pipelines. You write rules in the Data Quality Definition Language (DQDL), such as \"order_id is complete and unique\" or \"row count is greater than the average of the last 10 runs\", and Glue evaluates them and gives a data quality score: the percentage of rules that pass. It is serverless, built on the open-source Deequ framework, and can also recommend rules and detect anomalies with machine learningML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose.",
+    "Choose it when a question asks to check data quality automatically, stop bad data before it reaches a data lake or a training job, or watch data quality over time (MLA-C02 tasks 1.3.1 and 4.1.2).",
+    "Runs use IAM roles with access only to the tables and buckets they check; results in S3 are encrypted like other Glue outputs; Lake Formation permissions apply to governed tables.",
+    "Serverless and managed; checks in ETL jobs can stop a run so that bad data never lands, and results history supports audits.",
+    "Checks in ETL jobs scale with the job (auto scaling and Flex are supported there); incremental checks use job bookmarks or pushdown predicates so only new data is evaluated.",
+    "You pay for the compute (DPU hours) that evaluations and recommendations use, with no license. Check new partitions incrementally instead of whole tables.",
+    "Watch quality scores in CloudWatch, route results through EventBridge to SNS or Step Functions, and record APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls in CloudTrail.",
+    "Already know this topic?",
+    "Try the AWS Glue Data Quality quiz: 5 questions on AWS Glue Data Quality.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS Glue Data Quality.",
+    "All Analytics tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "ddcf93db1db41668543ee60cc9a998483b400d9ca84c5c57d38128b1d6059b3d",
+  "source_url": "https://letmemaster.com/aws/mla-c02/analytics/aws-glue-data-quality",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Entry point",
+          "How it works",
+          "Choose it for"
+        ],
+        [
+          "Data Catalog tables",
+          "Evaluate rulesets on tables (S3, Amazon Redshift, Iceberg, Hudi, Delta Lake, and others); get rule recommendations; schedule runs",
+          "Ongoing checks of data at restEncryption at restEncrypting data where it is stored, such as on disks, in databases, or in backups, so that it cannot be read without the key. On AWS it usually uses keys in AWS KMS.Glossary entryClose, by data stewards, with little code"
+        ],
+        [
+          "AWS Glue ETLETL (Extract, transform, and load)Copying data from sources, cleaning and reshaping it, and loading it into a target such as a data warehouse. AWS Glue is the AWS serverless ETL service.Glossary entryClose jobs",
+          "Add a data quality step in Glue Studio or in a script",
+          "Proactive checks in transit: find the failed records, quarantine them, and stop the job before bad data loads"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Rule-based checks on Data Catalog tables or inside Glue ETL, with failed-record handling",
+          "AWS Glue Data Quality"
+        ],
+        [
+          "Visual profiling and cleaning without code",
+          "AWS Glue DataBrew"
+        ],
+        [
+          "Data insights and target leakage before ML training",
+          "Data Wrangler in SageMaker Canvas"
+        ],
+        [
+          "Drift of model inputs in production",
+          "Model monitoring with data capture and a baseline (see SageMaker AI deployment)"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS Glue Data Quality for MLA-C02: Study Notes · LetMeMaster"
+}

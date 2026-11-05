@@ -1,0 +1,155 @@
+{
+  "fetched_at": "2026-11-05T14:14:47Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Prepare for your certification, a few minutes at a time."
+    },
+    {
+      "level": 2,
+      "text": "Exams"
+    },
+    {
+      "level": 3,
+      "text": "AWS Certified Machine Learning Engineer – Associate"
+    },
+    {
+      "level": 3,
+      "text": "AWS Certified Solutions Architect – Associate"
+    },
+    {
+      "level": 2,
+      "text": "Latest tutorials"
+    },
+    {
+      "level": 3,
+      "text": "Amazon Bedrock"
+    },
+    {
+      "level": 3,
+      "text": "Amazon Bedrock AgentCore"
+    },
+    {
+      "level": 3,
+      "text": "Amazon CodeGuru"
+    },
+    {
+      "level": 2,
+      "text": "Send feedback"
+    },
+    {
+      "level": 2,
+      "text": "Send feedback"
+    },
+    {
+      "level": 2,
+      "text": "What you'll find here"
+    },
+    {
+      "level": 3,
+      "text": "Tutorials"
+    },
+    {
+      "level": 3,
+      "text": "Service quizzes and practice quizzes"
+    },
+    {
+      "level": 3,
+      "text": "Practice exams"
+    },
+    {
+      "level": 3,
+      "text": "Progress tracking"
+    },
+    {
+      "level": 3,
+      "text": "Glossary"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02 · AssociateBeta AWS Certified Machine Learning Engineer – Associate",
+        "SAA-C03 · Associate AWS Certified Solutions Architect – Associate"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Amazon Bedrock · 10 min read Amazon Bedrock AWS's fully managed service for building generative AI applications with foundation models: choosing and invoking models, on-demand, cross-Region, batch, and Provisioned Throughput inference, customization and Custom Model Import, Knowledge Bases for RAG, agents, Guardrails, evaluations, prompt management, security, cost, and monitoring.",
+        "Amazon Bedrock AgentCore · 6 min read Amazon Bedrock AgentCore AWS's platform for running AI agents in production with any framework and model: Runtime with isolated sessions, Memory, Gateway for turning APIs into MCP tools, Identity, Policy, Code Interpreter and Browser tools, Observability, Evaluations, versioning, security, cost, and how it differs from Amazon Bedrock Agents.",
+        "Amazon CodeGuru · 2 min read Amazon CodeGuru ML-powered developer tools: CodeGuru Reviewer for code reviews and secrets detection (closed to new repository associations since November 7, 2025) and CodeGuru Profiler for finding expensive code at run time, with the alternatives AWS suggests for securing ML pipelines."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tutorials Short, original study notes you can read in a few minutes.",
+        "Service quizzes and practice quizzes Original questions with an explanation for every option, at the end of each tutorial and by topic or domain.",
+        "Practice exams Full-length timed practice exams weighted by exam domain, with a review afterwards.",
+        "Progress tracking Sign in with Google to keep your scores, bookmarks, and cards in sync.",
+        "Glossary Terms you meet in questions, explained in one place."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Original study notes and practice questions for cloud certification exams, designed for learning on your phone.",
+    "MLA-C02 · AssociateBeta",
+    "SAA-C03 · Associate",
+    "Amazon Bedrock · 10 min read",
+    "AWS's fully managed service for building generative AI applications with foundation models: choosing and invoking models, on-demand, cross-Region, batch, and Provisioned Throughput inference, customization and Custom Model Import, Knowledge Bases for RAG, agents, Guardrails, evaluations, prompt management, security, cost, and monitoring.",
+    "Amazon Bedrock AgentCore · 6 min read",
+    "AWS's platform for running AI agents in production with any framework and model: Runtime with isolated sessions, Memory, Gateway for turning APIs into MCP tools, Identity, Policy, Code Interpreter and Browser tools, Observability, Evaluations, versioning, security, cost, and how it differs from Amazon Bedrock Agents.",
+    "Amazon CodeGuru · 2 min read",
+    "ML-powered developer tools: CodeGuru Reviewer for code reviews and secrets detection (closed to new repository associations since November 7, 2025) and CodeGuru Profiler for finding expensive code at run time, with the alternatives AWS suggests for securing ML pipelines.",
+    "Found a problem or have an idea? Tell us.",
+    "Sign in so we can reply in your Issue Tracker.",
+    "Sign in only to save your progress.",
+    "Short, original study notes you can read in a few minutes.",
+    "Original questions with an explanation for every option, at the end of each tutorial and by topic or domain.",
+    "Full-length timed practice exams weighted by exam domain, with a review afterwards.",
+    "Sign in with Google to keep your scores, bookmarks, and cards in sync.",
+    "Terms you meet in questions, explained in one place.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "eefe8329d672e4e04211b03344d533ee821c23ae60ab524ca1a1a09a0d42b82a",
+  "source_url": "https://letmemaster.com/",
+  "status": "candidate",
+  "tables": [],
+  "title": "LetMeMaster"
+}

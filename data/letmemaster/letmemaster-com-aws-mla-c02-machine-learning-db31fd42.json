@@ -1,0 +1,90 @@
+{
+  "fetched_at": "2026-11-05T14:15:11Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Machine Learning and Artificial Intelligence"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Amazon Bedrock 10 min read",
+        "Amazon Bedrock AgentCore 6 min read",
+        "Amazon CodeGuru 2 min read",
+        "Amazon Comprehend 5 min read",
+        "Amazon Comprehend Medical 2 min read",
+        "Amazon DevOps Guru 2 min read",
+        "AWS HealthLake 2 min read",
+        "Amazon Lex 4 min read",
+        "Amazon Personalize 3 min read",
+        "Amazon Polly 3 min read",
+        "Amazon Rekognition 5 min read",
+        "Amazon SageMaker AI 7 min read",
+        "Amazon Textract 4 min read",
+        "Amazon Transcribe 4 min read",
+        "Amazon Translate 3 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "SageMaker AI: deployment, MLOps, and monitoring 8 min read",
+        "SageMaker AI: preparing data and features 7 min read",
+        "SageMaker AI: training and tuning models 8 min read"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "MLA-C02 study guide",
+    "Machine Learning and Artificial Intelligence services for AWS Certified Machine Learning Engineer – Associate (MLA-C02), with a tutorial on each.",
+    "The whole MLA-C02 study guide · Practice MLA-C02",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "cb2ad164cf9caceb25654b86e7b889cee7ac2e24cdeeb60def1e2e0d2b5a49a5",
+  "source_url": "https://letmemaster.com/aws/mla-c02/machine-learning",
+  "status": "candidate",
+  "tables": [],
+  "title": "Machine Learning and Artificial Intelligence for MLA-C02: Study Guide · LetMeMaster"
+}

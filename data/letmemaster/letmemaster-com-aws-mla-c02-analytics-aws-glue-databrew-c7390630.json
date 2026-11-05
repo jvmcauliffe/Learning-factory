@@ -1,0 +1,262 @@
+{
+  "fetched_at": "2026-11-05T14:15:26Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS Glue DataBrew"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Analytics"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Dataset: points to the data: files in Amazon S3, tables in the AWS Glue Data Catalog, Amazon Redshift, or JDBC databases.",
+        "Project: an interactive session on a sample of the dataset, where you try transformations and see a preview before and after each step.",
+        "Recipe: the saved list of transformation steps, versioned and reusable on other datasets with the same structure.",
+        "Recipe job: runs a recipe over the full dataset and writes the output to S3 (CSV, ParquetApache ParquetAn open-source columnar file format for analytics that stores compressed columns along with the schema. Querying Parquet files with Amazon Athena scans less data than CSV or JSON, so it is faster and cheaper.Glossary entryClose, JSONJSON (JavaScript Object Notation)A text format for structured data made of name-and-value pairs and lists, such as {\"bucket\": \"logs\"}. IAM policies, most AWS API responses, and many CloudFormation templates are written in JSON.Glossary entryClose, and other formats), on demand or on a schedule.",
+        "Profile job: computes statistics for each column (missing values, distinct values, distributions, outliers, correlations) so you can spot problems before training.",
+        "Data quality rules: rulesets checked during profile jobs, such as \"no more than 1% missing values in amount\".",
+        "PIIPII (Personally identifiable information)Information that can identify a person, alone or combined with other data, such as a name, email address, or passport number. Amazon Macie finds PII in Amazon S3.Glossary entryClose handling: detect personally identifiable information and mask, hash, encrypt, redact, or remove it before data is used for training (task 1.2.8)."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to DataBrew",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Clean data with no code, point and click→ leads to DataBrew recipe",
+        "Same cleaning every night on new files→ leads to Scheduled recipe job",
+        "Column statistics before training→ leads to Profile job",
+        "Mask PII columns without code→ leads to DataBrew PII transformations"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Export the flow to SageMaker Pipelines→ leads to Data Wrangler in Canvas",
+        "Complex joins over petabytes in Spark→ leads to AWS Glue ETL or EMR",
+        "Fail an ETL run when quality rules break→ leads to AWS Glue Data Quality"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "DataBrew is serverless, visual data preparation with more than 250 transformations, for users who don't want to write code.",
+        "Projects explore a sample; recipes save the steps; recipe jobs apply them to full datasets on a schedule; profile jobs measure data quality.",
+        "It can detect and mask PII; output goes to S3.",
+        "Pay for interactive sessions and job node hours."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Glue DataBrew Developer Guide: What is AWS Glue DataBrew?",
+        "AWS Glue DataBrew Developer Guide: Creating and using recipes"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Glue DataBrew Developer Guide: Creating, running, and scheduling jobs",
+        "AWS Glue DataBrew Developer Guide: Identifying and handling personally identifiable information (PII)"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Analytics AWS Glue",
+        "Next in Analytics AWS Glue Data Quality"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "A visual, no-code data preparation service: projects, more than 250 transformations, recipes and jobs, data profiles and quality rules, PII handling, security, cost, and how it compares with Data Wrangler and AWS Glue ETL.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS Glue DataBrew quiz: 5 questions on AWS Glue DataBrew.",
+    "AWS Glue DataBrew is a visual data preparation service: analysts, data scientists, and engineers clean and normalize data without writing code. You open a dataset in a grid, see value distributions, and apply point-and-click transformations, choosing from more than 250 (remove nulls, replace missing values, fix formats, split and merge columns, encode categories, and natural language steps such as splitting sentences). DataBrew is serverless, so it handles terabytes without clusters, and it writes the prepared data to Amazon S3.",
+    "Choose DataBrew when a question asks to prepare or clean data visually, with no code, repeat the same steps on new data on a schedule, or profile data quality, for analytics or MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose (MLA-C02 tasks 1.2.1 and 1.3.1).",
+    "IAM roles control which data DataBrew can read and write; outputs are encrypted with SSESSE (Server-side encryption)Encryption that a service applies when it stores your data and removes when you read it back. Amazon S3 encrypts every new object with SSE-S3 by default; SSE-KMS uses keys in AWS KMS instead.Glossary entryClose-S3 or KMS keys; jobs can reach data sources in a VPC through Glue connections. Use the PII transformations to mask sensitive columns.",
+    "DataBrew is a managed, serverless Regional service; jobs can retry on failure, and recipes and outputs in S3 make runs repeatable.",
+    "Projects work on a sample for fast interaction; jobs process the whole dataset and scale by the number of nodes you allow.",
+    "You pay for interactive sessions while you work in a project and for job node hours when recipes and profiles run. Stop idle sessions, profile a sample, and schedule jobs only as often as the data changes.",
+    "Job runs report to Amazon CloudWatch and EventBridge; CloudTrail records the APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls.",
+    "Already know this topic?",
+    "Try the AWS Glue DataBrew quiz: 5 questions on AWS Glue DataBrew.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS Glue DataBrew.",
+    "All Analytics tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "3fead04dfb8556fea19d3ad6803a8aceef90dba718e36f803af3f2999d0e18d4",
+  "source_url": "https://letmemaster.com/aws/mla-c02/analytics/aws-glue-databrew",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Analysts clean data visually, recipes on a schedule, output to S3",
+          "AWS Glue DataBrew"
+        ],
+        [
+          "Data scientists prepare ML data visually and export it to SageMaker Pipelines or Feature Store",
+          "Data Wrangler in SageMaker Canvas"
+        ],
+        [
+          "Large-scale ETLETL (Extract, transform, and load)Copying data from sources, cleaning and reshaping it, and loading it into a target such as a data warehouse. AWS Glue is the AWS serverless ETL service.Glossary entryClose written in Spark or Python, or built in a visual job editor",
+          "AWS Glue ETL jobs"
+        ],
+        [
+          "Rule-based quality checks inside ETL pipelines or on Data Catalog tables",
+          "AWS Glue Data Quality"
+        ],
+        [
+          "Full control of Spark, Hive, or Presto clusters",
+          "Amazon EMR"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS Glue DataBrew for MLA-C02: Study Notes · LetMeMaster"
+}

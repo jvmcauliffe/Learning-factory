@@ -1,0 +1,73 @@
+{
+  "fetched_at": "2026-11-05T14:14:51Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Exams"
+    },
+    {
+      "level": 2,
+      "text": "AWS Certified Machine Learning Engineer – Associate"
+    },
+    {
+      "level": 2,
+      "text": "AWS Certified Solutions Architect – Associate"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02 · AssociateBeta AWS Certified Machine Learning Engineer – Associate Validates the ability to build, operationalize, deploy, and maintain machine learning and generative AI solutions on AWS, from data preparation to monitoring and security. View exam overview",
+        "SAA-C03 · Associate AWS Certified Solutions Architect – Associate Validates the ability to design solutions based on the AWS Well-Architected Framework: architectures that are secure, resilient, high-performing, and cost-optimized. View exam overview"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Choose an exam to see its domains and how to prepare.",
+    "MLA-C02 · AssociateBeta",
+    "Validates the ability to build, operationalize, deploy, and maintain machine learning and generative AI solutions on AWS, from data preparation to monitoring and security.",
+    "SAA-C03 · Associate",
+    "Validates the ability to design solutions based on the AWS Well-Architected Framework: architectures that are secure, resilient, high-performing, and cost-optimized.",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "61c5854c983e1ee6345452c41a058e7953fcb7b16cce4ab6c391c9e0ed066de2",
+  "source_url": "https://letmemaster.com/exams",
+  "status": "candidate",
+  "tables": [],
+  "title": "Exams · LetMeMaster"
+}

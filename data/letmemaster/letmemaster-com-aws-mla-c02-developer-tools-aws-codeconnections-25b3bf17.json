@@ -1,0 +1,240 @@
+{
+  "fetched_at": "2026-11-05T14:15:43Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CodeConnections"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Connection: created in the Developer Tools console, then completed by authorizing the AWS app in the provider (a \"handshake\"); it stays pending until that step is done.",
+        "Host: represents a self-managed provider installation, such as GitHub Enterprise Server or GitLab self-managed, including one reachable only from your VPC.",
+        "Use in pipelines: a CodePipeline source action uses the connection to detect pushes and pull requests (with filters on branches, tags, and paths) and to fetch the code; CodeBuild can use it to check out source.",
+        "Infrastructure as codeIaC (Infrastructure as code)Defining infrastructure, such as networks, servers, and permissions, in text files that are versioned and deployed automatically, instead of setting it up by hand. AWS CloudFormation and the AWS CDK are AWS tools for it.Glossary entryClose: reference the connection ARN in CloudFormation or CDK templates, so no secrets appear in templates."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to CodeConnections",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Pipeline must start on GitHub pushes→ leads to Connection in a CodePipeline source action",
+        "GitHub Enterprise Server in a private network→ leads to Connection with a host",
+        "No tokens in templates→ leads to Reference the connection ARN"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Move repositories into AWS→ leads to CodeCommit"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "A connection authorizes AWS developer tools to use GitHub, GitLab, or Bitbucket repositories, with no stored secrets.",
+        "Hosts support self-managed providers such as GitHub Enterprise Server and GitLab self-managed.",
+        "CodePipeline source actions use connections to trigger on pushes and pull requests.",
+        "Formerly AWS CodeStar Connections; no extra charge."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Developer Tools console User Guide: What are connections?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Developer Tools AWS CodeCommit",
+        "Next in Developer Tools AWS CodeDeploy"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Connections that let AWS developer tools use third-party source code providers such as GitHub, GitLab, and Bitbucket: how connections work, using them in CodePipeline and CodeBuild, hosts for self-managed providers, and security.",
+    "2 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CodeConnections quiz: 5 questions on AWS CodeConnections.",
+    "AWS CodeConnections lets AWS developer tools use code in third-party source providers such as GitHub, GitLab, and Bitbucket. A connection is an AWS resource, with its own ARNARN (Amazon Resource Name)The unique identifier of an AWS resource, in the form arn:partition:service:region:account-id:resource. IAM policies use ARNs to name the resources they allow or deny.Glossary entryClose, that authorizes AWS to access repositories in your provider account. Services such as AWS CodePipeline, AWS CodeBuild, and AWS CodeDeploy reference the connection instead of storing tokens or passwords. The service was previously called AWS CodeStar Connections; existing resources in the old namespace still work.",
+    "Choose CodeConnections when a question says the code is on GitHub, GitLab, or Bitbucket and a pipeline in AWS must start on changes and read the code, without copying the repository or managing secrets (MLA-C02 task 3.3.2).",
+    "Access to use a connection is controlled by IAM (for example codeconnections:UseConnection), so only approved pipelines and projects can read the repositories; no personal access tokens are stored in AWS. Scope the provider-side app to only the repositories you need. CloudTrail records connection use.",
+    "Connections are managed resources; if the provider authorization is revoked, the connection stops working, so monitor pipeline source failures.",
+    "Event-based triggers through the connection start pipelines as soon as a change is pushed, instead of polling.",
+    "There is no additional charge for connections; you pay for the services that use them.",
+    "Pipeline source action failures appear in CodePipeline and EventBridge; CloudTrail logs connection APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose calls.",
+    "Already know this topic?",
+    "Try the AWS CodeConnections quiz: 5 questions on AWS CodeConnections.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CodeConnections.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "140e14d965ac39965cb5901b28c2e2ac69efce3d449b2621a59c0e1d93bf669a",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-codeconnections",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Use GitHub, GitLab, or Bitbucket repositories in AWS pipelines",
+          "AWS CodeConnections"
+        ],
+        [
+          "Host private Git repositories in AWS",
+          "AWS CodeCommit"
+        ],
+        [
+          "Store packages and dependencies",
+          "AWS CodeArtifact"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CodeConnections for MLA-C02: Study Notes · LetMeMaster"
+}

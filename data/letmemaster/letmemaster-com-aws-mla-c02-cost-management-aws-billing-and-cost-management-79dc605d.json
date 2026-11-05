@@ -1,0 +1,300 @@
+{
+  "fetched_at": "2026-11-05T14:15:33Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS Billing and Cost Management"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Where ML costs come from, and how to cut them"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Cloud Financial Management"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Where ML costs come from, and how to cut them",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Cost allocation tags: tag resources (for example project=churn-model, team=ds) and activate the tags in the Billing console so costs can be grouped by them. SageMaker AI jobs, endpoints, and Bedrock resources such as Provisioned Throughput support tags.",
+        "Cost Explorer: charts of costs and usage over time, filtered by service, account, RegionAWS RegionA separate geographic area where AWS runs its services, such as us-east-1 in Northern Virginia, made up of several Availability Zones. Most resources live in one Region; you choose Regions for latency, data residency, and the services you need.Glossary entryClose, usage type, or tag, with forecasts (see the AWS Cost Explorer tutorial).",
+        "AWS Budgets: a cost or usage limit with alerts when actual or forecasted spend crosses it, and budget actions that apply an IAM or service control policySCP (Service control policy)An AWS Organizations policy that sets the maximum permissions for IAM users and roles in member accounts. It grants nothing by itself, and it does not apply to the management account.Glossary entryClose, or stop EC2 and RDS instances, when a threshold is reached (see AWS Budgets). This is how to set cost quotas for a team or project.",
+        "Cost Anomaly Detection: machine learning watches spend per service, account, cost category, or tag and alerts on unusual spikes, such as a forgotten GPU endpoint or a runaway token bill, through email or SNS.",
+        "Data exports (and the Cost and Usage Report): the most detailed hourly cost and usage data delivered to S3, for analysis with Athena or dashboards in Amazon Quick Sight.",
+        "Cost categories: rules that group costs into your own categories, such as \"training\" and \"inference\"."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "See the cost",
+        "Control the cost",
+        "Reduce the cost"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Cost per model or team→ leads to Activated cost allocation tags",
+        "Trend and forecast of spend→ leads to Cost Explorer",
+        "Hourly line items in S3→ leads to Data exports with Athena"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Hard limit for a project's spend→ leads to Budgets with budget actions",
+        "Unexpected GPU or token spike→ leads to Cost Anomaly Detection"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Training→ leads to Managed Spot training",
+        "Steady inference→ leads to SageMaker AI Savings Plans"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Billing and Cost Management covers bills, consolidated billing, and the cost tools: Cost Explorer, Budgets, Cost Anomaly Detection, tags, categories, and exports.",
+        "Tag ML resources and activate the tags to see cost per project or team.",
+        "Budgets with actions set cost quotas; Cost Anomaly Detection catches surprises.",
+        "Know the main ML cost drivers and how to reduce each."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Billing User Guide: What is AWS Billing and Cost Management?",
+        "AWS Cost Management User Guide: Use AWS Billing and Cost Management"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS Cost Management User Guide: Getting started with AWS Cost Anomaly Detection",
+        "AWS Billing User Guide: Organizing and tracking costs using AWS cost allocation tags"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Where ML costs come from, and how to cut them",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Next in Cloud Financial Management AWS Budgets"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "The AWS console and tools for paying for and controlling AWS costs: bills and consolidated billing, cost allocation tags, Cost Explorer, Budgets, Cost Anomaly Detection, data exports, and how ML teams track training, inference, and token costs.",
+    "4 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS Billing and Cost Management quiz: 5 questions on AWS Billing and Cost Management.",
+    "AWS Billing and Cost Management is the set of console pages and tools for paying your AWS bill and understanding, controlling, and optimizing costs. Billing shows invoices, payments, and charges per service and account; Cost Management adds analysis and controls: Cost Explorer, AWS Budgets, Cost Anomaly Detection, cost allocation tags, cost categories, data exports of detailed cost and usage data, and the Pricing Calculator. With AWS Organizations, consolidated billing gives one bill for all member accounts.",
+    "MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose workloads make costs move quickly: GPUGPU (Graphics processing unit)A processor with thousands of small cores that run many calculations in parallel. GPUs speed up machine learning, graphics, and video work; EC2 instance families such as P and G include them.Glossary entryClose training jobs, always-on endpoints, notebooks left running, and per-token charges for foundation models. Choose these tools when a question asks to see where ML money goes, set cost limits, or be alerted to unexpected spend (MLA-C02 tasks 4.2.5, 4.2.7, 4.2.9, and 4.2.10).",
+    "Billing access is controlled by IAM permissions for the billing and cost management actions; in an organization, the management account controls consolidated billing and which tags are activated. Budget actions can restrict permissions automatically.",
+    "Not applicable in the usual sense: billing data is managed by AWS; exports to S3 keep your own copy for audit.",
+    "Cost data updates several times a day, not in real time, so pair budgets and anomaly detection with CloudWatch alarms on usage metrics for faster signals.",
+    "Most features are free; some, such as Cost Explorer APIAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose requests and budget actions beyond the free allowance, have small charges.",
+    "Budgets and Cost Anomaly Detection send alerts through email and SNS; CloudTrail records billing console and API actions.",
+    "Already know this topic?",
+    "Try the AWS Billing and Cost Management quiz: 5 questions on AWS Billing and Cost Management.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS Billing and Cost Management.",
+    "All Cloud Financial Management tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "e81a37524f60f4b0088f51aa93114b2fdb74634caa57cff2e960dee0e101e930",
+  "source_url": "https://letmemaster.com/aws/mla-c02/cost-management/aws-billing-and-cost-management",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Cost",
+          "Ways to reduce it"
+        ],
+        [
+          "Training jobs",
+          "Managed Spot training, right-sized instances, early stopping, fewer tuning jobs"
+        ],
+        [
+          "Real-time endpoints",
+          "Autoscaling, serverless or asynchronous inference for spiky traffic, multi-model endpoints, Inferentia instances, Savings Plans"
+        ],
+        [
+          "Notebooks and development",
+          "Stop idle notebooks and apps, use lifecycle configurations"
+        ],
+        [
+          "Foundation model tokens",
+          "Smaller models, shorter prompts, prompt caching, batch inference, capped output tokens"
+        ],
+        [
+          "Vector stores and embeddings",
+          "Embed only changed documents, lower-cost vector storage (such as Amazon S3 Vectors) for infrequent queries"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "See which project's training jobs cost the most",
+          "Cost allocation tags in Cost Explorer"
+        ],
+        [
+          "Alert, or restrict permissions, when a team's spend passes a limit",
+          "AWS Budgets with budget actions"
+        ],
+        [
+          "Catch an unexpected spike without setting a threshold",
+          "Cost Anomaly Detection"
+        ],
+        [
+          "Hourly, per-resource cost data for custom analysis",
+          "Data exports to S3, queried with Athena"
+        ],
+        [
+          "Right-size instances from utilization",
+          "AWS Compute Optimizer"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS Billing and Cost Management for MLA-C02: Study Notes · LetMeMaster"
+}

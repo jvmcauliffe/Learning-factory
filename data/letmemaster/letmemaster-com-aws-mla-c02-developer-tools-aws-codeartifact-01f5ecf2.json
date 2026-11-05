@@ -1,0 +1,246 @@
+{
+  "fetched_at": "2026-11-05T14:15:37Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "AWS CodeArtifact"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Developer Tools"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Domain: groups repositories for an organization, with one storage and one encryption key; packages are stored once even when several repositories use them.",
+        "Repository: holds packages of any supported type; a package manager points at the repository endpoint.",
+        "Upstream repositories: a repository can use another in the same domain as an upstream, so packages approved in a central repository are available to team repositories.",
+        "External connection: links a repository to a public registry such as PyPI or npmjs; packages are fetched on first request and cached.",
+        "Authentication: users and build jobs get a short-lived authorization token from their AWS credentials; packages can't be made public."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to CodeArtifact",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Only approved PyPI packages in training builds→ leads to CodeArtifact with an external connection",
+        "Share a private Python library across teams→ leads to Publish to a CodeArtifact repository",
+        "Builds have no internet access→ leads to CodeArtifact through VPC endpoints"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Store Docker images→ leads to Amazon ECR",
+        "Register model versions→ leads to SageMaker Model Registry"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "CodeArtifact stores private packages and caches public ones from PyPI, npmjs, Maven Central, and others.",
+        "Domains hold repositories; upstreams share approved packages; external connections fetch public packages on demand.",
+        "Access uses IAM, repository policies, short-lived tokens, and KMS encryption.",
+        "Use ECR for container images and the Model Registry for models."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "AWS CodeArtifact User Guide: What is AWS CodeArtifact?"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Developer Tools AWS CDK",
+        "Next in Developer Tools AWS CodeBuild"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "AWS's managed artifact repository for software packages: domains and repositories, upstreams and external connections to public registries such as PyPI and npm, controlling ML dependencies, security, and cost.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the AWS CodeArtifact quiz: 5 questions on AWS CodeArtifact.",
+    "AWS CodeArtifact is a managed artifact repository for software packages. Teams publish their private packages to it and fetch open-source packages through it, using the tools they already use: pip and twine, npm and yarn, Maven and Gradle, and the NuGet CLI, among others. CodeArtifact can fetch packages on demand from public repositories such as PyPI, npmjs.com, and Maven Central and keep a copy, so builds keep working even if a public package changes or disappears.",
+    "Choose CodeArtifact when a question asks to control and share dependencies: approved, versioned Python packages for training and inference containers, private libraries shared between teams, or builds that must not reach the public internet directly (MLA-C02 tasks 3.2.3 and 4.3.1).",
+    "IAM policies and repository and domain policies control who can read and publish; assets are encrypted with a KMS key chosen for the domain; tokens expire; builds in a VPC can reach CodeArtifact through VPC endpointsVPC endpointA private connection from a VPC to an AWS service or another endpoint service without crossing the internet. Gateway endpoints, for Amazon S3 and DynamoDB, are route table targets; interface endpoints are network interfaces that use AWS PrivateLink.Glossary entryClose. Combined with Amazon Inspector scanning of container images and code reviews, a curated repository reduces supply-chain risk.",
+    "Packages fetched from public registries are kept in your repository, so builds are repeatable even if the public version is removed.",
+    "Builds fetch dependencies from a nearby managed repository; cache packages in CodeBuild for faster builds.",
+    "You pay for storage, requests, and data transfer out; there are no servers to run.",
+    "CloudTrail records publishing and reads; EventBridge reports package version changes, which can start downstream builds.",
+    "Already know this topic?",
+    "Try the AWS CodeArtifact quiz: 5 questions on AWS CodeArtifact.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on AWS CodeArtifact.",
+    "All Developer Tools tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "490a3fbcfa034cdae25e7c0c4de5ae18aa9cd09aabd5f8808e6122d2e0182911",
+  "source_url": "https://letmemaster.com/aws/mla-c02/developer-tools/aws-codeartifact",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Private and approved Python, npm, Maven, or NuGet packages",
+          "AWS CodeArtifact"
+        ],
+        [
+          "Container images for training and inference",
+          "Amazon ECR"
+        ],
+        [
+          "Source code",
+          "AWS CodeCommit, or a third-party provider through CodeConnections"
+        ],
+        [
+          "Trained model artifacts and versions",
+          "SageMaker Model Registry and Amazon S3"
+        ]
+      ]
+    }
+  ],
+  "title": "AWS CodeArtifact for MLA-C02: Study Notes · LetMeMaster"
+}

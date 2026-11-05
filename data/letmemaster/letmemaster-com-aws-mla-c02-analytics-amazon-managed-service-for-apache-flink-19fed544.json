@@ -1,0 +1,258 @@
+{
+  "fetched_at": "2026-11-05T14:15:29Z",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Amazon Managed Service for Apache Flink"
+    },
+    {
+      "level": 2,
+      "text": "What it is"
+    },
+    {
+      "level": 2,
+      "text": "Concepts and features"
+    },
+    {
+      "level": 2,
+      "text": "Security, resilience, performance, and cost"
+    },
+    {
+      "level": 3,
+      "text": "Security"
+    },
+    {
+      "level": 3,
+      "text": "Resilience"
+    },
+    {
+      "level": 3,
+      "text": "Performance"
+    },
+    {
+      "level": 3,
+      "text": "Cost"
+    },
+    {
+      "level": 3,
+      "text": "Monitoring"
+    },
+    {
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "level": 2,
+      "text": "Reverse mindmap: when the question points here"
+    },
+    {
+      "level": 2,
+      "text": "Key takeaways"
+    },
+    {
+      "level": 2,
+      "text": "Sources"
+    },
+    {
+      "level": 2,
+      "text": "On this page"
+    },
+    {
+      "level": 2,
+      "text": "Test your knowledge"
+    },
+    {
+      "level": 2,
+      "text": "Add LetMeMaster to your Home Screen"
+    }
+  ],
+  "lists": [
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "MLA-C02",
+        "/",
+        "Analytics"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Sources and sinks: Amazon Kinesis Data Streams, Amazon MSK (Apache Kafka), Amazon S3, and others through Flink connectors; write results to Kinesis, Amazon Data Firehose, S3, OpenSearch Service, databases, or SageMaker Feature Store.",
+        "Stateful processing: Flink keeps state (counts, windows, last values) per key, so it can compute rolling averages, sessions, and features over time windows for training and inference.",
+        "Event time and windows: tumbling, sliding, and session windows based on when events happened, handling late data.",
+        "Calling a model: the DataStream API can call an external endpoint asynchronously, for example an Amazon SageMaker AI endpoint or Amazon Bedrock, to score each event.",
+        "Studio notebooks: interactive SQL, Python, or Scala queries on live streams for exploration and dashboards; a notebook can be promoted to a long-running application. For production pipelines with version control and CI/CDCI/CD (Continuous integration and continuous delivery)Practices in which every code change is built and tested automatically (continuous integration) and kept ready to release, often deploying it automatically through a pipeline (continuous delivery or deployment).Glossary entryClose, build the application in an IDE."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Points to Managed Service for Apache Flink",
+        "Points elsewhere"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Rolling 5-minute averages per user, in real time→ leads to Flink windows and state",
+        "Join two streams by key→ leads to Flink stream joins",
+        "Score each event with a model→ leads to Flink async call to an endpoint",
+        "Explore a live stream with SQL→ leads to Flink Studio notebook"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Light transformation of each record→ leads to Lambda",
+        "Land the stream in S3 as Parquet→ leads to Data Firehose"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Managed Apache Flink for stateful, real-time stream processing in Java, Scala, Python, or SQL.",
+        "Reads Kinesis and Kafka, writes to streams, S3, Firehose, OpenSearch, and feature stores.",
+        "Checkpoints and snapshots protect state; automatic scaling adjusts parallelism.",
+        "Pay for KPUs per hour; monitor lag (millisBehindLatest), backpressure, and checkpoints in CloudWatch."
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Managed Service for Apache Flink Developer Guide: What is Amazon Managed Service for Apache Flink?",
+        "Managed Service for Apache Flink Developer Guide: Implement application scaling"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Managed Service for Apache Flink Developer Guide: Implement fault tolerance"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "What it is",
+        "Concepts and features",
+        "Security, resilience, performance, and cost",
+        "Security",
+        "Resilience",
+        "Performance",
+        "Cost",
+        "Monitoring",
+        "Comparisons",
+        "Reverse mindmap: when the question points here",
+        "Key takeaways",
+        "Sources"
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Previous in Analytics AWS Lake Formation",
+        "Next in Analytics Amazon OpenSearch Service"
+      ],
+      "ordered": false
+    },
+    {
+      "items": [
+        "Tap the Share button  in your browser's toolbar. In Safari it is at the bottom of the screen, or at the top on iPad.",
+        "Scroll down and tap Add to Home Screen.",
+        "Tap Add. Open LetMeMaster from its icon on your Home Screen."
+      ],
+      "ordered": true
+    },
+    {
+      "items": [
+        "Home",
+        "Exams",
+        "Practice",
+        "Progress"
+      ],
+      "ordered": false
+    }
+  ],
+  "paragraphs": [
+    "Managed Apache Flink for real-time stream processing: applications in Java, Scala, Python, or SQL, Studio notebooks, sources and sinks such as Kinesis and Amazon MSK, checkpoints and snapshots, scaling, streaming feature engineering and inference, security, and cost.",
+    "3 min read · Last reviewed 3 November 2026 · MLA-C02",
+    "Sign in to\n\t\tbookmark tutorials and track what you have read.",
+    "Already know this topic?",
+    "Try the Amazon Managed Service for Apache Flink quiz: 5 questions on Amazon Managed Service for Apache Flink.",
+    "Amazon Managed Service for Apache Flink runs Apache Flink applications that process streaming data in real time, written in Java, Scala, Python, or SQLSQL (Structured Query Language)The standard language for querying and changing data in relational databases. Analytics services such as Amazon Athena and Amazon Redshift also use SQL.Glossary entryClose. AWS provides the infrastructure: compute, parallelism, automatic scaling, Availability ZoneAZ (Availability Zone)An isolated location within an AWS Region, made up of one or more data centers with their own power, cooling, and networking. The AZs in a Region are linked by fast, low-latency connections, so spreading resources across them protects against the failure of one site.Glossary entryClose failoverFailoverSwitching automatically to a standby resource when the primary one fails, such as a standby database in Amazon RDS or a backup site chosen by Route 53 failover routing.Glossary entryClose, and backups of application state as checkpoints and snapshots. You use Flink's own APIsAPI (Application programming interface)A defined way for one program to ask another for data or actions, such as a set of HTTPS requests and responses. Every AWS service is controlled through its API, which the console, the CLI, and the SDKs call for you.Glossary entryClose (DataStream, Table API, and Flink SQL), sources, and sinks as you would on your own cluster. The service was previously named Amazon Kinesis Data Analytics for Apache Flink.",
+    "Choose it when a question asks to transform, aggregate, or enrich a stream continuously with statefulStatefulKeeping track of earlier requests or connections. A stateful firewall, such as a security group, remembers allowed connections and lets their return traffic back in automatically.Glossary entryClose logic: windows, joins between streams, real-time features for MLML (Machine learning)Software that learns patterns from example data to make predictions or decisions, instead of following rules written by hand. A model is first trained on data, then used to make predictions on new data, which is called inference.Glossary entryClose, anomaly detection, or calling a model for each event (MLA-C02 tasks 1.1.4 and 1.2.3).",
+    "The application runs with an IAM role for its sources and sinks; connect it to your VPC to reach private resources such as an MSK cluster; data is encrypted in transit and state is encrypted at rest.",
+    "Checkpoints are taken automatically so an application recovers from failures without losing or duplicating state; snapshots are backups you create or take on update and can restore from. The service handles AZ failover.",
+    "Throughput depends on parallelism: the number of parallel tasks. Automatic scaling raises parallelism with CPU load; set parallelism per task to match the number of Kinesis shards or Kafka partitions. Watch for backpressure and checkpoint duration.",
+    "You pay for Kinesis Processing Units (KPUs), units of compute and memory, per hour while the application runs, plus storage for running state and backups. Right-size parallelism and stop development applications when idle.",
+    "Amazon CloudWatch shows metrics such as records in and out, millisecond latencyLatencyThe time between sending a request and receiving the response, usually measured in milliseconds. Distance and processing add to it; caching and serving users from nearby locations reduce it.Glossary entryClose, backpressure, checkpoint size and duration, and millisBehindLatest (how far behind the stream the application is); application logs go to CloudWatch Logs.",
+    "Already know this topic?",
+    "Try the Amazon Managed Service for Apache Flink quiz: 5 questions on Amazon Managed Service for Apache Flink.",
+    "Sign in to test\n\t\tyour knowledge with 5 questions on Amazon Managed Service for Apache Flink.",
+    "All Analytics tutorials",
+    "Glossary Privacy Install the app",
+    "LetMeMaster is an independent educational project and is not affiliated with or endorsed by Amazon Web Services. Practice results do not predict actual exam outcomes.",
+    "© 2026 LetMeMaster. All rights reserved. Content may not be copied or redistributed without permission.",
+    "Proudly made in Canada 🍁",
+    "Version 0.0.12"
+  ],
+  "raw_sha256": "30078f69bc644b9690c7fd902edf788c6cf36b4cd3fe32f98ec45ab97ddb678d",
+  "source_url": "https://letmemaster.com/aws/mla-c02/analytics/amazon-managed-service-for-apache-flink",
+  "status": "candidate",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Need",
+          "Choose"
+        ],
+        [
+          "Stateful, continuous stream processing with windows and joins",
+          "Managed Service for Apache Flink"
+        ],
+        [
+          "Simple per-record transformation of a stream",
+          "AWS Lambda reading Kinesis"
+        ],
+        [
+          "Deliver a stream to S3 or Redshift, with format conversion, no code",
+          "Amazon Data Firehose"
+        ],
+        [
+          "Spark Structured Streaming you already run",
+          "Amazon EMR or AWS Glue streaming jobs"
+        ],
+        [
+          "Store and replay the stream for several consumers",
+          "Kinesis Data Streams or Amazon MSK"
+        ]
+      ]
+    }
+  ],
+  "title": "Amazon Managed Service for Apache Flink for MLA-C02: Study Notes · LetMeMaster"
+}
