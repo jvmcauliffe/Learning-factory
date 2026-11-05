@@ -1,0 +1,79 @@
+:root {
+  --bg: #fbfbf9; --fg: #1c1d20; --muted: #5d6068; --line: #dcdcd6;
+  --card: #ffffff; --accent: #1f5fbf; --accent-fg: #ffffff; --ok: #1d7a46; --code: #f1f1ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141517; --fg: #e8e8e6; --muted: #a4a7ad; --line: #2e3035;
+    --card: #1c1d21; --accent: #7db0ff; --accent-fg: #101114; --ok: #5fcf8b; --code: #24262b;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141517; --fg: #e8e8e6; --muted: #a4a7ad; --line: #2e3035;
+  --card: #1c1d21; --accent: #7db0ff; --accent-fg: #101114; --ok: #5fcf8b; --code: #24262b;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 8px; top: 8px; background: var(--card); padding: 8px; z-index: 10; }
+.top {
+  position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line);
+  padding: 8px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px;
+}
+.brand { font-weight: 700; color: var(--fg); text-decoration: none; margin-right: auto; }
+.icon-btn {
+  background: none; border: 1px solid var(--line); color: var(--fg); border-radius: 8px;
+  min-width: 44px; min-height: 44px; font-size: 18px; cursor: pointer;
+}
+nav { display: flex; gap: 2px; overflow-x: auto; width: 100%; }
+nav a {
+  color: var(--fg); text-decoration: none; padding: 10px 12px; border-radius: 8px;
+  white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center;
+}
+nav a[aria-current="page"] { background: var(--accent); color: var(--accent-fg); }
+main { max-width: 760px; margin: 0 auto; padding: 16px; outline: none; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.4em 0; }
+h2 { font-size: 1.3rem; margin: 1.6em 0 0.4em; scroll-margin-top: 130px; }
+h3 { font-size: 1.1rem; }
+.muted { color: var(--muted); }
+.group { margin: 24px 0 8px; font-size: 1.05rem; }
+.lessons { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.lessons a {
+  display: block; text-decoration: none; color: var(--fg); background: var(--card);
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; min-height: 44px;
+}
+.lessons .num { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 6px; }
+.lessons .owns { display: block; color: var(--muted); font-size: 0.9rem; }
+.lessons .state { float: right; color: var(--muted); font-size: 0.85rem; }
+.lessons .done .state { color: var(--ok); font-weight: 600; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin: 12px 0; }
+.btn {
+  display: inline-block; background: var(--accent); color: var(--accent-fg); border: 0; border-radius: 10px;
+  padding: 10px 16px; min-height: 44px; font: inherit; text-decoration: none; cursor: pointer;
+}
+.btn.ghost { background: none; color: var(--accent); border: 1px solid var(--line); }
+.jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; padding: 0; list-style: none; }
+.jump a {
+  display: inline-block; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px;
+  text-decoration: none; font-size: 0.9rem;
+}
+.markread { margin-left: 8px; font-size: 0.85rem; font-weight: 400; color: var(--muted); white-space: nowrap; }
+.markread input { width: 20px; height: 20px; vertical-align: middle; margin-right: 4px; }
+.pager { display: flex; justify-content: space-between; gap: 8px; margin: 24px 0; flex-wrap: wrap; }
+.lesson table { border-collapse: collapse; display: block; overflow-x: auto; max-width: 100%; }
+.lesson th, .lesson td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+.lesson th { background: var(--code); }
+.lesson code { background: var(--code); padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+.lesson pre { background: var(--code); padding: 12px; border-radius: 8px; overflow-x: auto; }
+.lesson pre code { background: none; padding: 0; }
+.lesson blockquote { margin: 12px 0; padding: 4px 14px; border-left: 4px solid var(--accent); color: var(--muted); }
+.lesson img { max-width: 100%; height: auto; }
+.notice { border-left: 4px solid var(--accent); padding: 8px 12px; background: var(--card); margin: 12px 0; }
+.credit { max-width: 760px; margin: 32px auto 0; padding: 16px; border-top: 1px solid var(--line); font-size: 0.88rem; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (min-width: 700px) { nav { width: auto; } .top { flex-wrap: nowrap; } }
