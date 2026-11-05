@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "q0682",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "The team must review what changes a template update will make before applying it. What should the architect use?",
+      "options": [
+        {
+          "text": "Change Sets",
+          "explanation": "This is the guide's answer for this scenario (line 38). Its note: preview = change set, always.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 38
+          }
+        },
+        {
+          "text": "Drift Detection",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine whether anyone modified stack resources manually via the console (line 44).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 44
+          }
+        },
+        {
+          "text": "Stack Policy",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent accidental updates to a critical resource during stack updates (line 50).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "AWS CDK",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Developers prefer defining infrastructure in TypeScript/Python rather than YAML (line 46).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 46
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0683",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "Standardized security and compliance resources must be deployed to all accounts in an organization, across Regions. What should the architect use?",
+      "options": [
+        {
+          "text": "AWS CDK",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Developers prefer defining infrastructure in TypeScript/Python rather than YAML (line 46).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 46
+          }
+        },
+        {
+          "text": "CloudFormation StackSets",
+          "explanation": "This is the guide's answer for this scenario (line 40). Its note: one template → many accounts/regions.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 40
+          }
+        },
+        {
+          "text": "Nested Stacks",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reuse a common VPC pattern across many templates (line 52).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 52
+          }
+        },
+        {
+          "text": "Change Sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Team must review what changes a template update will make before applying it (line 38).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 38
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0684",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "The RDS database must not be deleted when the stack is torn down. What should the architect configure?",
+      "options": [
+        {
+          "text": "Drift Detection",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine whether anyone modified stack resources manually via the console (line 44).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 44
+          }
+        },
+        {
+          "text": "Change Sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Team must review what changes a template update will make before applying it (line 38).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 38
+          }
+        },
+        {
+          "text": "DeletionPolicy: Retain",
+          "explanation": "This is the guide's answer for this scenario (line 42). Its note: or Snapshot if they want a final copy.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 42
+          }
+        },
+        {
+          "text": "Stack Policy",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent accidental updates to a critical resource during stack updates (line 50).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 50
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0685",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "The team must find out whether anyone modified stack resources manually through the console. What should the architect use?",
+      "options": [
+        {
+          "text": "Change Sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Team must review what changes a template update will make before applying it (line 38).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 38
+          }
+        },
+        {
+          "text": "CloudFormation StackSets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy standardized security/compliance resources to all accounts in an organization, across regions (line 40).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 40
+          }
+        },
+        {
+          "text": "Nested Stacks",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reuse a common VPC pattern across many templates (line 52).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 52
+          }
+        },
+        {
+          "text": "Drift Detection",
+          "explanation": "This is the guide's answer for this scenario (line 44). Its note: template vs. reality diff.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 44
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0686",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "Developers prefer to define infrastructure in TypeScript or Python rather than YAML. What should the architect use?",
+      "options": [
+        {
+          "text": "AWS CDK",
+          "explanation": "This is the guide's answer for this scenario (line 46). Its note: code that compiles to CloudFormation.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 46
+          }
+        },
+        {
+          "text": "CloudFormation StackSets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy standardized security/compliance resources to all accounts in an organization, across regions (line 40).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 40
+          }
+        },
+        {
+          "text": "Nested Stacks",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reuse a common VPC pattern across many templates (line 52).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 52
+          }
+        },
+        {
+          "text": "DeletionPolicy: Retain",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Ensure the RDS database is not deleted when the stack is torn down (line 42).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 42
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0687",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "Identical environments must be deployed repeatedly across Regions with no manual steps. What should the architect use?",
+      "options": [
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "CloudFormation templates",
+          "explanation": "This is the guide's answer for this scenario (line 48). Its note: the core IaC pitch.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0688",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "Accidental updates to a critical resource must be prevented during stack updates. What should the architect configure?",
+      "options": [
+        {
+          "text": "Drift Detection",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine whether anyone modified stack resources manually via the console (line 44).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 44
+          }
+        },
+        {
+          "text": "Change Sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Team must review what changes a template update will make before applying it (line 38).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 38
+          }
+        },
+        {
+          "text": "Stack Policy",
+          "explanation": "This is the guide's answer for this scenario (line 50). Its note: update-protection inside a stack.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "DeletionPolicy: Retain",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Ensure the RDS database is not deleted when the stack is torn down (line 42).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 42
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0689",
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "stem": "A common VPC pattern must be reused across many templates. What should the architect use?",
+      "options": [
+        {
+          "text": "Change Sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Team must review what changes a template update will make before applying it (line 38).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 38
+          }
+        },
+        {
+          "text": "CloudFormation StackSets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Deploy standardized security/compliance resources to all accounts in an organization, across regions (line 40).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 40
+          }
+        },
+        {
+          "text": "Stack Policy",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent accidental updates to a critical resource during stack updates (line 50).",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "Nested Stacks",
+          "explanation": "This is the guide's answer for this scenario (line 52). Its note: componentize the recipe.",
+          "source": {
+            "guide": "content/saa-c03/28-CloudFormation.md",
+            "line": 52
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    }
+  ]
+}
