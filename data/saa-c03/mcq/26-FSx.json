@@ -1,0 +1,298 @@
+{
+  "questions": [
+    {
+      "id": "q0650",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "Windows applications need shared storage with Active Directory authentication. Which service fits?",
+      "options": [
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "This is the guide's answer for this scenario (line 46). Its note: SMB + AD = Windows FSx; EFS can't do Windows.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 46
+          }
+        },
+        {
+          "text": "FSx for Lustre",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ML training job needs high-throughput access to a dataset stored in S3 (line 48).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "FSx for OpenZFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an on-prem ZFS file server serving NFS to Linux clients (line 58).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "S3 File Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an aging NAS; store files in S3 but keep low-latency local access over SMB/NFS (line 69).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 69
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0651",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "A machine-learning training job needs high-throughput access to a dataset stored in S3. Which service fits?",
+      "options": [
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate on-premises NetApp storage to AWS with minimal changes (line 50).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "FSx for Lustre",
+          "explanation": "This is the guide's answer for this scenario (line 48). Its note: only Lustre mounts S3 as a filesystem at HPC speed.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Windows applications need shared storage with Active Directory authentication (line 46).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 46
+          }
+        },
+        {
+          "text": "FSx for OpenZFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an on-prem ZFS file server serving NFS to Linux clients (line 58).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 58
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0652",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "On-premises NetApp storage must be migrated to AWS with minimal changes. Which service fits?",
+      "options": [
+        {
+          "text": "FSx for Lustre",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ML training job needs high-throughput access to a dataset stored in S3 (line 48).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "FSx for OpenZFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an on-prem ZFS file server serving NFS to Linux clients (line 58).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "This is the guide's answer for this scenario (line 50). Its note: the word \"NetApp\" is the whole answer.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Windows applications need shared storage with Active Directory authentication (line 46).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 46
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0653",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "A batch processing job needs short-term, cost-optimized high-performance storage. Which option fits?",
+      "options": [
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Windows applications need shared storage with Active Directory authentication (line 46).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 46
+          }
+        },
+        {
+          "text": "FSx for OpenZFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an on-prem ZFS file server serving NFS to Linux clients (line 58).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate on-premises NetApp storage to AWS with minimal changes (line 50).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "FSx for Lustre Scratch",
+          "explanation": "This is the guide's answer for this scenario (line 52). Its note: temporary + cheap + no replication = Scratch.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 52
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0654",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "A file share must be accessed by both Linux (NFS) and Windows (SMB) clients. Which service fits?",
+      "options": [
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "This is the guide's answer for this scenario (line 54). Its note: the only multi-protocol option.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 54
+          }
+        },
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Windows applications need shared storage with Active Directory authentication (line 46).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 46
+          }
+        },
+        {
+          "text": "FSx for Lustre",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ML training job needs high-throughput access to a dataset stored in S3 (line 48).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "S3 File Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an aging NAS; store files in S3 but keep low-latency local access over SMB/NFS (line 69).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 69
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0655",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "A .NET application stores user home directories and the storage must survive an AZ failure. Which option fits?",
+      "options": [
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate on-premises NetApp storage to AWS with minimal changes (line 50).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "FSx for Windows, Multi-AZ",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: Windows workload + HA = Multi-AZ Windows FSx.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "FSx for Lustre",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ML training job needs high-throughput access to a dataset stored in S3 (line 48).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "FSx for OpenZFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an on-prem ZFS file server serving NFS to Linux clients (line 58).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 58
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0656",
+      "guide": "content/saa-c03/26-FSx.md",
+      "stem": "An on-premises ZFS file server serving NFS to Linux clients must be replaced. Which service fits?",
+      "options": [
+        {
+          "text": "FSx for Lustre",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: ML training job needs high-throughput access to a dataset stored in S3 (line 48).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 48
+          }
+        },
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate on-premises NetApp storage to AWS with minimal changes (line 50).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 50
+          }
+        },
+        {
+          "text": "FSx for OpenZFS",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: ZFS named → OpenZFS.",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Windows applications need shared storage with Active Directory authentication (line 46).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 46
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

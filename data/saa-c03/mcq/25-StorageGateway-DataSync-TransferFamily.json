@@ -1,0 +1,382 @@
+{
+  "questions": [
+    {
+      "id": "q0630",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "The company wants to eliminate its physical tape backup infrastructure but keep its existing backup software. What should the architect use?",
+      "options": [
+        {
+          "text": "Tape Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 67). Its note: virtual tape library → S3/Glacier; software sees tapes)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "DataSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 50 TB from an on-prem NAS to S3, preserving file permissions and metadata, minimal effort (line 71).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "FSx for NetApp ONTAP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate on-premises NetApp storage to AWS with minimal changes (line 50).",
+          "source": {
+            "guide": "content/saa-c03/26-FSx.md",
+            "line": 50
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0631",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "An aging NAS must be replaced: files should be stored in S3 while on-premises users keep low-latency local access over SMB or NFS. What should the architect use?",
+      "options": [
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "S3 File Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 69). Its note: cloud-backed share with local cache)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "DataSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 50 TB from an on-prem NAS to S3, preserving file permissions and metadata, minimal effort (line 71).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 71
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0632",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "50 TB must be migrated from an on-premises NAS to S3, preserving file permissions and metadata, with minimal effort. What should the architect use?",
+      "options": [
+        {
+          "text": "Volume Gateway — Stored",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On-prem app needs low-latency access to the ENTIRE dataset, with backups to AWS for DR (line 75).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "DataSync",
+          "explanation": "This is the guide's answer for this scenario (line 71). Its note: migration engine; preserves metadata; gateway is for ongoing access, not moves)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0633",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "Business partners upload files over SFTP and cannot change their workflow; the files must land in S3. What should the architect use?",
+      "options": [
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "DataSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 50 TB from an on-prem NAS to S3, preserving file permissions and metadata, minimal effort (line 71).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Volume Gateway — Cached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On-prem storage is running out of space; extend capacity while keeping frequently used data fast (line 77).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Transfer Family",
+          "explanation": "This is the guide's answer for this scenario (line 73). Its note: managed SFTP endpoint — never build SFTP on EC2)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0634",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "An on-premises application needs low-latency access to the entire dataset, with backups to AWS for disaster recovery. Which option fits?",
+      "options": [
+        {
+          "text": "Volume Gateway — Stored",
+          "explanation": "This is the guide's answer for this scenario (line 75). Its note: full data local, async snapshots to S3)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Volume Gateway — Cached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On-prem storage is running out of space; extend capacity while keeping frequently used data fast (line 77).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0635",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "On-premises storage is running out of space. The architect must extend capacity while keeping frequently used data fast. Which option fits?",
+      "options": [
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Volume Gateway — Cached",
+          "explanation": "This is the guide's answer for this scenario (line 77). Its note: primary in S3, hot cache local)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Volume Gateway — Stored",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On-prem app needs low-latency access to the ENTIRE dataset, with backups to AWS for DR (line 75).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0636",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "Files must be copied nightly from on-premises SMB shares to EFS, with bandwidth throttling. What should the architect use?",
+      "options": [
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "Volume Gateway — Cached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: On-prem storage is running out of space; extend capacity while keeping frequently used data fast (line 77).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "DataSync",
+          "explanation": "This is the guide's answer for this scenario (line 79). Its note: scheduled transfers + throttling are its signature features)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0637",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "On-premises users need low-latency access to file shares stored on FSx for Windows File Server. What should the architect use?",
+      "options": [
+        {
+          "text": "S3 File Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an aging NAS; store files in S3 but keep low-latency local access over SMB/NFS (line 69).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "FSx File Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 81).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 81
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0638",
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "stem": "Data must be transferred between S3 and EFS within AWS. What should the architect use?",
+      "options": [
+        {
+          "text": "DataSync",
+          "explanation": "This is the guide's answer for this scenario (line 83). Its note: works AWS-to-AWS too, agentless)..",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Tape Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants to eliminate its physical tape backup infrastructure but keep existing backup software (line 67).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "Transfer Family",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Business partners upload files via SFTP and cannot change their workflow; files must land in S3 (line 73).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 73
+          }
+        },
+        {
+          "text": "S3 File Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Replace an aging NAS; store files in S3 but keep low-latency local access over SMB/NFS (line 69).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 69
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

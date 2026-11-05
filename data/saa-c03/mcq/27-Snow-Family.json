@@ -1,0 +1,298 @@
+{
+  "questions": [
+    {
+      "id": "q0666",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "200 TB must be migrated from a site with a 100 Mbps link, with a deadline in 3 weeks. Which option fits?",
+      "options": [
+        {
+          "text": "Snowball Edge Storage Optimized",
+          "explanation": "This is the guide's answer for this scenario (line 39). Its note: network math = months, so ship devices — a few 80 TB units.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "Snowmobile",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Decommission an entire datacenter: multiple petabytes (>10 PB) to AWS (line 41).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Snowcone",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small remote clinic needs to transfer ~8–10 TB from a space- and power-constrained site (line 47).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "DataSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 50 TB from an on-prem NAS to S3, preserving file permissions and metadata, minimal effort (line 71).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 71
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0667",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "An entire datacenter holding more than 10 PB must be moved to AWS. Which option fits?",
+      "options": [
+        {
+          "text": "DataSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 50 TB from an on-prem NAS to S3, preserving file permissions and metadata, minimal effort (line 71).",
+          "source": {
+            "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+            "line": 71
+          }
+        },
+        {
+          "text": "Snowmobile",
+          "explanation": "This is the guide's answer for this scenario (line 41). Its note: past ~10 PB, send the truck.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Snowball Edge Storage Optimized",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 200 TB, the site has a 100 Mbps link, deadline in 3 weeks (line 39).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "Snowcone",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small remote clinic needs to transfer ~8–10 TB from a space- and power-constrained site (line 47).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 47
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0668",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "A research ship must run analysis on collected data with no internet connectivity. Which option fits?",
+      "options": [
+        {
+          "text": "Snowmobile",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Decommission an entire datacenter: multiple petabytes (>10 PB) to AWS (line 41).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "AWS OpsHub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Manage Snow devices with a graphical interface (line 51).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "Snowball Edge Compute Optimized",
+          "explanation": "This is the guide's answer for this scenario (line 43). Its note: compute at the disconnected edge; GPU if ML is mentioned.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "Snowball Edge Storage Optimized",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 200 TB, the site has a 100 Mbps link, deadline in 3 weeks (line 39).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 39
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0669",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "The company wants to archive 80 TB directly into S3 Glacier using Snowball. What is the right approach?",
+      "options": [
+        {
+          "text": "Snowmobile",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Decommission an entire datacenter: multiple petabytes (>10 PB) to AWS (line 41).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Snowball Edge Compute Optimized",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Research ship must run analysis on collected data with no internet connectivity (line 43).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "AWS OpsHub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Manage Snow devices with a graphical interface (line 51).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "Import to S3, then lifecycle rule to Glacier",
+          "explanation": "This is the guide's answer for this scenario (line 45). Its note: Snowball can't write to Glacier directly — THE trap.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 45
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0670",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "A small remote clinic must transfer about 8 to 10 TB from a space- and power-constrained site. Which option fits?",
+      "options": [
+        {
+          "text": "Snowcone",
+          "explanation": "This is the guide's answer for this scenario (line 47). Its note: tiny footprint, tiny capacity.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Snowball Edge Storage Optimized",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 200 TB, the site has a 100 Mbps link, deadline in 3 weeks (line 39).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "Snowmobile",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Decommission an entire datacenter: multiple petabytes (>10 PB) to AWS (line 41).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "AWS OpsHub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Manage Snow devices with a graphical interface (line 51).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 51
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0671",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "40 TB must be transferred once and would take 6 weeks over the existing connection. Which option fits?",
+      "options": [
+        {
+          "text": "AWS OpsHub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Manage Snow devices with a graphical interface (line 51).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "Snowball Edge",
+          "explanation": "This is the guide's answer for this scenario (line 49). Its note: >1 week over the wire → Snow family.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 49
+          }
+        },
+        {
+          "text": "Snowmobile",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Decommission an entire datacenter: multiple petabytes (>10 PB) to AWS (line 41).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Snowcone",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small remote clinic needs to transfer ~8–10 TB from a space- and power-constrained site (line 47).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 47
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0672",
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "stem": "The team wants to manage Snow devices with a graphical interface. What should the architect use?",
+      "options": [
+        {
+          "text": "Snowmobile",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Decommission an entire datacenter: multiple petabytes (>10 PB) to AWS (line 41).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Snowcone",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Small remote clinic needs to transfer ~8–10 TB from a space- and power-constrained site (line 47).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "AWS OpsHub",
+          "explanation": "This is the guide's answer for this scenario (line 51). Its note: the Snow GUI.",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "Snowball Edge Storage Optimized",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate 200 TB, the site has a 100 Mbps link, deadline in 3 weeks (line 39).",
+          "source": {
+            "guide": "content/saa-c03/27-Snow-Family.md",
+            "line": 39
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
