@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "q0814",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "The apex domain example.com must be routed to an Application Load Balancer. Which record type fits?",
+      "options": [
+        {
+          "text": "Alias record",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: CNAME illegal at apex.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "NACL deny rule",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Block a specific malicious IP address (line 58).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private subnet needs S3 access at no cost (line 60).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Network Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Static IPs required by the firewall team for the load balancer (line 66).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0815",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "A specific malicious IP address must be blocked. What should the architect configure?",
+      "options": [
+        {
+          "text": "Global Accelerator",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Improve performance AND static IPs for global TCP/UDP app (line 68).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "NACL deny rule",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: security groups can't deny.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private subnet needs S3 access at no cost (line 60).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Network Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Static IPs required by the firewall team for the load balancer (line 66).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0816",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "A private subnet needs access to S3 at no cost. What should the architect use?",
+      "options": [
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide pairs this answer with: Transitive routing (line 81).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Resolver inbound endpoint",
+          "explanation": "Not this one. The guide pairs this answer with: On-prem → VPC DNS (line 143).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 143
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "This is the guide's answer for this scenario (line 60). Its note: NAT Gateway is the paid decoy.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Egress-only Internet Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: IPv6-only instances need outbound internet access but must block inbound (line 112).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 112
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0817",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "An existing unencrypted RDS instance must be encrypted. What is the approach?",
+      "options": [
+        {
+          "text": "FSx for Windows",
+          "explanation": "Not this one. The guide pairs this answer with: Windows file share (line 80).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Secrets Manager",
+          "explanation": "Not this one. The guide pairs this answer with: Auto-rotation (line 86).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "Aurora cloning",
+          "explanation": "Not this one. The guide pairs this answer with: Instant prod DB copy for testing (line 167).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 167
+          }
+        },
+        {
+          "text": "Snapshot → encrypted copy → restore",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: \"enable encryption\" checkbox doesn't exist.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0818",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "Orders must be fanned out to inventory, billing and shipping, and none may be lost. What is the design?",
+      "options": [
+        {
+          "text": "SNS topic → three SQS queues",
+          "explanation": "This is the guide's answer for this scenario (line 64). Its note: durability per consumer.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "AppFlow",
+          "explanation": "Not this one. The guide pairs this answer with: SaaS → S3 (line 153).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 153
+          }
+        },
+        {
+          "text": "AppSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs a GraphQL API with real-time data sync (line 118).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 118
+          }
+        },
+        {
+          "text": "SES",
+          "explanation": "Not this one. The guide pairs this answer with: Application emails (line 165).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 165
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0819",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "The firewall team requires static IP addresses for the load balancer. Which option fits?",
+      "options": [
+        {
+          "text": "Secrets Manager",
+          "explanation": "Not this one. The guide pairs this answer with: Auto-rotation (line 86).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "Network Load Balancer",
+          "explanation": "This is the guide's answer for this scenario (line 66). Its note: ALB has none.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Alias record",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route example.com (apex) to an ALB (line 56).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private subnet needs S3 access at no cost (line 60).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0820",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "A global TCP/UDP application needs better performance and static IP addresses. Which service fits?",
+      "options": [
+        {
+          "text": "Alias record",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route example.com (apex) to an ALB (line 56).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide pairs this answer with: Transitive routing (line 81).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Global Accelerator",
+          "explanation": "This is the guide's answer for this scenario (line 68). Its note: CloudFront can't do UDP.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Network Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Static IPs required by the firewall team for the load balancer (line 66).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0821",
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "stem": "Database credentials must be rotated automatically every 30 days. Which service fits?",
+      "options": [
+        {
+          "text": "CloudHSM",
+          "explanation": "Not this one. The guide pairs this answer with: FIPS Level 3 (line 83).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "ACM",
+          "explanation": "Not this one. The guide pairs this answer with: Free auto-renewing TLS certs (line 140).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "AWS Artifact",
+          "explanation": "Not this one. The guide pairs this answer with: Compliance reports for auditors (line 169).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "Secrets Manager",
+          "explanation": "This is the guide's answer for this scenario (line 70). Its note: Parameter Store is the decoy.",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

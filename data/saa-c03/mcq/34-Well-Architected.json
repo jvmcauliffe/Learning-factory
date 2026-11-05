@@ -1,0 +1,256 @@
+{
+  "questions": [
+    {
+      "id": "q0781",
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "stem": "Two proposed designs both meet every requirement, and the question asks for the MOST cost-effective one. How should the architect choose?",
+      "options": [
+        {
+          "text": "the cheaper one that still works",
+          "explanation": "This is the guide's answer for this scenario (line 39). Its note: Cost Optimization is steering — e.g., Spot over On-Demand for fault-tolerant batch.",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "AWS Well-Architected Tool",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Ensure the architecture follows AWS best practices at no additional cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Sustainability",
+          "explanation": "Not this one. The guide pairs this answer with: Maximize utilization, Graviton (line 60).",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Reliability (Multi-AZ, ASG, Route 53)",
+          "explanation": "Not this one. The guide pairs this answer with: Survive failure, stop guessing capacity (line 57).",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 57
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0782",
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "stem": "A production database runs in a single Availability Zone and its reliability must be improved. What should the architect do?",
+      "options": [
+        {
+          "text": "AWS Well-Architected Tool",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Ensure the architecture follows AWS best practices at no additional cost (line 47).",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Enable Multi-AZ",
+          "explanation": "This is the guide's answer for this scenario (line 41). Its note: Reliability pillar: survive AZ failure with automatic failover.",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Graviton instances / serverless",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce the environmental impact of the workload (line 49).",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 49
+          }
+        },
+        {
+          "text": "CloudFront",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Improve performance for global users (line 45).",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 45
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0783",
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "stem": "The team must run containers with the LEAST operational overhead. Which option fits?",
+      "options": [
+        {
+          "text": "EMR with Spot task nodes",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Data team needs managed Apache Spark for nightly processing at low cost (line 124).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 124
+          }
+        },
+        {
+          "text": "Amplify",
+          "explanation": "Not this one. The guide pairs this answer with: Full-stack quickstart (line 164).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 164
+          }
+        },
+        {
+          "text": "Fargate over EC2 launch type",
+          "explanation": "This is the guide's answer for this scenario (line 43). Its note: Operational Excellence/managed-first: no servers to patch.",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "Outposts",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Regulations require workloads to run in the company's own datacenter using AWS services (line 126).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 126
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0784",
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "stem": "Users around the world experience slow response times. What should the architect use to improve performance for them?",
+      "options": [
+        {
+          "text": "Egress-only Internet Gateway",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: IPv6-only instances need outbound internet access but must block inbound (line 112).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 112
+          }
+        },
+        {
+          "text": "Textract",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically extract fields and tables from scanned invoices (line 114).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 114
+          }
+        },
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide pairs this answer with: Transitive routing (line 81).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "CloudFront",
+          "explanation": "This is the guide's answer for this scenario (line 45). Its note: Performance Efficiency: go global, cache at the edge.",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 45
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0785",
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "stem": "The company wants to check, at no additional cost, whether its architecture follows AWS best practices. Which tool fits?",
+      "options": [
+        {
+          "text": "AWS Well-Architected Tool",
+          "explanation": "This is the guide's answer for this scenario (line 47). Its note: free console questionnaire → improvement plan.",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "AWS Artifact",
+          "explanation": "Not this one. The guide pairs this answer with: Compliance reports for auditors (line 169).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide pairs this answer with: Distributed tracing (line 168).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "CloudHSM",
+          "explanation": "Not this one. The guide pairs this answer with: FIPS Level 3 (line 83).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0786",
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "stem": "The company wants to reduce the environmental impact of a workload. Which approach fits?",
+      "options": [
+        {
+          "text": "QuickSight",
+          "explanation": "Not this one. The guide pairs this answer with: BI dashboards (line 151).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 151
+          }
+        },
+        {
+          "text": "Graviton instances / serverless",
+          "explanation": "This is the guide's answer for this scenario (line 49). Its note: Sustainability: maximize utilization.",
+          "source": {
+            "guide": "content/saa-c03/34-Well-Architected.md",
+            "line": 49
+          }
+        },
+        {
+          "text": "Outposts",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Regulations require workloads to run in the company's own datacenter using AWS services (line 126).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 126
+          }
+        },
+        {
+          "text": "MSK",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a self-managed Apache Kafka cluster with no application changes (line 116).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 116
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    }
+  ]
+}

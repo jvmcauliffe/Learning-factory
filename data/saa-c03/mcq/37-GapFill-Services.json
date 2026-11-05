@@ -1,0 +1,508 @@
+{
+  "questions": [
+    {
+      "id": "q0836",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "An on-premises application uses RabbitMQ with AMQP and must be migrated with minimal code changes. Which service fits?",
+      "options": [
+        {
+          "text": "Amazon MQ",
+          "explanation": "This is the guide's answer for this scenario (line 108). Its note: protocol keywords = MQ; SQS would mean rewriting.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 108
+          }
+        },
+        {
+          "text": "MSK",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a self-managed Apache Kafka cluster with no application changes (line 116).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 116
+          }
+        },
+        {
+          "text": "AppSync",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Mobile app needs a GraphQL API with real-time data sync (line 118).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 118
+          }
+        },
+        {
+          "text": "SES",
+          "explanation": "Not this one. The guide pairs this answer with: Application emails (line 165).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 165
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0837",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "HTTPS is required on CloudFront with a custom domain. Where must the certificate be provisioned?",
+      "options": [
+        {
+          "text": "AWS Artifact",
+          "explanation": "Not this one. The guide pairs this answer with: Compliance reports for auditors (line 169).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "ACM in us-east-1",
+          "explanation": "This is the guide's answer for this scenario (line 110). Its note: CloudFront only reads certs from N. Virginia.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 110
+          }
+        },
+        {
+          "text": "CloudHSM",
+          "explanation": "Not this one. The guide pairs this answer with: FIPS Level 3 (line 83).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Secrets Manager",
+          "explanation": "Not this one. The guide pairs this answer with: Auto-rotation (line 86).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 86
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0838",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "IPv6-only instances need outbound internet access but inbound connections must be blocked. What should the architect use?",
+      "options": [
+        {
+          "text": "Transit Gateway",
+          "explanation": "Not this one. The guide pairs this answer with: Transitive routing (line 81).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Resolver inbound endpoint",
+          "explanation": "Not this one. The guide pairs this answer with: On-prem → VPC DNS (line 143).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 143
+          }
+        },
+        {
+          "text": "Egress-only Internet Gateway",
+          "explanation": "This is the guide's answer for this scenario (line 112). Its note: the IPv6 answer; NAT gateway is IPv4.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 112
+          }
+        },
+        {
+          "text": "Gateway VPC Endpoint",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Private subnet needs S3 access at no cost (line 60).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 60
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0839",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "Fields and tables must be extracted automatically from scanned invoices. Which service fits?",
+      "options": [
+        {
+          "text": "Rekognition",
+          "explanation": "Not this one. The guide pairs this answer with: Images/video analysis (line 154).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 154
+          }
+        },
+        {
+          "text": "Comprehend",
+          "explanation": "Not this one. The guide pairs this answer with: Sentiment (line 156).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 156
+          }
+        },
+        {
+          "text": "Kendra",
+          "explanation": "Not this one. The guide pairs this answer with: Intelligent doc search (line 158).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 158
+          }
+        },
+        {
+          "text": "Textract",
+          "explanation": "This is the guide's answer for this scenario (line 114). Its note: forms/documents, beyond OCR — not Rekognition.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 114
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0840",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "A self-managed Apache Kafka cluster must be migrated with no application changes. Which service fits?",
+      "options": [
+        {
+          "text": "MSK",
+          "explanation": "This is the guide's answer for this scenario (line 116). Its note: the word Kafka does all the work.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 116
+          }
+        },
+        {
+          "text": "Amazon MQ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Existing on-prem app uses RabbitMQ with AMQP; migrate with minimal code changes (line 108).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 108
+          }
+        },
+        {
+          "text": "EMR",
+          "explanation": "Not this one. The guide pairs this answer with: Spark / Hadoop (line 149).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 149
+          }
+        },
+        {
+          "text": "AppFlow",
+          "explanation": "Not this one. The guide pairs this answer with: SaaS → S3 (line 153).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 153
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0841",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "A mobile app needs a GraphQL API with real-time data sync. Which service fits?",
+      "options": [
+        {
+          "text": "SES",
+          "explanation": "Not this one. The guide pairs this answer with: Application emails (line 165).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 165
+          }
+        },
+        {
+          "text": "AppSync",
+          "explanation": "This is the guide's answer for this scenario (line 118). Its note: GraphQL/subscriptions/offline = AppSync every time.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 118
+          }
+        },
+        {
+          "text": "Amazon MQ",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Existing on-prem app uses RabbitMQ with AMQP; migrate with minimal code changes (line 108).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 108
+          }
+        },
+        {
+          "text": "AppFlow",
+          "explanation": "Not this one. The guide pairs this answer with: SaaS → S3 (line 153).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 153
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0842",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "OS security patches must be applied automatically to 500 EC2 instances every month. What should the architect use?",
+      "options": [
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide pairs this answer with: Distributed tracing (line 168).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "AWS Artifact",
+          "explanation": "Not this one. The guide pairs this answer with: Compliance reports for auditors (line 169).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "SSM Patch Manager",
+          "explanation": "This is the guide's answer for this scenario (line 120). Its note: fleet patching on a schedule.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 120
+          }
+        },
+        {
+          "text": "SSM Session Manager",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Shell access to private instances without SSH keys or bastion hosts (line 128).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 128
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0843",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "All objects already stored in an S3 bucket must be encrypted. What should the architect use?",
+      "options": [
+        {
+          "text": "Aurora cloning",
+          "explanation": "Not this one. The guide pairs this answer with: Instant prod DB copy for testing (line 167).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 167
+          }
+        },
+        {
+          "text": "AppFlow",
+          "explanation": "Not this one. The guide pairs this answer with: SaaS → S3 (line 153).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 153
+          }
+        },
+        {
+          "text": "Rekognition",
+          "explanation": "Not this one. The guide pairs this answer with: Images/video analysis (line 154).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 154
+          }
+        },
+        {
+          "text": "S3 Batch Operations",
+          "explanation": "This is the guide's answer for this scenario (line 122). Its note: default encryption only covers new objects.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 122
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0844",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "A data team needs managed Apache Spark for nightly processing at low cost. Which option fits?",
+      "options": [
+        {
+          "text": "EMR with Spot task nodes",
+          "explanation": "This is the guide's answer for this scenario (line 124). Its note: Spark = EMR; Spot = cheap.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 124
+          }
+        },
+        {
+          "text": "MSK",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Migrate a self-managed Apache Kafka cluster with no application changes (line 116).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 116
+          }
+        },
+        {
+          "text": "QuickSight",
+          "explanation": "Not this one. The guide pairs this answer with: BI dashboards (line 151).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 151
+          }
+        },
+        {
+          "text": "SageMaker",
+          "explanation": "Not this one. The guide pairs this answer with: Custom ML (line 160).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 160
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0845",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "Regulations require workloads to run in the company's own datacenter while using AWS services. What should the architect use?",
+      "options": [
+        {
+          "text": "MGN",
+          "explanation": "Not this one. The guide pairs this answer with: Lift-and-shift servers (rehost) (line 137).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 137
+          }
+        },
+        {
+          "text": "Outposts",
+          "explanation": "This is the guide's answer for this scenario (line 126). Its note: AWS racks on your floor — data residency.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 126
+          }
+        },
+        {
+          "text": "Local Zones",
+          "explanation": "Not this one. The guide pairs this answer with: Single-digit ms to a metro city (line 146).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 146
+          }
+        },
+        {
+          "text": "Wavelength",
+          "explanation": "Not this one. The guide pairs this answer with: 5G edge (line 147).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 147
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0846",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "Administrators need shell access to private instances without SSH keys or bastion hosts. What should the architect use?",
+      "options": [
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide pairs this answer with: Distributed tracing (line 168).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "CloudHSM",
+          "explanation": "Not this one. The guide pairs this answer with: FIPS Level 3 (line 83).",
+          "source": {
+            "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "SSM Session Manager",
+          "explanation": "This is the guide's answer for this scenario (line 128). Its note: no port 22, fully audited.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 128
+          }
+        },
+        {
+          "text": "SSM Patch Manager",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically apply OS security patches to 500 EC2 instances monthly (line 120).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 120
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0847",
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "stem": "An Oracle database must be migrated to Aurora PostgreSQL. What should the architect use?",
+      "options": [
+        {
+          "text": "MGN",
+          "explanation": "Not this one. The guide pairs this answer with: Lift-and-shift servers (rehost) (line 137).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 137
+          }
+        },
+        {
+          "text": "Elastic Disaster Recovery (DRS)",
+          "explanation": "Not this one. The guide pairs this answer with: DR replication, RPO seconds (line 138).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Aurora cloning",
+          "explanation": "Not this one. The guide pairs this answer with: Instant prod DB copy for testing (line 167).",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 167
+          }
+        },
+        {
+          "text": "DMS + SCT",
+          "explanation": "This is the guide's answer for this scenario (line 130). Its note: different engines = heterogeneous = add the Schema Conversion Tool.",
+          "source": {
+            "guide": "content/saa-c03/37-GapFill-Services.md",
+            "line": 130
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
