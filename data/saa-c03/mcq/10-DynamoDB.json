@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0296",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "A flash sale causes unpredictable traffic spikes and the table throttles. Which capacity mode fits?",
+      "options": [
+        {
+          "text": "On-Demand capacity mode",
+          "explanation": "This is the guide's answer for this scenario (line 82). Its note: pay-per-request absorbs spikes.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce read latency to microseconds without changing application code (line 83).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "TTL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically remove session records after 30 minutes, at no cost (line 86).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "GSI",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Table keyed on user_id, but app must also query by email (line 87).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0297",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "The architect must cut read latency to microseconds without changing application code. What should be added?",
+      "options": [
+        {
+          "text": "On-Demand capacity mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Flash sale causes unpredictable spikes; table throttles (line 82).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "This is the guide's answer for this scenario (line 83). Its note: API-compatible cache, DynamoDB-only.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Global Tables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global users need low-latency reads AND writes in every region (line 84).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "DynamoDB Streams + Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run custom logic whenever items are added or modified (line 85).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 85
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0298",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "Global users need low-latency reads and writes in every region. Which feature fits?",
+      "options": [
+        {
+          "text": "GSI",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Table keyed on user_id, but app must also query by email (line 87).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "DynamoDB Transactions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Debit one account and credit another — both or neither (line 88).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "Global Tables",
+          "explanation": "This is the guide's answer for this scenario (line 84). Its note: active-active; Aurora Global has only one writer.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce read latency to microseconds without changing application code (line 83).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0299",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "Custom logic must run whenever items are added or modified. What should the architect use?",
+      "options": [
+        {
+          "text": "TTL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically remove session records after 30 minutes, at no cost (line 86).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "Global Tables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global users need low-latency reads AND writes in every region (line 84).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "DynamoDB Transactions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Debit one account and credit another — both or neither (line 88).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "DynamoDB Streams + Lambda",
+          "explanation": "This is the guide's answer for this scenario (line 85). Its note: 24-hour change feed triggers functions.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 85
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0300",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "Session records must be removed automatically after 30 minutes, at no cost. What should the architect use?",
+      "options": [
+        {
+          "text": "TTL",
+          "explanation": "This is the guide's answer for this scenario (line 86). Its note: free auto-delete, ~48h window.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "DynamoDB Streams + Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run custom logic whenever items are added or modified (line 85).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "On-Demand capacity mode",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Flash sale causes unpredictable spikes; table throttles (line 82).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "GSI",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Table keyed on user_id, but app must also query by email (line 87).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0301",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "A table is keyed on user_id, but the application must also query by email. What should be added?",
+      "options": [
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce read latency to microseconds without changing application code (line 83).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "GSI",
+          "explanation": "This is the guide's answer for this scenario (line 87). Its note: new query attribute, addable anytime — LSI is creation-time-only bait.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "DynamoDB Transactions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Debit one account and credit another — both or neither (line 88).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "Global Tables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global users need low-latency reads AND writes in every region (line 84).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0302",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "A transfer must debit one account and credit another: both succeed or neither does. Which feature fits?",
+      "options": [
+        {
+          "text": "Strongly consistent read",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Application must always see the most recent write (line 90).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 90
+          }
+        },
+        {
+          "text": "DynamoDB Streams + Lambda",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Run custom logic whenever items are added or modified (line 85).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "DynamoDB Transactions",
+          "explanation": "This is the guide's answer for this scenario (line 88). Its note: ACID, 2x capacity cost.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 88
+          }
+        },
+        {
+          "text": "GSI",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Table keyed on user_id, but app must also query by email (line 87).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0303",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "An application must store 2 MB documents per record. What is the right design?",
+      "options": [
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Reduce read latency to microseconds without changing application code (line 83).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Global Tables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global users need low-latency reads AND writes in every region (line 84).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "TTL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically remove session records after 30 minutes, at no cost (line 86).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "S3 for the object, DynamoDB holds the pointer",
+          "explanation": "This is the guide's answer for this scenario (line 89). Its note: 400 KB item limit.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 89
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0304",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "The application must always see the most recent write. Which read type fits?",
+      "options": [
+        {
+          "text": "Strongly consistent read",
+          "explanation": "This is the guide's answer for this scenario (line 90). Its note: 1 RCU vs 2 eventual reads.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 90
+          }
+        },
+        {
+          "text": "Global Tables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global users need low-latency reads AND writes in every region (line 84).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "TTL",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically remove session records after 30 minutes, at no cost (line 86).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "GSI",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Table keyed on user_id, but app must also query by email (line 87).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0305",
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "stem": "Reporting needs joins across many tables. Which service fits?",
+      "options": [
+        {
+          "text": "Global Tables",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Global users need low-latency reads AND writes in every region (line 84).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "RDS/Aurora",
+          "explanation": "This is the guide's answer for this scenario (line 91). Its note: not DynamoDB (relational = SQL.",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 91
+          }
+        },
+        {
+          "text": "GSI",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Table keyed on user_id, but app must also query by email (line 87).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "DynamoDB Transactions",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Debit one account and credit another — both or neither (line 88).",
+          "source": {
+            "guide": "content/saa-c03/10-DynamoDB.md",
+            "line": 88
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

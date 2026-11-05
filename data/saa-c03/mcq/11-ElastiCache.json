@@ -1,0 +1,382 @@
+{
+  "questions": [
+    {
+      "id": "q0320",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "Popular product pages generate thousands of identical reads that overload the RDS database. Which service fits?",
+      "options": [
+        {
+          "text": "ElastiCache",
+          "explanation": "This is the guide's answer for this scenario (line 76). Its note: repeated reads belong in memory.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "Redis sorted sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Real-time gaming leaderboard with player rankings (line 77).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0321",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "A real-time gaming leaderboard needs player rankings. Which option fits?",
+      "options": [
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Redis sorted sets",
+          "explanation": "This is the guide's answer for this scenario (line 77). Its note: ranking is built in — free points.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "write-through",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cached prices must never be out of date (line 81).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 81
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0322",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "Users are logged out when the Auto Scaling group terminates instances. What is the fix?",
+      "options": [
+        {
+          "text": "Read Replica",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Long analytical/reporting queries slow the production database (line 82).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "store sessions in ElastiCache for Redis",
+          "explanation": "This is the guide's answer for this scenario (line 78). Its note: make the web tier stateless.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 78
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0323",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "A cache must survive a node failure without data loss. Which engine fits?",
+      "options": [
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "write-through",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cached prices must never be out of date (line 81).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Redis",
+          "explanation": "This is the guide's answer for this scenario (line 79). Its note: replication + Multi-AZ failover; Memcached has neither.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 79
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0324",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "The company wants the simplest, multithreaded cache and accepts losing cached data. Which engine fits?",
+      "options": [
+        {
+          "text": "Memcached",
+          "explanation": "This is the guide's answer for this scenario (line 80). Its note: the only time it wins.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Redis",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cache must survive a node failure without data loss (line 79).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "write-through",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cached prices must never be out of date (line 81).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0325",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "Cached prices must never be out of date. Which caching strategy fits?",
+      "options": [
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "write-through",
+          "explanation": "This is the guide's answer for this scenario (line 81). Its note: cache updated on every write; lazy loading can serve stale.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Lazy loading (+ TTL)",
+          "explanation": "Not this one. The guide pairs this answer with: Stale-tolerant, cache only hot data (line 96).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 96
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0326",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "Long analytical and reporting queries are slowing the production database. What should the architect add?",
+      "options": [
+        {
+          "text": "Redis sorted sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Real-time gaming leaderboard with player rankings (line 77).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Read Replica",
+          "explanation": "This is the guide's answer for this scenario (line 82). Its note: not a cache (diverse queries never hit cache.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "ElastiCache",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Popular product pages generate thousands of identical reads that overload RDS (line 76).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 76
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0327",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "DynamoDB reads must be sped up without modifying the application. What should the architect use?",
+      "options": [
+        {
+          "text": "ElastiCache",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Popular product pages generate thousands of identical reads that overload RDS (line 76).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 76
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Redis sorted sets",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Real-time gaming leaderboard with player rankings (line 77).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 77
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "This is the guide's answer for this scenario (line 83). Its note: ElastiCache would require code changes.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0328",
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "stem": "Application components need publish/subscribe messaging through the cache layer. Which engine fits?",
+      "options": [
+        {
+          "text": "Redis",
+          "explanation": "This is the guide's answer for this scenario (line 84). Its note: pub/sub is Redis-only.",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "Memcached",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Simplest cache, multithreaded, losing cached data is fine (line 80).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "write-through",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Cached prices must never be out of date (line 81).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "DAX",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Speed up DynamoDB reads without modifying the application (line 83).",
+          "source": {
+            "guide": "content/saa-c03/11-ElastiCache.md",
+            "line": 83
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}
