@@ -130,3 +130,14 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .tq-card h2 { font-size: 1.25rem; line-height: 1.4; }
 #tq-jump { max-width: 100%; min-height: 44px; font: inherit; color: var(--fg); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px; }
 a.btn { display: inline-block; text-decoration: none; }
+.pg-big { font-size: 1.4rem; font-weight: 700; margin: 0 0 8px; }
+.pg-bar { height: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.pg-fill { height: 100%; background: var(--accent); }
+.pg-weak li { margin: 12px 0; }
+.pg-list { list-style: none; padding: 0; }
+.pg-list li { margin: 10px 0; }
+.pg-scroll { overflow-x: auto; }
+.pg-table { border-collapse: collapse; width: 100%; min-width: 560px; }
+.pg-table th, .pg-table td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; }
+.pg-table td { font-variant-numeric: tabular-nums; }
+#pg-file { max-width: 100%; min-height: 44px; font: inherit; }
