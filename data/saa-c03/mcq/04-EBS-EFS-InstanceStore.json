@@ -1,0 +1,550 @@
+{
+  "questions": [
+    {
+      "id": "q0124",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "A database needs 12,000 IOPS, and the company wants the cost-effective choice. Which EBS volume type fits?",
+      "options": [
+        {
+          "text": "gp3",
+          "explanation": "This is the guide's answer for this scenario (line 128). Its note: under the 16,000 line, and gp3 provisions IOPS cheaply.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 128
+          }
+        },
+        {
+          "text": "io1/io2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Critical database needs 50,000 IOPS (line 130).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 130
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Sequential processing of large log files, throughput-focused, cost-effective (line 132).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "Instance Store",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fastest possible storage for temporary scratch/cache data (line 140).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 140
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0125",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "A critical database needs 50,000 IOPS. Which EBS volume type fits?",
+      "options": [
+        {
+          "text": "EFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fleet of Linux instances in an ASG must share uploaded files (line 136).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "io1/io2",
+          "explanation": "This is the guide's answer for this scenario (line 130). Its note: past 16,000, only provisioned-IOPS SSD plays; sub-ms or 256k IOPS → io2 Block Express.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 130
+          }
+        },
+        {
+          "text": "gp3",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database needs 12,000 IOPS, cost-effective (line 128).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 128
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Sequential processing of large log files, throughput-focused, cost-effective (line 132).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0126",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "A workload does sequential processing of large log files, is throughput-focused, and must be cost-effective. Which EBS volume type fits?",
+      "options": [
+        {
+          "text": "io1/io2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Critical database needs 50,000 IOPS (line 130).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 130
+          }
+        },
+        {
+          "text": "sc1",
+          "explanation": "Not this one. The guide pairs this answer with: coldest, cheapest EBS (line 164).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 164
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "This is the guide's answer for this scenario (line 132). Its note: big + sequential = HDD; frequent access = st1, cold archive = sc1 — and neither can boot.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "gp3",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database needs 12,000 IOPS, cost-effective (line 128).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 128
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0127",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "A gp2 volume needs more IOPS but not more storage. What should the architect do?",
+      "options": [
+        {
+          "text": "io1/io2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Critical database needs 50,000 IOPS (line 130).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 130
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Sequential processing of large log files, throughput-focused, cost-effective (line 132).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "Instance Store",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fastest possible storage for temporary scratch/cache data (line 140).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "migrate to gp3",
+          "explanation": "This is the guide's answer for this scenario (line 134). Its note: gp2 chains IOPS to size; gp3 provisions them independently and is ~20% cheaper.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 134
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0128",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "A fleet of Linux instances in an Auto Scaling group must share uploaded files. Which storage fits?",
+      "options": [
+        {
+          "text": "EFS",
+          "explanation": "This is the guide's answer for this scenario (line 136). Its note: many mounters + multi-AZ + NFS = the shared folder.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Windows instances need shared storage with Active Directory integration (line 138).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "io1/io2 Multi-Attach",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple instances must attach the same block volume in one AZ (cluster software) (line 150).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 150
+          }
+        },
+        {
+          "text": "Instance Store",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fastest possible storage for temporary scratch/cache data (line 140).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 140
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0129",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "Windows instances need shared storage with Active Directory integration. Which service fits?",
+      "options": [
+        {
+          "text": "io1/io2 Multi-Attach",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple instances must attach the same block volume in one AZ (cluster software) (line 150).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 150
+          }
+        },
+        {
+          "text": "FSx for Windows File Server",
+          "explanation": "This is the guide's answer for this scenario (line 138). Its note: EFS is Linux-only — THE trap.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "EFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fleet of Linux instances in an ASG must share uploaded files (line 136).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Sequential processing of large log files, throughput-focused, cost-effective (line 132).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0130",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "What is the fastest possible storage for temporary scratch or cache data?",
+      "options": [
+        {
+          "text": "gp3",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database needs 12,000 IOPS, cost-effective (line 128).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 128
+          }
+        },
+        {
+          "text": "EFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fleet of Linux instances in an ASG must share uploaded files (line 136).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "Instance Store",
+          "explanation": "This is the guide's answer for this scenario (line 140). Its note: \"temporary\" unlocks it; millions of IOPS, ephemeral is fine here.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "io1/io2",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Critical database needs 50,000 IOPS (line 130).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 130
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0131",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "An application needs high-IOPS storage, and the data must persist after the instance stops. What should the architect use?",
+      "options": [
+        {
+          "text": "Instance Store",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fastest possible storage for temporary scratch/cache data (line 140).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "gp3",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database needs 12,000 IOPS, cost-effective (line 128).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 128
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Sequential processing of large log files, throughput-focused, cost-effective (line 132).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "io2 EBS, not instance store",
+          "explanation": "This is the guide's answer for this scenario (line 142). Its note: \"persist\" disqualifies the notepad.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 142
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0132",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "A data volume must survive instance termination. What should the architect configure?",
+      "options": [
+        {
+          "text": "DeleteOnTermination = false",
+          "explanation": "This is the guide's answer for this scenario (line 144). Its note: root defaults true, extra volumes default false — check which one the question means.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "Data Lifecycle Manager",
+          "explanation": "Not this one. The guide pairs this answer with: automate snapshot schedules (line 174).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 174
+          }
+        },
+        {
+          "text": "format + mount + fstab",
+          "explanation": "Not this one. The guide pairs this answer with: new extra volume unusable (line 169).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 169
+          }
+        },
+        {
+          "text": "Recycle Bin",
+          "explanation": "Not this one. The guide pairs this answer with: recover deleted snapshot (line 172).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 172
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0133",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "An architect must encrypt an existing unencrypted EBS volume. What is the procedure?",
+      "options": [
+        {
+          "text": "Recycle Bin",
+          "explanation": "Not this one. The guide pairs this answer with: recover deleted snapshot (line 172).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 172
+          }
+        },
+        {
+          "text": "snapshot → copy with encryption enabled → create volume from the encrypted copy",
+          "explanation": "This is the guide's answer for this scenario (line 146). Its note: no in-place flip exists.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 146
+          }
+        },
+        {
+          "text": "Data Lifecycle Manager",
+          "explanation": "Not this one. The guide pairs this answer with: automate snapshot schedules (line 174).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 174
+          }
+        },
+        {
+          "text": "Fast Snapshot Restore (expensive)",
+          "explanation": "Not this one. The guide pairs this answer with: instant full performance from snapshot (line 173).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 173
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0134",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "Backups of EBS volumes must go to another region for disaster recovery, automatically. What should the architect set up?",
+      "options": [
+        {
+          "text": "Recycle Bin",
+          "explanation": "Not this one. The guide pairs this answer with: recover deleted snapshot (line 172).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 172
+          }
+        },
+        {
+          "text": "Fast Snapshot Restore (expensive)",
+          "explanation": "Not this one. The guide pairs this answer with: instant full performance from snapshot (line 173).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "DLM-scheduled snapshots + cross-region snapshot copy",
+          "explanation": "This is the guide's answer for this scenario (line 148). Its note: snapshots live in S3 and copy across regions.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 148
+          }
+        },
+        {
+          "text": "Snapshot Archive (75% off, 24–72 hr restore)",
+          "explanation": "Not this one. The guide pairs this answer with: cheap rarely-restored snapshots (line 171).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 171
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0135",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "Multiple instances in one AZ must attach the same block volume for cluster software. What should the architect use?",
+      "options": [
+        {
+          "text": "EFS",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Fleet of Linux instances in an ASG must share uploaded files (line 136).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "gp3",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Database needs 12,000 IOPS, cost-effective (line 128).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 128
+          }
+        },
+        {
+          "text": "st1",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Sequential processing of large log files, throughput-focused, cost-effective (line 132).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 132
+          }
+        },
+        {
+          "text": "io1/io2 Multi-Attach",
+          "explanation": "This is the guide's answer for this scenario (line 150). Its note: up to 16 instances, same AZ — block storage, not a file system.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 150
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0136",
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "stem": "How can the architect reduce the cost of EFS for files that have been untouched for months?",
+      "options": [
+        {
+          "text": "lifecycle policy to EFS IA/Archive",
+          "explanation": "This is the guide's answer for this scenario (line 152). Its note: same trick as S3 tiering, applied to the shared folder.",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 152
+          }
+        },
+        {
+          "text": "Elastic mode",
+          "explanation": "Not this one. The guide pairs this answer with: EFS throughput default (line 180).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 180
+          }
+        },
+        {
+          "text": "Max I/O performance mode",
+          "explanation": "Not this one. The guide pairs this answer with: thousands of concurrent EFS clients (line 179).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 179
+          }
+        },
+        {
+          "text": "Snapshot Archive (75% off, 24–72 hr restore)",
+          "explanation": "Not this one. The guide pairs this answer with: cheap rarely-restored snapshots (line 171).",
+          "source": {
+            "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+            "line": 171
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    }
+  ]
+}

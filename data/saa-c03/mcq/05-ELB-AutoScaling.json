@@ -1,0 +1,466 @@
+{
+  "questions": [
+    {
+      "id": "q0165",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "Requests for /api/* must go to one set of servers and /images/* to another. Which load balancer feature fits?",
+      "options": [
+        {
+          "text": "ALB path-based routing",
+          "explanation": "This is the guide's answer for this scenario (line 136). Its note: only L7 sees URLs.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "NLB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: UDP-based multiplayer game needs low latency and a static IP (line 138).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Gateway Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Inspect all traffic with a third-party firewall/IDS appliance fleet (line 140).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "Route 53 (DNS, slower)",
+          "explanation": "Not this one. The guide pairs this answer with: Region-level failover (line 180).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 180
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0166",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "A UDP-based multiplayer game needs low latency and a static IP address. Which load balancer fits?",
+      "options": [
+        {
+          "text": "Route 53 (DNS, slower)",
+          "explanation": "Not this one. The guide pairs this answer with: Region-level failover (line 180).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 180
+          }
+        },
+        {
+          "text": "NLB",
+          "explanation": "This is the guide's answer for this scenario (line 138). Its note: ALB can't do UDP or static IPs.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "ALB path-based routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route `/api/*` to one set of servers and `/images/*` to another (line 136).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "Gateway Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Inspect all traffic with a third-party firewall/IDS appliance fleet (line 140).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 140
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0167",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "All traffic must be inspected by a fleet of third-party firewall or IDS appliances. Which load balancer fits?",
+      "options": [
+        {
+          "text": "NLB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: UDP-based multiplayer game needs low latency and a static IP (line 138).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 138
+          }
+        },
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "Gateway Load Balancer",
+          "explanation": "This is the guide's answer for this scenario (line 140). Its note: GENEVE 6081, bump-in-the-wire.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "ALB path-based routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route `/api/*` to one set of servers and `/images/*` to another (line 136).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 136
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0168",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "The load balancer marks instances unhealthy, but the Auto Scaling group does not replace them. What is the fix?",
+      "options": [
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "Cross-zone LB (ALB free/on, NLB paid/off)",
+          "explanation": "Not this one. The guide pairs this answer with: Uneven traffic across AZs (line 172).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 172
+          }
+        },
+        {
+          "text": "Predictive scaling",
+          "explanation": "Not this one. The guide pairs this answer with: ML-forecasted scaling (line 176).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 176
+          }
+        },
+        {
+          "text": "enable ELB health checks on the ASG",
+          "explanation": "This is the guide's answer for this scenario (line 142). Its note: default is EC2 status checks only.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 142
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0169",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "Payroll traffic spikes every month-end at a known time. Which scaling policy fits?",
+      "options": [
+        {
+          "text": "Scheduled scaling",
+          "explanation": "This is the guide's answer for this scenario (line 144). Its note: predictable = scheduled.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "Target Tracking",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Keep average CPU at 40% with minimal configuration (line 146).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 146
+          }
+        },
+        {
+          "text": "SQS queue depth metric",
+          "explanation": "Not this one. The guide pairs this answer with: Scale on job backlog (line 178).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 178
+          }
+        },
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0170",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "An architect wants to keep average CPU at 40% with minimal configuration. Which scaling policy fits?",
+      "options": [
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "Target Tracking",
+          "explanation": "This is the guide's answer for this scenario (line 146). Its note: \"keep metric at value\" + \"simplest\".",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 146
+          }
+        },
+        {
+          "text": "Scheduled scaling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Payroll traffic spikes every month-end at a known time (line 144).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "SQS queue depth metric",
+          "explanation": "Not this one. The guide pairs this answer with: Scale on job backlog (line 178).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 178
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0171",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "One ALB must serve many HTTPS domains with different certificates. What feature enables this?",
+      "options": [
+        {
+          "text": "X-Forwarded-For",
+          "explanation": "Not this one. The guide pairs this answer with: Client IP behind ALB (line 173).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "SNI",
+          "explanation": "This is the guide's answer for this scenario (line 148). Its note: multiple TLS certs, one listener.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 148
+          }
+        },
+        {
+          "text": "Cross-zone LB (ALB free/on, NLB paid/off)",
+          "explanation": "Not this one. The guide pairs this answer with: Uneven traffic across AZs (line 172).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 172
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0172",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "Corporate clients must whitelist fixed IP addresses for the company's load balancer. What should the architect use?",
+      "options": [
+        {
+          "text": "ALB path-based routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route `/api/*` to one set of servers and `/images/*` to another (line 136).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 136
+          }
+        },
+        {
+          "text": "Gateway Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Inspect all traffic with a third-party firewall/IDS appliance fleet (line 140).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "Route 53 (DNS, slower)",
+          "explanation": "Not this one. The guide pairs this answer with: Region-level failover (line 180).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 180
+          }
+        },
+        {
+          "text": "NLB with Elastic IPs",
+          "explanation": "This is the guide's answer for this scenario (line 150). Its note: or Global Accelerator in front of an ALB.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 150
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0173",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "An application behind an ALB needs the original client IP address. How can it get it?",
+      "options": [
+        {
+          "text": "X-Forwarded-For header",
+          "explanation": "This is the guide's answer for this scenario (line 152). Its note: NLB would preserve it natively.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 152
+          }
+        },
+        {
+          "text": "SNI",
+          "explanation": "Not this one. The guide pairs this answer with: Multiple TLS certs, one LB (line 170).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Cross-zone LB (ALB free/on, NLB paid/off)",
+          "explanation": "Not this one. The guide pairs this answer with: Uneven traffic across AZs (line 172).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 172
+          }
+        },
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-3",
+      "status": "candidate"
+    },
+    {
+      "id": "q0174",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "Workers must scale based on the number of unprocessed jobs. Which approach fits?",
+      "options": [
+        {
+          "text": "Deregistration delay (draining)",
+          "explanation": "Not this one. The guide pairs this answer with: Errors during scale-in (line 171).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "ASG scaling on SQS queue depth",
+          "explanation": "This is the guide's answer for this scenario (line 154). Its note: backlog per instance.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 154
+          }
+        },
+        {
+          "text": "Scheduled scaling",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Payroll traffic spikes every month-end at a known time (line 144).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 144
+          }
+        },
+        {
+          "text": "Predictive scaling",
+          "explanation": "Not this one. The guide pairs this answer with: ML-forecasted scaling (line 176).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 176
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0175",
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "stem": "An application must handle millions of TCP requests per second with extreme performance. Which load balancer fits?",
+      "options": [
+        {
+          "text": "Gateway Load Balancer",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Inspect all traffic with a third-party firewall/IDS appliance fleet (line 140).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 140
+          }
+        },
+        {
+          "text": "SNI",
+          "explanation": "Not this one. The guide pairs this answer with: Multiple TLS certs, one LB (line 170).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "NLB",
+          "explanation": "This is the guide's answer for this scenario (line 156). Its note: \"millions\" + \"ultra-low latency\" = L4.",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 156
+          }
+        },
+        {
+          "text": "ALB path-based routing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Route `/api/*` to one set of servers and `/images/*` to another (line 136).",
+          "source": {
+            "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+            "line": 136
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-3",
+      "status": "candidate"
+    }
+  ]
+}

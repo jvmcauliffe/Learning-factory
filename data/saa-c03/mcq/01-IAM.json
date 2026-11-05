@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0001",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "An application on EC2 needs to write to DynamoDB. What is the most secure way to provide credentials?",
+      "options": [
+        {
+          "text": "IAM role attached to the instance (instance profile)",
+          "explanation": "This is the guide's answer for this scenario (line 135). Its note: never access keys on the box..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 135
+          }
+        },
+        {
+          "text": "Lambda execution role",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A Lambda function must read from an S3 bucket. How should it authenticate? (line 137).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 137
+          }
+        },
+        {
+          "text": "IAM Identity Center",
+          "explanation": "Not this one. The guide pairs this answer with: SSO, one login → many AWS accounts (line 171).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "Cognito",
+          "explanation": "Not this one. The guide pairs this answer with: Federate app customers (Google/Facebook login) (line 173).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 173
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0002",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "A Lambda function must read from an S3 bucket. How should it authenticate?",
+      "options": [
+        {
+          "text": "Cognito",
+          "explanation": "Not this one. The guide pairs this answer with: Federate app customers (Google/Facebook login) (line 173).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "Lambda execution role",
+          "explanation": "This is the guide's answer for this scenario (line 137). Its note: with S3 read permissions — same costume pattern, serverless flavor..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 137
+          }
+        },
+        {
+          "text": "IAM role attached to the instance (instance profile)",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: An application on EC2 needs to write to DynamoDB. What's the MOST secure way to provide credentials? (line 135).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 135
+          }
+        },
+        {
+          "text": "Permission boundary",
+          "explanation": "Not this one. The guide pairs this answer with: Cap max permissions of ONE user/role (line 168).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 168
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0003",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "Users in Account A need temporary access to resources in Account B. What should the architect do?",
+      "options": [
+        {
+          "text": "Permission boundary",
+          "explanation": "Not this one. The guide pairs this answer with: Cap max permissions of ONE user/role (line 168).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "Cognito",
+          "explanation": "Not this one. The guide pairs this answer with: Federate app customers (Google/Facebook login) (line 173).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "Create a role in Account B with a trust policy trusting Account A; users AssumeRole via STS",
+          "explanation": "This is the guide's answer for this scenario (line 139). Its note: \"temporary\" + \"another account\" = cross-account role..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 139
+          }
+        },
+        {
+          "text": "SCP (AWS Organizations)",
+          "explanation": "Not this one. The guide pairs this answer with: Org-wide restriction, applies even to root (line 167).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 167
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0004",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "A user's identity policy allows s3:PutObject, but uploads fail with Access Denied. What should the architect look for?",
+      "options": [
+        {
+          "text": "ExternalId in trust policy",
+          "explanation": "Not this one. The guide pairs this answer with: Third party assumes your role safely (line 164).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 164
+          }
+        },
+        {
+          "text": "Fix the trust policy",
+          "explanation": "Not this one. The guide pairs this answer with: Role exists but \"can't be assumed\" (line 165).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 165
+          }
+        },
+        {
+          "text": "IAM Access Analyzer",
+          "explanation": "Not this one. The guide pairs this answer with: Who is my resource shared with externally? (line 176).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 176
+          }
+        },
+        {
+          "text": "Look for an explicit Deny — bucket policy, SCP, or permission boundary",
+          "explanation": "This is the guide's answer for this scenario (line 141). Its note: explicit Deny always beats Allow..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 141
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0005",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "An action works in a standalone account but fails in an account inside AWS Organizations. What is the likely cause?",
+      "options": [
+        {
+          "text": "A Service Control Policy is blocking it",
+          "explanation": "This is the guide's answer for this scenario (line 143). Its note: \"Organizations\" is the tell..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 143
+          }
+        },
+        {
+          "text": "Permission boundary",
+          "explanation": "Not this one. The guide pairs this answer with: Cap max permissions of ONE user/role (line 168).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "Fix the trust policy",
+          "explanation": "Not this one. The guide pairs this answer with: Role exists but \"can't be assumed\" (line 165).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 165
+          }
+        },
+        {
+          "text": "IAM Access Analyzer",
+          "explanation": "Not this one. The guide pairs this answer with: Who is my resource shared with externally? (line 176).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 176
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0006",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "Developers may create IAM roles for their apps, but security wants a guarantee that those roles can never exceed a defined permission set. What should the architect use?",
+      "options": [
+        {
+          "text": "S3 ACL (≠ Network ACL)",
+          "explanation": "Not this one. The guide pairs this answer with: Legacy S3 grant mechanism, avoid (line 170).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 170
+          }
+        },
+        {
+          "text": "Permission boundaries",
+          "explanation": "This is the guide's answer for this scenario (line 145). Its note: \"maximum permissions\" / \"cannot exceed\" is the signal..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 145
+          }
+        },
+        {
+          "text": "ExternalId in trust policy",
+          "explanation": "Not this one. The guide pairs this answer with: Third party assumes your role safely (line 164).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 164
+          }
+        },
+        {
+          "text": "Credentials report / access advisor",
+          "explanation": "Not this one. The guide pairs this answer with: Find unused users / stale permissions (line 177).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 177
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0007",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "5,000 employees with existing Active Directory logins need access to multiple AWS accounts without creating IAM users. What should the architect use?",
+      "options": [
+        {
+          "text": "SCP (AWS Organizations)",
+          "explanation": "Not this one. The guide pairs this answer with: Org-wide restriction, applies even to root (line 167).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 167
+          }
+        },
+        {
+          "text": "Credentials report / access advisor",
+          "explanation": "Not this one. The guide pairs this answer with: Find unused users / stale permissions (line 177).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 177
+          }
+        },
+        {
+          "text": "IAM Identity Center with SAML federation to AD",
+          "explanation": "This is the guide's answer for this scenario (line 147). Its note: \"existing corporate directory\" + \"multiple accounts\" + \"no IAM users\"..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 147
+          }
+        },
+        {
+          "text": "Cognito",
+          "explanation": "Not this one. The guide pairs this answer with: Federate app customers (Google/Facebook login) (line 173).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 173
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0008",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "An application needs short-lived credentials that expire automatically. What should it use?",
+      "options": [
+        {
+          "text": "Execution role",
+          "explanation": "Not this one. The guide pairs this answer with: Lambda needs permissions (line 160).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 160
+          }
+        },
+        {
+          "text": "Cognito",
+          "explanation": "Not this one. The guide pairs this answer with: Federate app customers (Google/Facebook login) (line 173).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 173
+          }
+        },
+        {
+          "text": "IAM Identity Center",
+          "explanation": "Not this one. The guide pairs this answer with: SSO, one login → many AWS accounts (line 171).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "STS AssumeRole",
+          "explanation": "This is the guide's answer for this scenario (line 149). Its note: \"temporary/short-lived credentials\" is literally STS's product..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 149
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0009",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "Users may terminate EC2 instances only if they have signed in with MFA. How can the architect enforce this?",
+      "options": [
+        {
+          "text": "Policy Condition with `aws:MultiFactorAuthPresent`",
+          "explanation": "This is the guide's answer for this scenario (line 151). Its note: sensitive action + MFA = that condition key..",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 151
+          }
+        },
+        {
+          "text": "SCP (AWS Organizations)",
+          "explanation": "Not this one. The guide pairs this answer with: Org-wide restriction, applies even to root (line 167).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 167
+          }
+        },
+        {
+          "text": "Permission boundary",
+          "explanation": "Not this one. The guide pairs this answer with: Cap max permissions of ONE user/role (line 168).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 168
+          }
+        },
+        {
+          "text": "IAM Access Analyzer",
+          "explanation": "Not this one. The guide pairs this answer with: Who is my resource shared with externally? (line 176).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 176
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0010",
+      "guide": "content/saa-c03/01-IAM.md",
+      "stem": "A new AWS account was just created. What should be done first to secure it?",
+      "options": [
+        {
+          "text": "Credentials report / access advisor",
+          "explanation": "Not this one. The guide pairs this answer with: Find unused users / stale permissions (line 177).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 177
+          }
+        },
+        {
+          "text": "Enable MFA on the root user, delete/avoid root access keys, create an admin user for daily work.",
+          "explanation": "This is the guide's answer for this scenario (line 153).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 153
+          }
+        },
+        {
+          "text": "IAM Identity Center",
+          "explanation": "Not this one. The guide pairs this answer with: SSO, one login → many AWS accounts (line 171).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 171
+          }
+        },
+        {
+          "text": "IAM Access Analyzer",
+          "explanation": "Not this one. The guide pairs this answer with: Who is my resource shared with externally? (line 176).",
+          "source": {
+            "guide": "content/saa-c03/01-IAM.md",
+            "line": 176
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}
