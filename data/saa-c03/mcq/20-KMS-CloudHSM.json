@@ -1,0 +1,382 @@
+{
+  "questions": [
+    {
+      "id": "q0531",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "A security team must audit every use of an encryption key. Which combination fits?",
+      "options": [
+        {
+          "text": "KMS + CloudTrail",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: every key use is logged — KMS's superpower)..",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Secrets Manager",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Automatically rotate the RDS database password every 30 days. (line 65).",
+          "source": {
+            "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+            "line": 65
+          }
+        },
+        {
+          "text": "Inspector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Continuously scan EC2 instances and container images for software vulnerabilities (CVEs) (line 107).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "Macie",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify S3 buckets containing personally identifiable information (line 103).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0532",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "A 100 MB file must be encrypted using KMS. What is the right approach?",
+      "options": [
+        {
+          "text": "CloudHSM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Compliance requires FIPS 140-2 Level 3 validated modules. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Envelope encryption via GenerateDataKey",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: KMS only encrypts ≤4KB directly)..",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Enable S3 Bucket Key",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: KMS request costs exploded from millions of S3 objects with SSE-KMS. (line 70).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "KMS multi-Region keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt data in us-east-1, decrypt the same ciphertext in eu-west-1 (DR/global tables). (line 66).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0533",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "A compromised KMS key must be deleted immediately. What can the architect do?",
+      "options": [
+        {
+          "text": "Enable S3 Bucket Key",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: KMS request costs exploded from millions of S3 objects with SSE-KMS. (line 70).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "KMS multi-Region keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt data in us-east-1, decrypt the same ciphertext in eu-west-1 (DR/global tables). (line 66).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Impossible — 7–30 day mandatory waiting period; disable it now instead",
+          "explanation": "This is the guide's answer for this scenario (line 60).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "Customer-managed key with auto-rotation enabled",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Keys must rotate automatically every year under company control. (line 68).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 68
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0534",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "Compliance requires FIPS 140-2 Level 3 validated modules. Which service fits?",
+      "options": [
+        {
+          "text": "KMS + CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Security team must audit every use of an encryption key. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "KMS multi-Region keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt data in us-east-1, decrypt the same ciphertext in eu-west-1 (DR/global tables). (line 66).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Customer-managed key with auto-rotation enabled",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Keys must rotate automatically every year under company control. (line 68).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "CloudHSM",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: KMS is Level 2)..",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0535",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "Encryption keys must be inaccessible even to AWS. Which service fits?",
+      "options": [
+        {
+          "text": "CloudHSM",
+          "explanation": "This is the guide's answer for this scenario (line 64). Its note: single-tenant, customer-controlled)..",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "KMS + CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Security team must audit every use of an encryption key. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "Customer-managed key with auto-rotation enabled",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Keys must rotate automatically every year under company control. (line 68).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Enable S3 Bucket Key",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: KMS request costs exploded from millions of S3 objects with SSE-KMS. (line 70).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0536",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "Data encrypted in us-east-1 must be decrypted from the same ciphertext in eu-west-1. What should the architect use?",
+      "options": [
+        {
+          "text": "Enable S3 Bucket Key",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: KMS request costs exploded from millions of S3 objects with SSE-KMS. (line 70).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 70
+          }
+        },
+        {
+          "text": "KMS multi-Region keys",
+          "explanation": "This is the guide's answer for this scenario (line 66).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "CloudHSM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Compliance requires FIPS 140-2 Level 3 validated modules. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "Envelope encryption via GenerateDataKey",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt a 100MB file using KMS. (line 58).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 58
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0537",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "Keys must rotate automatically every year under company control. What is the right configuration?",
+      "options": [
+        {
+          "text": "Envelope encryption via GenerateDataKey",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt a 100MB file using KMS. (line 58).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "Parameter Store SecureString",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Store an encrypted license key for free. (line 75).",
+          "source": {
+            "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+            "line": 75
+          }
+        },
+        {
+          "text": "Customer-managed key with auto-rotation enabled",
+          "explanation": "This is the guide's answer for this scenario (line 68).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Enable S3 Bucket Key",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: KMS request costs exploded from millions of S3 objects with SSE-KMS. (line 70).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0538",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "KMS request costs exploded after millions of S3 objects were encrypted with SSE-KMS. What should the architect do?",
+      "options": [
+        {
+          "text": "Envelope encryption via GenerateDataKey",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt a 100MB file using KMS. (line 58).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "KMS multi-Region keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt data in us-east-1, decrypt the same ciphertext in eu-west-1 (DR/global tables). (line 66).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Customer-managed key with auto-rotation enabled",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Keys must rotate automatically every year under company control. (line 68).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Enable S3 Bucket Key",
+          "explanation": "This is the guide's answer for this scenario (line 70). Its note: fewer KMS calls; accept coarser audit)..",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0539",
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "stem": "A user has full IAM KMS permissions but still gets AccessDenied on a key. What is the cause?",
+      "options": [
+        {
+          "text": "Key policy doesn't allow them — BOTH key policy and IAM must permit",
+          "explanation": "This is the guide's answer for this scenario (line 72).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "Customer-managed key with auto-rotation enabled",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Keys must rotate automatically every year under company control. (line 68).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "Envelope encryption via GenerateDataKey",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt a 100MB file using KMS. (line 58).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "KMS multi-Region keys",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Encrypt data in us-east-1, decrypt the same ciphertext in eu-west-1 (DR/global tables). (line 66).",
+          "source": {
+            "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}
