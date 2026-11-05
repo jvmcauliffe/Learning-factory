@@ -1,0 +1,3095 @@
+{
+  "credit": "Terms and sentences are RonitSachdev's, from aws-saa-c03-guides (CC BY 4.0). https://github.com/RonitSachdev/aws-saa-c03-guides",
+  "entries": [
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0001",
+      "line": 40,
+      "section": "How the exam distinguishes them",
+      "section_slug": "how-the-exam-distinguishes-them",
+      "sentence": "**Simple AD** is the answer when the words are **\"lowest cost\"**, **\"basic LDAP\"**, **\"small organization\"** — and *nothing* in the scenario mentions trust, MFA, or on-prem integration.",
+      "term": "\"small organization\""
+    },
+    {
+      "guide": "content/saa-c03/13-Lambda.md",
+      "id": "g0002",
+      "line": 52,
+      "section": "Odds and ends the exam sprinkles in",
+      "section_slug": "odds-and-ends-the-exam-sprinkles-in",
+      "sentence": "**Container images**: deploy Lambda as a container up to **10 GB** — the answer when dependencies blow past the 250 MB zip limit.",
+      "term": "10 GB"
+    },
+    {
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "id": "g0003",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Try to upload 100 TB over a 100 Mbps connection and the math says roughly **100+ days** — and that's if nobody else touches the network.",
+      "term": "100+ days"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0004",
+      "line": 33,
+      "section": "Storage classes and THE 3-filter algorithm",
+      "section_slug": "storage-classes-and-the-3-filter-algorithm",
+      "sentence": "**Filter 3 — minimum storage duration.** IA classes bill a minimum **30 days**, Glacier Instant and Flexible **90 days**, Deep Archive **180 days** — delete early and you pay for the minimum anyway.",
+      "term": "180 days"
+    },
+    {
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "id": "g0005",
+      "line": 46,
+      "section": "Global Accelerator",
+      "section_slug": "global-accelerator",
+      "sentence": "Gives you **2 static anycast IP addresses** — the same two IPs work worldwide, and they **never change**.",
+      "term": "2 static anycast IP addresses"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0006",
+      "line": 16,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Config tweaks live in **`.ebextensions`** — YAML/JSON files in your code bundle that customize the environment (packages, env vars, resources).",
+      "term": "`.ebextensions`"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0007",
+      "line": 122,
+      "section": "MFA and the root account",
+      "section_slug": "mfa-and-the-root-account",
+      "sentence": "Policies can demand it via the condition key **`aws:MultiFactorAuthPresent`** — e.g., deny `s3:DeleteObject` unless it's `true`.",
+      "term": "`aws:MultiFactorAuthPresent`"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0008",
+      "line": 125,
+      "section": "Observability & admin access",
+      "section_slug": "observability-and-admin-access",
+      "sentence": "**VPC Flow Logs** capture traffic **metadata** — source/destination IP, port, protocol, **ACCEPT or REJECT** — to CloudWatch Logs or S3.",
+      "term": "ACCEPT or REJECT"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0009",
+      "line": 27,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "Self-service creation of **new, standardized, pre-configured accounts**",
+      "term": "Account Factory"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0010",
+      "line": 33,
+      "section": "Certificates & network odds-and-ends",
+      "section_slug": "certificates-and-network-odds-and-ends",
+      "sentence": "**ACM (AWS Certificate Manager)** — **free public TLS/SSL certificates** with **automatic renewal**, attachable to ALB, CloudFront, API Gateway.",
+      "term": "ACM (AWS Certificate Manager)"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0011",
+      "line": 47,
+      "section": "Policy JSON anatomy",
+      "section_slug": "policy-json-anatomy",
+      "sentence": "**Action** — which API calls (`s3:GetObject`, `ec2:*`...).",
+      "term": "Action"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0012",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "If you've never worked in a Windows shop: **Active Directory (AD)** is Microsoft's on-premises system that acts as the **corporate phonebook plus the master keyring**.",
+      "term": "Active Directory (AD)"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0013",
+      "line": 39,
+      "section": "How the exam distinguishes them",
+      "section_slug": "how-the-exam-distinguishes-them",
+      "sentence": "**AD Connector** is the answer when compliance or policy says **identities must never be stored in the cloud**.",
+      "term": "AD Connector"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0014",
+      "line": 26,
+      "section": "THE tested table: deployment policies",
+      "section_slug": "the-tested-table-deployment-policies",
+      "sentence": "Update every instance simultaneously",
+      "term": "All at once"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0015",
+      "line": 11,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "**Amazon MQ** — managed **ActiveMQ / RabbitMQ** message broker.",
+      "term": "Amazon MQ"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0016",
+      "line": 94,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**Amplify** — full-stack web/mobile app **quickstart**: hosting, auth, backend wired together.",
+      "term": "Amplify"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0017",
+      "line": 73,
+      "section": "How AWS decides yes or no",
+      "section_slug": "how-aws-decides-yes-or-no",
+      "sentence": "**THE trap:** *\"A user's policy clearly says Allow, but the action fails.\"* The answer is always one of: **an explicit Deny somewhere**, **an SCP on the account** (common when the question mentions AWS Organizations), or **a permission boundary** clipping the identity policy.",
+      "term": "an SCP on the account"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0018",
+      "line": 52,
+      "section": "NLB — the fast, no-questions host (Layer 4)",
+      "section_slug": "nlb-the-fast-no-questions-host-layer-4",
+      "sentence": "Speaks **any TCP or UDP** — gaming servers, IoT, MQTT, custom binary protocols.",
+      "term": "any TCP or UDP"
+    },
+    {
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "id": "g0019",
+      "line": 47,
+      "section": "Global Accelerator",
+      "section_slug": "global-accelerator",
+      "sentence": "Handles **ANY TCP or UDP traffic** — not just HTTP.",
+      "term": "ANY TCP or UDP traffic"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0020",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**CloudTrail** = **API audit** — every API call to AWS recorded.",
+      "term": "API audit"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0021",
+      "line": 57,
+      "section": "Analytics family",
+      "section_slug": "analytics-family",
+      "sentence": "Move data from **SaaS apps (Salesforce, Slack) → S3/Redshift**, no code",
+      "term": "AppFlow"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0022",
+      "line": 13,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "**Application Migration Service (MGN)** — the **lift-and-shift (rehost)** tool.",
+      "term": "Application Migration Service (MGN)"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0023",
+      "line": 92,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**AppSync** — managed **GraphQL** API.",
+      "term": "AppSync"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0024",
+      "line": 48,
+      "section": "Policy JSON anatomy",
+      "section_slug": "policy-json-anatomy",
+      "sentence": "**Resource** — which things, named by **ARN** (Amazon Resource Name — AWS's globally unique ID string for every object it manages).",
+      "term": "ARN"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0025",
+      "line": 75,
+      "section": "The detection zoo — one-liners you must know cold",
+      "section_slug": "the-detection-zoo-one-liners-you-must-know-cold",
+      "sentence": "**Download AWS compliance reports** (SOC, PCI, ISO) to hand to auditors",
+      "term": "Artifact"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0026",
+      "line": 126,
+      "section": "Events and querying",
+      "section_slug": "events-and-querying",
+      "sentence": "**Athena** — SQL **across many objects/whole buckets**, serverless, pay-per-query.",
+      "term": "Athena"
+    },
+    {
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "id": "g0027",
+      "line": 42,
+      "section": "The two comparisons worth 30 extra seconds",
+      "section_slug": "the-two-comparisons-worth-30-extra-seconds",
+      "sentence": "**Athena cost optimization** — this appears almost **verbatim**: *\"reduce Athena query costs / improve performance.\"* Athena bills per TB **scanned**, so scan less:",
+      "term": "Athena cost optimization"
+    },
+    {
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "id": "g0028",
+      "line": 32,
+      "section": "The two comparisons worth 30 extra seconds",
+      "section_slug": "the-two-comparisons-worth-30-extra-seconds",
+      "sentence": "**Athena vs Redshift** — both do SQL analytics, so which?",
+      "term": "Athena vs Redshift"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0029",
+      "line": 41,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "Cross-region replication, **RPO ~1 second, RTO < 1 minute**",
+      "term": "Aurora Global Database"
+    },
+    {
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "id": "g0030",
+      "line": 11,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Trusted Advisor** is your **automated AWS consultant** — a robot auditor that continuously scans your account and nags you about the exact things a human consultant would bill you for.",
+      "term": "automated AWS consultant"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0031",
+      "line": 58,
+      "section": "Firewall Manager — the head of security for the whole chain",
+      "section_slug": "firewall-manager-the-head-of-security-for-the-whole-chain",
+      "sentence": "THE trap: *\"every new account automatically gets the security policies\"* → that word **automatically across accounts** means **Firewall Manager**, not WAF alone.",
+      "term": "automatically across accounts"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0032",
+      "line": 104,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**AWS Artifact** — self-service portal to download **AWS compliance reports** (SOC, PCI, ISO).",
+      "term": "AWS Artifact"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0033",
+      "line": 44,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "**Centralized, cross-service backup plans** (EBS, RDS, DynamoDB, EFS…) + **Vault Lock** for immutable backups",
+      "term": "AWS Backup"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0034",
+      "line": 90,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**AWS Batch** — run **long batch jobs** as Docker containers; schedules onto EC2/Spot for you.",
+      "term": "AWS Batch"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0035",
+      "line": 12,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "Set thresholds on cost or usage; **alert** (or trigger actions) when actual/forecast crosses them",
+      "term": "AWS Budgets"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0036",
+      "line": 104,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**AWS Artifact** — self-service portal to download **AWS compliance reports** (SOC, PCI, ISO).",
+      "term": "AWS compliance reports"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0037",
+      "line": 48,
+      "section": "DataSync — the moving company",
+      "section_slug": "datasync-the-moving-company",
+      "sentence": "**AWS DataSync** is the **migration / scheduled-transfer engine**: **one-time or scheduled** sync from on-prem **NFS/SMB** into **S3, EFS, or FSx**.",
+      "term": "AWS DataSync"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0038",
+      "line": 54,
+      "section": "Firewall Manager — the head of security for the whole chain",
+      "section_slug": "firewall-manager-the-head-of-security-for-the-whole-chain",
+      "sentence": "**AWS Firewall Manager** is the **central policy manager**: define security policies once (WAF rules, Shield Advanced, Security Group rules, Network Firewall rules) and it **auto-applies them across the organization**, including to **new accounts and new resources as they appear**.",
+      "term": "AWS Firewall Manager"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0039",
+      "line": 62,
+      "section": "Network Firewall — the VPC-wide inspector",
+      "section_slug": "network-firewall-the-vpc-wide-inspector",
+      "sentence": "**AWS Network Firewall** is a **managed firewall for your whole VPC**, inspecting traffic at **Layers 3 through 7** — think intrusion prevention, domain filtering, stateful rules for *all* traffic entering/leaving the VPC, not just HTTP to one ALB.",
+      "term": "AWS Network Firewall"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0040",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**AWS Organizations** is how you herd them: one **management account** at the top, and every other account (a **member account**) hangs off a tree: **Root → OUs (Organizational Units) → accounts**.",
+      "term": "AWS Organizations"
+    },
+    {
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "id": "g0041",
+      "line": 20,
+      "section": "What you can attach",
+      "section_slug": "what-you-can-attach",
+      "sentence": "**Cross-account sharing**: share a TGW with other AWS accounts using **AWS RAM** (Resource Access Manager) — one hub for the whole organization.",
+      "term": "AWS RAM"
+    },
+    {
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "id": "g0042",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**AWS Service Catalog** is a **vending machine of pre-approved infrastructure**.",
+      "term": "AWS Service Catalog"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0043",
+      "line": 11,
+      "section": "WAF — the Layer 7 bouncer",
+      "section_slug": "waf-the-layer-7-bouncer",
+      "sentence": "**AWS WAF** (Web Application Firewall) works at **Layer 7** — the application layer — meaning it actually *reads HTTP requests*: URLs, headers, query strings, body content.",
+      "term": "AWS WAF"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0044",
+      "line": 42,
+      "section": "ALB — the smart host (Layer 7)",
+      "section_slug": "alb-the-smart-host-layer-7",
+      "sentence": "**AWS WAF attaches to ALB** (a web application firewall inspects HTTP — it needs Layer 7, so it can't attach to an NLB).",
+      "term": "AWS WAF attaches to ALB"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0045",
+      "line": 48,
+      "section": "DataSync — the moving company",
+      "section_slug": "datasync-the-moving-company",
+      "sentence": "Bonus fact the exam likes: DataSync also moves data **between AWS storage services** — S3 ↔ EFS ↔ FSx — no agent needed for that.",
+      "term": "between AWS storage services"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0046",
+      "line": 30,
+      "section": "The one axis that decides everything: IOPS vs Throughput",
+      "section_slug": "the-one-axis-that-decides-everything-iops-vs-throughput",
+      "sentence": "That's **big data, log processing, ETL, streaming** — chewing through giant files front to back.",
+      "term": "big data, log processing, ETL, streaming"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0047",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "This is the **biggest topic on the SAA-C03 exam** — networking questions are everywhere, and they're very pattern-matchable once the mental model clicks.",
+      "term": "biggest topic on the SAA-C03 exam"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0048",
+      "line": 20,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "**Billing Conductor** — niche one-liner: build *customized* (pro forma) billing views/rates for showing costs to internal groups or customers.",
+      "term": "Billing Conductor"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0049",
+      "line": 99,
+      "section": "Who can get in: access controls",
+      "section_slug": "who-can-get-in-access-controls",
+      "sentence": "**Block Public Access** — the master kill-switch, **on by default**, overrides any policy or ACL that tries to make things public.",
+      "term": "Block Public Access"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0050",
+      "line": 30,
+      "section": "THE tested table: deployment policies",
+      "section_slug": "the-tested-table-deployment-policies",
+      "sentence": "Clone the entire **environment**, test it, then **swap DNS CNAMEs**",
+      "term": "Blue/Green"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0051",
+      "line": 100,
+      "section": "Who can get in: access controls",
+      "section_slug": "who-can-get-in-access-controls",
+      "sentence": "**Bucket policies** — resource-based JSON policies (Section 1!) on the bucket: cross-account grants, enforce HTTPS, require encryption headers, IP restrictions.",
+      "term": "Bucket policies"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0052",
+      "line": 120,
+      "section": "Performance",
+      "section_slug": "performance",
+      "sentence": "**Byte-range fetches** — GET just a slice of an object (`Range` header): parallel downloads, or grab only the header/footer of a huge file.",
+      "term": "Byte-range fetches"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0053",
+      "line": 84,
+      "section": "Health checks",
+      "section_slug": "health-checks",
+      "sentence": "You can also build **calculated health checks** — combine up to 256 child checks with AND/OR/NOT logic into one parent check (\"healthy only if at least 3 of 5 children are healthy\").",
+      "term": "calculated health checks"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0054",
+      "line": 15,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "They define the *maximum* of what identities in an account **can possibly do** — they **never give anyone permission**.",
+      "term": "can possibly do"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0055",
+      "line": 23,
+      "section": "Features → scenarios (this is the exam meat)",
+      "section_slug": "features-scenarios-this-is-the-exam-meat",
+      "sentence": "**Change Sets** — a **preview** of exactly what an update would create/modify/delete *before* you apply it.",
+      "term": "Change Sets"
+    },
+    {
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "id": "g0056",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Everyone checks in at the front desk first, where the receptionist **routes** them to the right floor, **checks their ID** (authentication), **turns away crowds** when the lobby is full (throttling), and **writes every visit in the logbook** (logging) — all *before* your code runs a single line.",
+      "term": "checks their ID"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0057",
+      "line": 46,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "If/else branching",
+      "term": "Choice"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0058",
+      "line": 21,
+      "section": "Site-to-Site VPN",
+      "section_slug": "site-to-site-vpn",
+      "sentence": "**Client VPN** is the cousin: it connects **individual laptops** to a VPC — think \"remote employees working from home,\" not \"connect the datacenter.\"",
+      "term": "Client VPN"
+    },
+    {
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "id": "g0059",
+      "line": 25,
+      "section": "CloudFront (CDN — Content Delivery Network)",
+      "section_slug": "cloudfront-cdn-content-delivery-network",
+      "sentence": "**CloudFront also accelerates DYNAMIC content** — even uncacheable requests benefit from riding AWS's network from the edge to the origin.",
+      "term": "CloudFront also accelerates DYNAMIC content"
+    },
+    {
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "id": "g0060",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**CloudHSM** is different: it's you renting an **entire private vault room** — dedicated hardware, your rules, and even the bank staff **cannot see inside**.",
+      "term": "CloudHSM"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0061",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Spell out the jargon: **EventBridge** (formerly **CloudWatch Events** — same engine, bigger brand) is a serverless **event bus**: a pipe that receives structured JSON events and matches them against **rules** to decide where they go.",
+      "term": "CloudWatch Events"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0062",
+      "line": 95,
+      "section": "Placement groups: where the cars park",
+      "section_slug": "placement-groups-where-the-cars-park",
+      "sentence": "**Cluster** — everything packed on the **same rack** in one AZ.",
+      "term": "Cluster"
+    },
+    {
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "id": "g0063",
+      "line": 43,
+      "section": "The two comparisons worth 30 extra seconds",
+      "section_slug": "the-two-comparisons-worth-30-extra-seconds",
+      "sentence": "Convert files to **columnar formats — Parquet or ORC** (read only needed columns),",
+      "term": "columnar formats — Parquet or ORC"
+    },
+    {
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "id": "g0064",
+      "line": 12,
+      "section": "OLTP vs OLAP",
+      "section_slug": "oltp-vs-olap",
+      "sentence": "Purpose-built warehouses use **columnar storage** — data stored column-by-column, so scanning `revenue` doesn't drag every other field off disk.",
+      "term": "columnar storage"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0065",
+      "line": 53,
+      "section": "Aurora",
+      "section_slug": "aurora",
+      "sentence": "Aurora is AWS's own cloud-native engine, **compatible with MySQL and PostgreSQL** (your app connects the same way).",
+      "term": "compatible with MySQL and PostgreSQL"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0066",
+      "line": 15,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "ML **rightsizing recommendations** for EC2, EBS volumes, Lambda, ASGs",
+      "term": "Compute Optimizer"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0067",
+      "line": 71,
+      "section": "Purchasing options: which contract?",
+      "section_slug": "purchasing-options-which-contract",
+      "sentence": "**Compute Savings Plan** — applies to **any instance family, any region, and even Fargate and Lambda**.",
+      "term": "Compute Savings Plan"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0068",
+      "line": 49,
+      "section": "Policy JSON anatomy",
+      "section_slug": "policy-json-anatomy",
+      "sentence": "**Condition** — optional \"only if\" clauses: only with MFA, only from this IP range, only over HTTPS.",
+      "term": "Condition"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0069",
+      "line": 15,
+      "section": "Template anatomy (know the section names)",
+      "section_slug": "template-anatomy-know-the-section-names",
+      "sentence": "\"Only create this in prod\" logic",
+      "term": "Conditions"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0070",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**AWS Config** = **configuration history + compliance** — snapshots of your resources' settings over time, checked against rules.",
+      "term": "configuration history + compliance"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0071",
+      "line": 11,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "**Consolidated billing** — the whole organization gets **one bill**, paid by the management account.",
+      "term": "Consolidated billing"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0072",
+      "line": 23,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "**Control Tower** — Organizations gives you the raw tree; **Control Tower is the automated, opinionated setup on top of it**.",
+      "term": "Control Tower"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0073",
+      "line": 66,
+      "section": "Snapshots: the time machine",
+      "section_slug": "snapshots-the-time-machine",
+      "sentence": "You can **copy a snapshot to another region** — that's the answer to **cross-region disaster recovery** (\"back up EBS data to another region\" → snapshot, copy it over).",
+      "term": "copy a snapshot to another region"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0074",
+      "line": 13,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "The **most detailed** line-item billing data, delivered **to S3**, queried with **Athena** (or QuickSight)",
+      "term": "Cost & Usage Report (CUR)"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0075",
+      "line": 16,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "Tag resources (team/project), then slice costs by tag — must be **activated in the Billing console**",
+      "term": "Cost Allocation Tags"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0076",
+      "line": 14,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "**Machine learning** watches spend and alerts on **unusual spikes** — no thresholds needed",
+      "term": "Cost Anomaly Detection"
+    },
+    {
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "id": "g0077",
+      "line": 77,
+      "section": "Two easy-to-miss CloudFront features (practice-test lessons)",
+      "section_slug": "two-easy-to-miss-cloudfront-features-practice-test-lessons",
+      "sentence": "It's a **cost dial** — it has nothing to do with routing to origins.",
+      "term": "cost dial"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0078",
+      "line": 11,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "Visualize and filter **historical** spend, **forecast ~12 months** ahead, get **RI/Savings Plan purchase recommendations**",
+      "term": "Cost Explorer"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0079",
+      "line": 15,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "Pay only for what you use, and measure it",
+      "term": "Cost Optimization"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0080",
+      "line": 48,
+      "section": "Shield — the riot police (DDoS)",
+      "section_slug": "shield-the-riot-police-ddos",
+      "sentence": "Adds **Layer 7 DDoS protection**, a **24/7 DDoS Response Team (DRT)** of human experts you can call mid-attack, and **cost protection** — AWS refunds the scaling charges the attack caused.",
+      "term": "cost protection"
+    },
+    {
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "id": "g0081",
+      "line": 24,
+      "section": "CloudFront (CDN — Content Delivery Network)",
+      "section_slug": "cloudfront-cdn-content-delivery-network",
+      "sentence": "It **costs money** — the cheap habit is versioned filenames (`app-v2.js`) instead.",
+      "term": "costs money"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0082",
+      "line": 26,
+      "section": "WAF — the Layer 7 bouncer",
+      "section_slug": "waf-the-layer-7-bouncer",
+      "sentence": "And a lovely testing feature: **Count mode** — the rule *counts* matches instead of blocking, so you can test rules against production traffic without breaking real users.",
+      "term": "Count mode"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0083",
+      "line": 15,
+      "section": "CloudWatch — \"how is it doing?\"",
+      "section_slug": "cloudwatch-how-is-it-doing",
+      "sentence": "EC2 sends **CPU, network, and disk-ops by default** — but **MEMORY and disk-space usage are NOT default metrics**.",
+      "term": "CPU, network, and disk-ops by default"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0084",
+      "line": 107,
+      "section": "Transit Gateway (TGW) — the hub",
+      "section_slug": "transit-gateway-tgw-the-hub",
+      "sentence": "Share it **cross-account with AWS RAM** (Resource Access Manager).",
+      "term": "cross-account with AWS RAM"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0085",
+      "line": 25,
+      "section": "CloudWatch — \"how is it doing?\"",
+      "section_slug": "cloudwatch-how-is-it-doing",
+      "sentence": "**Dashboards** are **cross-region** — one pane of glass for a global app.",
+      "term": "cross-region"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0086",
+      "line": 57,
+      "section": "Lifecycle, versioning, replication",
+      "section_slug": "lifecycle-versioning-replication",
+      "sentence": "**CRR** (Cross-Region Replication) → different region: compliance, disaster recovery, lower latency for far-away users.",
+      "term": "CRR"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0087",
+      "line": 25,
+      "section": "CloudWatch — \"how is it doing?\"",
+      "section_slug": "cloudwatch-how-is-it-doing",
+      "sentence": "**Dashboards** are **cross-region** — one pane of glass for a global app.",
+      "term": "Dashboards"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0088",
+      "line": 32,
+      "section": "CloudTrail — \"WHO did WHAT?\"",
+      "section_slug": "cloudtrail-who-did-what",
+      "sentence": "**DATA events** (S3 **object-level** reads/writes, Lambda invokes) are **opt-in and cost extra** — THE trap: *\"who deleted the object in the bucket?\"* → default CloudTrail can't say; you need **data events enabled**.",
+      "term": "DATA events"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0089",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "If a question demands **custom engine configuration or OS-level access**, RDS is out — the answer is **database on EC2** (full control, all the toil) or **RDS Custom** (a halfway house for Oracle/SQL Server).",
+      "term": "database on EC2"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0090",
+      "line": 52,
+      "section": "DataSync — the moving company",
+      "section_slug": "datasync-the-moving-company",
+      "sentence": "**DataSync = MOVE the data** (one-time migration or scheduled copy — the truck leaves).",
+      "term": "DataSync = MOVE the data"
+    },
+    {
+      "guide": "content/saa-c03/27-Snow-Family.md",
+      "id": "g0091",
+      "line": 21,
+      "section": "The device lineup",
+      "section_slug": "the-device-lineup",
+      "sentence": "**Snowcone** comes with the **DataSync agent preinstalled** — copy data on it, and it can sync back online later, or you ship it.",
+      "term": "DataSync agent preinstalled"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0092",
+      "line": 79,
+      "section": "Purchasing options: which contract?",
+      "section_slug": "purchasing-options-which-contract",
+      "sentence": "**Dedicated Host** — you get **visibility into the physical server itself: sockets, cores, host ID**.",
+      "term": "Dedicated Host"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0093",
+      "line": 80,
+      "section": "Purchasing options: which contract?",
+      "section_slug": "purchasing-options-which-contract",
+      "sentence": "**Dedicated Instance** — hardware isolation, but **no visibility or control over the physical server**, and cheaper.",
+      "term": "Dedicated Instance"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0094",
+      "line": 28,
+      "section": "Features → scenarios (this is the exam meat)",
+      "section_slug": "features-scenarios-this-is-the-exam-meat",
+      "sentence": "**DeletionPolicy** — per-resource instruction for stack deletion: **Retain** (keep the resource) or **Snapshot** (snapshot it first — works for RDS, EBS, etc.).",
+      "term": "DeletionPolicy"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0095",
+      "line": 74,
+      "section": "The detection zoo — one-liners you must know cold",
+      "section_slug": "the-detection-zoo-one-liners-you-must-know-cold",
+      "sentence": "**Investigate AFTER a finding** — builds a graph of relationships to find **root cause**",
+      "term": "Detective"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0096",
+      "line": 29,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "Implemented as **AWS Config rules** — *detect and flag* violations after the fact",
+      "term": "Detective guardrails"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0097",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Direct Connect (DX)** is like building **your own private toll road** straight from your building to AWS: a dedicated physical fiber line.",
+      "term": "Direct Connect (DX)"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0098",
+      "line": 47,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "Database Migration Service — also does ongoing replication between databases",
+      "term": "DMS"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0099",
+      "line": 17,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "**DMS + SCT** — **Database Migration Service** moves databases (and can do **ongoing replication**, source stays live during migration).",
+      "term": "DMS + SCT"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0100",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Related jargon: **LDAP** is the standard protocol for talking to directories like AD; **domain join** means enrolling a machine into the AD domain so it obeys its rules.",
+      "term": "domain join"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0101",
+      "line": 128,
+      "section": "MFA and the root account",
+      "section_slug": "mfa-and-the-root-account",
+      "sentence": "**Don't use root for daily work** — create an admin IAM identity instead.",
+      "term": "Don't use root for daily work"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0102",
+      "line": 25,
+      "section": "Features → scenarios (this is the exam meat)",
+      "section_slug": "features-scenarios-this-is-the-exam-meat",
+      "sentence": "**Drift Detection** — answers \"did someone hand-edit our resources in the console?\" Compares live reality to the template.",
+      "term": "Drift Detection"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0103",
+      "line": 109,
+      "section": "ENI: the detachable network identity card",
+      "section_slug": "eni-the-detachable-network-identity-card",
+      "sentence": "One more pattern: attaching **multiple ENIs** to one instance = **dual-homing** — for example, one interface on the public network and one on a separate **management network**.",
+      "term": "dual-homing"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0104",
+      "line": 42,
+      "section": "Resiliency patterns",
+      "section_slug": "resiliency-patterns",
+      "sentence": "**DX + VPN failover** — THE classic exam pattern.",
+      "term": "DX + VPN failover"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0105",
+      "line": 42,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "Multi-region, multi-active NoSQL — writes anywhere",
+      "term": "DynamoDB Global Tables"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0106",
+      "line": 14,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**EB itself is free** — you pay only for the resources it creates (EC2, ALB, etc.).",
+      "term": "EB itself is free"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0107",
+      "line": 121,
+      "section": "The five-storage lineup",
+      "section_slug": "the-five-storage-lineup",
+      "sentence": "Network block device, one instance (mostly), one AZ, persistent — boot volumes and databases",
+      "term": "EBS"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0108",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**EBS (Elastic Block Store)** is your **personal external hard drive** plugged into your desk.",
+      "term": "EBS (Elastic Block Store)"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0109",
+      "line": 17,
+      "section": "CloudWatch — \"how is it doing?\"",
+      "section_slug": "cloudwatch-how-is-it-doing",
+      "sentence": "**Alarms.** Watch a metric, cross a threshold, take action: notify **SNS**, trigger **Auto Scaling**, or run **EC2 actions** (stop/terminate/recover).",
+      "term": "EC2 actions"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0110",
+      "line": 72,
+      "section": "Purchasing options: which contract?",
+      "section_slug": "purchasing-options-which-contract",
+      "sentence": "**EC2 Instance Savings Plan** — locked to **one family in one region** (e.g., \"m5 in us-east-1\"), but a **bigger discount**.",
+      "term": "EC2 Instance Savings Plan"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0111",
+      "line": 21,
+      "section": "Users, groups, roles",
+      "section_slug": "users-groups-roles",
+      "sentence": "**EC2 → attach an instance role** (delivered via an *instance profile*).",
+      "term": "EC2 → attach an instance role"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0112",
+      "line": 11,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "AWS gives you two: **ECS** (Elastic Container Service — AWS's own, simple) and **EKS** (Elastic Kubernetes Service — managed Kubernetes, the open-source industry standard).",
+      "term": "ECS"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0113",
+      "line": 46,
+      "section": "Policy JSON anatomy",
+      "section_slug": "policy-json-anatomy",
+      "sentence": "**Effect** — `Allow` or `Deny`.",
+      "term": "Effect"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0114",
+      "line": 122,
+      "section": "The five-storage lineup",
+      "section_slug": "the-five-storage-lineup",
+      "sentence": "Shared NFS folder, multi-AZ, many Linux instances, pay-per-use — shared content",
+      "term": "EFS"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0115",
+      "line": 10,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**EFS (Elastic File System)** is the **shared network folder** the whole office mounts.",
+      "term": "EFS (Elastic File System)"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0116",
+      "line": 11,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "AWS gives you two: **ECS** (Elastic Container Service — AWS's own, simple) and **EKS** (Elastic Kubernetes Service — managed Kubernetes, the open-source industry standard).",
+      "term": "EKS"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0117",
+      "line": 45,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "**Continuous block-level replication of servers** (on-prem or EC2) into AWS — cheap DR for lifted servers, RPO seconds / RTO minutes",
+      "term": "Elastic Disaster Recovery (DRS)"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0118",
+      "line": 115,
+      "section": "Elastic IP: the phone number you own",
+      "section_slug": "elastic-ip-the-phone-number-you-own",
+      "sentence": "An **Elastic IP (EIP)** is a static public IPv4 address that **you own** and can remap to any instance — **even across AZs** (unlike an ENI move).",
+      "term": "Elastic IP (EIP)"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0119",
+      "line": 103,
+      "section": "ENI: the detachable network identity card",
+      "section_slug": "eni-the-detachable-network-identity-card",
+      "sentence": "An **Elastic Network Interface (ENI)** is a virtual network card, and here's the key mental model: it's a **detachable identity badge**.",
+      "term": "Elastic Network Interface (ENI)"
+    },
+    {
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "id": "g0120",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**ElastiCache** is AWS's managed cache service.",
+      "term": "ElastiCache"
+    },
+    {
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "id": "g0121",
+      "line": 49,
+      "section": "Exam technique (the meta-game)",
+      "section_slug": "exam-technique-the-meta-game",
+      "sentence": "**Eliminate two** — almost every question has two obviously wrong answers.",
+      "term": "Eliminate two"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0122",
+      "line": 52,
+      "section": "Analytics family",
+      "section_slug": "analytics-family",
+      "sentence": "Managed **Hadoop/Spark** cluster; use **Spot for task nodes** to cut cost",
+      "term": "EMR"
+    },
+    {
+      "guide": "content/saa-c03/13-Lambda.md",
+      "id": "g0123",
+      "line": 44,
+      "section": "Lambda in a VPC",
+      "section_slug": "lambda-in-a-vpc",
+      "sentence": "Put it **in the VPC** (it gets an **ENI** — Elastic Network Interface — in your subnet) and it can reach private RDS... but **it LOSES internet access**.",
+      "term": "ENI"
+    },
+    {
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "id": "g0124",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**CloudHSM** is different: it's you renting an **entire private vault room** — dedicated hardware, your rules, and even the bank staff **cannot see inside**.",
+      "term": "entire private vault room"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0125",
+      "line": 109,
+      "section": "Instance Store: the notepad glued to the desk",
+      "section_slug": "instance-store-the-notepad-glued-to-the-desk",
+      "sentence": "**EPHEMERAL** (temporary): data is **lost when the instance stops, hibernates, or terminates** — though it **survives a reboot** (a reboot stays on the same host; a stop can move you to a different one, and someone else's desk has a different notepad).",
+      "term": "EPHEMERAL"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0126",
+      "line": 115,
+      "section": "Elastic IP: the phone number you own",
+      "section_slug": "elastic-ip-the-phone-number-you-own",
+      "sentence": "An **Elastic IP (EIP)** is a static public IPv4 address that **you own** and can remap to any instance — **even across AZs** (unlike an ENI move).",
+      "term": "even across AZs"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0127",
+      "line": 124,
+      "section": "Events and querying",
+      "section_slug": "events-and-querying",
+      "sentence": "**Event notifications** — \"when an object lands (or is deleted), do something\": target **Lambda, SQS, SNS**, or **EventBridge** (EventBridge unlocks richer filtering and fan-out to many services).",
+      "term": "Event notifications"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0128",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**EventBridge** is the switchboard operator: trains (events) roll in from every direction — AWS services, outside SaaS companies, your own apps — and the operator reads each train's manifest and routes it down the right track to the right destination.",
+      "term": "EventBridge"
+    },
+    {
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "id": "g0129",
+      "line": 29,
+      "section": "SQS — the mailbox (queue, PULL, one message → ONE worker)",
+      "section_slug": "sqs-the-mailbox-queue-pull-one-message-one-worker",
+      "sentence": "Each message is processed by **exactly one worker** — once someone takes the letter from the mailbox, it's theirs.",
+      "term": "exactly one worker"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0130",
+      "line": 22,
+      "section": "EBS: your network-attached hard drive",
+      "section_slug": "ebs-your-network-attached-hard-drive",
+      "sentence": "**Extra attached volumes default to false** — they survive.",
+      "term": "Extra attached volumes default to false"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0131",
+      "line": 63,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "Primary + secondary; flips when **health check** fails",
+      "term": "Failover"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0132",
+      "line": 108,
+      "section": "Instance Store: the notepad glued to the desk",
+      "section_slug": "instance-store-the-notepad-glued-to-the-desk",
+      "sentence": "**Fastest storage EC2 offers** — NVMe instance store reaches **millions of IOPS**, far beyond anything EBS can do.",
+      "term": "Fastest storage EC2 offers"
+    },
+    {
+      "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+      "id": "g0133",
+      "line": 61,
+      "section": "The runtime pattern (the \"fix the hardcoded password\" answer)",
+      "section_slug": "the-runtime-pattern-the-fix-the-hardcoded-password-answer",
+      "sentence": "The fix is **fetch at runtime via IAM role** — and if rotation is mentioned, Secrets Manager, so the password changes **without downtime** and the app never notices.",
+      "term": "fetch at runtime via IAM role"
+    },
+    {
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "id": "g0134",
+      "line": 81,
+      "section": "Kinesis Data Firehose — the delivery truck",
+      "section_slug": "kinesis-data-firehose-the-delivery-truck",
+      "sentence": "Streams is a river; **Firehose** is a delivery truck on a schedule: **near-real-time (~60 seconds buffering)**, **ZERO code, fully managed**, and it delivers to fixed destinations: **S3, Redshift, OpenSearch, Splunk** (plus optional **Lambda transform** en route).",
+      "term": "Firehose"
+    },
+    {
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "id": "g0135",
+      "line": 51,
+      "section": "Exam technique (the meta-game)",
+      "section_slug": "exam-technique-the-meta-game",
+      "sentence": "**Flag it and move on** — later questions often jog your memory.",
+      "term": "Flag it and move on"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0136",
+      "line": 123,
+      "section": "The five-storage lineup",
+      "section_slug": "the-five-storage-lineup",
+      "sentence": "Managed third-party file systems — **Windows (SMB/AD)**, or Lustre for HPC",
+      "term": "FSx"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0137",
+      "line": 61,
+      "section": "GLB — the security-appliance plumber (Layer 3)",
+      "section_slug": "glb-the-security-appliance-plumber-layer-3",
+      "sentence": "Uses the **GENEVE protocol on port 6081** (a recognizable exam factoid).",
+      "term": "GENEVE protocol on port 6081"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0138",
+      "line": 64,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "Routes by **where the user IS** — a hard rule",
+      "term": "Geolocation"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0139",
+      "line": 65,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "Draws a map boundary between **YOUR resources**, adjustable with a **BIAS** dial",
+      "term": "Geoproximity"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0140",
+      "line": 51,
+      "section": "Analytics family",
+      "section_slug": "analytics-family",
+      "sentence": "**Serverless ETL** (extract-transform-load) + **Data Catalog** + crawlers that auto-discover schemas",
+      "term": "Glue"
+    },
+    {
+      "guide": "content/saa-c03/13-Lambda.md",
+      "id": "g0141",
+      "line": 30,
+      "section": "Three ways a Lambda gets invoked",
+      "section_slug": "three-ways-a-lambda-gets-invoked",
+      "sentence": "Lambda queues it, and on failure **retries twice**, then the event is **gone** — unless you configure a **DLQ (dead-letter queue) or failure destination**.",
+      "term": "gone"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0142",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "A **group** is a department — everyone in \"Developers\" gets whatever the department is allowed.",
+      "term": "group"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0143",
+      "line": 70,
+      "section": "The detection zoo — one-liners you must know cold",
+      "section_slug": "the-detection-zoo-one-liners-you-must-know-cold",
+      "sentence": "**ML threat detection** on **CloudTrail, VPC Flow Logs, DNS logs** — no agents. Finds **cryptomining, unusual API calls, compromised credentials**",
+      "term": "GuardDuty"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0144",
+      "line": 97,
+      "section": "Placement groups: where the cars park",
+      "section_slug": "placement-groups-where-the-cars-park",
+      "sentence": "Keywords: **Hadoop, Cassandra, Kafka, HDFS** — big distributed systems.",
+      "term": "Hadoop, Cassandra, Kafka, HDFS"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0145",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "The load balancer gives clients **one single DNS name** (one front door), **spreads incoming traffic** across many servers, and constantly runs **health checks** — little \"are you okay?\" pings — so it stops sending traffic to any server that's sick.",
+      "term": "health checks"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0146",
+      "line": 125,
+      "section": "Boot-time toolkit: user data, metadata, hibernate",
+      "section_slug": "boot-time-toolkit-user-data-metadata-hibernate",
+      "sentence": "**Hibernate** — instead of stopping cold, the instance's **RAM is written to the encrypted EBS root volume**; on start, RAM is restored and the app resumes mid-thought.",
+      "term": "Hibernate"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0147",
+      "line": 49,
+      "section": "Hosted zones",
+      "section_slug": "hosted-zones",
+      "sentence": "A **hosted zone** is a container for all the DNS records of one domain.",
+      "term": "hosted zone"
+    },
+    {
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "id": "g0148",
+      "line": 27,
+      "section": "Keys and hot partitions",
+      "section_slug": "keys-and-hot-partitions",
+      "sentence": "If everyone's key is `country = \"USA\"`, all traffic slams one partition — a **hot partition** — and you get throttled while the rest of the table sits idle.",
+      "term": "hot partition"
+    },
+    {
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "id": "g0149",
+      "line": 49,
+      "section": "Traffic control & performance",
+      "section_slug": "traffic-control-and-performance",
+      "sentence": "Exceed it and clients get **HTTP 429 Too Many Requests** — \"clients receiving 429\" → you're being throttled.",
+      "term": "HTTP 429 Too Many Requests"
+    },
+    {
+      "guide": "content/saa-c03/23-Cognito.md",
+      "id": "g0150",
+      "line": 51,
+      "section": "Cognito vs IAM Identity Center — don't mix up the audiences",
+      "section_slug": "cognito-vs-iam-identity-center-don-t-mix-up-the-audiences",
+      "sentence": "THE trap: *\"employees need single sign-on to AWS accounts\"* → that's your **workforce**, and the answer is **IAM Identity Center** (the successor to AWS SSO), *not* Cognito.",
+      "term": "IAM Identity Center"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0151",
+      "line": 55,
+      "section": "ECR — the image warehouse",
+      "section_slug": "ecr-the-image-warehouse",
+      "sentence": "Bonus exam fact: ECR does **image vulnerability scanning** — \"scan container images for CVEs\" → **ECR scanning**.",
+      "term": "image vulnerability scanning"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0152",
+      "line": 124,
+      "section": "Boot-time toolkit: user data, metadata, hibernate",
+      "section_slug": "boot-time-toolkit-user-data-metadata-hibernate",
+      "sentence": "**IMDSv2** is the hardened version: it requires a **session token first** (a PUT request, then use the token), which blocks the SSRF attacks that plagued v1.",
+      "term": "IMDSv2"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0153",
+      "line": 29,
+      "section": "THE tested table: deployment policies",
+      "section_slug": "the-tested-table-deployment-policies",
+      "sentence": "Build a **whole new fleet** alongside the old, swap when healthy",
+      "term": "Immutable"
+    },
+    {
+      "guide": "content/saa-c03/13-Lambda.md",
+      "id": "g0154",
+      "line": 44,
+      "section": "Lambda in a VPC",
+      "section_slug": "lambda-in-a-vpc",
+      "sentence": "Put it **in the VPC** (it gets an **ENI** — Elastic Network Interface — in your subnet) and it can reach private RDS... but **it LOSES internet access**.",
+      "term": "in the VPC"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0155",
+      "line": 65,
+      "section": "Snapshots: the time machine",
+      "section_slug": "snapshots-the-time-machine",
+      "sentence": "Snapshots are **incremental backups stored in S3** — only changed blocks after the first one, so they're cheap.",
+      "term": "incremental backups stored in S3"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0156",
+      "line": 106,
+      "section": "Instance Store: the notepad glued to the desk",
+      "section_slug": "instance-store-the-notepad-glued-to-the-desk",
+      "sentence": "**Instance Store** is physical disk **inside the host machine itself** — no network hop at all.",
+      "term": "inside the host machine itself"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0157",
+      "line": 72,
+      "section": "The detection zoo — one-liners you must know cold",
+      "section_slug": "the-detection-zoo-one-liners-you-must-know-cold",
+      "sentence": "**Vulnerability scanner** — **CVEs** on **EC2 (via SSM agent), ECR container images, Lambda**",
+      "term": "Inspector"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0158",
+      "line": 124,
+      "section": "Boot-time toolkit: user data, metadata, hibernate",
+      "section_slug": "boot-time-toolkit-user-data-metadata-hibernate",
+      "sentence": "**Instance metadata** — from inside the instance, hit **`http://169.254.169.254/latest/meta-data/`** to learn about yourself: instance ID, AZ, attached IAM role credentials, partition number.",
+      "term": "Instance metadata"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0159",
+      "line": 11,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Instance Store** is the **notepad glued to the desk itself**.",
+      "term": "Instance Store"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0160",
+      "line": 36,
+      "section": "Public vs private: it's all about the route",
+      "section_slug": "public-vs-private-it-s-all-about-the-route",
+      "sentence": "An **Internet Gateway (IGW)** is the VPC's **two-way front door** — traffic can go out AND the internet can come in (to public IPs).",
+      "term": "Internet Gateway (IGW)"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0161",
+      "line": 29,
+      "section": "The one axis that decides everything: IOPS vs Throughput",
+      "section_slug": "the-one-axis-that-decides-everything-iops-vs-throughput",
+      "sentence": "**IOPS** (input/output operations per second) = **lots of small, random reads/writes**.",
+      "term": "IOPS"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0162",
+      "line": 13,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Jargon check: **NFS** (Network File System, the Linux share protocol), **SMB** (Server Message Block, the Windows share protocol), **iSCSI** (block storage — raw disk — over the network), **SFTP/FTPS/FTP** (classic file-transfer protocols).",
+      "term": "iSCSI"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0163",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Here's the hybrid-storage problem: your on-prem servers speak the old languages — **NFS and SMB file shares** (network drives), **iSCSI block volumes** (raw disks over the network), **tape backups**.",
+      "term": "iSCSI block volumes"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0164",
+      "line": 23,
+      "section": "CloudWatch — \"how is it doing?\"",
+      "section_slug": "cloudwatch-how-is-it-doing",
+      "sentence": "**Subscription filters**: stream log events in **real time** to **Kinesis or Lambda** — \"process logs as they arrive\" → subscription filter.",
+      "term": "Kinesis or Lambda"
+    },
+    {
+      "guide": "content/saa-c03/20-KMS-CloudHSM.md",
+      "id": "g0165",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**KMS** (**Key Management Service**) is the bank's shared vault: your keys live in safe-deposit boxes, the bank's staff (AWS) run the vault, almost every AWS service knows how to walk up to it, and **every single time a key is used, it's written in the register** — that register is **CloudTrail**, and that audit trail is **KMS's superpower**.",
+      "term": "KMS"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0166",
+      "line": 77,
+      "section": "The encryption ladder (sorted by how little you trust AWS)",
+      "section_slug": "the-encryption-ladder-sorted-by-how-little-you-trust-aws",
+      "sentence": "**S3 Bucket Key** fixes this — one bucket-level key cuts **KMS API costs ~99%** — BUT fewer KMS calls means a **coarser per-object audit trail** in CloudTrail.",
+      "term": "KMS API costs ~99%"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0167",
+      "line": 77,
+      "section": "The encryption ladder (sorted by how little you trust AWS)",
+      "section_slug": "the-encryption-ladder-sorted-by-how-little-you-trust-aws",
+      "sentence": "SSE-KMS fine print worth points: heavy traffic can hit **KMS API request limits** (every object touch calls KMS).",
+      "term": "KMS API request limits"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0168",
+      "line": 56,
+      "section": "Analytics family",
+      "section_slug": "analytics-family",
+      "sentence": "Build a **data lake** fast + **fine-grained (row/column) access control**",
+      "term": "Lake Formation"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0169",
+      "line": 44,
+      "section": "RDS Proxy",
+      "section_slug": "rds-proxy",
+      "sentence": "Every connection costs memory, and **Lambda** — which can scale to thousands of concurrent executions in seconds — will happily open thousands of connections and knock your database over.",
+      "term": "Lambda"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0170",
+      "line": 62,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "Answers with whichever region is **fastest for that user**",
+      "term": "Latency"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0171",
+      "line": 68,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "**Latency vs Geolocation** — the classic confusion pair:",
+      "term": "Latency vs Geolocation"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0172",
+      "line": 11,
+      "section": "WAF — the Layer 7 bouncer",
+      "section_slug": "waf-the-layer-7-bouncer",
+      "sentence": "**AWS WAF** (Web Application Firewall) works at **Layer 7** — the application layer — meaning it actually *reads HTTP requests*: URLs, headers, query strings, body content.",
+      "term": "Layer 7"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0173",
+      "line": 62,
+      "section": "Network Firewall — the VPC-wide inspector",
+      "section_slug": "network-firewall-the-vpc-wide-inspector",
+      "sentence": "**AWS Network Firewall** is a **managed firewall for your whole VPC**, inspecting traffic at **Layers 3 through 7** — think intrusion prevention, domain filtering, stateful rules for *all* traffic entering/leaving the VPC, not just HTTP to one ALB.",
+      "term": "Layers 3 through 7"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0174",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Related jargon: **LDAP** is the standard protocol for talking to directories like AD; **domain join** means enrolling a machine into the AD domain so it obeys its rules.",
+      "term": "LDAP"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0175",
+      "line": 47,
+      "section": "NAT Gateway — the outbound-only door",
+      "section_slug": "nat-gateway-the-outbound-only-door",
+      "sentence": "The NAT Gateway **lives IN a public subnet** — it needs the IGW route itself to reach the internet.",
+      "term": "lives IN a public subnet"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0176",
+      "line": 44,
+      "section": "Edge & hybrid infrastructure",
+      "section_slug": "edge-and-hybrid-infrastructure",
+      "sentence": "AWS extension in a **metro city** near your users",
+      "term": "Local Zones"
+    },
+    {
+      "guide": "content/saa-c03/23-Cognito.md",
+      "id": "g0177",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "At the front desk there's a **login box** — you prove who you are and get a **visitor badge** (that's the **User Pool**, and the badge is a **JWT token**).",
+      "term": "login box"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0178",
+      "line": 71,
+      "section": "The detection zoo — one-liners you must know cold",
+      "section_slug": "the-detection-zoo-one-liners-you-must-know-cold",
+      "sentence": "**PII / sensitive data discovery in S3** (ML finds credit cards, SSNs)",
+      "term": "Macie"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0179",
+      "line": 38,
+      "section": "How the exam distinguishes them",
+      "section_slug": "how-the-exam-distinguishes-them",
+      "sentence": "**Managed Microsoft AD** is the answer when the scenario needs *actual AD machinery in AWS*: **EC2 Windows domain join**, **MFA**, seamless integration with **RDS for SQL Server / FSx for Windows / WorkSpaces**, or a **trust with on-prem** so both user sets work.",
+      "term": "Managed Microsoft AD"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0180",
+      "line": 49,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "For-each over an array of items",
+      "term": "Map"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0181",
+      "line": 14,
+      "section": "Template anatomy (know the section names)",
+      "section_slug": "template-anatomy-know-the-section-names",
+      "sentence": "Lookup tables, e.g. the right AMI ID per region",
+      "term": "Mappings"
+    },
+    {
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "id": "g0182",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "It runs one of two open-source engines for you — **Redis** or **Memcached** — handling patching, monitoring, and failover.",
+      "term": "Memcached"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0183",
+      "line": 115,
+      "section": "PrivateLink — a service window, not a network marriage",
+      "section_slug": "privatelink-a-service-window-not-a-network-marriage",
+      "sentence": "Peering/TGW **merge networks** — everything can reach everything.",
+      "term": "merge networks"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0184",
+      "line": 125,
+      "section": "Observability & admin access",
+      "section_slug": "observability-and-admin-access",
+      "sentence": "**VPC Flow Logs** capture traffic **metadata** — source/destination IP, port, protocol, **ACCEPT or REJECT** — to CloudWatch Logs or S3.",
+      "term": "metadata"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0185",
+      "line": 55,
+      "section": "DataSync — the moving company",
+      "section_slug": "datasync-the-moving-company",
+      "sentence": "A gateway is for *continuing access*, not bulk moves — a **migration** with **metadata preserved** is **DataSync**, every time.",
+      "term": "metadata preserved"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0186",
+      "line": 43,
+      "section": "The two \"special\" classes and their exact signals",
+      "section_slug": "the-two-special-classes-and-their-exact-signals",
+      "sentence": "There's a **monitoring fee per object** — millions of tiny objects = real money.",
+      "term": "monitoring fee per object"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0187",
+      "line": 11,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Signal: *\"existing application uses **MQTT / AMQP / JMS** (industry-standard messaging protocols) and must migrate with **minimal rewrite**.\"* THE trap: for **new** applications, AWS wants **SQS/SNS** — MQ is only for lifting existing broker-based apps.",
+      "term": "MQTT / AMQP / JMS"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0188",
+      "line": 53,
+      "section": "Analytics family",
+      "section_slug": "analytics-family",
+      "sentence": "Managed **Apache Kafka**",
+      "term": "MSK"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0189",
+      "line": 31,
+      "section": "CloudTrail — \"WHO did WHAT?\"",
+      "section_slug": "cloudtrail-who-did-what",
+      "sentence": "For longer retention, create a **Trail → S3** (and make it a **multi-region trail** — a best practice and a favorite answer).",
+      "term": "multi-region trail"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0190",
+      "line": 66,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "Returns **up to 8 healthy** answers at once",
+      "term": "Multi-Value"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0191",
+      "line": 118,
+      "section": "Performance",
+      "section_slug": "performance",
+      "sentence": "**Multipart upload** — parallel chunks for big files: recommended >100 MB, required >5 GB, and a failed part retries alone.",
+      "term": "Multipart upload"
+    },
+    {
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "id": "g0192",
+      "line": 72,
+      "section": "Kinesis Data Streams — the river",
+      "section_slug": "kinesis-data-streams-the-river",
+      "sentence": "**MULTIPLE consumers read the SAME data** (in SQS, one worker takes the message and it's gone; in the river, everyone on the bank sees the same water).",
+      "term": "MULTIPLE consumers read the SAME data"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0193",
+      "line": 72,
+      "section": "Shared ELB features worth points",
+      "section_slug": "shared-elb-features-worth-points",
+      "sentence": "**SNI (Server Name Indication)**: lets one load balancer host **multiple TLS certificates** — the client says which hostname it wants during the TLS handshake, and the LB serves the matching cert.",
+      "term": "multiple TLS certificates"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0194",
+      "line": 76,
+      "section": "The two guards: Security Groups vs NACLs",
+      "section_slug": "the-two-guards-security-groups-vs-nacls",
+      "sentence": "THE trap: *\"block traffic from a specific malicious IP\"* → **NACL DENY rule** (a SG physically has no deny button).",
+      "term": "NACL DENY rule"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0195",
+      "line": 41,
+      "section": "NAT Gateway — the outbound-only door",
+      "section_slug": "nat-gateway-the-outbound-only-door",
+      "sentence": "Enter the **NAT Gateway** (Network Address Translation).",
+      "term": "NAT Gateway"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0196",
+      "line": 27,
+      "section": "Features → scenarios (this is the exam meat)",
+      "section_slug": "features-scenarios-this-is-the-exam-meat",
+      "sentence": "**Nested Stacks** — stacks inside stacks; package common patterns (a standard VPC, say) as reusable components.",
+      "term": "Nested Stacks"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0197",
+      "line": 87,
+      "section": "EFS: the shared network folder",
+      "section_slug": "efs-the-shared-network-folder",
+      "sentence": "**EFS (Elastic File System)** is a managed **NFS** (Network File System — the classic Linux shared-folder protocol) file system.",
+      "term": "NFS"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0198",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Here's the hybrid-storage problem: your on-prem servers speak the old languages — **NFS and SMB file shares** (network drives), **iSCSI block volumes** (raw disks over the network), **tape backups**.",
+      "term": "NFS and SMB file shares"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0199",
+      "line": 32,
+      "section": "EventBridge: the event router of AWS",
+      "section_slug": "eventbridge-the-event-router-of-aws",
+      "sentence": "**No EC2 instance running crontab** — that's the wrong answer every time.",
+      "term": "No EC2 instance running crontab"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0200",
+      "line": 42,
+      "section": "How the exam distinguishes them",
+      "section_slug": "how-the-exam-distinguishes-them",
+      "sentence": "Simple AD supports **no trust and no MFA** — the moment either word appears, Simple AD is eliminated.",
+      "term": "no trust and no MFA"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0201",
+      "line": 102,
+      "section": "Who can get in: access controls",
+      "section_slug": "who-can-get-in-access-controls",
+      "sentence": "**OAC (Origin Access Control)** — when CloudFront (AWS's CDN — content delivery network, a global fleet of caching edge servers) sits in front of your bucket, OAC lets **only CloudFront** fetch from the bucket, so nobody can bypass the CDN and hit S3 directly.",
+      "term": "OAC (Origin Access Control)"
+    },
+    {
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "id": "g0202",
+      "line": 12,
+      "section": "OLTP vs OLAP",
+      "section_slug": "oltp-vs-olap",
+      "sentence": "**OLAP** — OnLine **Analytical** Processing: **few huge scans**.",
+      "term": "OLAP"
+    },
+    {
+      "guide": "content/saa-c03/12-Other-Databases.md",
+      "id": "g0203",
+      "line": 11,
+      "section": "OLTP vs OLAP",
+      "section_slug": "oltp-vs-olap",
+      "sentence": "**OLTP** — OnLine **Transaction** Processing: **many small operations**.",
+      "term": "OLTP"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0204",
+      "line": 20,
+      "section": "EBS: your network-attached hard drive",
+      "section_slug": "ebs-your-network-attached-hard-drive",
+      "sentence": "It attaches to **one instance at a time** — with one exception: **io1/io2 Multi-Attach**, which lets up to **16 instances in the same AZ** attach the same volume (for cluster-aware software only, not ordinary filesystems).",
+      "term": "one instance at a time"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0205",
+      "line": 125,
+      "section": "Events and querying",
+      "section_slug": "events-and-querying",
+      "sentence": "**S3 Select** — run SQL against the contents of **ONE object** (CSV/JSON/Parquet) and pull back only the matching rows — the app downloads kilobytes instead of the whole gigabyte.",
+      "term": "ONE object"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0206",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "The load balancer gives clients **one single DNS name** (one front door), **spreads incoming traffic** across many servers, and constantly runs **health checks** — little \"are you okay?\" pings — so it stops sending traffic to any server that's sick.",
+      "term": "one single DNS name"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0207",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "This is an **ONGOING bridge** — it stays forever.",
+      "term": "ONGOING bridge"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0208",
+      "line": 11,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "Run and improve: everything as code, small reversible changes",
+      "term": "Operational Excellence"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0209",
+      "line": 32,
+      "section": "CloudTrail — \"WHO did WHAT?\"",
+      "section_slug": "cloudtrail-who-did-what",
+      "sentence": "**DATA events** (S3 **object-level** reads/writes, Lambda invokes) are **opt-in and cost extra** — THE trap: *\"who deleted the object in the bucket?\"* → default CloudTrail can't say; you need **data events enabled**.",
+      "term": "opt-in and cost extra"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0210",
+      "line": 11,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "You need an **orchestrator** — a robotic harbor master.",
+      "term": "orchestrator"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0211",
+      "line": 43,
+      "section": "Edge & hybrid infrastructure",
+      "section_slug": "edge-and-hybrid-infrastructure",
+      "sentence": "AWS-managed racks physically installed **in YOUR datacenter**",
+      "term": "Outposts"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0212",
+      "line": 17,
+      "section": "Template anatomy (know the section names)",
+      "section_slug": "template-anatomy-know-the-section-names",
+      "sentence": "Values to surface after creation; **Export** them and another stack reads them with **Fn::ImportValue** (cross-stack references)",
+      "term": "Outputs"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0213",
+      "line": 117,
+      "section": "PrivateLink — a service window, not a network marriage",
+      "section_slug": "privatelink-a-service-window-not-a-network-marriage",
+      "sentence": "**Overlapping CIDRs are fine** (no routing between networks — it's just an ENI).",
+      "term": "Overlapping CIDRs are fine"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0214",
+      "line": 70,
+      "section": "Networking and scaling facts",
+      "section_slug": "networking-and-scaling-facts",
+      "sentence": "**awsvpc network mode**: every task gets its **own ENI** (Elastic Network Interface — its own private IP) and therefore its **own security group**.",
+      "term": "own ENI"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0215",
+      "line": 48,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "Run branches at the same time",
+      "term": "Parallel"
+    },
+    {
+      "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+      "id": "g0216",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Parameter Store** is a **key hook board in a locked closet**: cheap (free, in fact), tidy, labeled hooks arranged in neat rows — grab whatever key you need.",
+      "term": "Parameter Store"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0217",
+      "line": 13,
+      "section": "Template anatomy (know the section names)",
+      "section_slug": "template-anatomy-know-the-section-names",
+      "sentence": "Inputs at deploy time (instance size, env name)",
+      "term": "Parameters"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0218",
+      "line": 97,
+      "section": "Placement groups: where the cars park",
+      "section_slug": "placement-groups-where-the-cars-park",
+      "sentence": "**Partition** — up to **7 partitions per AZ**, each partition is an isolated group of racks, and each partition can hold **hundreds of instances**.",
+      "term": "Partition"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0219",
+      "line": 85,
+      "section": "Systems Manager (SSM) suite",
+      "section_slug": "systems-manager-ssm-suite",
+      "sentence": "**Patch Manager** — **automated OS patching** on a schedule (maintenance windows).",
+      "term": "Patch Manager"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0220",
+      "line": 79,
+      "section": "Purchasing options: which contract?",
+      "section_slug": "purchasing-options-which-contract",
+      "sentence": "That's exactly what **per-socket or per-core BYOL licenses** (old-school Windows Server, SQL Server, Oracle licenses) require.",
+      "term": "per-socket or per-core BYOL licenses"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0221",
+      "line": 14,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "Right tool for the job, serverless-first, go global",
+      "term": "Performance Efficiency"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0222",
+      "line": 96,
+      "section": "STS and roles: how the costume gets put on",
+      "section_slug": "sts-and-roles-how-the-costume-gets-put-on",
+      "sentence": "**Permissions policy** — what the costume lets you do.",
+      "term": "Permissions policy"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0223",
+      "line": 16,
+      "section": "OSI layers in 60 seconds (you need this to pick the right LB)",
+      "section_slug": "osi-layers-in-60-seconds-you-need-this-to-pick-the-right-lb",
+      "sentence": "**Layer 4 (Transport)** = the envelope address **plus the apartment number** — the **port** (like TCP port 443 or UDP port 3000).",
+      "term": "plus the apartment number"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0224",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "And **policies** are the written rules pinned to the wall saying which badges open which doors.",
+      "term": "policies"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0225",
+      "line": 100,
+      "section": "Scaling policies — match the keyword",
+      "section_slug": "scaling-policies-match-the-keyword",
+      "sentence": "Machine learning forecasts load and scales **ahead** of it",
+      "term": "Predictive"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0226",
+      "line": 101,
+      "section": "Who can get in: access controls",
+      "section_slug": "who-can-get-in-access-controls",
+      "sentence": "**Presigned URLs** — a time-limited signed link to one object: *\"let a customer download this private file for 20 minutes, no AWS account needed.\"* The URL **inherits the permissions of whoever created it** (creator can't read it → URL doesn't work either) and lives **at most 7 days**.",
+      "term": "Presigned URLs"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0227",
+      "line": 28,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "Implemented as **SCPs** — *block* disallowed actions",
+      "term": "Preventive guardrails"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0228",
+      "line": 52,
+      "section": "Hosted zones",
+      "section_slug": "hosted-zones",
+      "sentence": "**Private hosted zone** — answers queries **only from inside VPCs you attach it to**.",
+      "term": "Private hosted zone"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0229",
+      "line": 27,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "And note: **production uses BOTH** — Multi-AZ for surviving failures, replicas for scaling reads.",
+      "term": "production uses BOTH"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0230",
+      "line": 51,
+      "section": "Hosted zones",
+      "section_slug": "hosted-zones",
+      "sentence": "**Public hosted zone** — answers queries from the whole internet.",
+      "term": "Public hosted zone"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0231",
+      "line": 55,
+      "section": "Analytics family",
+      "section_slug": "analytics-family",
+      "sentence": "**BI dashboards** and visualizations",
+      "term": "QuickSight"
+    },
+    {
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "id": "g0232",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "A **cache** keeps the answers to repeated questions in **RAM** (memory) instead of making the database work them out again.",
+      "term": "RAM"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0233",
+      "line": 33,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "**RAM (Resource Access Manager)** — share actual **resources** across accounts without duplicating them: **VPC subnets** (multiple accounts launching into one shared VPC), **Transit Gateways**, **Route 53 Resolver rules**, License Manager configs.",
+      "term": "RAM (Resource Access Manager)"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0234",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "If a question demands **custom engine configuration or OS-level access**, RDS is out — the answer is **database on EC2** (full control, all the toil) or **RDS Custom** (a halfway house for Oracle/SQL Server).",
+      "term": "RDS Custom"
+    },
+    {
+      "guide": "content/saa-c03/13-Lambda.md",
+      "id": "g0235",
+      "line": 46,
+      "section": "Lambda in a VPC",
+      "section_slug": "lambda-in-a-vpc",
+      "sentence": "The answer is **RDS Proxy** — a connection pooler that shares a warm pool of connections.",
+      "term": "RDS Proxy"
+    },
+    {
+      "guide": "content/saa-c03/36-Exam-Traps-KeyPatterns.md",
+      "id": "g0236",
+      "line": 48,
+      "section": "Exam technique (the meta-game)",
+      "section_slug": "exam-technique-the-meta-game",
+      "sentence": "**Read the last sentence first** — that's where the actual question and qualifier live; the story above it is scenery.",
+      "term": "Read the last sentence first"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0237",
+      "line": 17,
+      "section": "CloudWatch — \"how is it doing?\"",
+      "section_slug": "cloudwatch-how-is-it-doing",
+      "sentence": "**Composite alarms** combine several alarms with AND/OR to **reduce alert noise** — \"too many alarms firing at once\" → composite alarm.",
+      "term": "reduce alert noise"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0238",
+      "line": 26,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Re-architect for cloud (e.g., monolith → serverless)",
+      "term": "Refactor"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0239",
+      "line": 23,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Lift-and-shift, no changes (MGN)",
+      "term": "Rehost"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0240",
+      "line": 13,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "Survive failures, recover automatically, stop guessing capacity",
+      "term": "Reliability"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0241",
+      "line": 27,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Move VMware wholesale (VMware Cloud on AWS)",
+      "term": "Relocate"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0242",
+      "line": 41,
+      "section": "NAT Gateway — the outbound-only door",
+      "section_slug": "nat-gateway-the-outbound-only-door",
+      "sentence": "Picture a **receptionist who mails letters for everyone in the building**: she takes your letter, **swaps the return address for the building's front-desk address**, and **remembers who asked** — so when the reply comes back, she hands it to the right person.",
+      "term": "remembers who asked"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0243",
+      "line": 91,
+      "section": "Auto Scaling Groups",
+      "section_slug": "auto-scaling-groups",
+      "sentence": "If an instance dies, the ASG **replaces it automatically** — self-healing for free.",
+      "term": "replaces it automatically"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0244",
+      "line": 24,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Lift-and-tinker (e.g., self-managed MySQL → RDS)",
+      "term": "Replatform"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0245",
+      "line": 25,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Drop it, buy SaaS instead",
+      "term": "Repurchase"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0246",
+      "line": 48,
+      "section": "Policy JSON anatomy",
+      "section_slug": "policy-json-anatomy",
+      "sentence": "**Resource** — which things, named by **ARN** (Amazon Resource Name — AWS's globally unique ID string for every object it manages).",
+      "term": "Resource"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0247",
+      "line": 16,
+      "section": "Template anatomy (know the section names)",
+      "section_slug": "template-anatomy-know-the-section-names",
+      "sentence": "**The only REQUIRED section** — what actually gets built",
+      "term": "Resources"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0248",
+      "line": 28,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Leave it on-prem for now",
+      "term": "Retain"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0249",
+      "line": 29,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Turn it off, nobody used it anyway",
+      "term": "Retire"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0250",
+      "line": 24,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "Second nuance worth a mark: tags don't help billing **retroactively or automatically** — a cost allocation tag only starts appearing in billing data **after you activate it**, and only for usage from then on.",
+      "term": "retroactively or automatically"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0251",
+      "line": 50,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "**Exponential backoff retries built in**",
+      "term": "Retry/Catch"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0252",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "A **role** is a **temporary costume**: a visitor's vest that anyone (a person, a server, another company) can put on for a while, gain its powers, and then take off.",
+      "term": "role"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0253",
+      "line": 27,
+      "section": "THE tested table: deployment policies",
+      "section_slug": "the-tested-table-deployment-policies",
+      "sentence": "Update in batches, batch by batch",
+      "term": "Rolling"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0254",
+      "line": 28,
+      "section": "THE tested table: deployment policies",
+      "section_slug": "the-tested-table-deployment-policies",
+      "sentence": "Spin up one extra batch first, then roll",
+      "term": "Rolling with additional batch"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0255",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "If creation fails partway, CloudFormation **rolls back automatically by default** — no half-baked cakes left in the oven.",
+      "term": "rolls back automatically by default"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0256",
+      "line": 53,
+      "section": "Lifecycle, versioning, replication",
+      "section_slug": "lifecycle-versioning-replication",
+      "sentence": "Add **MFA Delete** and permanently deleting a version (or suspending versioning) requires the **root user's MFA device** — the \"extra protection against accidental or malicious deletes\" answer.",
+      "term": "root user's MFA device"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0257",
+      "line": 22,
+      "section": "EBS: your network-attached hard drive",
+      "section_slug": "ebs-your-network-attached-hard-drive",
+      "sentence": "...**except** for the deletion flags: the **root volume** is created automatically and has **DeleteOnTermination = true by default** (terminate the instance, lose the root disk).",
+      "term": "root volume"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0258",
+      "line": 46,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "Health check fails → DNS flips traffic to the DR region",
+      "term": "Route 53 failover routing"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0259",
+      "line": 37,
+      "section": "Certificates & network odds-and-ends",
+      "section_slug": "certificates-and-network-odds-and-ends",
+      "sentence": "**Route 53 Resolver endpoints** — hybrid DNS plumbing.",
+      "term": "Route 53 Resolver endpoints"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0260",
+      "line": 51,
+      "section": "How to answer any DR question",
+      "section_slug": "how-to-answer-any-dr-question",
+      "sentence": "Find the stated **RPO/RTO numbers** (or words like \"zero downtime\").",
+      "term": "RPO/RTO numbers"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0261",
+      "line": 84,
+      "section": "Systems Manager (SSM) suite",
+      "section_slug": "systems-manager-ssm-suite",
+      "sentence": "**Run Command** — execute scripts **across a fleet** at once, no SSH.",
+      "term": "Run Command"
+    },
+    {
+      "guide": "content/saa-c03/04-EBS-EFS-InstanceStore.md",
+      "id": "g0262",
+      "line": 124,
+      "section": "The five-storage lineup",
+      "section_slug": "the-five-storage-lineup",
+      "sentence": "Object storage over HTTP — not a disk at all; apps talk to it via API, effectively unlimited",
+      "term": "S3"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0263",
+      "line": 98,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**S3 Batch Operations** — run one operation across **billions of EXISTING objects**: copy, tag, restore, or — the exam favorite — **\"encrypt all existing objects in the bucket.\"** Default bucket encryption only covers *new* uploads; Batch Operations fixes history.",
+      "term": "S3 Batch Operations"
+    },
+    {
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "id": "g0264",
+      "line": 43,
+      "section": "The supporting cast",
+      "section_slug": "the-supporting-cast",
+      "sentence": "Objects copied to a bucket in another region",
+      "term": "S3 Cross-Region Replication (CRR)"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0265",
+      "line": 125,
+      "section": "Events and querying",
+      "section_slug": "events-and-querying",
+      "sentence": "**S3 Select** — run SQL against the contents of **ONE object** (CSV/JSON/Parquet) and pull back only the matching rows — the app downloads kilobytes instead of the whole gigabyte.",
+      "term": "S3 Select"
+    },
+    {
+      "guide": "content/saa-c03/23-Cognito.md",
+      "id": "g0266",
+      "line": 41,
+      "section": "The classic flow (draw this in your head)",
+      "section_slug": "the-classic-flow-draw-this-in-your-head",
+      "sentence": "Note the Identity Pool is generous about what it accepts: tokens from a **User Pool**, from **social providers** directly, or from **SAML** — it's an exchange desk for *any* recognized badge.",
+      "term": "SAML"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0267",
+      "line": 116,
+      "section": "IAM Identity Center (the artist formerly known as AWS SSO)",
+      "section_slug": "iam-identity-center-the-artist-formerly-known-as-aws-sso",
+      "sentence": "It also **federates**: connect your existing corporate identity provider — **Okta, Azure AD / Microsoft Entra ID, or on-prem Active Directory** — via **SAML 2.0** (Security Assertion Markup Language, the standard XML handshake that lets one system vouch \"yes, this is Alice\" to another).",
+      "term": "SAML 2.0"
+    },
+    {
+      "guide": "content/saa-c03/31-Cost-Management.md",
+      "id": "g0268",
+      "line": 19,
+      "section": "The tool zoo",
+      "section_slug": "the-tool-zoo",
+      "sentence": "**Savings Plans / Reserved Instances** are the *commitment discounts* themselves (covered with EC2 pricing) — Cost Explorer is where AWS **recommends** buying them based on your history.",
+      "term": "Savings Plans / Reserved Instances"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0269",
+      "line": 99,
+      "section": "Scaling policies — match the keyword",
+      "section_slug": "scaling-policies-match-the-keyword",
+      "sentence": "Scale at known times",
+      "term": "Scheduled"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0270",
+      "line": 42,
+      "section": "AWS Config — \"what did it look like, and is it compliant?\"",
+      "section_slug": "aws-config-what-did-it-look-like-and-is-it-compliant",
+      "sentence": "If the question says \"**prevent** users from ever doing X\" → that's **SCPs** (or IAM), not Config.",
+      "term": "SCPs"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0271",
+      "line": 13,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "**SCPs (Service Control Policies)** — the exam's favorite.",
+      "term": "SCPs (Service Control Policies)"
+    },
+    {
+      "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+      "id": "g0272",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Secrets Manager** is a **hotel keycard system**: it costs money, but it **automatically reissues the keycards on a schedule**, so even a stolen card goes stale on its own.",
+      "term": "Secrets Manager"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0273",
+      "line": 12,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "Least privilege, defense in depth, encrypt everywhere",
+      "term": "Security"
+    },
+    {
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "id": "g0274",
+      "line": 73,
+      "section": "The detection zoo — one-liners you must know cold",
+      "section_slug": "the-detection-zoo-one-liners-you-must-know-cold",
+      "sentence": "**Aggregation dashboard** — collects findings from all the above + runs compliance standards (CIS, PCI)",
+      "term": "Security Hub"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0275",
+      "line": 19,
+      "section": "ECS vocabulary — learn these four words cold",
+      "section_slug": "ecs-vocabulary-learn-these-four-words-cold",
+      "sentence": "Keeps N tasks running, replaces crashed ones, wires them to an ALB",
+      "term": "Service"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0276",
+      "line": 96,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**SES (Simple Email Service)** — send **application emails** at scale (receipts, notifications, marketing).",
+      "term": "SES (Simple Email Service)"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0277",
+      "line": 83,
+      "section": "Systems Manager (SSM) suite",
+      "section_slug": "systems-manager-ssm-suite",
+      "sentence": "**Session Manager** — shell access to instances with **no SSH keys, no bastion host, no open port 22**, all logged.",
+      "term": "Session Manager"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0278",
+      "line": 27,
+      "section": "Direct Connect (DX)",
+      "section_slug": "direct-connect-dx",
+      "sentence": "**Setup time: WEEKS to MONTHS** (someone has to physically run fiber).",
+      "term": "Setup time: WEEKS to MONTHS"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0279",
+      "line": 13,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Jargon check: **NFS** (Network File System, the Linux share protocol), **SMB** (Server Message Block, the Windows share protocol), **iSCSI** (block storage — raw disk — over the network), **SFTP/FTPS/FTP** (classic file-transfer protocols).",
+      "term": "SFTP/FTPS/FTP"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0280",
+      "line": 60,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "One record, one answer, no health checks",
+      "term": "Simple"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0281",
+      "line": 40,
+      "section": "How the exam distinguishes them",
+      "section_slug": "how-the-exam-distinguishes-them",
+      "sentence": "**Simple AD** is the answer when the words are **\"lowest cost\"**, **\"basic LDAP\"**, **\"small organization\"** — and *nothing* in the scenario mentions trust, MFA, or on-prem integration.",
+      "term": "Simple AD"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0282",
+      "line": 39,
+      "section": "The two \"special\" classes and their exact signals",
+      "section_slug": "the-two-special-classes-and-their-exact-signals",
+      "sentence": "**One Zone-IA** stores data in a **single Availability Zone** — the AZ burns down, the data is gone.",
+      "term": "single Availability Zone"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0283",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "A **Site-to-Site VPN** (Virtual Private Network) is like sending an **armored car on public roads**: your data travels over the ordinary public internet, but wrapped in an encrypted IPsec tunnel so nobody can peek inside.",
+      "term": "Site-to-Site VPN"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0284",
+      "line": 5,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "The framework's **six pillars** are the six things the inspector checks, and on the exam they don't appear as their own questions so much as the *lens* a question forces you to look through.",
+      "term": "six pillars"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0285",
+      "line": 93,
+      "section": "Failover: who handles what",
+      "section_slug": "failover-who-handles-what",
+      "sentence": "One neat corollary: if your DR design is **a single instance per region**, there's nothing for an ELB to balance — Route 53 Failover pointing at the instances directly is enough, and you can **skip the ELB entirely** (saves money; the exam likes this).",
+      "term": "skip the ELB entirely"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0286",
+      "line": 25,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "And because clients **cache** DNS answers (controlled by **TTL — Time To Live**, the \"how long may you remember this answer\" setting), Route 53 failover is **slow** — clients keep using the old cached IP until TTL expires.",
+      "term": "slow"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0287",
+      "line": 13,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "Jargon check: **NFS** (Network File System, the Linux share protocol), **SMB** (Server Message Block, the Windows share protocol), **iSCSI** (block storage — raw disk — over the network), **SFTP/FTPS/FTP** (classic file-transfer protocols).",
+      "term": "SMB"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0288",
+      "line": 63,
+      "section": "One pointer",
+      "section_slug": "one-pointer",
+      "sentence": "If the scenario is **offline, or the data is so huge the network math doesn't work** (weeks of transfer time, remote sites, limited bandwidth), that's the **Snow Family** — Section 27's story.",
+      "term": "Snow Family"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0289",
+      "line": 96,
+      "section": "Placement groups: where the cars park",
+      "section_slug": "placement-groups-where-the-cars-park",
+      "sentence": "**Spread** — every instance on **its own rack** with its own power/network.",
+      "term": "Spread"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0290",
+      "line": 18,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "There's also a **Worker environment**: instead of serving web traffic, it pulls jobs from an **SQS queue** — the background-processing tier of your app.",
+      "term": "SQS queue"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0291",
+      "line": 11,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "Signal: *\"existing application uses **MQTT / AMQP / JMS** (industry-standard messaging protocols) and must migrate with **minimal rewrite**.\"* THE trap: for **new** applications, AWS wants **SQS/SNS** — MQ is only for lifting existing broker-based apps.",
+      "term": "SQS/SNS"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0292",
+      "line": 58,
+      "section": "Lifecycle, versioning, replication",
+      "section_slug": "lifecycle-versioning-replication",
+      "sentence": "**SRR** (Same-Region Replication) → same region: log aggregation into one bucket, prod → test copies.",
+      "term": "SRR"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0293",
+      "line": 24,
+      "section": "Features → scenarios (this is the exam meat)",
+      "section_slug": "features-scenarios-this-is-the-exam-meat",
+      "sentence": "**Stack Policies** — protect specific resources within a stack **from being modified by stack updates**.",
+      "term": "Stack Policies"
+    },
+    {
+      "guide": "content/saa-c03/28-CloudFormation.md",
+      "id": "g0294",
+      "line": 26,
+      "section": "Features → scenarios (this is the exam meat)",
+      "section_slug": "features-scenarios-this-is-the-exam-meat",
+      "sentence": "**StackSets** — deploy **one template to MANY accounts and regions** in one operation.",
+      "term": "StackSets"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0295",
+      "line": 56,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "**Standard vs Express workflows** — memorize this table:",
+      "term": "Standard vs Express workflows"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0296",
+      "line": 41,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "A **state machine** is your flowchart; each box is a **state**:",
+      "term": "state machine"
+    },
+    {
+      "guide": "content/saa-c03/13-Lambda.md",
+      "id": "g0297",
+      "line": 21,
+      "section": "Hard limits — where half the traps live",
+      "section_slug": "hard-limits-where-half-the-traps-live",
+      "sentence": "**Step Functions** is only right if the work can be **divided into chunks under 15 minutes each**.",
+      "term": "Step Functions"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0298",
+      "line": 98,
+      "section": "Scaling policies — match the keyword",
+      "section_slug": "scaling-policies-match-the-keyword",
+      "sentence": "Add/remove N instances at metric thresholds you define",
+      "term": "Step Scaling"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0299",
+      "line": 67,
+      "section": "Aurora",
+      "section_slug": "aurora",
+      "sentence": "**Storage auto-grows to 128 TB** — no provisioning",
+      "term": "Storage auto-grows to 128 TB"
+    },
+    {
+      "guide": "content/saa-c03/09-RDS-Aurora.md",
+      "id": "g0300",
+      "line": 49,
+      "section": "RDS Proxy",
+      "section_slug": "rds-proxy",
+      "sentence": "Also worth one neuron: **storage autoscaling** — RDS can grow its storage automatically when it runs low (\"database keeps running out of disk with unpredictable growth\" → enable storage autoscaling).",
+      "term": "storage autoscaling"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0301",
+      "line": 53,
+      "section": "DataSync — the moving company",
+      "section_slug": "datasync-the-moving-company",
+      "sentence": "**Storage Gateway = ongoing hybrid ACCESS** (the bridge stays; on-prem apps keep reading/writing after — or instead of — migrating).",
+      "term": "Storage Gateway = ongoing hybrid ACCESS"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0302",
+      "line": 92,
+      "section": "STS and roles: how the costume gets put on",
+      "section_slug": "sts-and-roles-how-the-costume-gets-put-on",
+      "sentence": "**STS (Security Token Service)** is the coat-check counter that hands out costumes.",
+      "term": "STS (Security Token Service)"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0303",
+      "line": 31,
+      "section": "Boxes in boxes",
+      "section_slug": "boxes-in-boxes",
+      "sentence": "**Region > VPC > subnets > instances.** A VPC lives in ONE region; a **subnet lives in ONE Availability Zone** (so multi-AZ = multiple subnets).",
+      "term": "subnet lives in ONE Availability Zone"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0304",
+      "line": 16,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "Maximize utilization, minimize wasted compute",
+      "term": "Sustainability"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0305",
+      "line": 97,
+      "section": "Scaling policies — match the keyword",
+      "section_slug": "scaling-policies-match-the-keyword",
+      "sentence": "\"Keep this metric at this value\" (e.g., CPU at 40%) — AWS does the math",
+      "term": "Target Tracking"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0306",
+      "line": 18,
+      "section": "ECS vocabulary — learn these four words cold",
+      "section_slug": "ecs-vocabulary-learn-these-four-words-cold",
+      "sentence": "One running copy of that definition",
+      "term": "Task"
+    },
+    {
+      "guide": "content/saa-c03/14-ECS-EKS-Fargate.md",
+      "id": "g0307",
+      "line": 17,
+      "section": "ECS vocabulary — learn these four words cold",
+      "section_slug": "ecs-vocabulary-learn-these-four-words-cold",
+      "sentence": "JSON blueprint: which image, CPU/RAM, ports, env vars, IAM roles",
+      "term": "Task Definition"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0308",
+      "line": 92,
+      "section": "STS and roles: how the costume gets put on",
+      "section_slug": "sts-and-roles-how-the-costume-gets-put-on",
+      "sentence": "When anything calls **`sts:AssumeRole`**, STS returns **temporary credentials** — an access key, secret key, and session token — valid for a limited time (15 minutes to 12 hours, **default 1 hour**), after which they expire on their own.",
+      "term": "temporary credentials"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0309",
+      "line": 19,
+      "section": "Migration & messaging",
+      "section_slug": "migration-and-messaging",
+      "sentence": "**The 7 Rs of migration** — one line each:",
+      "term": "The 7 Rs of migration"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0310",
+      "line": 37,
+      "section": "Public vs private: it's all about the route",
+      "section_slug": "public-vs-private-it-s-all-about-the-route",
+      "sentence": "**THE definition** — memorize this exactly: a subnet is **public** if its route table has a route to the IGW (`0.0.0.0/0 → igw-xxx`).",
+      "term": "THE definition"
+    },
+    {
+      "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+      "id": "g0311",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**THE differentiator is AUTOMATIC ROTATION** — and it belongs to Secrets Manager alone.",
+      "term": "THE differentiator is AUTOMATIC ROTATION"
+    },
+    {
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "id": "g0312",
+      "line": 58,
+      "section": "SNS — the megaphone (PUSH, one → MANY)",
+      "section_slug": "sns-the-megaphone-push-one-many",
+      "sentence": "**THE fan-out pattern** — the exam's darling:",
+      "term": "THE fan-out pattern"
+    },
+    {
+      "guide": "content/saa-c03/10-DynamoDB.md",
+      "id": "g0313",
+      "line": 69,
+      "section": "Two more exam staples",
+      "section_slug": "two-more-exam-staples",
+      "sentence": "**The serverless poster-child stack** — memorize the chain:",
+      "term": "The serverless poster-child stack"
+    },
+    {
+      "guide": "content/saa-c03/34-Well-Architected.md",
+      "id": "g0314",
+      "line": 29,
+      "section": "The six pillars",
+      "section_slug": "the-six-pillars",
+      "sentence": "**The Well-Architected Tool** is a **free questionnaire in the console**: you answer questions about a workload, pillar by pillar, and it produces an **improvement plan**.",
+      "term": "The Well-Architected Tool"
+    },
+    {
+      "guide": "content/saa-c03/15-Elastic-Beanstalk.md",
+      "id": "g0315",
+      "line": 41,
+      "section": "THE RDS trap",
+      "section_slug": "the-rds-trap",
+      "sentence": "If you create an RDS database **inside** a Beanstalk environment, its lifecycle is **tied to the environment** — terminate or rebuild the environment, and **the database dies with it**.",
+      "term": "tied to the environment"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0316",
+      "line": 64,
+      "section": "The encryption ladder (sorted by how little you trust AWS)",
+      "section_slug": "the-encryption-ladder-sorted-by-how-little-you-trust-aws",
+      "sentence": "Encryption **in transit** = scrambled while traveling over the network, done by **TLS** (Transport Layer Security — the \"s\" in https, the standard protocol that encrypts web traffic).",
+      "term": "TLS"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0317",
+      "line": 119,
+      "section": "Performance",
+      "section_slug": "performance",
+      "sentence": "**Transfer Acceleration** — for **UPLOADS from users around the globe into ONE central bucket**: they upload to the nearest CloudFront edge location, then the data rides **AWS's private backbone** to the bucket.",
+      "term": "Transfer Acceleration"
+    },
+    {
+      "guide": "content/saa-c03/25-StorageGateway-DataSync-TransferFamily.md",
+      "id": "g0318",
+      "line": 59,
+      "section": "Transfer Family — the managed SFTP dock",
+      "section_slug": "transfer-family-the-managed-sftp-dock",
+      "sentence": "*\"Partners upload via SFTP, must keep their existing workflow\"* → **Transfer Family** — and **never** the distractor \"run an SFTP server on EC2\" (that's undifferentiated heavy lifting the exam always wants you to reject).",
+      "term": "Transfer Family"
+    },
+    {
+      "guide": "content/saa-c03/33-Transit-Gateway.md",
+      "id": "g0319",
+      "line": 9,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Transit Gateway (TGW)** is the **airport hub**.",
+      "term": "Transit Gateway (TGW)"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0320",
+      "line": 97,
+      "section": "STS and roles: how the costume gets put on",
+      "section_slug": "sts-and-roles-how-the-costume-gets-put-on",
+      "sentence": "**Trust policy** — **who is allowed to put the costume on.** It's a resource-based policy on the role itself, naming the trusted principal (a service like `ec2.amazonaws.com`, another account, a SAML provider).",
+      "term": "Trust policy"
+    },
+    {
+      "guide": "content/saa-c03/24-Directory-Services.md",
+      "id": "g0321",
+      "line": 24,
+      "section": "The three options (the table to memorize)",
+      "section_slug": "the-three-options-the-table-to-memorize",
+      "sentence": "Jargon check: a **trust relationship** means two separate AD forests agree to honor each other's logins — cloud AD trusts on-prem AD and vice versa (**two-way trust**), so users from *either* directory can access resources on *either* side, without syncing passwords into the cloud.",
+      "term": "trust relationship"
+    },
+    {
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "id": "g0322",
+      "line": 11,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "**Trusted Advisor** is your **automated AWS consultant** — a robot auditor that continuously scans your account and nags you about the exact things a human consultant would bill you for.",
+      "term": "Trusted Advisor"
+    },
+    {
+      "guide": "content/saa-c03/11-ElastiCache.md",
+      "id": "g0323",
+      "line": 58,
+      "section": "Caching strategies — when do you write the sticky note?",
+      "section_slug": "caching-strategies-when-do-you-write-the-sticky-note",
+      "sentence": "**TTL** (time-to-live) on cached entries is the middle ground: stale data expires automatically after N seconds.",
+      "term": "TTL"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0324",
+      "line": 43,
+      "section": "Resiliency patterns",
+      "section_slug": "resiliency-patterns",
+      "sentence": "**Two DX connections** (ideally at different locations) → maximum resiliency, maximum cost.",
+      "term": "Two DX connections"
+    },
+    {
+      "guide": "content/saa-c03/06-VPC.md",
+      "id": "g0325",
+      "line": 36,
+      "section": "Public vs private: it's all about the route",
+      "section_slug": "public-vs-private-it-s-all-about-the-route",
+      "sentence": "An **Internet Gateway (IGW)** is the VPC's **two-way front door** — traffic can go out AND the internet can come in (to public IPs).",
+      "term": "two-way front door"
+    },
+    {
+      "guide": "content/saa-c03/05-ELB-AutoScaling.md",
+      "id": "g0326",
+      "line": 51,
+      "section": "NLB — the fast, no-questions host (Layer 4)",
+      "section_slug": "nlb-the-fast-no-questions-host-layer-4",
+      "sentence": "Handles **millions of requests per second** with **ultra-low latency** — the \"extreme performance\" keyword answer.",
+      "term": "ultra-low latency"
+    },
+    {
+      "guide": "content/saa-c03/23-Cognito.md",
+      "id": "g0327",
+      "line": 46,
+      "section": "The clever bits worth exam points",
+      "section_slug": "the-clever-bits-worth-exam-points",
+      "sentence": "**Guest access**: Identity Pools support **unauthenticated identities** — \"let users browse content *before* signing up\" → Identity Pool guest access.",
+      "term": "unauthenticated identities"
+    },
+    {
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "id": "g0328",
+      "line": 34,
+      "section": "CloudTrail — \"WHO did WHAT?\"",
+      "section_slug": "cloudtrail-who-did-what",
+      "sentence": "**CloudTrail Insights**: detects **unusual API activity** (sudden spike in TerminateInstances).",
+      "term": "unusual API activity"
+    },
+    {
+      "guide": "content/saa-c03/08-CloudFront-GlobalAccelerator.md",
+      "id": "g0329",
+      "line": 72,
+      "section": "The three-way direction trap",
+      "section_slug": "the-three-way-direction-trap",
+      "sentence": "(S3 Transfer Acceleration uses the same edge network, but for **uploads into S3** — \"users worldwide upload large files to a central bucket\" is its exact sentence.)",
+      "term": "uploads into S3"
+    },
+    {
+      "guide": "content/saa-c03/16-API-Gateway.md",
+      "id": "g0330",
+      "line": 50,
+      "section": "Traffic control & performance",
+      "section_slug": "traffic-control-and-performance",
+      "sentence": "**Usage Plans + API Keys** (REST only): per-customer request quotas and rate tiers.",
+      "term": "Usage Plans + API Keys"
+    },
+    {
+      "guide": "content/saa-c03/01-IAM.md",
+      "id": "g0331",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "A **user** is a permanent employee badge with your name on it.",
+      "term": "user"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0332",
+      "line": 123,
+      "section": "Boot-time toolkit: user data, metadata, hibernate",
+      "section_slug": "boot-time-toolkit-user-data-metadata-hibernate",
+      "sentence": "**User data** — a script you paste at launch.",
+      "term": "User data"
+    },
+    {
+      "guide": "content/saa-c03/17-SQS-SNS-Kinesis.md",
+      "id": "g0333",
+      "line": 31,
+      "section": "SQS — the mailbox (queue, PULL, one message → ONE worker)",
+      "section_slug": "sqs-the-mailbox-queue-pull-one-message-one-worker",
+      "sentence": "**Visibility timeout** — the mechanic the exam adores:",
+      "term": "Visibility timeout"
+    },
+    {
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "id": "g0334",
+      "line": 33,
+      "section": "Core concepts",
+      "section_slug": "core-concepts",
+      "sentence": "**RAM (Resource Access Manager)** — share actual **resources** across accounts without duplicating them: **VPC subnets** (multiple accounts launching into one shared VPC), **Transit Gateways**, **Route 53 Resolver rules**, License Manager configs.",
+      "term": "VPC subnets"
+    },
+    {
+      "guide": "content/saa-c03/32-DirectConnect-VPN.md",
+      "id": "g0335",
+      "line": 44,
+      "section": "Resiliency patterns",
+      "section_slug": "resiliency-patterns",
+      "sentence": "**VPN now, DX later** — need connectivity this week while the fiber is being installed?",
+      "term": "VPN now, DX later"
+    },
+    {
+      "guide": "content/saa-c03/18-EventBridge-StepFunctions.md",
+      "id": "g0336",
+      "line": 47,
+      "section": "Step Functions: the workflow orchestrator",
+      "section_slug": "step-functions-the-workflow-orchestrator",
+      "sentence": "Pause for time or until a timestamp",
+      "term": "Wait"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0337",
+      "line": 45,
+      "section": "Edge & hybrid infrastructure",
+      "section_slug": "edge-and-hybrid-infrastructure",
+      "sentence": "AWS compute embedded in **5G telecom networks**",
+      "term": "Wavelength"
+    },
+    {
+      "guide": "content/saa-c03/07-Route53.md",
+      "id": "g0338",
+      "line": 61,
+      "section": "Routing policies",
+      "section_slug": "routing-policies",
+      "sentence": "Split traffic by percentage you assign",
+      "term": "Weighted"
+    },
+    {
+      "guide": "content/saa-c03/21-SecretsManager-ParameterStore.md",
+      "id": "g0339",
+      "line": 18,
+      "section": "Secrets Manager — rotation is the whole point",
+      "section_slug": "secrets-manager-rotation-is-the-whole-point",
+      "sentence": "Rotation happens **without downtime** — the app just fetches the current value at connect time.",
+      "term": "without downtime"
+    },
+    {
+      "guide": "content/saa-c03/30-ServiceCatalog-TrustedAdvisor.md",
+      "id": "g0340",
+      "line": 7,
+      "section": "The idea",
+      "section_slug": "the-idea",
+      "sentence": "The magic trick: users can launch these stacks **without holding broad IAM permissions themselves** — Service Catalog launches on their behalf using its own constrained role.",
+      "term": "without holding broad IAM permissions themselves"
+    },
+    {
+      "guide": "content/saa-c03/02-S3.md",
+      "id": "g0341",
+      "line": 87,
+      "section": "Object Lock: WORM",
+      "section_slug": "object-lock-worm",
+      "sentence": "**Object Lock** makes objects **WORM** — Write Once, Read Many: written, then **impossible to delete or overwrite** for a set retention period.",
+      "term": "WORM"
+    },
+    {
+      "guide": "content/saa-c03/37-GapFill-Services.md",
+      "id": "g0342",
+      "line": 102,
+      "section": "Developer & app services",
+      "section_slug": "developer-and-app-services",
+      "sentence": "**X-Ray** — **distributed tracing**: follow one request across microservices to find the slow/broken hop.",
+      "term": "X-Ray"
+    },
+    {
+      "guide": "content/saa-c03/03-EC2.md",
+      "id": "g0343",
+      "line": 68,
+      "section": "Purchasing options: which contract?",
+      "section_slug": "purchasing-options-which-contract",
+      "sentence": "But a **zonal RI** — one scoped to a specific Availability Zone — **also reserves capacity** in that AZ.",
+      "term": "zonal RI"
+    }
+  ],
+  "entry_count": 343,
+  "source": "RonitSachdev/aws-saa-c03-guides @ a71e466f02702fe01a6fe414c0b49cb8a673d205 (CC BY 4.0)",
+  "status": "candidate"
+}
