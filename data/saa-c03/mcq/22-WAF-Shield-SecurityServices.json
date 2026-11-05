@@ -1,0 +1,466 @@
+{
+  "questions": [
+    {
+      "id": "q0570",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "SQL injection attacks must be blocked against an application behind an Application Load Balancer. Which service fits?",
+      "options": [
+        {
+          "text": "WAF on the ALB",
+          "explanation": "This is the guide's answer for this scenario (line 93). Its note: L7 rules read HTTP)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "Shield Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Protection against common DDoS attacks at no additional cost (line 97).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Inspector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Continuously scan EC2 instances and container images for software vulnerabilities (CVEs) (line 107).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0571",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "Each client IP must be limited to 2,000 requests per 5 minutes. What should the architect configure?",
+      "options": [
+        {
+          "text": "Firewall Manager",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Ensure WAF rules are applied to all ALBs across 50 accounts, including future accounts (line 101).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "WAF rate-based rule",
+          "explanation": "This is the guide's answer for this scenario (line 95). Its note: \"per IP rate limit\" is WAF's signature move)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 95
+          }
+        },
+        {
+          "text": "Shield Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Protection against common DDoS attacks at no additional cost (line 97).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Shield Advanced",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company suffered a large DDoS, wants expert support during attacks and refunds for attack-related scaling costs (line 99).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 99
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0572",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "Protection against common DDoS attacks is needed at no additional cost. Which service fits?",
+      "options": [
+        {
+          "text": "WAF on the ALB",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Block SQL injection attacks against an application behind an ALB (line 93).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 93
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Shield Standard",
+          "explanation": "This is the guide's answer for this scenario (line 97). Its note: free, automatic, L3/L4)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Shield Advanced",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company suffered a large DDoS, wants expert support during attacks and refunds for attack-related scaling costs (line 99).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 99
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0573",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "A company suffered a large DDoS attack and wants expert support during attacks plus refunds for attack-related scaling costs. Which service fits?",
+      "options": [
+        {
+          "text": "Shield Standard",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Protection against common DDoS attacks at no additional cost (line 97).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 97
+          }
+        },
+        {
+          "text": "Firewall Manager",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Ensure WAF rules are applied to all ALBs across 50 accounts, including future accounts (line 101).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Shield Advanced",
+          "explanation": "This is the guide's answer for this scenario (line 99). Its note: DRT + cost protection = the $3k tier)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 99
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0574",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "WAF rules must be applied to all ALBs across 50 accounts, including future accounts. Which service fits?",
+      "options": [
+        {
+          "text": "Firewall Manager",
+          "explanation": "This is the guide's answer for this scenario (line 101). Its note: org-wide auto-apply; needs Organizations + Config)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 101
+          }
+        },
+        {
+          "text": "Security Hub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Single pane of glass for security findings across all accounts and services (line 109).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "Artifact",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Auditor requests AWS's SOC 2 / PCI compliance reports (line 113).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 113
+          }
+        },
+        {
+          "text": "Macie",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify S3 buckets containing personally identifiable information (line 103).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0575",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "The company must identify S3 buckets that contain personally identifiable information. Which service fits?",
+      "options": [
+        {
+          "text": "Security Hub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Single pane of glass for security findings across all accounts and services (line 109).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "Macie",
+          "explanation": "This is the guide's answer for this scenario (line 103). Its note: PII in S3, full stop)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Inspector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Continuously scan EC2 instances and container images for software vulnerabilities (CVEs) (line 107).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 107
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0576",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "An alert is needed when EC2 instances are used for cryptocurrency mining or credentials are compromised. Which service fits?",
+      "options": [
+        {
+          "text": "Inspector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Continuously scan EC2 instances and container images for software vulnerabilities (CVEs) (line 107).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 107
+          }
+        },
+        {
+          "text": "Artifact",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Auditor requests AWS's SOC 2 / PCI compliance reports (line 113).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 113
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "This is the guide's answer for this scenario (line 105). Its note: ML on CloudTrail/Flow/DNS logs, agentless)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Macie",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify S3 buckets containing personally identifiable information (line 103).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 103
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0577",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "EC2 instances and container images must be continuously scanned for software vulnerabilities. Which service fits?",
+      "options": [
+        {
+          "text": "Macie",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify S3 buckets containing personally identifiable information (line 103).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Artifact",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Auditor requests AWS's SOC 2 / PCI compliance reports (line 113).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 113
+          }
+        },
+        {
+          "text": "Inspector",
+          "explanation": "This is the guide's answer for this scenario (line 107). Its note: SSM agent on EC2, ECR, Lambda)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 107
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0578",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "The security team needs a single pane of glass for findings across all accounts and services. Which service fits?",
+      "options": [
+        {
+          "text": "Security Hub",
+          "explanation": "This is the guide's answer for this scenario (line 109). Its note: the aggregation dashboard)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Detective",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: After a GuardDuty finding, analyze and identify the root cause of the incident (line 111).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "Artifact",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Auditor requests AWS's SOC 2 / PCI compliance reports (line 113).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 113
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0579",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "After a GuardDuty finding, the team must analyse and identify the root cause of the incident. Which service fits?",
+      "options": [
+        {
+          "text": "Security Hub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Single pane of glass for security findings across all accounts and services (line 109).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "Detective",
+          "explanation": "This is the guide's answer for this scenario (line 111). Its note: post-finding investigation graph)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 111
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        },
+        {
+          "text": "Inspector",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Continuously scan EC2 instances and container images for software vulnerabilities (CVEs) (line 107).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 107
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0580",
+      "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+      "stem": "An auditor requests AWS's SOC 2 and PCI compliance reports. Where does the architect get them?",
+      "options": [
+        {
+          "text": "Security Hub",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Single pane of glass for security findings across all accounts and services (line 109).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 109
+          }
+        },
+        {
+          "text": "Macie",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Identify S3 buckets containing personally identifiable information (line 103).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 103
+          }
+        },
+        {
+          "text": "Artifact",
+          "explanation": "This is the guide's answer for this scenario (line 113). Its note: self-service report downloads)..",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 113
+          }
+        },
+        {
+          "text": "GuardDuty",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Alert when EC2 instances are used for cryptocurrency mining or credentials are compromised (line 105).",
+          "source": {
+            "guide": "content/saa-c03/22-WAF-Shield-SecurityServices.md",
+            "line": 105
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}
