@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "q0700",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "All accounts in the organization must be prevented from launching resources outside approved Regions. What should the architect use?",
+      "options": [
+        {
+          "text": "SCP on the root/OU",
+          "explanation": "This is the guide's answer for this scenario (line 37). Its note: org-wide ceiling = SCP.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 37
+          }
+        },
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        },
+        {
+          "text": "Control Tower Account Factory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: New teams need AWS accounts that come pre-configured with security baselines, via self-service (line 41).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 41
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0701",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "An SCP denies an action, yet the management account can still perform it. What is the explanation?",
+      "options": [
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "SCPs don't apply to the management account",
+          "explanation": "This is the guide's answer for this scenario (line 39). Its note: the exemption trap.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 39
+          }
+        },
+        {
+          "text": "Detective guardrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Guardrail that flags noncompliant resources but doesn't block creation (line 51).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 51
+          }
+        },
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0702",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "New teams need AWS accounts that come pre-configured with security baselines, through self-service. What should the architect use?",
+      "options": [
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        },
+        {
+          "text": "SCP on the root/OU",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent all accounts in the organization from launching resources outside approved regions (line 37).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 37
+          }
+        },
+        {
+          "text": "Control Tower Account Factory",
+          "explanation": "This is the guide's answer for this scenario (line 41). Its note: standardized account vending.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0703",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "The company wants a single bill and shared Reserved Instance discounts across accounts. What should the architect use?",
+      "options": [
+        {
+          "text": "Control Tower Account Factory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: New teams need AWS accounts that come pre-configured with security baselines, via self-service (line 41).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        },
+        {
+          "text": "SCP on the root/OU",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent all accounts in the organization from launching resources outside approved regions (line 37).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 37
+          }
+        },
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "This is the guide's answer for this scenario (line 43). Its note: pooled usage, shared RI/SP.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0704",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "Multiple accounts must use the same VPC subnets or a central Transit Gateway. What should the architect use?",
+      "options": [
+        {
+          "text": "AWS RAM",
+          "explanation": "This is the guide's answer for this scenario (line 45). Its note: share, don't duplicate.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        },
+        {
+          "text": "SCP on the root/OU",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent all accounts in the organization from launching resources outside approved regions (line 37).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 37
+          }
+        },
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "Control Tower Account Factory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: New teams need AWS accounts that come pre-configured with security baselines, via self-service (line 41).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 41
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0705",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "An IAM user has a full administrator policy in a member account but is denied. What should the architect check?",
+      "options": [
+        {
+          "text": "Control Tower Account Factory",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: New teams need AWS accounts that come pre-configured with security baselines, via self-service (line 41).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 41
+          }
+        },
+        {
+          "text": "The SCP",
+          "explanation": "This is the guide's answer for this scenario (line 47). Its note: ceiling overrides IAM allow.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 47
+          }
+        },
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0706",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "A multi-account environment must be set up automatically following AWS best practices. What should the architect use?",
+      "options": [
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        },
+        {
+          "text": "Control Tower",
+          "explanation": "This is the guide's answer for this scenario (line 49). Its note: landing zone + guardrails.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 49
+          }
+        },
+        {
+          "text": "SCP on the root/OU",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent all accounts in the organization from launching resources outside approved regions (line 37).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 37
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0707",
+      "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+      "stem": "A guardrail must flag noncompliant resources without blocking their creation. Which type fits?",
+      "options": [
+        {
+          "text": "SCP on the root/OU",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent all accounts in the organization from launching resources outside approved regions (line 37).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 37
+          }
+        },
+        {
+          "text": "Organizations consolidated billing",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Company wants a single bill and to share Reserved Instance discounts across accounts (line 43).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 43
+          }
+        },
+        {
+          "text": "AWS RAM",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Multiple accounts must use the same VPC subnets / a central Transit Gateway (line 45).",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 45
+          }
+        },
+        {
+          "text": "Detective guardrail",
+          "explanation": "This is the guide's answer for this scenario (line 51). Its note: Config rule; preventive = SCP = block.",
+          "source": {
+            "guide": "content/saa-c03/29-Organizations-ControlTower.md",
+            "line": 51
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}

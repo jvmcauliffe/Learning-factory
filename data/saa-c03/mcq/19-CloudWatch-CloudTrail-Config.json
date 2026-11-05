@@ -1,0 +1,424 @@
+{
+  "questions": [
+    {
+      "id": "q0506",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "A security review needs to determine who terminated a production EC2 instance last week. Which service fits?",
+      "options": [
+        {
+          "text": "CloudTrail",
+          "explanation": "This is the guide's answer for this scenario (line 56). Its note: API audit = who did what)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide pairs this answer with: Config history / compliance (line 82).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "CloudWatch",
+          "explanation": "Not this one. The guide pairs this answer with: Performance, health, alarms (line 80).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide pairs this answer with: Trace across microservices (line 94).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 94
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0507",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "An alarm must fire when application memory usage on EC2 exceeds 80%. What should the architect configure?",
+      "options": [
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "CloudWatch agent + custom metric + alarm",
+          "explanation": "This is the guide's answer for this scenario (line 58). Its note: memory is not a default metric)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 58
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide pairs this answer with: Config history / compliance (line 82).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0508",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "An alarm must trigger when the application logs more than 100 ERROR lines in 5 minutes. What should the architect configure?",
+      "options": [
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "Metric filter on CloudWatch Logs + alarm",
+          "explanation": "This is the guide's answer for this scenario (line 60).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 60
+          }
+        },
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0509",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "The team must show a security group's configuration as of last Tuesday and flag any group allowing SSH from the internet. Which service fits?",
+      "options": [
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "SCP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent anyone in the org from disabling CloudTrail. (line 74).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "This is the guide's answer for this scenario (line 62). Its note: timeline + managed rule)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0510",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "Noncompliant security groups must be fixed automatically without manual work. What is the design?",
+      "options": [
+        {
+          "text": "Config rule + SSM Automation remediation",
+          "explanation": "This is the guide's answer for this scenario (line 64).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 64
+          }
+        },
+        {
+          "text": "SCP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent anyone in the org from disabling CloudTrail. (line 74).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0511",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "A single request spans 10 microservices and the team must find which one is slow. Which service fits?",
+      "options": [
+        {
+          "text": "SCP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent anyone in the org from disabling CloudTrail. (line 74).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "This is the guide's answer for this scenario (line 66). Its note: distributed tracing)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0512",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "Log entries must be processed in real time as they are written. What should the architect use?",
+      "options": [
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "CloudWatch Logs subscription filter → Kinesis/Lambda",
+          "explanation": "This is the guide's answer for this scenario (line 68).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 68
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0513",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "The auditors need to identify who downloaded a specific S3 object. What provides this?",
+      "options": [
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "SCP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent anyone in the org from disabling CloudTrail. (line 74).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "CloudTrail data events",
+          "explanation": "This is the guide's answer for this scenario (line 70). Its note: object-level = opt-in, extra cost)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 70
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0514",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "API activity records must be kept for 7 years and be tamper-evident. What is the design?",
+      "options": [
+        {
+          "text": "Trail → S3 + log file integrity validation",
+          "explanation": "This is the guide's answer for this scenario (line 72). Its note: free history is only 90 days)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 72
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "SCP",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Prevent anyone in the org from disabling CloudTrail. (line 74).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 74
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-1",
+      "status": "candidate"
+    },
+    {
+      "id": "q0515",
+      "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+      "stem": "Nobody in the organization may be able to disable CloudTrail. What should the architect use?",
+      "options": [
+        {
+          "text": "X-Ray",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: A request spans 10 microservices; find which one is slow. (line 66).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 66
+          }
+        },
+        {
+          "text": "SCP",
+          "explanation": "This is the guide's answer for this scenario (line 74). Its note: Config detects; SCP prevents)..",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 74
+          }
+        },
+        {
+          "text": "AWS Config",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Show the configuration of a security group as of last Tuesday, and flag any SG allowing SSH from the internet. (line 62).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 62
+          }
+        },
+        {
+          "text": "CloudTrail",
+          "explanation": "Not this one. The guide uses this answer for a different scenario: Determine who terminated a production EC2 instance last week. (line 56).",
+          "source": {
+            "guide": "content/saa-c03/19-CloudWatch-CloudTrail-Config.md",
+            "line": 56
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-1",
+      "status": "candidate"
+    }
+  ]
+}
