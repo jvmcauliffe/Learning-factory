@@ -1,0 +1,340 @@
+{
+  "questions": [
+    {
+      "id": "q0795",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "A workload needs an RTO of 10 minutes and an RPO of seconds while keeping costs reasonable. Which DR strategy fits?",
+      "options": [
+        {
+          "text": "Warm Standby",
+          "explanation": "This is the guide's answer for this scenario (line 57). Its note: Active-Active also works but costs more; Pilot Light is too slow.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 57
+          }
+        },
+        {
+          "text": "Backup & Restore",
+          "explanation": "Not this one. The guide pairs this answer with: Cheapest, RTO hours (line 79).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "Pilot Light",
+          "explanation": "Not this one. The guide pairs this answer with: DB replicated, servers off (line 80).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Multi-Site Active-Active",
+          "explanation": "Not this one. The guide pairs this answer with: Zero RPO/RTO, both live (line 82).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 82
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0796",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "Disaster recovery is needed at the LOWEST cost, and hours of downtime are acceptable. Which DR strategy fits?",
+      "options": [
+        {
+          "text": "Pilot Light",
+          "explanation": "Not this one. The guide pairs this answer with: DB replicated, servers off (line 80).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Backup & Restore",
+          "explanation": "This is the guide's answer for this scenario (line 59). Its note: cheapest strategy that meets a relaxed RTO.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 59
+          }
+        },
+        {
+          "text": "Warm Standby",
+          "explanation": "Not this one. The guide pairs this answer with: Scaled-down copy running (line 81).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Multi-Site Active-Active",
+          "explanation": "Not this one. The guide pairs this answer with: Zero RPO/RTO, both live (line 82).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 82
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-4",
+      "status": "candidate"
+    },
+    {
+      "id": "q0797",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "An application must survive a Region failure with zero downtime and zero data loss. Which DR strategy fits?",
+      "options": [
+        {
+          "text": "Pilot Light",
+          "explanation": "Not this one. The guide pairs this answer with: DB replicated, servers off (line 80).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 80
+          }
+        },
+        {
+          "text": "Warm Standby",
+          "explanation": "Not this one. The guide pairs this answer with: Scaled-down copy running (line 81).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Multi-Site Active-Active",
+          "explanation": "This is the guide's answer for this scenario (line 61). Its note: only ~zero RPO/RTO option.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 61
+          }
+        },
+        {
+          "text": "Backup & Restore",
+          "explanation": "Not this one. The guide pairs this answer with: Cheapest, RTO hours (line 79).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 79
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0798",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "The database is continuously replicated to the DR Region, and EC2 instances are launched only during a disaster. Which DR strategy is this?",
+      "options": [
+        {
+          "text": "Backup & Restore",
+          "explanation": "Not this one. The guide pairs this answer with: Cheapest, RTO hours (line 79).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 79
+          }
+        },
+        {
+          "text": "Warm Standby",
+          "explanation": "Not this one. The guide pairs this answer with: Scaled-down copy running (line 81).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 81
+          }
+        },
+        {
+          "text": "Multi-Site Active-Active",
+          "explanation": "Not this one. The guide pairs this answer with: Zero RPO/RTO, both live (line 82).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 82
+          }
+        },
+        {
+          "text": "Pilot Light",
+          "explanation": "This is the guide's answer for this scenario (line 63). Its note: core data live, compute off.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 63
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0799",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "Backups of EBS, RDS and DynamoDB must be centrally managed and automated across the organization. Which service fits?",
+      "options": [
+        {
+          "text": "AWS Backup",
+          "explanation": "This is the guide's answer for this scenario (line 65). Its note: one service, backup plans + vault lock.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 65
+          }
+        },
+        {
+          "text": "DynamoDB Global Tables",
+          "explanation": "Not this one. The guide pairs this answer with: Multi-region multi-active NoSQL (line 84).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "Route 53 failover routing",
+          "explanation": "Not this one. The guide pairs this answer with: DNS failover to DR region (line 87).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "Elastic Disaster Recovery (DRS)",
+          "explanation": "Not this one. The guide pairs this answer with: Replicate on-prem servers for DR (line 86).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 86
+          }
+        }
+      ],
+      "correct": 0,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0800",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "A company needs cost-effective disaster recovery into AWS for 200 on-premises servers. Which service fits?",
+      "options": [
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide pairs this answer with: RPO 1s / RTO <1 min relational (line 83).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "Elastic Disaster Recovery (DRS)",
+          "explanation": "This is the guide's answer for this scenario (line 67). Its note: continuous block replication, pay tiny until failover.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 67
+          }
+        },
+        {
+          "text": "DynamoDB Global Tables",
+          "explanation": "Not this one. The guide pairs this answer with: Multi-region multi-active NoSQL (line 84).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "Route 53 failover routing",
+          "explanation": "Not this one. The guide pairs this answer with: DNS failover to DR region (line 87).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 87
+          }
+        }
+      ],
+      "correct": 1,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0801",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "A global relational database needs a cross-Region RPO of about one second. Which service fits?",
+      "options": [
+        {
+          "text": "AWS Backup (+ Vault Lock)",
+          "explanation": "Not this one. The guide pairs this answer with: Centralized cross-service backups (line 85).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 85
+          }
+        },
+        {
+          "text": "Route 53 failover routing",
+          "explanation": "Not this one. The guide pairs this answer with: DNS failover to DR region (line 87).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 87
+          }
+        },
+        {
+          "text": "Aurora Global Database",
+          "explanation": "This is the guide's answer for this scenario (line 69). Its note: RPO 1s, RTO under a minute.",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 69
+          }
+        },
+        {
+          "text": "DynamoDB Global Tables",
+          "explanation": "Not this one. The guide pairs this answer with: Multi-region multi-active NoSQL (line 84).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 84
+          }
+        }
+      ],
+      "correct": 2,
+      "domain": "domain-2",
+      "status": "candidate"
+    },
+    {
+      "id": "q0802",
+      "guide": "content/saa-c03/35-Disaster-Recovery.md",
+      "stem": "Users must be routed automatically to the standby Region when the primary Region fails. What should the architect use?",
+      "options": [
+        {
+          "text": "Aurora Global Database",
+          "explanation": "Not this one. The guide pairs this answer with: RPO 1s / RTO <1 min relational (line 83).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 83
+          }
+        },
+        {
+          "text": "DynamoDB Global Tables",
+          "explanation": "Not this one. The guide pairs this answer with: Multi-region multi-active NoSQL (line 84).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 84
+          }
+        },
+        {
+          "text": "Elastic Disaster Recovery (DRS)",
+          "explanation": "Not this one. The guide pairs this answer with: Replicate on-prem servers for DR (line 86).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 86
+          }
+        },
+        {
+          "text": "Route 53 failover routing with health checks",
+          "explanation": "This is the guide's answer for this scenario (line 71).",
+          "source": {
+            "guide": "content/saa-c03/35-Disaster-Recovery.md",
+            "line": 71
+          }
+        }
+      ],
+      "correct": 3,
+      "domain": "domain-2",
+      "status": "candidate"
+    }
+  ]
+}
